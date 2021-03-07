@@ -1,88 +1,63 @@
 
 # https://www.geeksforgeeks.org/python-spell-corrector-gui-using-tkinter/
 
-# import all functions / classes from the tkinter 
-from tkinter import *
-from textblob import TextBlob 
 import tkinter as tk
- 
-# Function to clear both the text entry boxes 
-def clearAll():  
-    # whole content of text entry area is deleted 
-    word1_field.delete(0, END) 
-    word2_field.delete(0, END) 
- 
-# Function to get a corrected word 
-def correction(): 
-    # get a content from entry box 
-    input_text = word1_field.get() 
- 
-    # create a TextBlob object 
-    blob_obj = TextBlob(input_text)
- 
-    # get a corrected word 
-    output_text = str(blob_obj.correct()) 
- 
-    # insert method inserting the 
-    # value in the text entry box. 
-    word2_field.insert(10, output_text) 
- 
-# Driver code 
-if __name__ == "__main__" : 
- 
-    # Create a GUI window 
-    root = Tk() 
- 
-    # Set the background colour of GUI window 
-    root.configure(background = 'light green') 
-     
-    # Set the configuration of GUI window (WidthxHeight) 
-    root.geometry("350x200")   # original: 400x150
- 
-    # set the name of tkinter GUI window 
-    root.title("Redaktor Teksti") 
-     
-    # Create Welcome to Spell Corrector Application: label 
-    headlabel = Label(root, text = 'Mirë se vini te ky redaktor teksti', 
-                    fg = 'black', bg = "red") 
-     
-    # Create a "Input Word": label 
-    label1 = Label(root, text = "Teksti Hyrës", 
-                fg = 'black', bg = 'dark green') 
-         
-    # Create a "Corrected Word": label 
-    label2 = Label(root, text = "Teksti Dalës", 
-                fg = 'black', bg = 'dark green') 
-     
-    # grid method is used for placing 
-    # the widgets at respective positions 
-    # in table like structure . 
-    # padx keyword argument used to set paading along x-axis . 
-    headlabel.grid(row = 0, column = 1) 
-    label1.grid(row = 1, column = 0) 
-    label2.grid(row = 3, column = 0, padx = 10) 
- 
-    # Create a text entry box 
-    # for filling or typing the information. 
-    word1_field = Entry() 
-    word2_field = Entry() 
-         
-    # padx keyword argument used to set paading along x-axis . 
-    # pady keyword argument used to set paading along y-axis . 
-    word1_field.grid(row = 1, column = 1, padx = 10, pady = 10) 
-    word2_field.grid(row = 3, column = 1, padx = 10, pady = 10) 
- 
-    # Create a Correction Button and attached 
-    # with correction function 
-    button1 = Button(root, text = "Korrigjo", bg = "red", fg = "black", 
-                                command = correction)  
-    button1.grid(row = 2, column = 1) 
-     
-    # Create a Clear Button and attached 
-    # with clearAll function 
-    button2 = Button(root, text = "Fshi", bg = "red", 
-                    fg = "black", command = clearAll) 
-    button2.grid(row = 4, column = 1) 
-     
-    # Start the GUI 
-    root.mainloop()
+from tkinter import *
+from replace import *
+
+## function to clear both text entry boxes
+def clearAll(field1, field2):
+	## whole content of the text area is deleted
+	field1.delete(0, END)
+	field2.delete(0, END)
+	
+## main execution code
+if __name__ == "__main__":
+
+	## create a GUI window with some specifications
+	root = Tk()
+	root.configure(background = "light green")	# background color of GUI
+	root.geometry("350x200")					# size of GUI WidthxHeight
+	root.title("Redaktor Teksti")				# main title of window
+	
+	## welcome message in the GUI
+	headlabel = Label(root, text = "Mirë se vini te ky redaktor teksti",
+					fg = "black", bg = "red")
+	
+	## create the label for the input text
+	inlabel = Label(root, text = "Teksti Hyrës", fg = "black", bg = "green") 
+	## create the label for the output text
+	outlabel = Label(root, text = "Teksti Dalës", fg = "black", bg = "green")
+
+	'''
+	using grid method for placing widgets at respective positions in 
+	table-like structure. padx keyword argument used to set pading along
+	x asix.
+	'''
+	headlabel.grid(row = 0, column = 1) 
+	inlabel.grid(row = 1, column = 0) 
+	outlabel.grid(row = 3, column = 0, padx = 10) 
+	
+	## text entries for filling or typing the texts
+	text1_field = Entry() ; text2_field = Entry()
+	
+	## padx and pady to set padding in x-axis and y-axis
+	text1_field.grid(row = 1, column = 1, padx = 10, pady = 10)
+	text2_field.grid(row = 3, column = 1, padx = 10, pady = 10)
+	
+	## correction button attached with correction function
+	correct_button = Button(root, text = "Korrigjo", bg = "red", fg = "black", 
+			command = lambda: correction(text1_field, text2_field))
+	correct_button.grid(row = 2, column = 1)
+	
+	## clear button attached with clearAll function
+	clear_button = Button(root, text = "Fshi", bg = "red", fg = "black",
+			command = lambda: clearAll(text1_field, text2_field)) 
+	clear_button.grid(row = 4, column = 1) 
+	
+	## start the GUI
+	root.mainloop()
+	
+	
+	
+	
