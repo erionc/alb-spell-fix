@@ -15,7 +15,6 @@ def correction(field1, field2):
     # get a corrected word 
     output_text = str(blob_obj.correct()) 
  
- 
     # insert the corrected text in the second entry box
     field2.insert(10, output_text) 
 '''
@@ -25,22 +24,23 @@ def correction(field_in, field_out):
 	# get content from the first box
 	input_text = field_in.get() 
 	t = input_text ; total_sub = 0
-	
-	## full word substitution template
-	# t = re.sub(r"eshte|ështe|eshtë", "është", t)
-	
+		
 	## call c substitutions 
 	t, c = replace_cs(t) ; total_sub += c
 	
 	## call e substitutions
 	t, c = replace_es(t) ; total_sub += c
+	
+	## call word substitutions 
+	# t, c = replace_words(t) ; total_sub += c
 
 	output_text = t
 	## insert the corrected text in the second box
 	field_out.insert(10, output_text)
 	## print number of total substitutions
 	print(f"U kryen {total_sub} zëvendësime.")
-	
+
+## function for c - ç substitutions
 def replace_cs(text):
 	## initializations 
 	t = text ; c_subs = 0
@@ -57,8 +57,7 @@ def replace_cs(text):
 	
 	return (t, c_subs)
 	
-	
-
+## function for e -> ë substitutions
 def replace_es(text):
 	## initializations 
 	t = text ; e_subs = 0
@@ -71,9 +70,18 @@ def replace_es(text):
 	## unë Unë ujë Ujë
 	t, c = re.subn(r"(u|U)(n|j)(e?)( |\.)", r"\1\2ë\4", t) ; e_subs += c
 	
+	m = "Mir|mir"
 	## Mirë, mirë
-	t, c = re.subn(r"(Mir|mir)(e?)( |\.)", r"\1ë\3", t) ; e_subs += c
+	t, c = re.subn(fr"({m})(e?)( |\.)", r"\1ë\3", t) ; e_subs += c
+	# t, c = re.subn(r"(Mir|mir)(e?)( |\.)", r"\1ë\3", t) ; e_subs += c
 	
 	return (t, e_subs)
+	
+## function for word substitutions
+def replace_words(text):
+	## initializations 
+	t = text ; word_subs = 0
+	
+	return (t, word_subs)
 	
 	
