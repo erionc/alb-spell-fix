@@ -26,13 +26,19 @@ def correction(field_in, field_out):
 	t = input_text ; total_sub = 0
 		
 	## call c substitutions 
-	t, c = replace_cs(t) ; total_sub += c
+	t, c = replace_c(t) ; total_sub += c
 	
 	## call e substitutions
-	t, c = replace_es(t) ; total_sub += c
+	t, c = replace_e(t) ; total_sub += c
 	
 	## call word substitutions 
-	# t, c = replace_words(t) ; total_sub += c
+	t, c = replace_words(t) ; total_sub += c
+	
+	## call dialect substitutions
+	t, c = replace_dial(t) ; total_sub += c
+	
+	## call english word substitutions
+	t, c = replace_eng(t) ; total_sub += c
 
 	output_text = t
 	## insert the corrected text in the second box
@@ -41,7 +47,7 @@ def correction(field_in, field_out):
 	print(f"U kryen {total_sub} zëvendësime.")
 
 ## function for c - ç substitutions
-def replace_cs(text):
+def replace_c(text):
 	## initializations 
 	t = text ; c_subs = 0
 	
@@ -58,24 +64,39 @@ def replace_cs(text):
 	return (t, c_subs)
 	
 ## function for e -> ë substitutions
-def replace_es(text):
+def replace_e(text):
 	## initializations 
 	t = text ; e_subs = 0
 	
 	## Është
-	t, c = re.subn(r"(E|Ë)(sht)(e|ë)", r"Ë\2ë", t) ; e_subs += c
+	t, c = re.subn(r"(E|Ë)(sht)(e|ë)?( |\.)", r"Ë\2ë\4", t) ; e_subs += c
 	## është
-	t, c = re.subn(r"(e|ë)(sht)(e|ë)", r"ë\2ë", t) ; e_subs += c
-	
-	## unë Unë ujë Ujë
-	t, c = re.subn(r"(u|U)(n|j)(e?)( |\.)", r"\1\2ë\4", t) ; e_subs += c
-	
-	m = "Mir|mir"
-	## Mirë, mirë
-	t, c = re.subn(fr"({m})(e?)( |\.)", r"\1ë\3", t) ; e_subs += c
+	t, c = re.subn(r"(e|ë)(sht)(e|ë)?( |\.)", r"ë\2ë\4", t) ; e_subs += c
+			
+	## fjalë që shkruhen pa ë në fund ose me ë të shkruar e - mir(e) -> mirë
+	pa_e = "Buk|buk|Mir|mir|Pun|pun|Shum|shum|uj|Uj|Un|un"
+	t, c = re.subn(fr"({pa_e})(e?)( |\.)", r"\1ë\3", t) ; e_subs += c
 	# t, c = re.subn(r"(Mir|mir)(e?)( |\.)", r"\1ë\3", t) ; e_subs += c
 	
 	return (t, e_subs)
+
+## function for replacing dialectic forms
+def replace_dial(text):
+	## initializations 
+	t = text ; dial_subs = 0
+	
+	## fjalë që shnkruhen pa a në fund - du(e) -> dua, thu(e) -> thua
+	dial = "Du|du|Thu|thu"
+	t, c = re.subn(fr"({dial})(e?)( |\.)", r"\1a\3", t) ; dial_subs += c
+	
+	return (t, dial_subs)
+	
+## function for english words substitutions
+def replace_eng(text):
+	## initializations 
+	t = text ; eng_subs = 0
+	
+	return (t, eng_subs)
 	
 ## function for word substitutions
 def replace_words(text):
@@ -83,5 +104,7 @@ def replace_words(text):
 	t = text ; word_subs = 0
 	
 	return (t, word_subs)
+	
+
 	
 	
