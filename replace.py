@@ -1,50 +1,5 @@
 
 import re
-# from textblob import TextBlob # required by initial implementation
-
-## initial implementation valid for English language only
-'''
-def correction(field1, field2): 
-    # get a content from the first entry box 
-    input_text = field1.get() 
- 
-	## all text corrections here
-    # create a TextBlob object 
-    blob_obj = TextBlob(input_text)
- 
-    # get a corrected word 
-    output_text = str(blob_obj.correct()) 
- 
-    # insert the corrected text in the second entry box
-    field2.insert(10, output_text) 
-'''
-
-## implementation for Albanian language
-def correction(field_in, field_out):
-	# get content from the first box
-	input_text = field_in.get() 
-	t = input_text ; total_sub = 0
-		
-	## call c substitutions 
-	t, c = replace_c(t) ; total_sub += c
-	
-	## call e substitutions
-	t, c = replace_e(t) ; total_sub += c
-	
-	## call word substitutions 
-	t, c = replace_words(t) ; total_sub += c
-	
-	## call dialect substitutions
-	t, c = replace_dial(t) ; total_sub += c
-	
-	## call english word substitutions
-	t, c = replace_eng(t) ; total_sub += c
-
-	output_text = t
-	## insert the corrected text in the second box
-	field_out.insert(10, output_text)
-	## print number of total substitutions
-	print(f"U kryen {total_sub} zëvendësime.")
 
 ## function for c - ç substitutions
 def replace_c(text):
@@ -86,8 +41,16 @@ def replace_dial(text):
 	t = text ; dial_subs = 0
 	
 	## fjalë që shnkruhen pa a në fund - du(e) -> dua, thu(e) -> thua
-	dial = "Du|du|Thu|thu"
-	t, c = re.subn(fr"({dial})(e?)( |\.)", r"\1a\3", t) ; dial_subs += c
+	dial1 = "Du|du|Thu|thu|Gru|gru"
+	t, c = re.subn(fr"({dial1})(e?)( |\.)", r"\1a\3", t) ; dial_subs += c
+	
+	## fjalë që shkruhen pa rë në fund - pru -> prurë
+	dial2 = "Pru|pru|Vra|vra"
+	t, c = re.subn(fr"({dial2})( |\.)", r"\1rë\2", t) ; dial_subs += c
+
+	## fjalë që shkruhen pa ar në fund - shku -> shkuar
+	dial3 = "Lexu|lexu|Shkru|shkru|Shku|shku"
+	t, c = re.subn(fr"({dial3})( |\.)", r"\1ar\2", t) ; dial_subs += c
 	
 	return (t, dial_subs)
 	
