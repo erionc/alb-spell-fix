@@ -1,30 +1,10 @@
 
-# https://www.geeksforgeeks.org/python-spell-corrector-gui-using-tkinter/
-
 import re
 import tkinter as tk
 from tkinter import *
 from replace import *
-# from textblob import TextBlob # required by initial implementation
 
-## initial implementation valid for English language only
-'''
-def correction(field1, field2): 
-    # get a content from the first entry box 
-    input_text = field1.get() 
- 
-	## all text corrections here
-    # create a TextBlob object 
-    blob_obj = TextBlob(input_text)
- 
-    # get a corrected word 
-    output_text = str(blob_obj.correct()) 
- 
-    # insert the corrected text in the second entry box
-    field2.insert(10, output_text) 
-'''
-
-## implementation for Albanian language
+## main correction function that calls other substitution functions
 def correction(field_in, field_out):
 	# get content from the first box
 	input_text = field_in.get() 
@@ -35,12 +15,12 @@ def correction(field_in, field_out):
 	
 	## call e substitutions
 	t, c = replace_e(t) ; total_sub += c
+		
+	## call dialect substitutions
+	t, c = replace_dial(t) ; total_sub += c
 	
 	## call word substitutions 
 	t, c = replace_words(t) ; total_sub += c
-	
-	## call dialect substitutions
-	t, c = replace_dial(t) ; total_sub += c
 	
 	## call english word substitutions
 	t, c = replace_eng(t) ; total_sub += c
@@ -103,7 +83,4 @@ if __name__ == "__main__":
 	
 	## start the GUI
 	root.mainloop()
-	
-	
-	
 	
