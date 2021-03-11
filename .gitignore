@@ -1,2 +1,2 @@
-./__pycache__/
-./tests.txt
+__pycache__/
+tests.txt
