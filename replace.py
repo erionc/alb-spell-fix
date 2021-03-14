@@ -16,6 +16,12 @@ pjes_geg1 = "Pru|pru|Vra|vra"
 ## mbarojnë me 'ar' -- shku -> shkuar
 pjes_geg2 = "Lexu|lexu|Shkru|shkru|Shku|shku|Dëgju|dëgju|Shiku|shiku"
 
+## fjalë që shkruhen pa ë në fund ose me ë të shkruar e - mir(e) -> mirë
+pa_e = "Buk|buk|Mir|mir|Nj|nj|Pun|pun|Shum|shum|uj|Uj|Un|un"
+
+## fjalë që shkruhen me c në vend të ç-së
+pa_c = "Cun|cun"
+
 ## function for c - ç substitutions
 def replace_c(text):
 	## initializations 
@@ -49,7 +55,6 @@ def replace_e(text):
 	t, c = re.subn(fr"(e|ë)(sht)(e|ë)?({we})", r"ë\2ë\4", t) ; e_subs += c
 			
 	## fjalë që shkruhen pa ë në fund ose me ë të shkruar e - mir(e) -> mirë
-	pa_e = "Buk|buk|Mir|mir|Nj|nj|Pun|pun|Shum|shum|uj|Uj|Un|un"
 	t, c = re.subn(fr"({pa_e})(e?)({we})", r"\1ë\3", t) ; e_subs += c
 	# t, c = re.subn(r"(Mir|mir)(e?)( |\.)", r"\1ë\3", t) ; e_subs += c
 	
