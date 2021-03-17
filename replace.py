@@ -15,10 +15,11 @@ pjes_geg1 = "Pru|pru|Vra|vra"
 ## pjesore të shkurtra gegërisht që mbarojnë me 'u' por që duhet të 
 ## mbarojnë me 'ar' -- shku -> shkuar
 pjes_geg2 = "Lexu|lexu|Shkru|shkru|Shku|shku|Dëgju|dëgju|Shiku|shiku"
-
+	
 ## fjalë që shkruhen pa ë në fund ose me ë të shkruar e - mir(e) -> mirë
-pa_e = "Buk|buk|Mir|mir|Nj|nj|Pun|pun|Shum|shum|uj|Uj|Un|un"
-
+pa_e = "Buk|buk|Flak|flak|Mir|mir|Nj|nj|Pun|pun|Rrug|rrug|Shum|shum|" + \
+		"Uj|uj|Un|un"
+		
 ## fjalë që shkruhen me c në vend të ç-së
 pa_c = "Cun|cun"
 
@@ -32,9 +33,10 @@ def replace_c(text):
 	## Ç'kemi, Ç'ke, Ç'keni, 
 	t, c = re.subn(fr"(C|C'|Ç)(ke*)", r"Ç'\2", t) ; c_subs += c
 	
-	## cka -> çka, c'ka(në) -> ç'ka(në)
+	## cka -> çka, c'kam, ckam -> ç'kam, c'ka(në) -> ç'ka(në)
 	t, c = re.subn(fr"(c)('?)(ka*)", r"ç\2\3", t) ; c_subs += c
-	## Cka -> Çka, C'ka(në) -> Ç'ka(në)
+	
+	## Cka -> Çka, C'kam, Ckam -> Ç'kam, C'ka(në) -> Ç'ka(në)
 	t, c = re.subn(fr"(C)('?)(ka*)", r"Ç\2\3", t) ; c_subs += c
 	
 	## çfarë 
