@@ -1,59 +1,58 @@
 
 import re
 
-## global variable that matches the ending of a word in regex
+## global variable that matches the ending of a word
 we = " |\t|\n|\.|\?|:|;|,|!"
 
 ## fjalë gegërisht që mbarojnë me 'u(e)' por që duhet të 
 ## mbarojnë me 'ua' -- du(e) -> dua, thu(e) -> thua
 fjale_geg1 = "Du|du|Thu|thu|Gru|gru"
 	
-## pjesore të shkurtra gegërisht që mbarojnë me 'u' por që duhet 
-## të mbarojnë me 'rë' -- pru -> prurë
-pjes_geg1 = "Pru|pru|Vra|vra"
+## pjesore të shkurtra gegërisht që mbarojnë me 'u', 'e', 'a' 
+## por që duhet të mbarojnë me 'rë' -- pru -> prurë
+pjes_geg1 = "Pi|pi|Pre|pre|Pru|pru|Vra|vra"
 
 ## pjesore të shkurtra gegërisht që mbarojnë me 'u' por që duhet të 
 ## mbarojnë me 'ar' -- shku -> shkuar
 pjes_geg2 = "Lexu|lexu|Shkru|shkru|Shku|shku|Dëgju|dëgju|Shiku|shiku"
 	
-## fjalë që shkruhen pa ë në fund ose me ë të shkruar e - mir(e) -> mirë
+## fjalë që shkruhen pa ë fundore ose me ë të shkruar e - mir(e) -> mirë
 pa_e = "Buk|buk|Flak|flak|Mir|mir|Nj|nj|Pun|pun|Rrug|rrug|Shum|shum|" + \
 		"Uj|uj|Un|un"
 		
 ## fjalë që shkruhen me C/c në vend të Ç/ç-së nistore
-## caj, coj, cun, 
-pa_c_nis = "aj|oj|un|ik"
+## caj, cajnik, cifte, coj, corape, cun, 
+pa_c_nis = "aj|ajnik|ifte|oj|orape|un"
 
 ## function for c - ç substitutions
 def replace_c(text):
 	## initializations 
 	t = text ; c_subs = 0
 	
-	## ç'kemi, ç'ke, ç'keni, 
-	t, c = re.subn(fr"(c|c'|ç)(ke*)", r"ç'\2", t) ; c_subs += c
-	## Ç'kemi, Ç'ke, Ç'keni, 
-	t, c = re.subn(fr"(C|C'|Ç)(ke*)", r"Ç'\2", t) ; c_subs += c
+	## ç'kemi, ç'ke, ç'keni, - no {we}
+	t, c = re.subn(fr"(\b)(c|c'|ç|q)(ke*)", r"ç'\3", t) ; c_subs += c
+	## Ç'kemi, Ç'ke, Ç'keni, - no {we}
+	t, c = re.subn(fr"(\b)(C|C'|Ç|Q)(ke*)", r"Ç'\3", t) ; c_subs += c
 	
-	## cka -> çka ; c'kam, ckam -> ç'kam ; c'ka(në) -> ç'ka(në)
-	t, c = re.subn(fr"(c)('?)(ka*)", r"ç\2\3", t) ; c_subs += c
-	
-	## Cka -> Çka ; C'kam, Ckam -> Ç'kam ; C'ka(në) -> Ç'ka(në)
-	t, c = re.subn(fr"(C)('?)(ka*)", r"Ç\2\3", t) ; c_subs += c
+	## cka -> çka ; c'kam, ckam -> ç'kam ; c'ka(në) -> ç'ka(në) - no {we}
+	t, c = re.subn(fr"(\b)(c|q)('?)(ka*)", r"ç\3\4", t) ; c_subs += c
+	## Cka -> Çka ; C'kam, Ckam -> Ç'kam ; C'ka(në) -> Ç'ka(në) - no {we}
+	t, c = re.subn(fr"(\b)(C|Q)('?)(ka*)", r"Ç\3\4", t) ; c_subs += c
 	
 	## çfarë 
-	t, c = re.subn(fr"(c|ç)(far)(e?)({we})", r"çfarë\4", t) ; c_subs += c
+	t, c = re.subn(fr"(\b)(c|ç|q)(far)(e?)({we})", r"çfarë\5", t) ; c_subs += c
 	## Çfarë
-	t, c = re.subn(fr"(C|Ç)(far)(e?)({we})", r"Çfarë\4", t) ; c_subs += c
+	t, c = re.subn(fr"(\b)(C|Ç|Q)(far)(e?)({we})", r"Çfarë\5", t) ; c_subs += c
 	
 	## çupë
-	t, c = re.subn(fr"(c|ç)(up)(e?)({we})", r"çupë\4", t) ; c_subs += c
+	t, c = re.subn(fr"(\b)(c|ç|q)(up)(e?)({we})", r"çupë\5", t) ; c_subs += c
 	## Çupë
-	t, c = re.subn(fr"(C|Ç)(up)(e?)({we})", r"Çupë\4", t) ; c_subs += c
+	t, c = re.subn(fr"(\b)(C|Ç|Q)(up)(e?)({we})", r"Çupë\5", t) ; c_subs += c
 	
 	## çikë
-	t, c = re.subn(fr"(c|ç)(ik)(e?)({we})", r"çikë\4", t) ; c_subs += c
+	t, c = re.subn(fr"(\b)(c|ç|q)(ik)(e?)({we})", r"çikë\5", t) ; c_subs += c
 	## Çikë
-	t, c = re.subn(fr"(C|Ç)(ik)(e?)({we})", r"Çikë\4", t) ; c_subs += c
+	t, c = re.subn(fr"(\b)(C|Ç|Q)(ik)(e?)({we})", r"Çikë\5", t) ; c_subs += c
 	
 	## fjalë që shkruhen me C/c në vend të Ç/ç-së nistore - caj -> çaj
 	t, c = re.subn(fr"(\b)(c)({pa_c_nis})({we})", r"ç\3\4", t) ; c_subs += c
@@ -71,7 +70,7 @@ def replace_e(text):
 	## është
 	t, c = re.subn(fr"(e|ë)(sht)(e|ë)?({we})", r"ë\2ë\4", t) ; e_subs += c
 			
-	## fjalë që shkruhen pa ë në fund ose me ë të shkruar e - mir(e) -> mirë
+	## fjalë që shkruhen pa ë fundore ose me ë të shkruar e - mir(e) -> mirë
 	t, c = re.subn(fr"(\b)({pa_e})(e?)({we})", r"\2ë\4", t) ; e_subs += c
 	# t, c = re.subn(r"(Mir|mir)(e?)( |\.)", r"\1ë\3", t) ; e_subs += c
 	
