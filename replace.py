@@ -2,7 +2,7 @@
 import re
 
 ## global variable that matches the ending of a word in regex
-we = " |\t|\n|\.|\?|;|,|!"
+we = " |\t|\n|\.|\?|:|;|,|!"
 
 ## fjalë gegërisht që mbarojnë me 'u(e)' por që duhet të 
 ## mbarojnë me 'ua' -- du(e) -> dua, thu(e) -> thua
@@ -20,8 +20,9 @@ pjes_geg2 = "Lexu|lexu|Shkru|shkru|Shku|shku|Dëgju|dëgju|Shiku|shiku"
 pa_e = "Buk|buk|Flak|flak|Mir|mir|Nj|nj|Pun|pun|Rrug|rrug|Shum|shum|" + \
 		"Uj|uj|Un|un"
 		
-## fjalë që shkruhen me c në vend të ç-së
-pa_c = "Cun|cun"
+## fjalë që shkruhen me C/c në vend të Ç/ç-së nistore
+## caj, coj, cun, 
+pa_c_nis = "aj|oj|un|ik"
 
 ## function for c - ç substitutions
 def replace_c(text):
@@ -33,16 +34,30 @@ def replace_c(text):
 	## Ç'kemi, Ç'ke, Ç'keni, 
 	t, c = re.subn(fr"(C|C'|Ç)(ke*)", r"Ç'\2", t) ; c_subs += c
 	
-	## cka -> çka, c'kam, ckam -> ç'kam, c'ka(në) -> ç'ka(në)
+	## cka -> çka ; c'kam, ckam -> ç'kam ; c'ka(në) -> ç'ka(në)
 	t, c = re.subn(fr"(c)('?)(ka*)", r"ç\2\3", t) ; c_subs += c
 	
-	## Cka -> Çka, C'kam, Ckam -> Ç'kam, C'ka(në) -> Ç'ka(në)
+	## Cka -> Çka ; C'kam, Ckam -> Ç'kam ; C'ka(në) -> Ç'ka(në)
 	t, c = re.subn(fr"(C)('?)(ka*)", r"Ç\2\3", t) ; c_subs += c
 	
 	## çfarë 
 	t, c = re.subn(fr"(c|ç)(far)(e?)({we})", r"çfarë\4", t) ; c_subs += c
 	## Çfarë
 	t, c = re.subn(fr"(C|Ç)(far)(e?)({we})", r"Çfarë\4", t) ; c_subs += c
+	
+	## çupë
+	t, c = re.subn(fr"(c|ç)(up)(e?)({we})", r"çupë\4", t) ; c_subs += c
+	## Çupë
+	t, c = re.subn(fr"(C|Ç)(up)(e?)({we})", r"Çupë\4", t) ; c_subs += c
+	
+	## çikë
+	t, c = re.subn(fr"(c|ç)(ik)(e?)({we})", r"çikë\4", t) ; c_subs += c
+	## Çikë
+	t, c = re.subn(fr"(C|Ç)(ik)(e?)({we})", r"Çikë\4", t) ; c_subs += c
+	
+	## fjalë që shkruhen me C/c në vend të Ç/ç-së nistore - caj -> çaj
+	t, c = re.subn(fr"(\b)(c)({pa_c_nis})({we})", r"ç\3\4", t) ; c_subs += c
+	t, c = re.subn(fr"(\b)(C)({pa_c_nis})({we})", r"Ç\3\4", t) ; c_subs += c
 	
 	return (t, c_subs)
 	
@@ -57,7 +72,7 @@ def replace_e(text):
 	t, c = re.subn(fr"(e|ë)(sht)(e|ë)?({we})", r"ë\2ë\4", t) ; e_subs += c
 			
 	## fjalë që shkruhen pa ë në fund ose me ë të shkruar e - mir(e) -> mirë
-	t, c = re.subn(fr"({pa_e})(e?)({we})", r"\1ë\3", t) ; e_subs += c
+	t, c = re.subn(fr"(\b)({pa_e})(e?)({we})", r"\2ë\4", t) ; e_subs += c
 	# t, c = re.subn(r"(Mir|mir)(e?)( |\.)", r"\1ë\3", t) ; e_subs += c
 	
 	return (t, e_subs)
@@ -68,13 +83,13 @@ def replace_dial(text):
 	t = text ; dial_subs = 0
 	
 	## fjalë që shnkruhen pa a në fund - du(e) -> dua, thu(e) -> thua
-	t, c = re.subn(fr"({fjale_geg1})(e?)({we})", r"\1a\3", t) ; dial_subs += c
+	t, c = re.subn(fr"(\b)({fjale_geg1})(e?)({we})", r"\2a\4", t) ; dial_subs += c
 	
 	## pjesoret që shkruhen pa rë në fund - pru -> prurë
-	t, c = re.subn(fr"({pjes_geg1})({we})", r"\1rë\2", t) ; dial_subs += c
+	t, c = re.subn(fr"(\b)({pjes_geg1})({we})", r"\2rë\3", t) ; dial_subs += c
 
 	## pjesoret që shkruhen pa ar në fund - shku -> shkuar
-	t, c = re.subn(fr"({pjes_geg2})({we})", r"\1ar\2", t) ; dial_subs += c
+	t, c = re.subn(fr"(\b)({pjes_geg2})({we})", r"\2ar\3", t) ; dial_subs += c
 	
 	return (t, dial_subs)
 	
