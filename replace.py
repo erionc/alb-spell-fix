@@ -1,6 +1,8 @@
 
 import re
 
+## 5.06: (\b) -> (.{1,3})?(\b)
+
 ## global variable that matches the ending of a word - (\b) is better
 # we = " |\t|\n|\.|\?|:|;|,|!"
 
@@ -24,8 +26,8 @@ pa_e = "Buk|buk|Flak|flak|Mir|mir|Nj|nj|Pun|pun|Rrug|rrug|Shum|shum|" + \
 		"Uj|uj|Un|un"
 		
 ## fjalë që shkruhen me C/c në vend të Ç/ç-së nistore
-## cafkë, caj, cajnik, cifte, coj, corape, cun, 
-pa_c_nis = "afkë|aj|ajnik|ifte|oj|orape|un"
+## cafkë, caj, cajnik, cifte, coj, corape, cudi, cun, 
+pa_c_nis = "afkë|aj|ajnik|ifte|oj|orape|udi|un"
 
 ## function for c - ç substitutions
 def replace_c(text):
