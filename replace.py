@@ -24,8 +24,8 @@ pa_e = "Buk|buk|Flak|flak|Mir|mir|Nj|nj|Pun|pun|Rrug|rrug|Shum|shum|" + \
 		"Uj|uj|Un|un"
 		
 ## fjalë që shkruhen me C/c në vend të Ç/ç-së nistore
-## caj, cajnik, cifte, coj, corape, cun, 
-pa_c_nis = "aj|ajnik|ifte|oj|orape|un"
+## cafkë, caj, cajnik, cifte, coj, corape, cun, 
+pa_c_nis = "afkë|aj|ajnik|ifte|oj|orape|un"
 
 ## function for c - ç substitutions
 def replace_c(text):
