@@ -10,12 +10,12 @@ def correction(field_in, field_out):
 	input_text = field_in.get() 
 	t = input_text ; total_sub = 0
 		
+	## call e substitutions
+	t, c = replace_e(t) ; total_sub += c
+	
 	## call c substitutions 
 	t, c = replace_c(t) ; total_sub += c
 	
-	## call e substitutions
-	t, c = replace_e(t) ; total_sub += c
-		
 	## call dialect substitutions
 	t, c = replace_dial(t) ; total_sub += c
 	
