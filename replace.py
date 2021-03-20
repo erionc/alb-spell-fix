@@ -17,18 +17,21 @@ kj = "kam |ke |ka |kemi |keni |kanë |jam |je |është |jemi |jeni |janë "
 
 ## pjesore të shkurtra gegërisht që mbarojnë me 'u', 'e', 'a' 
 ## por që duhet të mbarojnë me 'rë' -- pru -> prurë
-pjes_geg1 = "pa|pi|pre|pru|vra"
+pjes_geg1 = "pa|pi|pre|pru|vra|qa"
 
 ## pjesore të shkurtra gegërisht që mbarojnë me 'u' por që duhet të 
 ## mbarojnë me 'ar' -- shku -> shkuar
-pjes_geg2 = "lexu|shkru|shku|dëgju|shiku"
+pjes_geg2 = "lexu|shkru|shku|dëgju|shiku|punu"
+
+## pjesore të shkurtra gegërisht që duhet të mbarojnë me 'ur' -- kap -> kapur
+pjes_geg3 = "zbardh|ardh|zmbraps|zbraps|kap|hap"
 	
 ## fjalë që shkruhen pa ë fundore ose me ë të shkruar e - mir(e) -> mirë
 pa_e = "Buk|buk|Flak|flak|Jan|jan|Kan|kan|Mir|mir|Nj|nj|Pun|pun|Rrug|" + \
 		"rrug|Shum|shum|Uj|uj|Un|un"
 		
 ## temat që shkruhen me C/c në vend të Ç/ç-së nistore
-## cafkë, caj, cajnik, cifte, coj, corape, cudi, cun, 
+## cafk*, caj, cajnik, cift*, coj, corap*, cudi, cun, 
 pa_c_nis = "afk|aj|ajnik|ift|o|orap|udi|un"
 
 ## tema fjalësh që duhen shqipëruar
@@ -105,6 +108,9 @@ def replace_dial(text):
 	## pjesoret që shkruhen pa ar në fund - shku -> shkuar
 	t, c = re.subn(fr"(\b)({kj})({pjes_geg2})(\b)", r"\2\3ar", t) ; dial_subs += c
 	
+	## pjesoret që shkruhen pa ur në fund - kap -> kapur
+	t, c = re.subn(fr"(\b)({kj})({pjes_geg3})(\b)", r"\2\3ur", t) ; dial_subs += c
+
 	return (t, dial_subs)
 	
 ## function for english words substitutions
