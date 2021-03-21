@@ -21,7 +21,7 @@ pjes_geg1 = "pa|pi|pre|pru|vra|qa"
 
 ## pjesore të shkurtra gegërisht që mbarojnë me 'u' por që duhet të 
 ## mbarojnë me 'ar' -- shku -> shkuar
-pjes_geg2 = "lexu|shkru|shku|dëgju|shiku|punu|k(e|ë)rku|m(e|ë)su"
+pjes_geg2 = "lexu|shkru|shku|dëgju|shiku|punu|k(e|ë)rku|m(e|ë)su|provu"
 
 ## pjesore të shkurtra gegërisht që duhet të mbarojnë me 'ur' -- kap -> kapur
 pjes_geg3 = "zbardh|ardh|zmbraps|zbraps|kap|hap"
