@@ -42,7 +42,7 @@ if __name__ == "__main__":
 
 	## create a GUI window with some specifications
 	root = Tk()
-	root.configure(background = "black")		# background color of GUI
+	root.configure(background = "red")		# background color of GUI
 	root.geometry("800x600")					# size of GUI WidthxHeight
 	root.title("Redaktor Teksti")				# main title of window
 	
@@ -60,20 +60,20 @@ if __name__ == "__main__":
 	outlabel.grid(row = 13, column = 0, padx = 7) 
 	
 	## text entries for filling or typing the texts
-	text1_field = Text(height=12, width=66)
-	text2_field = Text(height=12, width=66)
+	text1_field = Text(height=12, width=66, fg="white", bg="black")
+	text2_field = Text(height=12, width=66, fg="white", bg="black")
 	
 	## padx and pady to set padding in x-axis and y-axis
 	text1_field.grid(row = 1, column = 1, padx = 7, pady = 7)
 	text2_field.grid(row = 13, column = 1, padx = 7, pady = 7)
 	
 	## correction button attached with correction function
-	correct_button = Button(root, text = "Redakto", bg = "red", fg = "black", 
+	correct_button = Button(root, text = "Redakto", bg = "magenta", fg = "black", 
 			command = lambda: correction(text1_field, text2_field))
 	correct_button.grid(row = 2, column = 1)
 	
 	## clear button attached with clearAll function
-	clear_button = Button(root, text = "Zbraz", bg = "red", fg = "black",
+	clear_button = Button(root, text = "Zbraz", bg = "magenta", fg = "black",
 			command = lambda: clearAll(text1_field, text2_field)) 
 	clear_button.grid(row = 14, column = 1) 
 	
