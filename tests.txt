@@ -1,16 +1,16 @@
 
-## Testime të zëvendësimeve. Totali - 88 zëvendësime
+## Testime të zëvendësimeve. Totali: 91 zëvendësime
 
-## Ç/ç - 40 zëvendësime
+## Ç/ç - 41 zëvendësime
 ckemi ckeni C'ke cke c'keni cka c'ka c'kanë cfare Cfare cfar
 Cfar ckam c'kam Ckam C'kam qkam q'ke qfar Qfare qkemi q'keni
 qup Qike Cun, cun: cun-at caj Caj coj, Coj cike Cik Cup cupe.
-Cifte corape. qqup qikee cafke Cafkë corapet. 
+Cifte corape. qqup qikee cafke Cafkë corapet cmime 
 
-## Ë/ë - 26 zëvendësime
+## Ë/ë - 28 zëvendësime
 Un, esht. nje nj ështe? esht Eshte Eshtë eshtë Une buk une
 un Un. Une. unë uj; Uj. uje Uje uje	ujë Rrug rruge flak
-Flake. Kan	kane
+Flake. Kan kane dit Dite
 
 ## Pjesoret - 18 zëvendësime
 ke shku; është vra kemi pre kam pre kanë pi keni pi
@@ -21,11 +21,14 @@ jeni zbraps janë zmbraps ke kerku ka kërku kemi mësu
 du thu gGru gruea Gru grue
 
 
-## Ç/ç - 40 zëvendësime
+###########################################################
+
+
+## Ç/ç - 41 zëvendësime
 ç'kemi ç'keni Ç'ke ç'ke ç'keni ç'ka ç'ka ç'kanë çfarë Çfarë çfarë
 Çfarë ç'kam ç'kam Ç'kam Ç'kam ç'kam ç'ke çfarë Çfarë ç'kemi ç'keni
 çupë Çikë Çun, çun: çun-at çaj Çaj çoj, Çoj çikë Çikë Çupë çupë.
-Çifte çorape. qqup qikee çafke Çafkë çorapet. 
+Çifte çorape. qqup qikee çafke Çafkë çorapet çmime 
 
 ## Ë/ë - 26 zëvendësime
 Unë, është. një një është? është Është Është është Unë bukë unë
@@ -39,3 +42,5 @@ jeni zbrapsur janë zmbrapsur ke kerkuar ka kërkuar kemi mësuar
 
 ## Të tjera - 4 zëvendësime
 dua thua gGru gruea Grua grua
+
+

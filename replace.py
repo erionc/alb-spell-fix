@@ -21,18 +21,18 @@ pjes_geg1 = "pa|pi|pre|pru|vra|qa"
 
 ## pjesore të shkurtra gegërisht që mbarojnë me 'u' por që duhet të 
 ## mbarojnë me 'ar' -- shku -> shkuar
-pjes_geg2 = "lexu|shkru|shku|dëgju|shiku|punu|k(e|ë)rku|m(e|ë)su|provu"
+pjes_geg2 = "lexu|shkru|shku|d(e|ë)gju|shiku|punu|k(e|ë)rku|m(e|ë)su|provu"
 
 ## pjesore të shkurtra gegërisht që duhet të mbarojnë me 'ur' -- kap -> kapur
 pjes_geg3 = "zbardh|ardh|zmbraps|zbraps|kap|hap"
 	
 ## fjalë që shkruhen pa ë fundore ose me ë të shkruar e - mir(e) -> mirë
 pa_e = "Buk|buk|Flak|flak|Jan|jan|Kan|kan|Mir|mir|Nj|nj|Pun|pun|Rrug|" + \
-		"rrug|Shum|shum|Uj|uj|Un|un"
+		"rrug|Shum|shum|Uj|uj|Un|un|Dit|dit"
 		
 ## temat që shkruhen me C/c në vend të Ç/ç-së nistore
-## cafk*, caj, cajnik, cift*, coj, corap*, cudi, cun, 
-pa_c_nis = "afk|aj|ajnik|ift|o|orap|udi|un"
+## cafk*, caj, cajnik, cift*, coj, corap*, cudi, cun, cmim* 
+pa_c_nis = "afk|aj|ajnik|ift|o|orap|udi|un|mim"
 
 ## tema fjalësh që duhen shqipëruar
 tem_sq = ""
