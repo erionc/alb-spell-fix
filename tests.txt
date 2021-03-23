@@ -1,5 +1,5 @@
 
-## Testime të zëvendësimeve. Totali: 91 zëvendësime
+## Testime të zëvendësimeve. Totali: 92 zëvendësime
 
 ## Ç/ç - 41 zëvendësime
 ckemi ckeni C'ke cke c'keni cka c'ka c'kanë cfare Cfare cfar
@@ -7,10 +7,10 @@ Cfar ckam c'kam Ckam C'kam qkam q'ke qfar Qfare qkemi q'keni
 qup Qike Cun, cun: cun-at caj Caj coj, Coj cike Cik Cup cupe.
 Cifte corape. qqup qikee cafke Cafkë corapet cmime 
 
-## Ë/ë - 28 zëvendësime
+## Ë/ë - 29 zëvendësime
 Un, esht. nje nj ështe? esht Eshte Eshtë eshtë Une buk une
 un Un. Une. unë uj; Uj. uje Uje uje	ujë Rrug rruge flak
-Flake. Kan kane dit Dite
+Flake. Kan kane dit Dite jet
 
 ## Pjesoret - 18 zëvendësime
 ke shku; është vra kemi pre kam pre kanë pi keni pi
@@ -30,10 +30,10 @@ du thu gGru gruea Gru grue
 çupë Çikë Çun, çun: çun-at çaj Çaj çoj, Çoj çikë Çikë Çupë çupë.
 Çifte çorape. qqup qikee çafke Çafkë çorapet çmime 
 
-## Ë/ë - 26 zëvendësime
+## Ë/ë - 29 zëvendësime
 Unë, është. një një është? është Është Është është Unë bukë unë
 unë Unë. Unë. unë ujë; Ujë. ujë Ujë ujë	ujë Rrugë rrugë flakë
-Flakë. Kanë	kanë
+Flakë. Kanë kanë ditë Ditë jetë
 
 ## Pjesoret - 18 zëvendësime
 ke shkuar; është vrarë kemi prerë kam prerë kanë pirë keni pirë
@@ -42,5 +42,7 @@ jeni zbrapsur janë zmbrapsur ke kerkuar ka kërkuar kemi mësuar
 
 ## Të tjera - 4 zëvendësime
 dua thua gGru gruea Grua grua
+
+
 
 

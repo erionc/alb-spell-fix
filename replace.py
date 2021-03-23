@@ -27,8 +27,8 @@ pjes_geg2 = "lexu|shkru|shku|d(e|ë)gju|shiku|punu|k(e|ë)rku|m(e|ë)su|provu"
 pjes_geg3 = "zbardh|ardh|zmbraps|zbraps|kap|hap"
 	
 ## fjalë që shkruhen pa ë fundore ose me ë të shkruar e - mir(e) -> mirë
-pa_e = "Buk|buk|Flak|flak|Jan|jan|Kan|kan|Mir|mir|Nj|nj|Pun|pun|Rrug|" + \
-		"rrug|Shum|shum|Uj|uj|Un|un|Dit|dit"
+pa_e_fund = "Buk|buk|Flak|flak|Jan|jan|Kan|kan|Mir|mir|Nj|nj|Pun|pun|Rrug|" + \
+		"rrug|Shum|shum|Uj|uj|Un|un|Dit|dit|Jet|jet"
 		
 ## temat që shkruhen me C/c në vend të Ç/ç-së nistore
 ## cafk*, caj, cajnik, cift*, coj, corap*, cudi, cun, cmim* 
@@ -89,7 +89,7 @@ def replace_e(text):
 	t, c = re.subn(fr"(\b)(e|ë)(sht)(e|ë)?(\b)", r"ë\3ë", t) ; e_subs += c
 	
 	## fjalë që shkruhen pa ë fundore ose me ë të shkruar e - mir(e) -> mirë
-	t, c = re.subn(fr"(\b)({pa_e})(e?)(\b)", r"\2ë", t) ; e_subs += c
+	t, c = re.subn(fr"(\b)({pa_e_fund})(e?)(\b)", r"\2ë", t) ; e_subs += c
 	# t, c = re.subn(r"(Mir|mir)(e?)( |\.)", r"\1ë\3", t) ; e_subs += c
 	
 	return (t, e_subs)
