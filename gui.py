@@ -58,8 +58,8 @@ if __name__ == "__main__":
 	table-like structure. padx keyword argument used to set pading along
 	x asix.
 	'''
-	inlabel.grid(row = 1, column = 0, padx = 5) 
-	outlabel.grid(row = 17, column = 0, padx = 5) 
+	inlabel.grid(row = 1, column = 0, padx = 7) 
+	outlabel.grid(row = 17, column = 0, padx = 7) 
 	
 	## text entries for filling or typing the texts
 	text1_field = Text(height=14, width=80, fg="white", bg="black")
@@ -67,9 +67,9 @@ if __name__ == "__main__":
 	text3_field = Text(height=1, width=17, fg="white", bg="black")
 	
 	## padx and pady to set padding in x-axis and y-axis
-	text1_field.grid(row = 1, column = 1, padx = 5, pady = 5)
-	text2_field.grid(row = 17, column = 1, padx = 5, pady = 5)
-	text3_field.place(x=58, y=628) # grid(row = 18, column = 1, padx = 5, pady = 5)
+	text1_field.grid(row = 1, column = 1, padx = 7, pady = 7)
+	text2_field.grid(row = 17, column = 1, padx = 7, pady = 7)
+	text3_field.place(x=693, y=637) 
 	
 	## correction button attached with correction function
 	correct_button = Button(root, text = "Redakto", bg = "magenta", fg = "black", 
