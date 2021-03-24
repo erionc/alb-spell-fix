@@ -26,7 +26,7 @@ def correction(field_in, field_out, field_message):
 	t, c = replace_eng(t) ; total_sub += c
 
 	output_text = t
-	output_message = str.format("{} zëvendësime", total_sub)
+	output_message = str.format("{} zëvendësime. ", total_sub)
 	## insert the corrected text in the second box
 	field_out.insert("1.0", output_text)
 	## insert the message in third box
