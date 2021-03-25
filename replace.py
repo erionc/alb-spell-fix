@@ -13,7 +13,8 @@ suf = "[a-zA-Z0-9çÇëË_-]{0,3}"
 fjale_geg1 = "du|Gru|gru|Mu|mu|thu"
 
 ## foljet ndihmëse kam/jam që paraprijnë pjesoret
-kj = "kam |ke |ka |kemi |keni |kanë |jam |je |është |jemi |jeni |janë "
+kj = "Kam |kam |Ke |ke |Ka |ka |Kemi |kemi |Keni |keni |Kanë |kanë |" + \
+	 "Jam |jam |Je |je |Është |është |Jemi |jemi |Jeni |jeni |Janë |janë "
 
 ## pjesore të shkurtra gegërisht që mbarojnë me 'u', 'e', 'a' 
 ## por që duhet të mbarojnë me 'rë' -- pru -> prurë
@@ -27,8 +28,8 @@ pjes_geg2 = "lexu|shkru|shku|d(e|ë)gju|shiku|punu|k(e|ë)rku|m(e|ë)su|provu"
 pjes_geg3 = "zbardh|ardh|zmbraps|zbraps|kap|hap"
 	
 ## fjalë që shkruhen pa ë fundore ose me ë të shkruar e - mir(e) -> mirë
-pa_e_fund = "Buk|buk|Flak|flak|Jan|jan|Kan|kan|Mir|mir|Nj|nj|Pun|pun|Rrug|" + \
-		"rrug|Shum|shum|Uj|uj|Un|un|Dit|dit|Jet|jet"
+pa_e_fund = "(B|b)uk|(F|f)lak|(J|j)an|(K|k)an|(L|l)ir|(M|m)ir|(N|n)j|" + \
+			"(P|p)un|(R|r)rug|(S|s)hum|(U|u)j|(U|u)n|(D|d)it|(J|j)et"
 		
 ## temat që shkruhen me C/c në vend të Ç/ç-së nistore
 ## cafk*, caj, cajnik, cift*, coj, corap*, cudi, cun, cmim* 

@@ -1,5 +1,5 @@
 
-## Testime të zëvendësimeve. Totali: 92 zëvendësime
+## Testime të zëvendësimeve. Totali: 94 zëvendësime
 
 ## Ç/ç - 41 zëvendësime
 ckemi ckeni C'ke cke c'keni cka c'ka c'kanë cfare Cfare cfar
@@ -12,10 +12,11 @@ Un, esht. nje nj ështe? esht Eshte Eshtë eshtë Une buk une
 un Un. Une. unë uj; Uj. uje Uje uje	ujë Rrug rruge flak
 Flake. Kan kane dit Dite jet
 
-## Pjesoret - 18 zëvendësime
+## Pjesoret - 20 zëvendësime
 ke shku; është vra kemi pre kam pre kanë pi keni pi
-jeni pre janë pa kemi kap kam hap ke ardh ka zbardh
+jeni pre janë pa kemi kap Kam hap ke ardh ka zbardh
 jeni zbraps janë zmbraps ke kerku ka kërku kemi mësu
+ka dëgju kemi degju
 
 ## Të tjera - 4 zëvendësime
 du thu gGru gruea Gru grue
