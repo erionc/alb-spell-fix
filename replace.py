@@ -10,7 +10,7 @@ suf = "[a-zA-Z0-9çÇëË_-]{0,3}"
 
 ## fjalë gegërisht që mbarojnë me 'u(e)' por që duhet të 
 ## mbarojnë me 'ua' -- du(e) -> dua, thu(e) -> thua
-fjale_geg1 = "(D|d)u|Gru|gru|Mu|mu|thu"
+fjale_geg1 = "(D|d)u|(G|g)ru|(M|m)u|(T|t)hu"
 
 ## foljet ndihmëse kam/jam që paraprijnë pjesoret
 kj = "Kam |kam |Ke |ke |Ka |ka |Kemi |kemi |Keni |keni |Kanë |kanë |" + \

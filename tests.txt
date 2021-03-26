@@ -1,5 +1,5 @@
 
-## Testime të zëvendësimeve. Totali: 95 zëvendësime
+## Testime të zëvendësimeve. Totali: 97 zëvendësime
 
 ## Ç/ç - 41 zëvendësime
 ckemi ckeni C'ke cke c'keni cka c'ka c'kanë cfare Cfare cfar
@@ -18,8 +18,8 @@ jeni prere janë pa kemi kap Kam hap ke ardh ka zbardh
 jeni zbraps janë zmbraps ke kerku ka kërku kemi mësu
 ka dëgju kemi degju ke nxjer
 
-## Të tjera - 4 zëvendësime
-du thu gGru gruea Gru grue
+## Të tjera - 6 zëvendësime
+du Due thu Thue; gGru gruea Gru grue
 
 
 ###########################################################
