@@ -10,17 +10,17 @@ suf = "[a-zA-Z0-9çÇëË_-]{0,3}"
 
 ## fjalë gegërisht që mbarojnë me 'u(e)' por që duhet të 
 ## mbarojnë me 'ua' -- du(e) -> dua, thu(e) -> thua
-fjale_geg1 = "du|Gru|gru|Mu|mu|thu"
+fjale_geg1 = "(D|d)u|Gru|gru|Mu|mu|thu"
 
 ## foljet ndihmëse kam/jam që paraprijnë pjesoret
 kj = "Kam |kam |Ke |ke |Ka |ka |Kemi |kemi |Keni |keni |Kanë |kanë |" + \
 	 "Jam |jam |Je |je |Është |është |Jemi |jemi |Jeni |jeni |Janë |janë "
 
-## pjesore të shkurtra gegërisht që mbarojnë me 'u', 'e', 'a' 
+## pjesore gegërisht që mbarojnë me 'u(r(e))', 'e(r(e))', 'a(r(e))' 
 ## por që duhet të mbarojnë me 'rë' -- pru -> prurë
-pjes_geg1 = "pa|pi|pre|pru|vra|qa"
+pj_pa_r_e = "nda|nxjer|pa|pi|pre|pru|qa|sha|tha|vra"
 
-## pjesore të shkurtra gegërisht që mbarojnë me 'u' por që duhet të 
+## pjesore gegërisht që mbarojnë me 'u' por që duhet të 
 ## mbarojnë me 'ar' -- shku -> shkuar
 pjes_geg2 = "lexu|shkru|shku|d(e|ë)gju|shiku|punu|k(e|ë)rku|m(e|ë)su|provu"
 
@@ -104,7 +104,7 @@ def replace_dial(text):
 	t, c = re.subn(fr"(\b)({fjale_geg1})(e?)(\b)", r"\2a", t) ; dial_subs += c
 	
 	## pjesoret që shkruhen pa rë në fund - pru -> prurë
-	t, c = re.subn(fr"(\b)({kj})({pjes_geg1})(\b)", r"\2\3rë", t) ; dial_subs += c
+	t, c = re.subn(fr"(\b)({kj})({pj_pa_r_e})(r(e)?)?(\b)", r"\2\3rë", t) ; dial_subs += c
 
 	## pjesoret që shkruhen pa ar në fund - shku -> shkuar
 	t, c = re.subn(fr"(\b)({kj})({pjes_geg2})(\b)", r"\2\3ar", t) ; dial_subs += c
