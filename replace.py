@@ -13,25 +13,26 @@ suf = "[a-zA-Z0-9çÇëË_-]{0,3}"
 fjale_geg1 = "(D|d)u|(G|g)ru|(M|m)u|(T|t)hu"
 
 ## foljet ndihmëse kam/jam që paraprijnë pjesoret
-kj = "Kam |kam |Ke |ke |Ka |ka |Kemi |kemi |Keni |keni |Kanë |kanë |" + \
-	 "Jam |jam |Je |je |Është |është |Jemi |jemi |Jeni |jeni |Janë |janë "
+kj = "Kam\s|kam\s|Ke\s|ke\s|Ka\s|ka\s|Kemi\s|kemi\s|Keni\s|keni\s|Kanë\s|kanë\s|" + \
+	 "Jam\s|jam\s|Je\s|je\s|Është\s|është\s|Jemi\s|jemi\s|Jeni\s|jeni\s|Janë\s|janë\s"
 
 ## pjesore gegërisht që mbarojnë me 'u(r(e))', 'e(r(e))', 'a(r(e))' 
 ## por që duhet të mbarojnë me 'rë' -- pru -> prurë
-pj_pa_r_e = "ble|gri|la|mar|nda|nga|ngri|nxjer|pa|pi|pre|pri|pru|qa|" + \
+pj_pa_re = "ble|gri|la|mar|nda|nga|ngri|nxjer|pa|pi|pre|pri|pru|qa|" + \
 			"sha|shkri|tha|vra"
 
 ## pjesore gegërisht që mbarojnë me 'u' por që duhet të 
 ## mbarojnë me 'ar' -- shku -> shkuar
-pjes_geg2 = "besu|dhunu|lexu|nd(e|ë)shku|ngacmu|shkru|shku|d(e|ë)gju|" + \
-			"shiku|pësu|punu|k(e|ë)rku|m(e|ë)su|provu"
+pj_pa_ar = "besu|dhunu|lexu|nd(e|ë)shku|ngacmu|shkru|shku|d(e|ë)gju|" + \
+			"shiku|p(ë|e)su|punu|k(e|ë)rku|m(e|ë)su|provu"
 
 ## pjesore të shkurtra gegërisht që duhet të mbarojnë me 'ur' -- kap -> kapur
-pjes_geg3 = "ardh|hap|kap|mat|ngrit|shit|ul|vulos|zbraps|zmbraps|zbardh|zhyt"
+pj_pa_ur = "ardh|hap|kap|mat|ngrit|shit|ul|vulos|zbraps|zmbraps|" + \
+			"zbardh|zhyt|mbyt"
 	
 ## fjalë që shkruhen pa ë fundore ose me ë të shkruar e - mir(e) -> mirë
 pa_e_fund = "(B|b)uk|(J|j)an|(K|k)an|(L|l)ir|(M|m)ir|(N|n)j|" + \
-			"(P|p)un|(R|r)rug|(S|s)hum|(U|u)j|(U|u)n|(D|d)it|(J|j)et" + \
+			"(P|p)un|(R|r)rug|(S|s)hum|(U|u)j|(U|u)n|(D|d)it|(J|j)et|" + \
 			"(B|b)uj|(S|s)trenjt|mij"
 		
 ## temat që shkruhen me C/c në vend të Ç/ç-së nistore
@@ -109,13 +110,13 @@ def replace_dial(text):
 	t, c = re.subn(fr"(\b)({fjale_geg1})(e?)(\b)", r"\2a", t) ; dial_subs += c
 	
 	## pjesoret që shkruhen pa rë në fund - pru -> prurë
-	t, c = re.subn(fr"(\b)({kj})({pj_pa_r_e})(r(e)?)?(\b)", r"\2\3rë", t) ; dial_subs += c
+	t, c = re.subn(fr"(\b)({kj})({pj_pa_re})(r(e)?)?(\b)", r"\2\3rë", t) ; dial_subs += c
 
 	## pjesoret që shkruhen pa ar në fund - shku -> shkuar
-	t, c = re.subn(fr"(\b)({kj})({pjes_geg2})(\b)", r"\2\3ar", t) ; dial_subs += c
+	t, c = re.subn(fr"(\b)({kj})({pj_pa_ar})(\b)", r"\2\3ar", t) ; dial_subs += c
 	
 	## pjesoret që shkruhen pa ur në fund - kap -> kapur
-	t, c = re.subn(fr"(\b)({kj})({pjes_geg3})(\b)", r"\2\3ur", t) ; dial_subs += c
+	t, c = re.subn(fr"(\b)({kj})({pj_pa_ur})(\b)", r"\2\3ur", t) ; dial_subs += c
 
 	return (t, dial_subs)
 	
