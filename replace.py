@@ -18,22 +18,27 @@ kj = "Kam |kam |Ke |ke |Ka |ka |Kemi |kemi |Keni |keni |Kanë |kanë |" + \
 
 ## pjesore gegërisht që mbarojnë me 'u(r(e))', 'e(r(e))', 'a(r(e))' 
 ## por që duhet të mbarojnë me 'rë' -- pru -> prurë
-pj_pa_r_e = "nda|nxjer|pa|pi|pre|pru|qa|sha|tha|vra"
+pj_pa_r_e = "ble|gri|la|mar|nda|nga|ngri|nxjer|pa|pi|pre|pri|pru|qa|" + \
+			"sha|shkri|tha|vra"
 
 ## pjesore gegërisht që mbarojnë me 'u' por që duhet të 
 ## mbarojnë me 'ar' -- shku -> shkuar
-pjes_geg2 = "lexu|shkru|shku|d(e|ë)gju|shiku|punu|k(e|ë)rku|m(e|ë)su|provu"
+pjes_geg2 = "besu|dhunu|lexu|nd(e|ë)shku|ngacmu|shkru|shku|d(e|ë)gju|" + \
+			"shiku|pësu|punu|k(e|ë)rku|m(e|ë)su|provu"
 
 ## pjesore të shkurtra gegërisht që duhet të mbarojnë me 'ur' -- kap -> kapur
-pjes_geg3 = "zbardh|ardh|zmbraps|zbraps|kap|hap"
+pjes_geg3 = "ardh|hap|kap|mat|ngrit|shit|ul|vulos|zbraps|zmbraps|zbardh|zhyt"
 	
 ## fjalë që shkruhen pa ë fundore ose me ë të shkruar e - mir(e) -> mirë
-pa_e_fund = "(B|b)uk|(F|f)lak|(J|j)an|(K|k)an|(L|l)ir|(M|m)ir|(N|n)j|" + \
-			"(P|p)un|(R|r)rug|(S|s)hum|(U|u)j|(U|u)n|(D|d)it|(J|j)et"
+pa_e_fund = "(B|b)uk|(J|j)an|(K|k)an|(L|l)ir|(M|m)ir|(N|n)j|" + \
+			"(P|p)un|(R|r)rug|(S|s)hum|(U|u)j|(U|u)n|(D|d)it|(J|j)et" + \
+			"(B|b)uj|(S|s)trenjt|mij"
 		
 ## temat që shkruhen me C/c në vend të Ç/ç-së nistore
-## cafk*, caj, cajnik, cift*, coj, corap*, cudi, cun, cmim* 
-pa_c_nis = "afk|aj|ajnik|ift|o|orap|udi|un|mim"
+## cafk*, caj, cajnik, cift*, coj, corap*, cudi, cun, cmim*, cimkë, cibuk
+## camcakëz, cmendur(i), 
+pa_c_nis = "afk|aj|ajnik|ift|oj|orap|udi|un|mim|imk(ë?)|ibuk|" + \
+		   "am(c|ç)ak(e|ë)z|mendur(i?)"
 
 ## tema fjalësh që duhen shqipëruar
 tem_sq = ""
