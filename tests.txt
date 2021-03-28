@@ -1,53 +1,70 @@
 
-## Testime të zëvendësimeve. Totali: 104 zëvendësime
+## Testime të zëvendësimeve. Totali: 131 zëvendësime
 
-## Ç/ç - 41 zëvendësime
-ckemi ckeni C'ke cke c'keni cka c'ka c'kanë cfare Cfare cfar
-Cfar ckam c'kam Ckam C'kam qkam q'ke qfar Qfare qkemi q'keni
-qup Qike Cun, cun: cun-at caj Caj coj, Coj cike Cik Cup cupe.
-Cifte corape. qqup qikee cafke Cafkë corapet cmime 
+## Ç/ç - 27 zëvendësime
+ckemi c'keni C'ke çke ckeni c'ka cka c'kanë cfarë Cfarë cfare
+Cfare c'kam ckam C'kam Ckam çkam cke cfare Cfare çkemi çkeni
+qikë Cikë Cupë Cupe cupë
+
+## pa ç nistore - 22 zëvendësime
+cafke cafkat Cafkë caj Caj cajnik camçakez cibuk Cift cifte cimke cimkë
+cmim cmimet co coj Coj Corap corape cudi çun cun cmendur Cmenduri
 
 ## Ë/ë - 27 zëvendësime
 Un, esht. nje nj ështe? esht Eshte Eshtë eshtë Une buk une
 un Un. Une. unë uj; Uj. uje Uje uje	ujë Rrug rruge Kan kane 
 dit Dite jet
 
-## pjesore pa "rë" - 12 zëvendësime
-je vra kemi pre ka ble kanë pir keni pi jeni prere janë pa 
-ke nxjer keni sha jemi gri ka nxjer janë shkri 
+## pjesore pa "rë" - 18 zëvendësime
+ka ble jemi gri janë la ke mar jemi nda ka nga ke ngri
+ke nxjer janë pa keni pi kemi pre janë pri kemi pru ka qa ka
+sha ka shkri jemi tha je vra
 
-## pjesore pa "ar" - 11 zëvendësime
-ke shku ke kerku keni kërku kemi mësu ka dëgju kemi degju kemi
-besu jam dhunu ka pësu kemi pesu je provu 
+## pjesore pa "ar" - 18 zëvendësime
+kemi besu ka dëgju kemi degju jam dhunu kam kerku ka kërku
+Keni lexu kemi mësu ka mesu Jemi ndëshku ka ndeshku kam ngacmu
+ke shkru Kanë shku ka pësu kemi pesu kanë punu je provu 
 
-## pjesore pa "ur" - 8 zëvendësime
-kemi kap Kam hap je mbyt kanë vulos ke ardh janë zbardh jeni
-zbraps janë zmbraps 
+## pjesore pa "ur" - 13 zëvendësime
+ka ardh je hap kemi kap Kam mat je mbyt jemi ngrit ka shit je ul
+kanë vulos janë zbardh jeni zbraps janë zmbraps ke zhyt
 
 ## Të tjera - 6 zëvendësime
 du Due thu Thue; gGru gruea Gru grue
 
 ###########################################################
 
-## Ç/ç - 41 zëvendësime
+## Ç/ç - 27 zëvendësime
 ç'kemi ç'keni Ç'ke ç'ke ç'keni ç'ka ç'ka ç'kanë çfarë Çfarë çfarë
 Çfarë ç'kam ç'kam Ç'kam Ç'kam ç'kam ç'ke çfarë Çfarë ç'kemi ç'keni
-çupë Çikë Çun, çun: çun-at çaj Çaj çoj, Çoj çikë Çikë Çupë çupë.
-Çifte çorape. qqup qikee çafke Çafkë çorapet çmime 
+çikë Çikë Çupë Çupë çupë
 
-## Ë/ë - 29 zëvendësime
+## pa ç nistore - 22 zëvendësime
+çafke çafkat Çafkë çaj Çaj çajnik camçakez çibuk Çift çifte çimke çimkë
+çmim çmimet ço çoj Çoj Çorap çorape çudi çun çun çmendur Çmenduri
+
+## Ë/ë - 27 zëvendësime
 Unë, është. një një është? është Është Është është Unë bukë unë
-unë Unë. Unë. unë ujë; Ujë. ujë Ujë ujë	ujë Rrugë rrugë flakë
-Flakë. Kanë kanë ditë Ditë jetë
+unë Unë. Unë. unë ujë; Ujë. ujë Ujë ujë	ujë Rrugë rrugë Kanë kanë 
+ditë Ditë jetë
 
-## Pjesoret - 21 zëvendësime
-ke shkuar; është vrarë kemi prerë kam prerë kanë pirë keni pirë
-jeni prerë janë parë kemi kapur Kam hapur ke ardhur ka zbardhur
-jeni zbrapsur janë zmbrapsur ke kerkuar ka kërkuar kemi mësuar
-ka dëgjuar kemi degjuar ke nxjerrë
+## pjesore pa "rë" - 18 zëvendësime
+ka blerë jemi grirë janë larë ke marrë jemi ndarë ka ngarë ke ngrirë
+ke nxjerrë janë parë keni pirë kemi prerë janë prirë kemi prurë ka qarë ka
+sharë ka shkrirë jemi tharë je vrarë
 
-## Të tjera - 4 zëvendësime
-dua thua gGru gruea Grua grua
+## pjesore pa "ar" - 18 zëvendësime
+kemi besuar ka dëgjuar kemi degjuar jam dhunuar kam kerkuar ka kërkuar
+Keni lexuar kemi mësuar ka mesuar Jemi ndëshkuar ka ndeshkuar kam ngacmuar
+ke shkruar Kanë shkuar ka pësuar kemi pesuar kanë punuar je provuar 
+
+## pjesore pa "ur" - 13 zëvendësime
+ka ardhur je hapur kemi kapur Kam matur je mbytur jemi ngritur ka shitur je ulur
+kanë vulosur janë zbardhur jeni zbrapsur janë zmbrapsur ke zhytur
+
+## Të tjera - 6 zëvendësime
+dua Dua thua Thua; gGru gruea Grua grua
+
 
 
 

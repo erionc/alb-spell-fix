@@ -10,25 +10,30 @@ suf = "[a-zA-Z0-9çÇëË_-]{0,3}"
 
 ## fjalë gegërisht që mbarojnë me 'u(e)' por që duhet të 
 ## mbarojnë me 'ua' -- du(e) -> dua, thu(e) -> thua
-fjale_geg1 = "(D|d)u|(G|g)ru|(M|m)u|(T|t)hu"
+fj_dialekt = "(D|d)u|(G|g)ru|(M|m)u|(T|t)hu"
 
 ## foljet ndihmëse kam/jam që paraprijnë pjesoret
-kj = "Kam\s|kam\s|Ke\s|ke\s|Ka\s|ka\s|Kemi\s|kemi\s|Keni\s|keni\s|Kanë\s|kanë\s|" + \
-	 "Jam\s|jam\s|Je\s|je\s|Është\s|është\s|Jemi\s|jemi\s|Jeni\s|jeni\s|Janë\s|janë\s"
+kj = "Kam\s|kam\s|Ke\s|ke\s|Ka\s|ka\s|Kemi\s|kemi\s|Keni\s|keni\s|" + \
+	 "Kanë\s|kanë\s|Jam\s|jam\s|Je\s|je\s|Është\s|është\s|Jemi\s|" + \
+	 "jemi\s|Jeni\s|jeni\s|Janë\s|janë\s"
 
-## pjesore gegërisht që mbarojnë me 'u(r(e))', 'e(r(e))', 'a(r(e))' 
+## pjesore të shkurtra që mbarojnë me 'u(r(e))', 'e(r(e))', 'a(r(e))' 
 ## por që duhet të mbarojnë me 'rë' -- pru -> prurë
 pj_pa_re = "ble|gri|la|mar|nda|nga|ngri|nxjer|pa|pi|pre|pri|pru|qa|" + \
 			"sha|shkri|tha|vra"
 
-## pjesore gegërisht që mbarojnë me 'u' por që duhet të 
+## pjesore të shkurtra që mbarojnë me 'u' por që duhet të 
 ## mbarojnë me 'ar' -- shku -> shkuar
-pj_pa_ar = "besu|dhunu|lexu|nd(e|ë)shku|ngacmu|shkru|shku|d(e|ë)gju|" + \
-			"shiku|p(ë|e)su|punu|k(e|ë)rku|m(e|ë)su|provu"
+pj_pa_ar = "besu|d(e|ë)gju|dhunu|k(e|ë)rku|lexu|m(e|ë)su|nd(e|ë)shku|" + \
+			"ngacmu|shkru|shku|p(ë|e)su|punu|provu"
 
-## pjesore të shkurtra gegërisht që duhet të mbarojnë me 'ur' -- kap -> kapur
-pj_pa_ur = "ardh|hap|kap|mat|ngrit|shit|ul|vulos|zbraps|zmbraps|" + \
-			"zbardh|zhyt|mbyt"
+## pjesore të shkurtra që duhet të mbarojnë me 'ur' -- kap -> kapur
+pj_pa_ur = "ardh|hap|kap|mat|mbyt|ngrit|shit|ul|vulos|zbardh|zbraps|" + \
+		   "zmbraps|zhyt"
+
+## pjesore të shkurtra që mbarojnë me 'y' por që duhet të 
+## mbarojnë me 'yer' -- thy -> thyer		   
+pj_pa_er = "kry|ly|shqy|thy"
 	
 ## fjalë që shkruhen pa ë fundore ose me ë të shkruar e - mir(e) -> mirë
 pa_e_fund = "(B|b)uk|(J|j)an|(K|k)an|(L|l)ir|(M|m)ir|(N|n)j|" + \
@@ -36,10 +41,9 @@ pa_e_fund = "(B|b)uk|(J|j)an|(K|k)an|(L|l)ir|(M|m)ir|(N|n)j|" + \
 			"(B|b)uj|(S|s)trenjt|mij"
 		
 ## temat që shkruhen me C/c në vend të Ç/ç-së nistore
-## cafk*, caj, cajnik, cift*, coj, corap*, cudi, cun, cmim*, cimkë, cibuk
-## camcakëz, cmendur(i), 
-pa_c_nis = "afk|aj|ajnik|ift|oj|orap|udi|un|mim|imk(ë?)|ibuk|" + \
-		   "am(c|ç)ak(e|ë)z|mendur(i?)"
+## ruhen prapashtesat ndaj nuk pranohen tema me grupe alternative me |
+## cafk, caj, cajnik, cibuk, cift, cimk, cmim, co, corap, cudi, cun, cmendur 
+pa_c_nis = "afk|aj|ajnik|ibuk|ift|imk|mim|o|orap|udi|un|mendur"
 
 ## tema fjalësh që duhen shqipëruar
 tem_sq = ""
@@ -64,19 +68,19 @@ def replace_c(text):
 	t, c = re.subn(fr"(\b)(C|C'|Ç|Q|Q')(ka)({suf})(\b)", r"Ç'\3\4", t) ; c_subs += c
 	
 	## çfarë 
-	t, c = re.subn(fr"(\b)(c|ç|q)(far)(e?)(\b)", r"çfarë", t) ; c_subs += c
+	t, c = re.subn(fr"(\b)(c|ç|q)(far)(e|ë)?(\b)", r"çfarë", t) ; c_subs += c
 	## Çfarë
-	t, c = re.subn(fr"(\b)(C|Ç|Q)(far)(e?)(\b)", r"Çfarë", t) ; c_subs += c
+	t, c = re.subn(fr"(\b)(C|Ç|Q)(far)(e|ë)?(\b)", r"Çfarë", t) ; c_subs += c
 	
 	## çupë
-	t, c = re.subn(fr"(\b)(c|ç|q)(up)(e?)(\b)", r"çupë", t) ; c_subs += c
+	t, c = re.subn(fr"(\b)(c|ç|q)(up)(e|ë)?(\b)", r"çupë", t) ; c_subs += c
 	## Çupë
-	t, c = re.subn(fr"(\b)(C|Ç|Q)(up)(e?)(\b)", r"Çupë", t) ; c_subs += c
+	t, c = re.subn(fr"(\b)(C|Ç|Q)(up)(e|ë)?(\b)", r"Çupë", t) ; c_subs += c
 	
 	## çikë
-	t, c = re.subn(fr"(\b)(c|ç|q)(ik)(e?)(\b)", r"çikë", t) ; c_subs += c
+	t, c = re.subn(fr"(\b)(c|ç|q)(ik)(e|ë)?(\b)", r"çikë", t) ; c_subs += c
 	## Çikë
-	t, c = re.subn(fr"(\b)(C|Ç|Q)(ik)(e?)(\b)", r"Çikë", t) ; c_subs += c
+	t, c = re.subn(fr"(\b)(C|Ç|Q)(ik)(e|ë)?(\b)", r"Çikë", t) ; c_subs += c
 	
 	## fjalë që shkruhen me C/c në vend të Ç/ç-së nistore - caj -> çaj
 	t, c = re.subn(fr"(\b)(c)({pa_c_nis})({suf})(\b)", r"ç\3\4", t) ; c_subs += c
@@ -96,7 +100,7 @@ def replace_e(text):
 	t, c = re.subn(fr"(\b)(e|ë)(sht)(e|ë)?(\b)", r"ë\3ë", t) ; e_subs += c
 	
 	## fjalë që shkruhen pa ë fundore ose me ë të shkruar e - mir(e) -> mirë
-	t, c = re.subn(fr"(\b)({pa_e_fund})(e?)(\b)", r"\2ë", t) ; e_subs += c
+	t, c = re.subn(fr"(\b)({pa_e_fund})(e)?(\b)", r"\2ë", t) ; e_subs += c
 	# t, c = re.subn(r"(Mir|mir)(e?)( |\.)", r"\1ë\3", t) ; e_subs += c
 	
 	return (t, e_subs)
@@ -107,7 +111,7 @@ def replace_dial(text):
 	t = text ; dial_subs = 0
 	
 	## fjalë që shnkruhen pa a në fund - du(e) -> dua, thu(e) -> thua
-	t, c = re.subn(fr"(\b)({fjale_geg1})(e?)(\b)", r"\2a", t) ; dial_subs += c
+	t, c = re.subn(fr"(\b)({fj_dialekt})(e?)(\b)", r"\2a", t) ; dial_subs += c
 	
 	## pjesoret që shkruhen pa rë në fund - pru -> prurë
 	t, c = re.subn(fr"(\b)({kj})({pj_pa_re})(r(e)?)?(\b)", r"\2\3rë", t) ; dial_subs += c
@@ -117,6 +121,9 @@ def replace_dial(text):
 	
 	## pjesoret që shkruhen pa ur në fund - kap -> kapur
 	t, c = re.subn(fr"(\b)({kj})({pj_pa_ur})(\b)", r"\2\3ur", t) ; dial_subs += c
+
+	## pjesoret që shkruhen pa er në fund - thy -> thyer
+	t, c = re.subn(fr"(\b)({kj})({pj_pa_er})(\b)", r"\2\3er", t) ; dial_subs += c
 
 	return (t, dial_subs)
 	
