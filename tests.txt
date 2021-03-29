@@ -1,5 +1,5 @@
 
-## Testime të zëvendësimeve. Totali: 131 zëvendësime
+## Testime të zëvendësimeve. Totali: 136 zëvendësime
 
 ## Ç/ç - 27 zëvendësime
 ckemi c'keni C'ke çke ckeni c'ka cka c'kanë cfarë Cfarë cfare
@@ -28,6 +28,9 @@ ke shkru Kanë shku ka pësu kemi pesu kanë punu je provu
 ## pjesore pa "ur" - 13 zëvendësime
 ka ardh je hap kemi kap Kam mat je mbyt jemi ngrit ka shit je ul
 kanë vulos janë zbardh jeni zbraps janë zmbraps ke zhyt
+
+## pjesore pa "er" - 5 zëvendësime
+ke gry, ka thy, Kemi ly janë shqy kanë kry
 
 ## Të tjera - 6 zëvendësime
 du Due thu Thue; gGru gruea Gru grue

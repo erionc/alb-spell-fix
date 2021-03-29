@@ -33,7 +33,7 @@ pj_pa_ur = "ardh|hap|kap|mat|mbyt|ngrit|shit|ul|vulos|zbardh|zbraps|" + \
 
 ## pjesore të shkurtra që mbarojnë me 'y' por që duhet të 
 ## mbarojnë me 'yer' -- thy -> thyer		   
-pj_pa_er = "kry|ly|shqy|thy"
+pj_pa_er = "gry|kry|ly|shqy|thy"
 	
 ## fjalë që shkruhen pa ë fundore ose me ë të shkruar e - mir(e) -> mirë
 pa_e_fund = "(B|b)uk|(J|j)an|(K|k)an|(L|l)ir|(M|m)ir|(N|n)j|" + \
