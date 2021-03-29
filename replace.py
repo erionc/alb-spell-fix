@@ -28,17 +28,17 @@ pj_pa_ar = "besu|d(e|ë)gju|dhunu|k(e|ë)rku|lexu|m(e|ë)su|nd(e|ë)shku|" + \
 			"ngacmu|shkru|shku|p(ë|e)su|punu|provu"
 
 ## pjesore të shkurtra që duhet të mbarojnë me 'ur' -- kap -> kapur
-pj_pa_ur = "ardh|hap|kap|mat|mbyt|ngrit|shit|ul|vulos|zbardh|zbraps|" + \
-		   "zmbraps|zhyt"
+pj_pa_ur = "ardh|hap|kap|mat|mbyt|m(e|ë)rzit|ngrit|shit|ul|vulos|zbardh|" + \
+		   "zbraps|zmbraps|zhyt"
 
 ## pjesore të shkurtra që mbarojnë me 'y' por që duhet të 
 ## mbarojnë me 'yer' -- thy -> thyer		   
 pj_pa_er = "gry|kry|ly|shqy|thy"
 	
 ## fjalë që shkruhen pa ë fundore ose me ë të shkruar e - mir(e) -> mirë
-pa_e_fund = "(B|b)uk|(J|j)an|(K|k)an|(L|l)ir|(M|m)ir|(N|n)j|" + \
+pa_e_fund = "(B|b)uk|(B|b)uj|(J|j)an|(K|k)an|(L|l)ir|(M|m)ir|(N|n)j|" + \
 			"(P|p)un|(R|r)rug|(S|s)hum|(U|u)j|(U|u)n|(D|d)it|(J|j)et|" + \
-			"(B|b)uj|(S|s)trenjt|mij"
+			"(S|s)htrenjt|mij"
 		
 ## temat që shkruhen me C/c në vend të Ç/ç-së nistore
 ## ruhen prapashtesat ndaj nuk pranohen tema me grupe alternative me |
