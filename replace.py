@@ -13,11 +13,16 @@ suf = "[a-zA-Z0-9çÇëË_-]{0,3}"
 fj_dialekt = "(D|d)u|(G|g)ru|(M|m)u|(T|t)hu"
 
 ## foljet ndihmëse kam/jam që paraprijnë pjesoret
-kj = "(K|k)am\s|Ke\s|ke\s|Ka\s|ka\s|Kemi\s|kemi\s|Keni\s|keni\s|" + \
-	 "Kanë\s|kanë\s|Jam\s|jam\s|Je\s|je\s|Është\s|është\s|Jemi\s|" + \
-	 "jemi\s|Jeni\s|jeni\s|Janë\s|janë\s|"
+kj = "Kam\s|kam\s|Ke\s|ke\s|Ka\s|ka\s|Kemi\s|kemi\s|Keni\s|keni\s|" + \
+	 "Kanë\s|kanë\s|" + \
+	 "Jam\s|jam\s|Je\s|je\s|Është\s|është\s|Jemi\s|" + \
+	 "jemi\s|Jeni\s|jeni\s|Janë\s|janë\s|" + \
+	 "Kisha\s|kisha\s|Kishe\s|kishe\s|Kishte\s|kishte\s|Kishim\s" + \
+	 "kishim\s|Kishit\s|kishit\s|Kishin\s|kishin\s|" + \
+	 "Isha\s|isha\s|Ishe\s|ishe\s|Ishte\s|ishte\s|Ishim\s|ishim\s|" + \
+	 "Ishit\s|ishit\s|Ishin\s|ishin\s|"
 
-## format e pashtjelluara
+## format e pashtjelluara që paraprijnë pjesoret
 psht = "për të\s|duke\s|pa\s"
 
 ## forma që qëndrojnë para pjesores

@@ -1,5 +1,5 @@
 
-## Testime të zëvendësimeve. Totali: 139 zëvendësime
+## Testime të zëvendësimeve. Totali: 143 zëvendësime
 
 ## Ç/ç - 27 zëvendësime
 ckemi c'keni C'ke çke ckeni c'ka cka c'kanë cfarë Cfarë cfare
@@ -17,22 +17,22 @@ dit Dite jet shtrenjt
 
 ## pjesore pa "rë" - 18 zëvendësime
 ka ble jemi gri janë la ke mar jemi nda ka nga ke ngri
-ke nxjer janë pa keni pi kemi pre janë pri kemi pru ka qa ka
-sha ka shkri jemi tha je vra
+ishit nxjer janë pa keni pi kemi pre janë pri kemi pru ka qa ka
+sha ishit shkri jemi tha je vra
 
 ## pjesore pa "ar" - 18 zëvendësime
-kemi besu ka dëgju kemi degju jam dhunu kam kerku ka kërku
-Keni lexu kemi mësu ka mesu Jemi ndëshku ka ndeshku kam ngacmu
-ke shkru Kanë shku ka pësu kemi pesu kanë punu je provu 
+kemi besu ka dëgju kemi degju jam dhunu kam kerku Ishin kërku
+Keni lexu kemi mësu ka mesu Ishim ndëshku ka ndeshku kam ngacmu
+ke shkru Kanë shku ka pësu kemi pesu kanë punu ishte provu 
 
 ## pjesore pa "ur" - 16 zëvendësime
-ka ardh je hap kemi kap Kam mat je mbyt jemi ngrit ka shit je ul
+ka ardh je hap kemi kap Kisha mat je mbyt jemi ngrit kishte shit je ul
 kanë vulos janë zbardh jeni zbraps janë zmbraps ke zhyt
-je mërzit janë merzit duke thith
+ishe mërzit janë merzit duke thith
 
-## pjesore pa "er" - 7 zëvendësime
-ke gry, ka thy, Kemi ly për të kry janë shqy kanë kry
-pa ly
+## pjesore pa "er" - 8 zëvendësime
+ke gry ka thy Kemi ly për të kry janë shqy kanë kry
+pa ly isha thy 
 
 ## Të tjera - 6 zëvendësime
 du Due thu Thue; gGru gruea Gru grue
@@ -55,24 +55,26 @@ ditë Ditë jetë shtrenjtë
 
 ## pjesore pa "rë" - 18 zëvendësime
 ka blerë jemi grirë janë larë ke marrë jemi ndarë ka ngarë ke ngrirë
-ke nxjerrë janë parë keni pirë kemi prerë janë prirë kemi prurë ka qarë ka
-sharë ka shkrirë jemi tharë je vrarë
+ishit nxjerrë janë parë keni pirë kemi prerë janë prirë kemi prurë ka qarë ka
+sharë ishit shkrirë jemi tharë je vrarë
 
 ## pjesore pa "ar" - 18 zëvendësime
-kemi besuar ka dëgjuar kemi degjuar jam dhunuar kam kerkuar ka kërkuar
-Keni lexuar kemi mësuar ka mesuar Jemi ndëshkuar ka ndeshkuar kam ngacmuar
-ke shkruar Kanë shkuar ka pësuar kemi pesuar kanë punuar je provuar 
+kemi besuar ka dëgjuar kemi degjuar jam dhunuar kam kerkuar Ishin kërkuar
+Keni lexuar kemi mësuar ka mesuar Ishim ndëshkuar ka ndeshkuar kam ngacmuar
+ke shkruar Kanë shkuar ka pësuar kemi pesuar kanë punuar ishte provuar 
 
-## pjesore pa "ur" - 15 zëvendësime
-ka ardhur je hapur kemi kapur Kam matur je mbytur jemi ngritur ka shitur je ulur
+## pjesore pa "ur" - 16 zëvendësime
+ka ardhur je hapur kemi kapur Kisha matur je mbytur jemi ngritur kishte shitur je ulur
 kanë vulosur janë zbardhur jeni zbrapsur janë zmbrapsur ke zhytur
-je mërzitur janë merzitur
+ishe mërzitur janë merzitur duke thithur
 
-## pjesore pa "er" - 5 zëvendësime
-ke gryer, ka thyer, Kemi lyer janë shqyer kanë kryer
+## pjesore pa "er" - 8 zëvendësime
+ke gryer ka thyer Kemi lyer për të kryer janë shqyer kanë kryer
+pa lyer isha thyer 
 
 ## Të tjera - 6 zëvendësime
 dua Dua thua Thua; gGru gruea Grua grua
+
 
 
 
