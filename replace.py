@@ -13,9 +13,15 @@ suf = "[a-zA-Z0-9çÇëË_-]{0,3}"
 fj_dialekt = "(D|d)u|(G|g)ru|(M|m)u|(T|t)hu"
 
 ## foljet ndihmëse kam/jam që paraprijnë pjesoret
-kj = "Kam\s|kam\s|Ke\s|ke\s|Ka\s|ka\s|Kemi\s|kemi\s|Keni\s|keni\s|" + \
+kj = "(K|k)am\s|Ke\s|ke\s|Ka\s|ka\s|Kemi\s|kemi\s|Keni\s|keni\s|" + \
 	 "Kanë\s|kanë\s|Jam\s|jam\s|Je\s|je\s|Është\s|është\s|Jemi\s|" + \
-	 "jemi\s|Jeni\s|jeni\s|Janë\s|janë\s"
+	 "jemi\s|Jeni\s|jeni\s|Janë\s|janë\s|"
+
+## format e pashtjelluara
+psht = "për të\s|duke\s|pa\s"
+
+## forma që qëndrojnë para pjesores
+pp = kj + psht
 
 ## pjesore të shkurtra që mbarojnë me 'u(r(e))', 'e(r(e))', 'a(r(e))' 
 ## por që duhet të mbarojnë me 'rë' -- pru -> prurë
@@ -28,8 +34,8 @@ pj_pa_ar = "besu|d(e|ë)gju|dhunu|k(e|ë)rku|lexu|m(e|ë)su|nd(e|ë)shku|" + \
 			"ngacmu|shkru|shku|p(ë|e)su|punu|provu"
 
 ## pjesore të shkurtra që duhet të mbarojnë me 'ur' -- kap -> kapur
-pj_pa_ur = "ardh|hap|kap|mat|mbyt|m(e|ë)rzit|ngrit|shit|ul|vulos|zbardh|" + \
-		   "zbraps|zmbraps|zhyt"
+pj_pa_ur = "ardh|hap|kap|mat|mbyt|m(e|ë)rzit|ngrit|shit|thith|ul|vulos|" + \
+		   "zbardh|zbraps|zmbraps|zhyt"
 
 ## pjesore të shkurtra që mbarojnë me 'y' por që duhet të 
 ## mbarojnë me 'yer' -- thy -> thyer		   
@@ -114,16 +120,16 @@ def replace_dial(text):
 	t, c = re.subn(fr"(\b)({fj_dialekt})(e?)(\b)", r"\2a", t) ; dial_subs += c
 	
 	## pjesoret që shkruhen pa rë në fund - pru -> prurë
-	t, c = re.subn(fr"(\b)({kj})({pj_pa_re})(r(e)?)?(\b)", r"\2\3rë", t) ; dial_subs += c
+	t, c = re.subn(fr"(\b)({pp})({pj_pa_re})(r(e)?)?(\b)", r"\2\3rë", t) ; dial_subs += c
 
 	## pjesoret që shkruhen pa ar në fund - shku -> shkuar
-	t, c = re.subn(fr"(\b)({kj})({pj_pa_ar})(\b)", r"\2\3ar", t) ; dial_subs += c
+	t, c = re.subn(fr"(\b)({pp})({pj_pa_ar})(\b)", r"\2\3ar", t) ; dial_subs += c
 	
 	## pjesoret që shkruhen pa ur në fund - kap -> kapur
-	t, c = re.subn(fr"(\b)({kj})({pj_pa_ur})(\b)", r"\2\3ur", t) ; dial_subs += c
+	t, c = re.subn(fr"(\b)({pp})({pj_pa_ur})(\b)", r"\2\3ur", t) ; dial_subs += c
 
 	## pjesoret që shkruhen pa er në fund - thy -> thyer
-	t, c = re.subn(fr"(\b)({kj})({pj_pa_er})(\b)", r"\2\3er", t) ; dial_subs += c
+	t, c = re.subn(fr"(\b)({pp})({pj_pa_er})(\b)", r"\2\3er", t) ; dial_subs += c
 
 	return (t, dial_subs)
 	
