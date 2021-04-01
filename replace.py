@@ -62,6 +62,15 @@ tem_sq = ""
 ## tema fjalësh angleze që duhen përkthyer
 tem_en = "file"
 
+## funksion për zëvendësime nga të cilat varen zëvendësimet e tjera
+def replace_dep(text):
+	## initializations 
+	t = text ; c_subs = 0
+	
+	## kena -> kemi ; jena -> jemi
+	t, c = re.subn(fr"(\b)(K|k|J|j)(ena)(\b)", r"\2emi", t) ; c_subs += c
+	
+	return (t, c_subs)
 
 ## function for c - ç substitutions
 def replace_c(text):

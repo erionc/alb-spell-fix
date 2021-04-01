@@ -9,6 +9,9 @@ def correction(field_in, field_out, field_message):
 	# get content from the first box
 	input_text = field_in.get("1.0", END) 
 	t = input_text ; total_sub = 0
+	
+	## call dependency substitutions
+	t, c = replace_dep(t) ; total_sub += c
 		
 	## call e substitutions
 	t, c = replace_e(t) ; total_sub += c
