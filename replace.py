@@ -20,10 +20,14 @@ kj = "Kam\s|kam\s|Ke\s|ke\s|Ka\s|ka\s|Kemi\s|kemi\s|Keni\s|keni\s|" + \
 	 "Kisha\s|kisha\s|Kishe\s|kishe\s|Kishte\s|kishte\s|Kishim\s" + \
 	 "kishim\s|Kishit\s|kishit\s|Kishin\s|kishin\s|" + \
 	 "Isha\s|isha\s|Ishe\s|ishe\s|Ishte\s|ishte\s|Ishim\s|ishim\s|" + \
-	 "Ishit\s|ishit\s|Ishin\s|ishin\s|"
+	 "Ishit\s|ishit\s|Ishin\s|ishin\s|" + \
+	 "Pata\s|pata\s|Pate\s|pate\s|Pati\s|pati\s|Patëm\s|patëm\s|" + \
+	 "Patët\s|patët\s|Patën\s|patën\s|" + \
+	 "Qeshë\s|qeshë\s|Qe\s|qe\s|Qemë\s|qemë\s|Qetë\s|qetë\s|" + \
+	 "Qenë\s|qenë\s|"
 
 ## format e pashtjelluara që paraprijnë pjesoret
-psht = "për të\s|duke\s|pa\s"
+psht = "për\stë\s|duke\s|pa\s"
 
 ## forma që qëndrojnë para pjesores
 pp = kj + psht
