@@ -70,6 +70,8 @@ def replace_dep(text):
 	## kena -> kemi ; jena -> jemi
 	t, c = re.subn(fr"(\b)(K|k|J|j)(ena)(\b)", r"\2emi", t) ; c_subs += c
 	
+	## other e -> ë replacements here
+	
 	return (t, c_subs)
 
 ## function for c - ç substitutions
