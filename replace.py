@@ -58,7 +58,8 @@ pa_e_fund = "(B|b)uk|(B|b)uj|(J|j)an|(K|k)an|(L|l)ir|(M|m)ir|(N|n)j|" + \
 ## temat që shkruhen me C/c në vend të Ç/ç-së nistore
 ## ruhen prapashtesat ndaj nuk pranohen tema me grupe alternative me |
 ## cafk, caj, cajnik, cibuk, cift, cimk, cmim, co, corap, cudi, cun, cmendur 
-pa_c_nis = "afk|aj|ajnik|ibuk|ift|imk|mim|o|orap|udi|un|mendur"
+pa_c_nis = "afk|aj|ajnik|akmak|arcaf|arçaf|ibuk|ift|imk|izme|mim|o|" + \
+		   "orap|udi|un|mendur"
 
 ## tema fjalësh që duhen shqipëruar
 tem_sq = ""
