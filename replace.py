@@ -3,7 +3,7 @@ import re
 
 ## 0-3 simbole shtesë në fund të fjalëve për të kapur prapashtesa 
 ## shquese dhe lakesat
-suf = "[a-zA-Z0-9çÇëË_-]{0,3}"
+suf = "[a-zA-Z0-9çÇëË_-]{0,4}"
 
 ## global variable that matches the ending of a word - (\b) is better
 # we = " |\t|\n|\.|\?|:|;|,|!"
@@ -74,6 +74,9 @@ def replace_dep(text):
 	
 	## kena -> kemi ; jena -> jemi
 	t, c = re.subn(fr"(\b)(K|k|J|j)(ena)(\b)", r"\2emi", t) ; c_subs += c
+	
+	## do te -> do të
+	t, c = re.subn(fr"(\b)(do\s)(te)(\b)", r"\2të", t) ; c_subs += c
 	
 	## other e -> ë replacements here
 	
