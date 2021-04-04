@@ -8,6 +8,10 @@ suf = "[a-zA-Z0-9çÇëË_-]{0,4}"
 ## global variable that matches the ending of a word - (\b) is better
 # we = " |\t|\n|\.|\?|:|;|,|!"
 
+## fjalë që i paraprinë të-së - do të, dua të, desha të 
+dt = "dua\s|do\s|duam\s|doni\s|duan\s|doja\s|doje\s|donte\s|donim\s|" + \
+	 "donit\s|donin\s|desha\s|deshe\s|deshte\s|deshëm\s|deshët\s|deshën\s"
+
 ## fjalë gegërisht që mbarojnë me 'u(e)' por që duhet të 
 ## mbarojnë me 'ua' -- du(e) -> dua, thu(e) -> thua
 fj_dialekt = "(D|d)u|(G|g)ru|(M|m)u|(T|t)hu"
@@ -35,7 +39,7 @@ pp = kj + psht
 ## pjesore të shkurtra që mbarojnë me 'u(r(e))', 'e(r(e))', 'a(r(e))' 
 ## por që duhet të mbarojnë me 'rë' -- pru -> prurë
 pj_pa_re = "ble|gri|la|mar|nda|nga|ngri|nxjer|pa|pi|pre|pri|pru|qa|" + \
-			"sha|shkri|tha|vra"
+			"sha|shkri|shtri|tha|vra"
 
 ## pjesore të shkurtra që mbarojnë me 'u' por që duhet të 
 ## mbarojnë me 'ar' -- shku -> shkuar
@@ -76,7 +80,7 @@ def replace_dep(text):
 	t, c = re.subn(fr"(\b)(K|k|J|j)(ena)(\b)", r"\2emi", t) ; c_subs += c
 	
 	## do te -> do të
-	t, c = re.subn(fr"(\b)(do\s)(te)(\b)", r"\2të", t) ; c_subs += c
+	t, c = re.subn(fr"(\b)({dt})(te)(\b)", r"\2të", t) ; c_subs += c
 	
 	## other e -> ë replacements here
 	
