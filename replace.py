@@ -52,7 +52,7 @@ pj_pa_ur = "ardh|hap|kap|mat|mbyt|m(e|ë)rzit|ngrit|shit|thith|ul|vulos|" + \
 
 ## pjesore të shkurtra që mbarojnë me 'y' por që duhet të 
 ## mbarojnë me 'yer' -- thy -> thyer		   
-pj_pa_er = "gry|kry|ly|shqy|thy"
+pj_pa_er = "fy|gry|kry|ly|shqy|thy"
 	
 ## fjalë që shkruhen pa ë fundore ose me ë të shkruar e - mir(e) -> mirë
 pa_e_fund = "(B|b)uk|(B|b)uj|(J|j)an|(K|k)an|(L|l)ir|(M|m)ir|(N|n)j|" + \
@@ -75,6 +75,15 @@ tem_en = "file"
 def replace_dep(text):
 	## initializations 
 	t = text ; c_subs = 0
+	
+	## deshe(m|t|n) -> deshë(m|t|n)
+	t, c = re.subn(fr"(\b)(D|d)(eshe)(m|t|n)(\b)", r"\2eshë\3", t) ; c_subs += c
+	
+	## jane -> janë
+	t, c = re.subn(fr"(\b)(J|j)(an)(e)?(\b)", r"\2anë", t) ; c_subs += c
+	
+	## pate(m|t|n) -> patë(m|t|n)
+	t, c = re.subn(fr"(\b)(pate)(m|t|n)(\b)", r"patë\3", t) ; c_subs += c
 	
 	## kena -> kemi ; jena -> jemi
 	t, c = re.subn(fr"(\b)(K|k|J|j)(ena)(\b)", r"\2emi", t) ; c_subs += c
