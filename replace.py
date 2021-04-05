@@ -39,7 +39,7 @@ pp = kj + psht
 ## pjesore të shkurtra që mbarojnë me 'u(r(e))', 'e(r(e))', 'a(r(e))' 
 ## por që duhet të mbarojnë me 'rë' -- pru -> prurë
 pj_pa_re = "ble|gri|la|mar|nda|nga|ngri|nxjer|pa|pi|pre|pri|pru|qa|" + \
-			"sha|shkri|shtri|tha|vra"
+			"sha|shkri|shtri|shty|tha|vra"
 
 ## pjesore të shkurtra që mbarojnë me 'u' por që duhet të 
 ## mbarojnë me 'ar' -- shku -> shkuar
@@ -52,7 +52,7 @@ pj_pa_ur = "ardh|hap|kap|mat|mbyt|m(e|ë)rzit|ngrit|shit|thith|ul|vulos|" + \
 
 ## pjesore të shkurtra që mbarojnë me 'y' por që duhet të 
 ## mbarojnë me 'yer' -- thy -> thyer		   
-pj_pa_er = "fy|gry|kry|ly|shqy|thy"
+pj_pa_er = "fy|gry|kry|kthy|ly|shqy|thy"
 	
 ## fjalë që shkruhen pa ë fundore ose me ë të shkruar e - mir(e) -> mirë
 pa_e_fund = "(B|b)uk|(B|b)uj|(J|j)an|(K|k)an|(L|l)ir|(M|m)ir|(N|n)j|" + \
@@ -84,6 +84,8 @@ def replace_dep(text):
 	
 	## pate(m|t|n) -> patë(m|t|n)
 	t, c = re.subn(fr"(\b)(pate)(m|t|n)(\b)", r"patë\3", t) ; c_subs += c
+	## qe(m|t|n)(e?) -> qe(m|t|n)ë
+	t, c = re.subn(fr"(\b)(Q|q)(e)(m|t|n)(e)?(\b)", r"\2e\4ë", t) ; c_subs += c
 	
 	## kena -> kemi ; jena -> jemi
 	t, c = re.subn(fr"(\b)(K|k|J|j)(ena)(\b)", r"\2emi", t) ; c_subs += c
