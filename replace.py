@@ -77,7 +77,7 @@ def replace_dep(text):
 	t = text ; c_subs = 0
 	
 	## deshe(m|t|n) -> deshë(m|t|n)
-	t, c = re.subn(fr"(\b)(D|d)(eshe)(m|t|n)(\b)", r"\2eshë\3", t) ; c_subs += c
+	t, c = re.subn(fr"(\b)(D|d)(eshe)(m|t|n)(\b)", r"\2eshë\4", t) ; c_subs += c
 	
 	## jane -> janë
 	t, c = re.subn(fr"(\b)(J|j)(an)(e)?(\b)", r"\2anë", t) ; c_subs += c
