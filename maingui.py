@@ -75,12 +75,12 @@ if __name__ == "__main__":
 	text3_field.place(x=693, y=637) 
 	
 	## correction button attached with correction function
-	correct_button = Button(root, text = "Redakto", bg = "magenta", fg = "black", 
+	correct_button = Button(root, text = "Redakto", bg = "blue", fg = "black", 
 			command = lambda: correction(text1_field, text2_field, text3_field))
 	correct_button.grid(row = 2, column = 1) # .place(x=790, y=300)
 	
 	## clear button attached with clearAll function
-	clear_button = Button(root, text = "Shuaj", bg = "magenta", fg = "black",
+	clear_button = Button(root, text = "Shuaj", bg = "blue", fg = "black",
 			command = lambda: clearAll(text1_field, text2_field, text3_field)) 
 	clear_button.grid(row = 18, column = 1) # .place(x=800, y=590)  
 	
