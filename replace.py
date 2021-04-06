@@ -14,7 +14,7 @@ dt = "dua\s|do\s|duam\s|doni\s|duan\s|doja\s|doje\s|donte\s|donim\s|" + \
 
 ## fjalë gegërisht që mbarojnë me 'u(e)' por që duhet të 
 ## mbarojnë me 'ua' -- du(e) -> dua, thu(e) -> thua
-fj_dialekt = "(D|d)u|(G|g)ru|(M|m)u|(T|t)hu"
+fj_dial = "(D|d)u|(G|g)ru|(M|m)u|(T|t)hu"
 
 ## foljet ndihmëse kam/jam që paraprijnë pjesoret
 kj = "Kam\s|kam\s|Ke\s|ke\s|Ka\s|ka\s|Kemi\s|kemi\s|Keni\s|keni\s|" + \
@@ -38,8 +38,8 @@ pp = kj + psht
 
 ## pjesore të shkurtra që mbarojnë me 'u(r(e))', 'e(r(e))', 'a(r(e))' 
 ## por që duhet të mbarojnë me 'rë' -- pru -> prurë
-pj_pa_re = "ble|gri|la|mar|nda|nga|ngri|nxjer|pa|pi|pre|pri|pru|qa|" + \
-			"sha|shkri|shtri|shty|tha|vra"
+pj_pa_re = "ble|fshi|gri|la|mar|nda|nga|ngri|nxi|nxjer|pa|pi|pre|pri|" + \
+			"pru|qa|sha|shkri|shtri|shty|tha|vra"
 
 ## pjesore të shkurtra që mbarojnë me 'u' por që duhet të 
 ## mbarojnë me 'ar' -- shku -> shkuar
@@ -55,9 +55,9 @@ pj_pa_ur = "ardh|hap|kap|mat|mbyt|m(e|ë)rzit|ngrit|shit|thith|ul|vulos|" + \
 pj_pa_er = "fy|gry|kry|kthy|ly|shqy|thy"
 	
 ## fjalë që shkruhen pa ë fundore ose me ë të shkruar e - mir(e) -> mirë
-pa_e_fund = "(B|b)uk|(B|b)uj|(J|j)an|(K|k)an|(L|l)ir|(M|m)ir|(N|n)j|" + \
-			"(P|p)un|(R|r)rug|(S|s)hum|(U|u)j|(U|u)n|(D|d)it|(J|j)et|" + \
-			"(S|s)htrenjt|mij"
+pa_e_fund = "(B|b)uk|(B|b)uj|(D|d)or|(G|g)un|(H|h)apësir|(L|l)ir|" + \
+			"(M|m)ir|(N|n)j|(P|p)un|(R|r)rug|(S|s)hum|(U|u)j|" + \
+			"(U|u)n|(D|d)it|(J|j)et|(S|s)htrenjt|mij"
 		
 ## temat që shkruhen me C/c në vend të Ç/ç-së nistore
 ## ruhen prapashtesat ndaj nuk pranohen tema me grupe alternative me |
@@ -79,8 +79,8 @@ def replace_dep(text):
 	## deshe(m|t|n) -> deshë(m|t|n)
 	t, c = re.subn(fr"(\b)(D|d)(eshe)(m|t|n)(\b)", r"\2eshë\4", t) ; c_subs += c
 	
-	## jane -> janë
-	t, c = re.subn(fr"(\b)(J|j)(an)(e)?(\b)", r"\2anë", t) ; c_subs += c
+	## jan(e) -> janë, kan(e) -> kanë
+	t, c = re.subn(fr"(\b)(J|j|K|k)(an)(e)?(\b)", r"\2anë", t) ; c_subs += c
 	
 	## pate(m|t|n) -> patë(m|t|n)
 	t, c = re.subn(fr"(\b)(pate)(m|t|n)(\b)", r"patë\3", t) ; c_subs += c
@@ -156,7 +156,7 @@ def replace_dial(text):
 	t = text ; dial_subs = 0
 	
 	## fjalë që shnkruhen pa a në fund - du(e) -> dua, thu(e) -> thua
-	t, c = re.subn(fr"(\b)({fj_dialekt})(e?)(\b)", r"\2a", t) ; dial_subs += c
+	t, c = re.subn(fr"(\b)({fj_dial})(e?)(\b)", r"\2a", t) ; dial_subs += c
 	
 	## pjesoret që shkruhen pa rë në fund - pru -> prurë
 	t, c = re.subn(fr"(\b)({pp})({pj_pa_re})(r(e)?)?(\b)", r"\2\3rë", t) ; dial_subs += c
