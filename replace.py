@@ -56,8 +56,8 @@ pj_pa_er = "fy|gry|kry|kthy|ly|shqy|thy"
 	
 ## fjalë që shkruhen pa ë fundore ose me ë të shkruar e - mir(e) -> mirë
 pa_e_fund = "(B|b)uk|(B|b)uj|(D|d)it|(D|d)or|(G|g)un|(J|j)et|(H|h)apësir|" + \
-			"(L|l)ir|mij|(M|m)ir|(N|n)j|(P|p)un|(R|r)rug|(S|s)hum|(U|u)j|" + \
-			"(U|u)n|(V|v)rim|(S|s)htrenjt"
+			"(L|l)ir|mij|(M|m)ir|(N|n)gjyr|(N|n)j|(P|p)un|(R|r)rug|" + \
+			"(S|s)hum|(U|u)j|(U|u)n|(V|v)rim|(S|s)htrenjt"
 		
 ## temat që shkruhen me C/c në vend të Ç/ç-së nistore
 ## ruhen prapashtesat ndaj nuk pranohen tema me grupe alternative me |
