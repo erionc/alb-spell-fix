@@ -1,5 +1,5 @@
 
-## Testime të zëvendësimeve. Totali: 186 zëvendësime
+## Testime të zëvendësimeve. Totali: 187 zëvendësime
 
 ## zëvendësime paraprake - 20 zëvendësime
 kena pa jena shtri do te, doja te, deshem te, donin te
@@ -16,10 +16,10 @@ cafke cafkat Cafkë caj Caj cajnik camçakez cibuk Cift cifte
 cimke cimkë cmim cmimet co coj Coj Corap corape cudi çun cun
 cmendur Cmenduri cakmak Carcaf carçaf cizme
 
-## Ë/ë - 32 zëvendësime
+## Ë/ë - 33 zëvendësime
 Un, esht. nje nj ështe? esht Eshte Eshtë eshtë Une buk une
 un Un. Une. unë uj; Uj. uje Uje uje	ujë Rrug rruge Kan kane 
-dit Dite jet shtrenjt dor Vrim vrime Ngjyr
+dit Dite jet shtrenjt dor Vrim vrime Ngjyr Pem
 
 ## pjesore pa "rë" - 21 zëvendësime
 ka ble jemi gri janë la ke mar jemi nda ka nga ke ngri
@@ -46,50 +46,4 @@ qe fy
 du Due thu Thue; gGru gruea Gru grue
 
 ###########################################################
-
-## Ç/ç - 27 zëvendësime
-ç'kemi ç'keni Ç'ke ç'ke ç'keni ç'ka ç'ka ç'kanë çfarë Çfarë çfarë
-Çfarë ç'kam ç'kam Ç'kam Ç'kam ç'kam ç'ke çfarë Çfarë ç'kemi ç'keni
-çikë Çikë Çupë Çupë çupë
-
-## pa ç nistore - 22 zëvendësime
-çafke çafkat Çafkë çaj Çaj çajnik camçakez çibuk Çift çifte çimke çimkë
-çmim çmimet ço çoj Çoj Çorap çorape çudi çun çun çmendur Çmenduri
-
-## Ë/ë - 28 zëvendësime
-Unë, është. një një është? është Është Është është Unë bukë unë
-unë Unë. Unë. unë ujë; Ujë. ujë Ujë ujë	ujë Rrugë rrugë Kanë kanë 
-ditë Ditë jetë shtrenjtë
-
-## pjesore pa "rë" - 21 zëvendësime
-ka blerë jemi grirë janë larë ke marrë jemi ndarë ka ngarë ke ngrirë
-ishit nxjerrë janë parë keni pirë kemi prerë janë prirë kemi prurë ka qarë ka
-sharë ishit shkrirë jemi tharë je vrarë duke pirë për të vrarë Qemë sharë
-
-## pjesore pa "ar" - 21 zëvendësime
-kemi besuar ka dëgjuar kemi degjuar jam dhunuar kam kerkuar Ishin kërkuar
-Keni lexuar kemi mësuar ka mesuar Ishim ndëshkuar ka ndeshkuar kam ngacmuar
-ke shkruar Kanë shkuar ka pësuar kemi pesuar kanë punuar ishte provuar 
-patën provuar patën shkuar qe shkruar
-
-## pjesore pa "ur" - 18 zëvendësime
-ka ardhur je hapur kemi kapur Kisha matur je mbytur jemi ngritur kishte shitur je ulur
-kanë vulosur janë zbardhur jeni zbrapsur janë zmbrapsur ke zhytur
-ishe mërzitur janë merzitur duke thithur pata kapur qe mbytur
-
-## pjesore pa "er" - 14 zëvendësime
-ke gryer ka thyer Kemi lyer për të kryer janë shqyer kanë kryer
-pa lyer isha thyer jemi thyer kemi kryer qemë lyer pati thyer
-
-## Të tjera - 6 zëvendësime
-dua Dua thua Thua; gGru gruea Grua grua
-
-
-
-
-
-
-
-
-
 

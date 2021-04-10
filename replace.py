@@ -38,32 +38,32 @@ pp = kj + psht
 
 ## pjesore të shkurtra që mbarojnë me 'u(r(e))', 'e(r(e))', 'a(r(e))' 
 ## por që duhet të mbarojnë me 'rë' -- pru -> prurë
-pj_pa_re = "ble|fshi|gri|la|mar|nda|nga|ngri|nxi|nxjer|pa|pi|pre|pri|" + \
-			"pru|qa|sha|shkri|shtri|shty|tha|vra"
+pj_pa_re = "ble|fshi|gri|la|mar|nda|nga|ngri|nxi|nxjer|pa|pi|pre|" + \
+"pri|pru|qa|sha|shkri|shtri|shty|tha|vra"
 
 ## pjesore të shkurtra që mbarojnë me 'u' por që duhet të 
 ## mbarojnë me 'ar' -- shku -> shkuar
-pj_pa_ar = "besu|d(e|ë)gju|dhunu|k(e|ë)rku|lexu|m(e|ë)su|nd(e|ë)shku|" + \
-			"ngacmu|shkru|shku|p(ë|e)su|punu|provu"
+pj_pa_ar = "besu|d(e|ë)gju|dhunu|k(e|ë)rku|lexu|m(e|ë)su|" + \
+"nd(e|ë)shku|ngacmu|shkru|shku|p(ë|e)su|punu|provu"
 
 ## pjesore të shkurtra që duhet të mbarojnë me 'ur' -- kap -> kapur
-pj_pa_ur = "ardh|hap|kap|mat|mbyt|m(e|ë)rzit|ngrit|shit|thith|ul|vulos|" + \
-		   "zbardh|zbraps|zmbraps|zhyt"
+pj_pa_ur = "ardh|hap|kap|mat|mbyt|m(e|ë)rzit|ngrit|shit|thith|ul|" + \
+"vulos|zbardh|zbraps|zmbraps|zhyt"
 
 ## pjesore të shkurtra që mbarojnë me 'y' por që duhet të 
 ## mbarojnë me 'yer' -- thy -> thyer		   
 pj_pa_er = "fy|gry|kry|kthy|ly|shqy|thy"
 	
 ## fjalë që shkruhen pa ë fundore ose me ë të shkruar e - mir(e) -> mirë
-pa_e_fund = "(B|b)uk|(B|b)uj|(D|d)it|(D|d)or|(G|g)un|(J|j)et|(H|h)apësir|" + \
-			"(L|l)ir|mij|(M|m)ir|(N|n)gjyr|(N|n)j|(P|p)un|(R|r)rug|" + \
-			"(S|s)hum|(U|u)j|(U|u)n|(V|v)rim|(S|s)htrenjt"
+pa_e_fund = "(B|b)uk|(B|b)uj|(D|d)it|(D|d)or|(G|g)un|(G|g)jell|(J|j)et|" + \
+"(H|h)apësir|(L|l)ir|mij|(M|m)ir|(M|m)oll|(N|n)gjyr|(N|n)j|(P|p)em|" + \
+"(P|p)un|(R|r)rug|(S|s)hum|(U|u)j|(U|u)n|(V|v)rim|(S|s)htrenjt"
 		
 ## temat që shkruhen me C/c në vend të Ç/ç-së nistore
 ## ruhen prapashtesat ndaj nuk pranohen tema me grupe alternative me |
 ## cafk, caj, cajnik, cibuk, cift, cimk, cmim, co, corap, cudi, cun, cmendur 
-pa_c_nis = "afk|aj|ajnik|akmak|arcaf|arçaf|ibuk|ift|imk|izme|mim|o|" + \
-		   "orap|udi|un|mendur"
+pa_c_nis = "afk|aj|ajnik|akmak|arcaf|arçaf|ibuk|ift|imk|izme|mim|" + \
+"o|orap|udi|un|mendur"
 
 ## tema fjalësh që duhen shqipëruar
 tem_sq = ""
