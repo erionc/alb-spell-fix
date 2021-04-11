@@ -9,12 +9,9 @@ suf = "[a-zA-Z0-9çÇëË_-]{0,4}"
 # we = " |\t|\n|\.|\?|:|;|,|!"
 
 ## fjalë që i paraprinë të-së - do të, dua të, desha të 
-dt = "dua\s|do\s|duam\s|doni\s|duan\s|doja\s|doje\s|donte\s|donim\s|" + \
-	 "donit\s|donin\s|desha\s|deshe\s|deshte\s|deshëm\s|deshët\s|deshën\s"
-
-## fjalë gegërisht që mbarojnë me 'u(e)' por që duhet të 
-## mbarojnë me 'ua' -- du(e) -> dua, thu(e) -> thua
-fj_dial = "(D|d)u|(G|g)ru|(M|m)u|(T|t)hu"
+para_te = "dua\s|do\s|duam\s|doni\s|duan\s|doja\s|doje\s|donte\s|donim\s|" + \
+"donit\s|donin\s|desha\s|deshe\s|deshte\s|deshëm\s|deshët\s|deshën\s|" + \
+"me\s|sapo\s|duhet\s|për\s"	 
 
 ## foljet ndihmëse kam/jam që paraprijnë pjesoret
 kj = "Kam\s|kam\s|Ke\s|ke\s|Ka\s|ka\s|Kemi\s|kemi\s|Keni\s|keni\s|" + \
@@ -31,10 +28,13 @@ kj = "Kam\s|kam\s|Ke\s|ke\s|Ka\s|ka\s|Kemi\s|kemi\s|Keni\s|keni\s|" + \
 	 "Qenë\s|qenë\s|"
 
 ## format e pashtjelluara që paraprijnë pjesoret
-psht = "për\stë\s|duke\s|pa\s"
+psht = "për\stë\s|duke\s|pa\s|"
+
+## të tjera forma që qëndrojnë para pjesores 
+pptj = "me\stë"
 
 ## forma që qëndrojnë para pjesores
-pp = kj + psht
+pp = kj + psht + pptj
 
 ## pjesore të shkurtra që mbarojnë me 'u(r(e))', 'e(r(e))', 'a(r(e))' 
 ## por që duhet të mbarojnë me 'rë' -- pru -> prurë
@@ -53,6 +53,10 @@ pj_pa_ur = "ardh|hap|kap|mat|mbyt|m(e|ë)rzit|ngrit|shit|thith|ul|" + \
 ## pjesore të shkurtra që mbarojnë me 'y' por që duhet të 
 ## mbarojnë me 'yer' -- thy -> thyer		   
 pj_pa_er = "fy|gry|kry|kthy|ly|shqy|thy"
+
+## fjalë gegërisht që mbarojnë me 'u(e)' por që duhet të 
+## mbarojnë me 'ua' -- du(e) -> dua, thu(e) -> thua
+fj_dial = "(D|d)u|(G|g)ru|(M|m)u|(T|t)hu"
 	
 ## fjalë që shkruhen pa ë fundore ose me ë të shkruar e - mir(e) -> mirë
 pa_e_fund = "(B|b)uk|(B|b)uj|(D|d)it|(D|d)or|(G|g)un|(G|g)jell|(J|j)et|" + \
