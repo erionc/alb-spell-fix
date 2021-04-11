@@ -1,12 +1,12 @@
 
-## Testime të zëvendësimeve. Totali: 190 zëvendësime
+## Testime të zëvendësimeve. Totali: 194 zëvendësime
 
 ## zëvendësime paraprake - 21 zëvendësime
 kena pa jena shtri do te, doja te, deshem te, donin te
 deshet te thoni, Deshem te vimë, jan kthyer, Jane larguar
 patëm punu Patët kthy qem vra Qene shty, per
 
-## te -> të - 2 zëvendësime
+## te -> të - 6 zëvendësime
 me te, sapo te, porsa te, që te, qe te mund te
 
 ## Ç/ç - 27 zëvendësime
