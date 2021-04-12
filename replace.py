@@ -11,7 +11,7 @@ suf = "[a-zA-Z0-9çÇëË_-]{0,4}"
 ## fjalë që i paraprinë të-së - do të, dua të, desha të 
 para_te = "dua\s|do\s|duam\s|doni\s|duan\s|doja\s|doje\s|donte\s|donim\s|" + \
 "donit\s|donin\s|desha\s|deshe\s|deshte\s|deshëm\s|deshët\s|deshën\s|" + \
-"me\s|sapo\s|porsa\s|duhet\s|mund\s|p(e|ë)r\s|q(e|ë)\s|dhe\s"	 
+"me\s|sapo\s|porsa\s|duhet\s|sikur\s|mund\s|q(e|ë)\s"	 
 
 ## foljet ndihmëse kam/jam që paraprijnë pjesoret
 kj = "Kam\s|kam\s|Ke\s|ke\s|Ka\s|ka\s|Kemi\s|kemi\s|Keni\s|keni\s|" + \
