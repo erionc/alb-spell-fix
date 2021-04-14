@@ -60,9 +60,9 @@ fj_dial = "(D|d)u|(G|g)ru|(M|m)u|(T|t)hu"
 	
 ## fjalë që shkruhen pa ë fundore ose me ë të shkruar e - mir(e) -> mirë
 pa_e_fund = "(B|b)uk|(B|b)uj|(D|d)it|(D|d)or|(G|g)un|(G|g)jell|(J|j)et|" + \
-"(H|h)apësir|(L|l)ir|mij|(M|m)ir|(M|m)oll|(N|n)gjyr|(N|n)j|(P|p)em|" + \
-"(P|p)un|(R|r)rug|(S|s)hum|(U|u)j|(U|u)n|(V|v)rim|(S|s)htrenjt"
-		
+"(H|h)apësir|(L|l)ir|(L|l)uft|mij|(M|m)ir|(M|m)oll|(N|n)gjyr|(N|n)j|" + \
+"(P|p)em|(P|p)un|(R|r)rug|(S|s)hum|(U|u)j|(U|u)n|(V|v)rim|(S|s)htrenjt"
+
 ## temat që shkruhen me C/c në vend të Ç/ç-së nistore
 ## ruhen prapashtesat ndaj nuk pranohen tema me grupe alternative me |
 ## cafk, caj, cajnik, cibuk, cift, cimk, cmim, co, corap, cudi, cun, cmendur 
