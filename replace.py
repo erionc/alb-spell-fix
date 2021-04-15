@@ -11,7 +11,8 @@ suf = "[a-zA-Z0-9çÇëË_-]{0,4}"
 ## fjalë që i paraprinë të-së - do të, dua të, desha të 
 para_te = "dua\s|do\s|duam\s|doni\s|duan\s|doja\s|doje\s|donte\s|donim\s|" + \
 "donit\s|donin\s|desha\s|deshe\s|deshte\s|deshëm\s|deshët\s|deshën\s|" + \
-"me\s|sapo\s|porsa\s|duhet\s|sikur\s|mund\s|q(e|ë)\s"	 
+"me\s|sapo\s|porsa\s|duhet\s|sikur\s|mund\s|kush\s|cil(i|a)\s|cil(ë|a)t\s|" + \
+"ku\sdo\s|kur\sdo\s"	 
 
 ## foljet ndihmëse kam/jam që paraprijnë pjesoret
 kj = "Kam\s|kam\s|Ke\s|ke\s|Ka\s|ka\s|Kemi\s|kemi\s|Keni\s|keni\s|" + \
@@ -82,6 +83,9 @@ def replace_dep(text):
 	
 	## deshe(m|t|n) -> deshë(m|t|n)
 	t, c = re.subn(fr"(\b)(D|d)(eshe)(m|t|n)(\b)", r"\2eshë\4", t) ; c_subs += c
+
+	## cilet -> cilët
+	t, c = re.subn(fr"(\b)cilet(\b)", r"cilët", t) ; c_subs += c
 	
 	## jan(e) -> janë, kan(e) -> kanë
 	t, c = re.subn(fr"(\b)(J|j|K|k)(an)(e)?(\b)", r"\2anë", t) ; c_subs += c
