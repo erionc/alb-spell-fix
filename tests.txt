@@ -1,5 +1,5 @@
 
-## Testime të zëvendësimeve. Totali: 201 zëvendësime
+## Testime të zëvendësimeve. Totali: 205 zëvendësime
 
 ## zëvendësime paraprake - 21 zëvendësime
 kena pa jena shtri do te, doja te, deshem te, donin te
@@ -26,10 +26,11 @@ un Un. Une. unë uj; Uj. uje Uje uje	ujë Rrug rruge Kan kane
 dit Dite jet shtrenjt dor Vrim vrime Ngjyr Pem Lufte
 shqis
 
-## pjesore pa "rë" - 21 zëvendësime
+## pjesore pa "rë" - 24 zëvendësime
 ka ble jemi gri janë la ke mar jemi nda ka nga ke ngri
 ishit nxjer janë pa keni pi kemi pre janë pri kemi pru ka qa ka
 sha ishit shkri jemi tha je vra duke pi për të vra Qemë sha
+jena gdhi, kemi përfshi
 
 ## pjesore pa "ar" - 21 zëvendësime
 kemi besu ka dëgju kemi degju jam dhunu kam kerku Ishin kërku

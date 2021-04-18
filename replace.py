@@ -39,8 +39,8 @@ pp = kj + psht + pptj
 
 ## pjesore të shkurtra që mbarojnë me 'u(r(e))', 'e(r(e))', 'a(r(e))' 
 ## por që duhet të mbarojnë me 'rë' -- pru -> prurë
-pj_pa_re = "ble|fshi|gri|la|mar|nda|nga|ngri|nxi|nxjer|pa|pi|pre|" + \
-"pri|pru|qa|sha|shkri|shtri|shty|tha|vra"
+pj_pa_re = "ble|fshi|gdhi|gri|la|lëpi|mar|mbi|mpi|nda|nga|ngri|nxi|nxjer|" + \
+"pa|përfshi|përpi|pi|pre|pri|pru|qa|sha|shkri|shtri|shty|tështi|tha|vra"
 
 ## pjesore të shkurtra që mbarojnë me 'u' por që duhet të 
 ## mbarojnë me 'ar' -- shku -> shkuar
@@ -68,7 +68,7 @@ pa_e_fund = "(B|b)uk|(B|b)uj|" + \
 "(L|l)ir|(L|l)uft|" + \
 "mij|(M|m)ir|(M|m)oll|" + \
 "(N|n)gjyr|(N|n)ism|(N|n)j|" + \
-"(P|p)em|(P|p)un|" + \
+"(P|p)em|(P|p)remis|(P|p)un|" + \
 "(R|r)rug|" + \
 "(S|s)hum|(S|s)hqis|(S|s)htrenjt|" + \
 "(U|u)j|(U|u)n|(V|v)rim"
