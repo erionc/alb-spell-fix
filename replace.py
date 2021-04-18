@@ -64,9 +64,14 @@ pa_e_fund = "(B|b)uk|(B|b)uj|" + \
 "(D|d)it|(D|d)or|" + \
 "(G|g)un|(G|g)jell|" + \
 "(J|j)et|" + \
-"(H|h)apësir|(L|l)ir|(L|l)uft|mij|(M|m)ir|(M|m)oll|(N|n)gjyr|(N|n)j|" + \
-"(P|p)em|(P|p)un|(R|r)rug|(S|s)hum|(S|s)hqis|(U|u)j|(U|u)n|(V|v)rim|" + \
-"(S|s)htrenjt|(N|n)ism|d"
+"(H|h)apësir|" + \
+"(L|l)ir|(L|l)uft|" + \
+"mij|(M|m)ir|(M|m)oll|" + \
+"(N|n)gjyr|(N|n)ism|(N|n)j|" + \
+"(P|p)em|(P|p)un|" + \
+"(R|r)rug|" + \
+"(S|s)hum|(S|s)hqis|(S|s)htrenjt|" + \
+"(U|u)j|(U|u)n|(V|v)rim"
 
 ## temat që shkruhen me C/c në vend të Ç/ç-së nistore
 ## ruhen prapashtesat ndaj nuk pranohen tema me grupe alternative me |
