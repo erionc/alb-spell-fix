@@ -12,7 +12,7 @@ suf = "[a-zA-Z0-9çÇëË_-]{0,4}"
 para_te = "dua\s|do\s|duam\s|doni\s|duan\s|doja\s|doje\s|donte\s|donim\s|" + \
 "donit\s|donin\s|desha\s|deshe\s|deshte\s|deshëm\s|deshët\s|deshën\s|" + \
 "me\s|sapo\s|porsa\s|duhet\s|sikur\s|mund\s|kush\s|cil(i|a)\s|cil(ë|a)t\s|" + \
-"ku\sdo\s|kur\sdo\s"	 
+"ku\sdo\s|kur\sdo\s" 
 
 ## foljet ndihmëse kam/jam që paraprijnë pjesoret
 kj = "Kam\s|kam\s|Ke\s|ke\s|Ka\s|ka\s|Kemi\s|kemi\s|Keni\s|keni\s|" + \
@@ -60,18 +60,20 @@ pj_pa_er = "fy|gry|kry|kthy|ly|shqy|thy"
 fj_dial = "(D|d)u|(G|g)ru|(M|m)u|(T|t)hu"
 	
 ## fjalë që shkruhen pa ë fundore ose me ë të shkruar e - mir(e) -> mirë
-pa_e_fund = "(B|b)uk|(B|b)uj|" + \
+pa_e_fund = "(B|b)uk|(B|b)uj|(B|b)im|" + \
 "(D|d)it|(D|d)or|" + \
 "(G|g)un|(G|g)jell|" + \
 "(J|j)et|" + \
 "(H|h)apësir|" + \
 "(L|l)ir|(L|l)uft|" + \
+"(K|k)lim|"
 "mij|(M|m)ir|(M|m)oll|" + \
 "(N|n)gjyr|(N|n)ism|(N|n)j|" + \
 "(P|p)em|(P|p)remis|(P|p)un|" + \
 "(R|r)rug|" + \
-"(S|s)hum|(S|s)hqis|(S|s)htrenjt|" + \
-"(U|u)j|(U|u)n|(V|v)rim"
+"(S|s)fid|(S|s)hum|(S|s)hqis|(S|s)htrenjt|" + \
+"(U|u)j|(U|u)n|" + \
+"(V|v)iktim|(V|v)rim"
 
 ## temat që shkruhen me C/c në vend të Ç/ç-së nistore
 ## ruhen prapashtesat ndaj nuk pranohen tema me grupe alternative me |
