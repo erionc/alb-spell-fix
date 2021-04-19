@@ -68,7 +68,7 @@ pa_e_fund = "(B|b)uk|(B|b)uj|(B|b)im|" + \
 "(H|h)apësir|" + \
 "(L|l)ir|(L|l)uft|" + \
 "(K|k)lim|"
-"mij|(M|m)ir|(M|m)oll|" + \
+"mij|(M|m)ir|(M|m)oll|(M|m)uzik" + \
 "(N|n)gjyr|(N|n)ism|(N|n)j|" + \
 "(P|p)em|(P|p)remis|(P|p)un|" + \
 "(R|r)rug|" + \
