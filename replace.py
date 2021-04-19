@@ -68,14 +68,18 @@ pa_e_fund = "(B|b)uk|(B|b)uj|(B|b)im|" + \
 "(H|h)apësir|" + \
 "(L|l)ir|(L|l)uft|" + \
 "(K|k)lim|"
-"mij|(M|m)ir|(M|m)oll|(M|m)uzik" + \
+"(M|m)atric|mij|(M|m)ir|(M|m)oll|(M|m)uzik" + \
 "(N|n)gjyr|(N|n)ism|(N|n)j|" + \
-"(P|p)em|(P|p)remis|(P|p)un|" + \
+"(Pakic)(P|p)em|(P|p)remis|(P|p)un|" + \
 "(R|r)rug|" + \
-"(S|s)fid|(S|s)hum|(S|s)hqis|(S|s)htrenjt|" + \
+"(S|s)fid|(S|s)hum|(S|s)humic|(S|s)hqis|(S|s)htrenjt|" + \
 "(T|t)hik" + \
 "(U|u)j|(U|u)n|" + \
 "(V|v)iktim|(V|v)il|(V|v)rim"
+
+# (V|v) v = v.split('|')
+# initials = ['(' + string.ascii_uppercase[i] + '|' +  string.ascii_lowercase[i] + ')' for i in range(0, len(string.ascii_lowercase))]
+# v = "|".join(map((lambda x: '(V|v)' + x), v.split('|')))
 
 ## temat që shkruhen me C/c në vend të Ç/ç-së nistore
 ## ruhen prapashtesat ndaj nuk pranohen tema me grupe alternative me |
