@@ -62,18 +62,18 @@ fj_dial = "(D|d)u|(G|g)ru|(M|m)u|(T|t)hu"
 ## fjalë që shkruhen pa ë fundore ose me ë të shkruar e - mir(e) -> mirë
 pa_e_fund = "(B|b)uk|(B|b)uj|(B|b)im|" + \
 "(D|d)it|(D|d)or|" + \
-"(F|f)rik" + \
-"(G|g)un|(G|g)jell|(G|g)ril" + \
+"(F|f)rik|" + \
+"(G|g)un|(G|g)jell|(G|g)ril|" + \
 "(J|j)et|" + \
 "(H|h)apësir|" + \
 "(L|l)ir|(L|l)uft|" + \
-"(K|k)lim|"
-"(M|m)atric|mij|(M|m)ir|(M|m)oll|(M|m)uzik" + \
+"(K|k)lim|" + \
+"(M|m)atric|(M|m)ij|(M|m)ir|(M|m)oll|(M|m)uzik|" + \
 "(N|n)gjyr|(N|n)ism|(N|n)j|" + \
-"(Pakic)(P|p)em|(P|p)remis|(P|p)un|" + \
+"(P|p)akic|(P|p)em|(P|p)remis|(P|p)un|" + \
 "(R|r)rug|" + \
 "(S|s)fid|(S|s)hum|(S|s)humic|(S|s)hqis|(S|s)htrenjt|" + \
-"(T|t)hik" + \
+"(T|t)hik|" + \
 "(U|u)j|(U|u)n|" + \
 "(V|v)iktim|(V|v)il|(V|v)rim"
 
