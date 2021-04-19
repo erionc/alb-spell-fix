@@ -62,7 +62,8 @@ fj_dial = "(D|d)u|(G|g)ru|(M|m)u|(T|t)hu"
 ## fjalë që shkruhen pa ë fundore ose me ë të shkruar e - mir(e) -> mirë
 pa_e_fund = "(B|b)uk|(B|b)uj|(B|b)im|" + \
 "(D|d)it|(D|d)or|" + \
-"(G|g)un|(G|g)jell|" + \
+"(F|f)rik" + \
+"(G|g)un|(G|g)jell|(G|g)ril" + \
 "(J|j)et|" + \
 "(H|h)apësir|" + \
 "(L|l)ir|(L|l)uft|" + \
@@ -72,8 +73,9 @@ pa_e_fund = "(B|b)uk|(B|b)uj|(B|b)im|" + \
 "(P|p)em|(P|p)remis|(P|p)un|" + \
 "(R|r)rug|" + \
 "(S|s)fid|(S|s)hum|(S|s)hqis|(S|s)htrenjt|" + \
+"(T|t)hik" + \
 "(U|u)j|(U|u)n|" + \
-"(V|v)iktim|(V|v)rim"
+"(V|v)iktim|(V|v)il|(V|v)rim"
 
 ## temat që shkruhen me C/c në vend të Ç/ç-së nistore
 ## ruhen prapashtesat ndaj nuk pranohen tema me grupe alternative me |
