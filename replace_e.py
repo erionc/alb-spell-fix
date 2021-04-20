@@ -1,7 +1,7 @@
 
 import re, string
 
-## fjalë që shkruhen pa ë fundore ose me ë të shkruar e - mir(e) -> mirë
+## fjalë që shkruhen pa ë fundore ose me e në vend të saj - mir(e) -> mirë
 no_e_end = [
 ['rr'],											# a
 ['uk', 'uj', 'im'],								# b

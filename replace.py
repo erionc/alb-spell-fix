@@ -58,7 +58,8 @@ pj_pa_er = "fy|gry|kry|kthy|ly|shqy|thy"
 ## fjalë gegërisht që mbarojnë me 'u(e)' por që duhet të 
 ## mbarojnë me 'ua' -- du(e) -> dua, thu(e) -> thua
 fj_dial = "(D|d)u|(G|g)ru|(M|m)u|(T|t)hu"
-	
+
+'''	
 ## fjalë që shkruhen pa ë fundore ose me ë të shkruar e - mir(e) -> mirë
 pa_e_fund = "(A|a)rr|" 
 "(B|b)uk|(B|b)uj|(B|b)im|" + \
@@ -85,7 +86,7 @@ pa_e_fund = "(A|a)rr|"
 "(X|x)ix|" + \
 "(Y|y)n|" + \
 "(Z|z)an"
-
+'''
 upp = string.ascii_uppercase.replace('W', '')
 low = string.ascii_lowercase.replace('w', '')
 # (V|v) v = v.split('|')
@@ -180,7 +181,7 @@ def replace_c(text):
 	# t, c = re.subn(fr"(\b)(C)({pa_c_nis})(\b)", r"Ç\3", t) ; c_subs += c
 	
 	return (t, c_subs)
-	
+'''
 ## function for e -> ë substitutions
 def replace_e(text):
 	## initializations 
@@ -196,7 +197,7 @@ def replace_e(text):
 	# t, c = re.subn(r"(Mir|mir)(e?)( |\.)", r"\1ë\3", t) ; e_subs += c
 	
 	return (t, e_subs)
-
+'''
 ## function for replacing dialectic forms
 def replace_dial(text):
 	## initializations 
