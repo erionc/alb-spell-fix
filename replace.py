@@ -1,5 +1,5 @@
 
-import re
+import re, string
 
 ## 0-3 simbole shtesë në fund të fjalëve për të kapur prapashtesa 
 ## shquese dhe lakesat
@@ -60,26 +60,45 @@ pj_pa_er = "fy|gry|kry|kthy|ly|shqy|thy"
 fj_dial = "(D|d)u|(G|g)ru|(M|m)u|(T|t)hu"
 	
 ## fjalë që shkruhen pa ë fundore ose me ë të shkruar e - mir(e) -> mirë
-pa_e_fund = "(B|b)uk|(B|b)uj|(B|b)im|" + \
+pa_e_fund = "(A|a)rr|" 
+"(B|b)uk|(B|b)uj|(B|b)im|" + \
+"(C|c)ak" + \
 "(D|d)it|(D|d)or|" + \
+"(E|e)r" + \
 "(F|f)rik|" + \
 "(G|g)un|(G|g)jell|(G|g)ril|" + \
+"(H|h)apësir|(H|h)urm" + \
+"(I|i)j" + \
 "(J|j)et|" + \
-"(H|h)apësir|" + \
+"(K|k)lim|(K|k)ov" + \
 "(L|l)ir|(L|l)uft|" + \
-"(K|k)lim|" + \
 "(M|m)atric|(M|m)ij|(M|m)ir|(M|m)oll|(M|m)uzik|" + \
 "(N|n)gjyr|(N|n)ism|(N|n)j|" + \
+"(O|o)rt" + \
 "(P|p)akic|(P|p)em|(P|p)remis|(P|p)un|" + \
+"(Q|q)ukm" + \
 "(R|r)rug|" + \
 "(S|s)fid|(S|s)hum|(S|s)humic|(S|s)hqis|(S|s)htrenjt|" + \
 "(T|t)hik|" + \
 "(U|u)j|(U|u)n|" + \
-"(V|v)iktim|(V|v)il|(V|v)rim"
+"(V|v)iktim|(V|v)il|(V|v)rim|" + \
+"(X|x)ix|" + \
+"(Y|y)n|" + \
+"(Z|z)an"
 
+upp = string.ascii_uppercase.replace('W', '')
+low = string.ascii_lowercase.replace('w', '')
 # (V|v) v = v.split('|')
 # initials = ['(' + string.ascii_uppercase[i] + '|' +  string.ascii_lowercase[i] + ')' for i in range(0, len(string.ascii_lowercase))]
 # v = "|".join(map((lambda x: '(V|v)' + x), v.split('|')))
+
+# lll = []
+# ll = [['rr', 'am'], ['uk', 'im']]
+# initials = ['(A|a)', '(B|b)']
+# for i in range(0, 2):
+	# lll.extend(map((lambda x: initials[i] + x), ll[i]))
+# z = '|'.join(lll)
+# print(z)
 
 ## temat që shkruhen me C/c në vend të Ç/ç-së nistore
 ## ruhen prapashtesat ndaj nuk pranohen tema me grupe alternative me |
