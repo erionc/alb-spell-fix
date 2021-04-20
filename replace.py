@@ -59,34 +59,6 @@ pj_pa_er = "fy|gry|kry|kthy|ly|shqy|thy"
 ## mbarojnë me 'ua' -- du(e) -> dua, thu(e) -> thua
 fj_dial = "(D|d)u|(G|g)ru|(M|m)u|(T|t)hu"
 
-'''	
-## fjalë që shkruhen pa ë fundore ose me ë të shkruar e - mir(e) -> mirë
-pa_e_fund = "(A|a)rr|" 
-"(B|b)uk|(B|b)uj|(B|b)im|" + \
-"(C|c)ak" + \
-"(D|d)it|(D|d)or|" + \
-"(E|e)r" + \
-"(F|f)rik|" + \
-"(G|g)un|(G|g)jell|(G|g)ril|" + \
-"(H|h)apësir|(H|h)urm" + \
-"(I|i)j" + \
-"(J|j)et|" + \
-"(K|k)lim|(K|k)ov" + \
-"(L|l)ir|(L|l)uft|" + \
-"(M|m)atric|(M|m)ij|(M|m)ir|(M|m)oll|(M|m)uzik|" + \
-"(N|n)gjyr|(N|n)ism|(N|n)j|" + \
-"(O|o)rt" + \
-"(P|p)akic|(P|p)em|(P|p)remis|(P|p)un|" + \
-"(Q|q)ukm" + \
-"(R|r)rug|" + \
-"(S|s)fid|(S|s)hum|(S|s)humic|(S|s)hqis|(S|s)htrenjt|" + \
-"(T|t)hik|" + \
-"(U|u)j|(U|u)n|" + \
-"(V|v)iktim|(V|v)il|(V|v)rim|" + \
-"(X|x)ix|" + \
-"(Y|y)n|" + \
-"(Z|z)an"
-'''
 upp = string.ascii_uppercase.replace('W', '')
 low = string.ascii_lowercase.replace('w', '')
 # (V|v) v = v.split('|')
@@ -181,23 +153,7 @@ def replace_c(text):
 	# t, c = re.subn(fr"(\b)(C)({pa_c_nis})(\b)", r"Ç\3", t) ; c_subs += c
 	
 	return (t, c_subs)
-'''
-## function for e -> ë substitutions
-def replace_e(text):
-	## initializations 
-	t = text ; e_subs = 0
-	
-	## Është
-	t, c = re.subn(fr"(\b)(E|Ë)(sht)(e|ë)?(\b)", r"Ë\3ë", t) ; e_subs += c
-	## është
-	t, c = re.subn(fr"(\b)(e|ë)(sht)(e|ë)?(\b)", r"ë\3ë", t) ; e_subs += c
-	
-	## fjalë që shkruhen pa ë fundore ose me ë të shkruar e - mir(e) -> mirë
-	t, c = re.subn(fr"(\b)({pa_e_fund})(e)?(\b)", r"\2ë", t) ; e_subs += c
-	# t, c = re.subn(r"(Mir|mir)(e?)( |\.)", r"\1ë\3", t) ; e_subs += c
-	
-	return (t, e_subs)
-'''
+
 ## function for replacing dialectic forms
 def replace_dial(text):
 	## initializations 
