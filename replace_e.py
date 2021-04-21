@@ -31,6 +31,7 @@ no_e_end = [
 ['an'],											# z
 ]
 
+## preparing the e replacement regular expression
 no_e_exp = [] ; upp = string.ascii_uppercase.replace('W', '')
 low = string.ascii_lowercase.replace('w', '')
 initials = ['(' + upp[i] + '|' +  low[i] + ')' for i in range(0, 25)]
