@@ -4,6 +4,7 @@ import tkinter as tk
 from tkinter import *
 from replace import *
 from replace_e import *
+from replace_c import *
 
 ## main correction function that calls other substitution functions
 def correction(field_in, field_out, field_message):
