@@ -4,7 +4,7 @@ import re, string
 ## fjalë që shkruhen pa ë fundore ose me e në vend të saj - mir(e) -> mirë
 no_e_end = [
 ['rr'],											# a
-['uk', 'uj', 'im'],								# b
+['ubullim', 'uk', 'uj', 'im'],					# b
 ['ak'],											# c
 ['it', 'or'],									# d
 ['r'],											# e
@@ -14,7 +14,7 @@ no_e_end = [
 ['j'],											# i
 ['et'],											# j
 ['lim', 'ov'],									# k
-['ir', 'uft'],									# l
+['lim', 'ir', 'uft'],							# l
 ['atric', 'ij', 'ir', 'oll', 					# m
 'uzik'],
 ['gjyr', 'ism', 'j'],							# n
@@ -25,7 +25,7 @@ no_e_end = [
 ['fid', 'hum', 'humic', 'hqis', 'htrenjt'],		# s
 ['hik'],										# t
 ['j', 'n'],										# u
-['iktim', 'il', 'rim'],							# v
+['vezullim', 'iktim', 'il', 'rim'],				# v
 ['ix'],											# x
 ['n'],											# y
 ['an'],											# z
