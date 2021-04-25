@@ -3,31 +3,32 @@ import re, string
 
 ## fjalë që shkruhen pa ë fundore ose me e në vend të saj - mir(e) -> mirë
 no_e_end = [
-['rr'],													# a
-['ubullim', 'uk', 'uj', 'im'],							# b
-['ak'],													# c
-['it', 'or', 'rejt'],									# d
-['r'],													# e
-['rik'],												# f
-['un', 'jell', 'ril'],									# g
-['apësir', 'urm'],										# h
-['j'],													# i
-['et'],													# j
-['lim', 'ov'],											# k
-['lim', 'ir', 'uft'],									# l
-['atric', 'ij', 'ir', 'oll', 'uzik'], 					# m
-['gjyr', 'ism', 'j'],									# n
-['rt'],													# o
-['adrejt', 'akic', 'em', 'remis', 'un'],				# p
-['ukm'],												# q
-['rug'],												# r
-['fid', 'hpejt', 'hum', 'humic', 'hqis', 'htrenjt'], 	# s
-['hik'],												# t
-['j', 'n'],												# u
-['vezullim', 'iktim', 'il', 'rim'],						# v
-['ix'],													# x
-['n'],													# y
-['an', 'hdrejt'],										# z
+['rr'],															# a
+['ubullim', 'uk', 'uj', 'im', 'ritm'],							# b
+['ak'],															# c
+['epozit', 'ispozit', 'it', 'or', 'rejt', 'rit'],				# d
+['r', 'ekspedit', 'kspozit'],									# e
+['rik'],														# f
+['un', 'jell', 'ril'],											# g
+['apësir', 'urm'],												# h
+['j'],															# i
+['et'],															# j
+['lim', 'ov'],													# k
+['lim', 'ir', 'uft'],											# l
+['atric', 'ij', 'ir', 'oll', 'uzik'], 							# m
+['gjyr', 'ism', 'j'],											# n
+['rt', 'pozit'],												# o
+['adrejt', 'akic', 'em', 'ozit', 'remis', 'un'],				# p
+['ukm'],														# q
+['rug'],														# r
+['fid', 'hpejt', 'hum', 'humic', 'hqis', 'htrenjt', 			# s
+'it'],
+['hik'],														# t
+['j', 'n'],														# u
+['vezullim', 'iktim', 'il', 'rim'],								# v
+['ix'],															# x
+['n'],															# y
+['an', 'hdrejt'],												# z
 ]
 
 ## preparing the e replacement regular expression
