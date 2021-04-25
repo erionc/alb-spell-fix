@@ -29,13 +29,13 @@ kj = "Kam\s|kam\s|Ke\s|ke\s|Ka\s|ka\s|Kemi\s|kemi\s|Keni\s|keni\s|" + \
 	 "Qenë\s|qenë\s|"
 
 ## format e pashtjelluara që paraprijnë pjesoret
-psht = "për\stë\s|duke\s|pa\s|"
+pasht = "për\stë\s|duke\s|pa\s|"
 
 ## të tjera forma që qëndrojnë para pjesores 
 pptj = "me\stë"
 
 ## forma që qëndrojnë para pjesores
-pp = kj + psht + pptj
+pp = kj + pasht + pptj
 
 ## pjesore të shkurtra që mbarojnë me 'u(r(e))', 'e(r(e))', 'a(r(e))' 
 ## por që duhet të mbarojnë me 'rë' -- pru -> prurë
