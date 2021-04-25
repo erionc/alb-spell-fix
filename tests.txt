@@ -1,5 +1,5 @@
 
-## Testime të zëvendësimeve. Totali: 213 zëvendësime
+## Testime të zëvendësimeve. Totali: 222 zëvendësime
 
 ## zëvendësime paraprake - 21 zëvendësime
 kena pa jena shtri do te, doja te, deshem te, donin te
@@ -10,7 +10,7 @@ patëm punu Patët kthy qem vra Qene shty, per
 me te, sapo te, porsa te, mund te sikur te kush te cili te
 cila te, cilet te, ku do te, kur do te
 
-## Ç/ç - 28 zëvendësime
+## Ç/ç - 29 zëvendësime
 ckemi c'keni C'ke çke ckeni c'ka cka c'kanë cfarë Cfarë cfare
 Cfare c'kam ckam C'kam Ckam çkam cke cfare Cfare çkemi çkeni
 qikë Cikë Cupë Cupe cupë callmë Cati
@@ -20,7 +20,7 @@ cafke cafkat Cafkë caj Caj cajnik camçakez cibuk Cift cifte
 cimke cimkë cmim cmimet co coj Coj Corap corape cudi çun cun
 cmendur Cmenduri cakmak Carcaf carçaf cizme
 
-## Ë/ë - 42 zëvendësime
+## Ë/ë - 48 zëvendësime
 Un, esht. nje nj ështe? esht Eshte Eshtë eshtë Une buk une
 un Un. Une. unë uj; Uj. uje Uje uje	ujë Rrug rruge Kan kane 
 dit Dite jet shtrenjt dor Vrim vrime Ngjyr Pem Lufte
@@ -44,7 +44,7 @@ ka ardh je hap kemi kap Kisha mat je mbyt jemi ngrit kishte shit je ul
 kanë vulos janë zbardh jeni zbraps janë zmbraps ke zhyt
 ishe mërzit janë merzit duke thith pata kap qe mbyt
 
-## pjesore pa "er" - 16 zëvendësime
+## pjesore pa "er" - 17 zëvendësime
 ke gry ka thy Kemi ly për të kry janë shqy kanë kry
 pa ly isha thy jena thy kena kry qemë ly pati thy
 qe fy ka shly

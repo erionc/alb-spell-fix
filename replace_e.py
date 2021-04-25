@@ -7,7 +7,7 @@ no_e_end = [
 ['ubullim', 'uk', 'uj', 'im', 'ritm'],							# b
 ['ak'],															# c
 ['epozit', 'ispozit', 'it', 'or', 'rejt', 'rit'],				# d
-['r', 'ekspedit', 'kspozit'],									# e
+['r', 'kspedit', 'kspozit'],									# e
 ['rik'],														# f
 ['un', 'jell', 'ril'],											# g
 ['apësir', 'urm'],												# h
