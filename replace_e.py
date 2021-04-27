@@ -15,7 +15,7 @@ no_e_end = [
 ['et'],															# j
 ['lim', 'ov'],													# k
 ['lim', 'ir', 'uft'],											# l
-['atric', 'ij', 'ir', 'oll', 'uzik'], 							# m
+['atric', 'ij', 'ir', 'iz', 'oll', 'uzik'], 					# m
 ['gjyr', 'ism', 'j'],											# n
 ['rt', 'pozit'],												# o
 ['adrejt', 'akic', 'em', 'ozit', 'remis', 'rik', 'un'],			# p
