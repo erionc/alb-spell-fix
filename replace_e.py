@@ -6,10 +6,11 @@ no_e_end = [
 ['rr'],															# a
 ['ibliotek', 'im', 'rek', 'ritm', 'ubullim', 'uk', 'uj'],		# b
 ['ak'],															# c
-['epozit', 'ispozit', 'it', 'or', 'rejt', 'rit'],				# d
+['at', 'eg', 'epozit', 'isfat', 'ispozit', 'it', 'or', 'rejt', 			# d
+'rit'],
 ['r', 'kspedit', 'kspozit'],									# e
 ['rik'],														# f
-['un', 'jell', 'ril'],											# g
+['jat', 'jell', 'ril', 'un',],									# g
 ['apësir', 'ipotek', 'urm'],									# h
 ['j'],															# i
 ['et'],															# j
@@ -21,8 +22,8 @@ no_e_end = [
 ['adrejt', 'akic', 'em', 'ozit', 'remis', 'rik', 'un'],			# p
 ['ukm'],														# q
 ['rug'],														# r
-['fid', 'hpejt', 'hpell', 'hum', 'humic', 'hqis', 'htrenjt', 	# s
-'it'],
+['fid', 'heg', 'hpejt', 'hpell', 'hum', 'humic', 'hqis', 		# s
+'htrenjt', 'it'],
 ['hik'],														# t
 ['j', 'n'],														# u
 ['vezullim', 'iktim', 'il', 'rim'],								# v
