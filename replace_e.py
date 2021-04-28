@@ -4,7 +4,7 @@ import re, string
 ## fjalë që shkruhen pa ë fundore ose me e në vend të saj - mir(e) -> mirë
 no_e_end = [
 ['rr'],															# a
-['ubullim', 'uk', 'uj', 'im', 'ritm'],							# b
+['ubullim', 'uk', 'uj', 'im', 'rek', 'ritm'],					# b
 ['ak'],															# c
 ['epozit', 'ispozit', 'it', 'or', 'rejt', 'rit'],				# d
 ['r', 'kspedit', 'kspozit'],									# e
