@@ -8,7 +8,7 @@ suf = "[a-zA-Z0-9çÇëË_-]{0,4}"
 ## temat që shkruhen me C/c në vend të Ç/ç-së nistore
 ## ruhen prapashtesat ndaj nuk pranohen tema me grupe alternative me |
 ## cafk, caj, cajnik, cibuk, cift, cimk, cmim, co, corap, cudi, cun, cmendur 
-pa_c_nis = "afk|aj|ajnik|akmak|allm|arcaf|arçaf|ati|ibuk|ift|imk|" + \
+pa_c_nis = "afk|aj|ajnik|akmak|allm|arcaf|arçaf|art|ati|ibuk|ift|imk|" + \
 "izme|mim|o|orap|udi|un|mendur"
 
 ## function for c - ç substitutions
