@@ -21,7 +21,7 @@ no_e_end = [
 ['adrejt', 'akic', 'em', 'ozit', 'remis', 'rik', 'un'],			# p
 ['ukm'],														# q
 ['rug'],														# r
-['fid', 'hpejt', 'hum', 'humic', 'hqis', 'htrenjt', 			# s
+['fid', 'hpejt', 'hpell', 'hum', 'humic', 'hqis', 'htrenjt', 	# s
 'it'],
 ['hik'],														# t
 ['j', 'n'],														# u
