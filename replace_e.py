@@ -3,33 +3,56 @@ import re, string
 
 ## fjalë që shkruhen pa ë fundore ose me e në vend të saj - mir(e) -> mirë
 no_e_end = [
-['rr'],															# a
-['ibliotek', 'im', 'rek', 'ritm', 'ubullim', 'uk', 'uj'],		# b
-['ak'],															# c
-['at', 'eg', 'epozit', 'isfat', 'ispozit', 'it', 'or', 'rejt', 			# d
-'rit'],
-['r', 'kspedit', 'kspozit'],									# e
-['rik'],														# f
-['jat', 'jell', 'ril', 'un',],									# g
-['apësir', 'ipotek', 'urm'],									# h
-['j'],															# i
-['et'],															# j
-['lim', 'ov'],													# k
-['lim', 'ir', 'uft'],											# l
-['atric', 'ij', 'ir', 'iz', 'oll', 'uzik'], 					# m
-['gjyr', 'ism', 'j'],											# n
-['rt', 'pozit'],												# o
-['adrejt', 'akic', 'em', 'ozit', 'remis', 'rik', 'un'],			# p
-['ukm'],														# q
-['rug'],														# r
-['fid', 'heg', 'hpejt', 'hpell', 'hum', 'humic', 'hqis', 		# s
-'htrenjt', 'it'],
-['hik'],														# t
-['j', 'n'],														# u
-['vezullim', 'iktim', 'il', 'rim'],								# v
-['ix'],															# x
-['n'],															# y
-['an', 'hdrejt'],												# z
+# a
+['rr'],
+# b															
+['ibliotek', 'im', 'rek', 'ritm', 'ubullim', 'uk', 'uj'],
+# c		
+['ip'],
+# d															
+['at', 'eg', 'epozit', 'isfat', 'ispozit', 'it', 'or', 'rejt', 'rit'],
+# e
+['r', 'kspedit', 'kspozit'],
+# f								
+['rik'],
+# g													
+['jat', 'jell', 'ril', 'un',],
+# h
+['apësir', 'ipotek', 'urm'],
+# i									
+['j'],	
+# j
+['et'],	
+# k																										
+['lim', 'lithm', 'ov'],	
+# l								
+['lim', 'ir', 'uft'],
+# m											
+['atric', 'ij', 'ir', 'iz', 'oll', 'uzik'], 
+# n					
+['gjyr', 'ism', 'j'],	
+# o							
+['rt', 'pozit'],		
+# p								
+['adrejt', 'akic', 'em', 'ozit', 'remis', 'rik', 'un'],
+# q		
+['ukm'],		
+# r											
+['rug'],
+# s												
+['fid', 'heg', 'hpejt', 'hpell', 'hum', 'humic', 'hqis', 'htrenjt', 'it'],
+# t
+['hik'],		
+# u											
+['j', 'n'],
+# v												
+['vezullim', 'iktim', 'il', 'rim'],
+# x								
+['ix'],	
+# y														
+['n'],	
+# z										
+['an', 'hdrejt'],												
 ]
 
 ## preparing the e replacement regular expression
