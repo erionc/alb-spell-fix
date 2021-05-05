@@ -10,7 +10,7 @@ no_e_end = [
 # c		
 ['ip'],
 # d															
-['at', 'eg', 'epozit', 'isfat', 'ispozit', 'it', 'or', 'rejt', 'rit'],
+['ardh', 'at', 'eg', 'epozit', 'isfat', 'ispozit', 'it', 'or', 'rejt', 'rit'],
 # e
 ['r', 'kspedit', 'kspozit'],
 # f								
@@ -34,7 +34,7 @@ no_e_end = [
 # o							
 ['rt', 'pozit'],		
 # p								
-['adrejt', 'ag', 'akic', 'em', 'ozit', 'remis', 'rik', 'un'],
+['adrejt', 'ag', 'akic', 'em', 'jeshk', 'ozit', 'remis', 'rik', 'un'],
 # q		
 ['ukm'],		
 # r											
