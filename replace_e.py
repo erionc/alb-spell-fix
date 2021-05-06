@@ -22,7 +22,7 @@ no_e_end = [
 # i									
 ['j'],	
 # j
-['et'],	
+['av', 'et'],	
 # k																										
 ['lim', 'lithm', 'ov'],	
 # l								
