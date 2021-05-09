@@ -52,7 +52,7 @@ no_e_end = [
 # y														
 ['n'],	
 # z										
-['an', 'hdrejt'],												
+['an', 'hdrejt', 'orr'],												
 ]
 
 ## preparing the e replacement regular expression
