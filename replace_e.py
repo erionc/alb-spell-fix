@@ -6,7 +6,7 @@ no_e_end = [
 # a
 ['rk', 'rn', 'rr'],
 # b															
-['arn', 'ibliotek', 'im', 'rek', 'ritm', 'ubullim', 'uk', 'uj'],
+['alt', 'arn', 'ibliotek', 'im', 'rek', 'ritm', 'ubullim', 'uk', 'uj'],
 # c		
 ['ip'],
 # d															
@@ -30,7 +30,7 @@ no_e_end = [
 # m											
 ['ark', 'atric', 'ij', 'ir', 'iz', 'oll', 'uzik'], 
 # n					
-['gjyr', 'ism', 'j'],	
+['aft', 'gjyr', 'ism', 'j'],	
 # o							
 ['rt', 'pozit'],		
 # p								
