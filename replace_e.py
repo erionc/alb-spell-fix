@@ -34,7 +34,7 @@ no_e_end = [
 # o							
 ['rt', 'pozit'],		
 # p								
-['adrejt', 'ag', 'akic', 'em', 'jeshk', 'ozit', 'remis', 'rik', 'un'],
+['adrejt', 'ag', 'akic', 'em', 'jeshk', 'ozit', 'remis', 'rik', 'un', 'ushk'],
 # q		
 ['ukm'],		
 # r											
@@ -46,9 +46,9 @@ no_e_end = [
 # u											
 ['j', 'n'],
 # v												
-['vezullim', 'iktim', 'il', 'rim'],
+['al', 'vezullim', 'iktim', 'il', 'rim'],
 # x								
-['ix'],	
+['ix', 'hung'],	
 # y														
 ['n'],	
 # z										
