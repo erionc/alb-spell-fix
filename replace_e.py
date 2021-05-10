@@ -10,9 +10,10 @@ no_e_end = [
 # c		
 ['ip'],
 # d															
-['ardh', 'at', 'eg', 'epozit', 'isfat', 'ispozit', 'it', 'or', 'rejt', 'rit'],
+['ardh', 'at', 'eg', 'epozit', 'ig', 'isfat', 'ispozit', 'it', 'or', 'rejt', 
+'rit'],
 # e
-['r', 'kspedit', 'kspozit'],
+['kspedit', 'kspozit', 'n', 'r'],
 # f								
 ['am', 'rik'],
 # g													
