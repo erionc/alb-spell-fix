@@ -15,7 +15,7 @@ no_e_end = [
 # e
 ['kspedit', 'kspozit', 'n', 'r'],
 # f								
-['am', 'rik'],
+['am', 'rik', 'urk'],
 # g													
 ['jat', 'jell', 'ril', 'un',],
 # h
@@ -25,7 +25,7 @@ no_e_end = [
 # j
 ['av', 'et'],	
 # k																										
-['lim', 'lithm', 'ov'],	
+['afk', 'lim', 'lithm', 'ov'],	
 # l								
 ['lim', 'ir', 'uft'],
 # m											
