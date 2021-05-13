@@ -25,7 +25,7 @@ no_e_end = [
 # j
 ['av', 'et'],	
 # k																										
-['afk', 'lim', 'lithm', 'ov'],	
+['afk', 'lim', 'lithm', 'ov', 'urv'],	
 # l								
 ['lim', 'ir', 'uft'],
 # m											
