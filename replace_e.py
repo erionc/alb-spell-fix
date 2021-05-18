@@ -6,7 +6,7 @@ no_e_end = [
 # a
 ['rk', 'rn', 'rr'],
 # b															
-['alt', 'arn', 'ibliotek', 'im', 'rek', 'ritm', 'ubullim', 'uk', 'uj'],
+['alt', 'arn', 'ibliotek', 'im', 'oj', 'rek', 'ritm', 'ubullim', 'uk', 'uj'],
 # c		
 ['ip'],
 # d															
