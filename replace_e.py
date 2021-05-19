@@ -29,7 +29,7 @@ no_e_end = [
 # l								
 ['lim', 'ir', 'op', 'uft'],
 # m											
-['ark', 'atric', 'ij', 'ir', 'iz', 'oll', 'uzik'], 
+['akin', 'ark', 'atric', 'ij', 'ir', 'iz', 'oll', 'uzik'], 
 # n					
 ['aft', 'ap', 'gjyr', 'ism', 'j'],	
 # o							
