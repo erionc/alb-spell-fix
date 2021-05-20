@@ -25,7 +25,7 @@ no_e_end = [
 # j
 ['av', 'et'],	
 # k																										
-['afk', 'lim', 'lithm', 'ov', 'urv'],	
+['afk', 'al', 'lim', 'lithm', 'ov', 'urv'],	
 # l								
 ['lim', 'ir', 'op', 'uft'],
 # m											
@@ -43,7 +43,7 @@ no_e_end = [
 # s												
 ['fid', 'heg', 'hpejt', 'hpell', 'hum', 'humic', 'hqis', 'htrenjt', 'it'],
 # t
-['ap', 'arg', 'hik'],		
+['han', 'ap', 'arg', 'hik'],		
 # u											
 ['j', 'n'],
 # v												
