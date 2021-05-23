@@ -65,6 +65,70 @@ for i in range(0, 25):
 	no_e_exp.extend(map((lambda x: initials[i] + x), no_e_end[i]))
 no_e_regex = '|'.join(no_e_exp)
 
+## fjalë që shkruhen me e në vend të ë-së fundore 
+## maje -> majë | duhet të zëvendësohen vetëm kur shfaqen
+## me e në fund, pra jo të ngatërohet me maj (muaji)
+with_e_end = [
+# a
+[],
+# b															
+[],
+# c		
+[],
+# d															
+[],
+# e
+[],
+# f								
+[],
+# g													
+[],
+# h
+[],
+# i									
+[],	
+# j
+[],	
+# k																										
+[],	
+# l								
+[],
+# m											
+['aj', ], 
+# n					
+[],	
+# o							
+[],		
+# p								
+[],
+# q		
+[],		
+# r											
+[],
+# s												
+[],
+# t
+[],		
+# u											
+[],
+# v												
+[],
+# x								
+[],	
+# y														
+[],	
+# z										
+[],												
+]
+
+## preparing the e replacement regular expression
+with_e_exp = [] ; upp = string.ascii_uppercase.replace('W', '')
+low = string.ascii_lowercase.replace('w', '')
+initials = ['(' + upp[i] + '|' +  low[i] + ')' for i in range(0, 25)]
+for i in range(0, 25):
+	with_e_exp.extend(map((lambda x: initials[i] + x), with_e_end[i]))
+with_e_regex = '|'.join(with_e_exp)
+
 ## function for e -> ë substitutions
 def replace_e(text):
 	## initializations 
@@ -77,6 +141,10 @@ def replace_e(text):
 	
 	## fjalë që shkruhen pa ë fundore ose me ë të shkruar e - mir(e) -> mirë
 	t, c = re.subn(fr"(\b)({no_e_regex})(e)?(\b)", r"\2ë", t) ; e_subs += c
+	# t, c = re.subn(r"(Mir|mir)(e?)( |\.)", r"\1ë\3", t) ; e_subs += c
+
+	## fjalë që shkruhen me ë fundore të shkruar e - maje -> majë
+	t, c = re.subn(fr"(\b)({with_e_regex})(e)(\b)", r"\2ë", t) ; e_subs += c
 	# t, c = re.subn(r"(Mir|mir)(e?)( |\.)", r"\1ë\3", t) ; e_subs += c
 	
 	return (t, e_subs)

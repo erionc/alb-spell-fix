@@ -20,7 +20,7 @@ cafke cafkat Cafkë caj Caj cajnik camçakez cibuk Cift cifte
 cimke cimkë cmim cmimet co coj Coj Corap corape cudi çun cun
 cmendur Cmenduri cakmak Carcaf carçaf cizme
 
-## Ë/ë - 96 zëvendësime
+## pa ë fundore ose me e në vend të saj - 96 zëvendësime
 Un, esht. nje nj ështe? esht Eshte Eshtë eshtë Une buk une
 un Un. Une. unë uj; Uj. uje Uje uje	ujë Rrug rruge Kan kane 
 dit Dite jet shtrenjt dor Vrim vrime Ngjyr Pem Lufte
@@ -31,6 +31,9 @@ page Moll pjeshke dardhe Jet arn barne fame arke tap
 zorre val pushke Naft Balte dig En Furke kafke Kurv
 lope grop Nape boj Gaf Gjem gjëm Makin ndjese than Kale
 humnere humbësir Humbetir Pështym peshtyme gjere 
+
+## me ë fundore të shkruar e - 1 zëvendësime
+maje
 
 ## pjesore pa "rë" - 24 zëvendësime
 ka ble jemi gri janë la ke mar jemi nda ka nga ke ngri
