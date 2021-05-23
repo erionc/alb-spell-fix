@@ -50,7 +50,7 @@ if __name__ == "__main__":
 	## create a GUI window with some specifications
 	root = Tk()
 	root.configure(background = "red")		# background color of GUI
-	root.geometry("900x680")				# size of GUI WidthxHeight
+	root.geometry("1000x716")				# size of GUI WidthxHeight
 	root.title("REDAKTOR TEKSTI PËR GJUHËN SHQIPE")		# main title of window
 	
 	## create the label for the input text
@@ -74,7 +74,7 @@ if __name__ == "__main__":
 	## padx and pady to set padding in x-axis and y-axis
 	text1_field.grid(row = 1, column = 1, padx = 7, pady = 7)
 	text2_field.grid(row = 17, column = 1, padx = 7, pady = 7)
-	text3_field.place(x=693, y=637) 
+	text3_field.place(x=756, y=668) 
 	
 	## correction button attached with correction function
 	correct_button = Button(root, text = "Redakto", bg = "cyan", fg = "black", 
