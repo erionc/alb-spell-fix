@@ -5,7 +5,7 @@ import re, string
 ## shquese dhe lakesat
 suf = "[a-zA-Z0-9çÇëË_-]{0,4}"
 
-## global variable that matches the ending of a word - (\b) is better
+## ndryshore globale për funding e fjalëve - më mirë (\b) 
 # we = " |\t|\n|\.|\?|:|;|,|!"
 
 ## fjalë që i paraprinë të-së - do të, dua të, desha të 
@@ -67,7 +67,7 @@ tem_en = "file"
 
 ## funksion për zëvendësime nga të cilat varen zëvendësimet e tjera
 def replace_dep(text):
-	## initializations 
+	## vlerënisje 
 	t = text ; c_subs = 0
 	
 	## deshe(m|t|n) -> deshë(m|t|n)
@@ -90,14 +90,14 @@ def replace_dep(text):
 	## per -> për (nuk ka per në fgjssh)
 	t, c = re.subn(fr"(\b)per(\b)", r"për", t) ; c_subs += c
 	
-	## do te -> do të
+	## do te -> do të ; dua te -> dua të 
 	t, c = re.subn(fr"(\b)({para_te})(te)(\b)", r"\2të", t) ; c_subs += c
 	
 	## other e -> ë replacements here
 	
 	return (t, c_subs)
 
-## function for replacing dialectic forms
+## funksion për zëvendësimin e formave dialektore
 def replace_dial(text):
 	## initializations 
 	t = text ; dial_subs = 0
@@ -119,14 +119,14 @@ def replace_dial(text):
 
 	return (t, dial_subs)
 	
-## function for english words substitutions
+## funksion për zëvendësimin e fjalëve angleze - todo
 def replace_eng(text):
 	## initializations 
 	t = text ; eng_subs = 0
 	
 	return (t, eng_subs)
 	
-## function for word substitutions
+## funksion për zëvendësime fjalësh të plota - todo
 def replace_words(text):
 	## initializations 
 	t = text ; word_subs = 0

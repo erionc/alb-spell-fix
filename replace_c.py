@@ -11,9 +11,9 @@ suf = "[a-zA-Z0-9çÇëË_-]{0,4}"
 pa_c_nis = "afk|aj|ajnik|akmak|allm|arcaf|arçaf|art|ati|ibuk|ift|imk|" + \
 "izme|mim|o|orap|udi|un|mendur"
 
-## function for c - ç substitutions
+## funksion për zëvendësime c -> ç 
 def replace_c(text):
-	## initializations 
+	## vlerënisje
 	t = text ; c_subs = 0
 	
 	## ç'kemi, ç'ke, ç'keni, 
