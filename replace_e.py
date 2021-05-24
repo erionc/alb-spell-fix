@@ -48,7 +48,7 @@ no_e_end = [
 # u											
 ['j', 'n'],
 # v												
-['al', 'vezullim', 'iktim', 'il', 'rim'],
+['al', 'vezullim', 'iktim', 'il', 'jeg', 'rim'],
 # x								
 ['ix', 'hung'],	
 # y														
