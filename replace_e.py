@@ -57,7 +57,7 @@ no_e_end = [
 ['an', 'hdrejt', 'orr'],												
 ]
 
-## preparing the e replacement regular expression
+## pregatitja e shprehjes së rregullt për korrigjimin e ë-së fundore
 no_e_exp = [] ; upp = string.ascii_uppercase.replace('W', '')
 low = string.ascii_lowercase.replace('w', '')
 initials = ['(' + upp[i] + '|' +  low[i] + ')' for i in range(0, 25)]
@@ -121,7 +121,8 @@ with_e_end = [
 [],												
 ]
 
-## preparing the e replacement regular expression
+## pregatitja e shprehjes së rregullt për zëvendësimin 
+## e e-së fundore me ë
 with_e_exp = [] ; upp = string.ascii_uppercase.replace('W', '')
 low = string.ascii_lowercase.replace('w', '')
 initials = ['(' + upp[i] + '|' +  low[i] + ')' for i in range(0, 25)]
@@ -129,9 +130,9 @@ for i in range(0, 25):
 	with_e_exp.extend(map((lambda x: initials[i] + x), with_e_end[i]))
 with_e_regex = '|'.join(with_e_exp)
 
-## function for e -> ë substitutions
+## funksion për zëvendësime e -> ë 
 def replace_e(text):
-	## initializations 
+	## velerënisje
 	t = text ; e_subs = 0
 	
 	## Është
