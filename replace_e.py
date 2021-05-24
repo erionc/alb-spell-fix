@@ -57,7 +57,7 @@ no_e_end = [
 ['an', 'hdrejt', 'orr'],												
 ]
 
-## pregatitja e shprehjes së rregullt për korrigjimin e ë-së fundore
+## përgatitja e shprehjes së rregullt për korrigjimin e ë-së fundore
 no_e_exp = [] ; upp = string.ascii_uppercase.replace('W', '')
 low = string.ascii_lowercase.replace('w', '')
 initials = ['(' + upp[i] + '|' +  low[i] + ')' for i in range(0, 25)]
@@ -121,7 +121,7 @@ with_e_end = [
 [],												
 ]
 
-## pregatitja e shprehjes së rregullt për zëvendësimin 
+## përgatitja e shprehjes së rregullt për zëvendësimin 
 ## e e-së fundore me ë
 with_e_exp = [] ; upp = string.ascii_uppercase.replace('W', '')
 low = string.ascii_lowercase.replace('w', '')
