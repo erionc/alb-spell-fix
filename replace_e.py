@@ -40,15 +40,16 @@ no_e_end = [
 # q		
 ['ukm'],		
 # r											
-['(e|ë)r', 'imt', 'rug', ],
+['(e|ë)r', 'imt', 'rug', 'rugin' ],
 # s												
-['fid', 'heg', 'hpejt', 'hpell', 'hum', 'humic', 'hqis', 'htrenjt', 'it'],
+['fid', 'heg', 'hpejt', 'hpell', 'hum', 'humic', 'hqis', 'htrenjt', 'it', 
+'ob', 'tuf',],
 # t
 ['han', 'ap', 'arg', 'hik'],		
 # u											
 ['j', 'n'],
 # v												
-['al', 'vezullim', 'iktim', 'il', 'jeg', 'rim'],
+['al', 'et(e|ë)tim', 'vezullim', 'iktim', 'il', 'jeg', 'rim'],
 # x								
 ['ix', 'hung'],	
 # y														
@@ -102,7 +103,7 @@ with_e_end = [
 # p								
 [],
 # q		
-[],		
+['ep'],		
 # r											
 [],
 # s												
