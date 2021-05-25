@@ -5,7 +5,7 @@ import re, string
 ## shquese dhe lakesat
 suf = "[a-zA-Z0-9çÇëË_-]{0,4}"
 
-## ndryshore globale për funding e fjalëve - më mirë (\b) 
+## ndryshore globale për fundin e fjalëve - më mirë (\b) 
 # we = " |\t|\n|\.|\?|:|;|,|!"
 
 ## fjalë që i paraprinë të-së - do të, dua të, desha të 
