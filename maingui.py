@@ -6,28 +6,28 @@ from replace import *
 from replace_e import *
 from replace_c import *
 
-## main correction function that calls other substitution functions
+## funksioni kryesor i korrigjimeve që thërret funksionet e tjera
 def correction(field_in, field_out, field_message):
-	# get content from the first box
+	# merret përmbajtja e kutizës së parë
 	input_text = field_in.get("1.0", END) 
 	t = input_text ; total_sub = 0
 	
-	## call dependency substitutions
+	## thirren zëvendësimet që krijojnë varësi
 	t, c = replace_dep(t) ; total_sub += c
 		
-	## call e substitutions
+	## thirren zëvendësimet e e-së
 	t, c = replace_e(t) ; total_sub += c
 	
-	## call c substitutions 
+	## thirren zëvendësimet e c-së
 	t, c = replace_c(t) ; total_sub += c
 	
-	## call dialect substitutions
+	## thirren zëvendësimet dialektore
 	t, c = replace_dial(t) ; total_sub += c
 	
-	## call word substitutions 
+	## thirren zëvendësime e fjalëve
 	t, c = replace_words(t) ; total_sub += c
 	
-	## call english word substitutions
+	## thirren zëvendësime e fjalëve angleze
 	t, c = replace_eng(t) ; total_sub += c
 
 	output_text = t
