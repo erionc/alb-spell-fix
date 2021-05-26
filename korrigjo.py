@@ -1,14 +1,14 @@
 
 import re, string
 
-## 0-3 simbole shtesë në fund të fjalëve për të kapur prapashtesa 
+## 0-4 simbole shtesë në fund të fjalëve për prapashtesat 
 ## shquese dhe lakesat
 suf = "[a-zA-Z0-9çÇëË_-]{0,4}"
 
 ## ndryshore globale për fundin e fjalëve - më mirë (\b) 
 # we = " |\t|\n|\.|\?|:|;|,|!"
 
-## fjalë që i paraprinë të-së - do të, dua të, desha të 
+## fjalë që i paraprinë të-së -- do të, dua të, desha të 
 para_te = "dua\s|do\s|duam\s|doni\s|duan\s|doja\s|doje\s|donte\s|donim\s|" + \
 "donit\s|donin\s|desha\s|deshe\s|deshte\s|deshëm\s|deshët\s|deshën\s|" + \
 "me\s|sapo\s|porsa\s|duhet\s|sikur\s|mund\s|kush\s|cil(i|a)\s|cil(ë|a)t\s|" + \
@@ -55,7 +55,7 @@ pj_pa_ur = "ardh|hap|kap|mat|mbyt|m(e|ë)rzit|ngrit|shit|thith|ul|" + \
 ## mbarojnë me 'yer' -- thy -> thyer		   
 pj_pa_er = "fy|gry|kry|kthy|ly|shly|shqy|thy"
 
-## fjalë gegërisht që mbarojnë me 'u(e)' por që duhet të 
+## fjalë dialektore që mbarojnë me 'u(e)' por që duhet të 
 ## mbarojnë me 'ua' -- du(e) -> dua, thu(e) -> thua
 fj_dial = "(D|d)u|(G|g)ru|(M|m)u|(T|t)hu"
 
@@ -63,7 +63,7 @@ fj_dial = "(D|d)u|(G|g)ru|(M|m)u|(T|t)hu"
 tem_sq = ""
 
 ## tema fjalësh angleze që duhen përkthyer
-tem_en = "file"
+tem_en = ""
 
 ## funksion për zëvendësime nga të cilat varen zëvendësimet e tjera
 def replace_dep(text):
@@ -93,40 +93,40 @@ def replace_dep(text):
 	## do te -> do të ; dua te -> dua të 
 	t, c = re.subn(fr"(\b)({para_te})(te)(\b)", r"\2të", t) ; c_subs += c
 	
-	## other e -> ë replacements here
+	## zëvendësime të tjera e -> ë
 	
 	return (t, c_subs)
 
 ## funksion për zëvendësimin e formave dialektore
 def replace_dial(text):
-	## initializations 
+	## vlerënisje 
 	t = text ; dial_subs = 0
 	
-	## fjalë që shnkruhen pa a në fund - du(e) -> dua, thu(e) -> thua
+	## fjalë që shnkruhen pa a në fund -- du(e) -> dua, thu(e) -> thua
 	t, c = re.subn(fr"(\b)({fj_dial})(e?)(\b)", r"\2a", t) ; dial_subs += c
 	
-	## pjesoret që shkruhen pa rë në fund - pru -> prurë
+	## pjesoret që shkruhen pa rë në fund -- pru -> prurë
 	t, c = re.subn(fr"(\b)({pp})({pj_pa_re})(r(e)?)?(\b)", r"\2\3rë", t) ; dial_subs += c
 
-	## pjesoret që shkruhen pa ar në fund - shku -> shkuar
+	## pjesoret që shkruhen pa ar në fund -- shku -> shkuar
 	t, c = re.subn(fr"(\b)({pp})({pj_pa_ar})(\b)", r"\2\3ar", t) ; dial_subs += c
 	
-	## pjesoret që shkruhen pa ur në fund - kap -> kapur
+	## pjesoret që shkruhen pa ur në fund -- kap -> kapur
 	t, c = re.subn(fr"(\b)({pp})({pj_pa_ur})(\b)", r"\2\3ur", t) ; dial_subs += c
 
-	## pjesoret që shkruhen pa er në fund - thy -> thyer
+	## pjesoret që shkruhen pa er në fund -- thy -> thyer
 	t, c = re.subn(fr"(\b)({pp})({pj_pa_er})(\b)", r"\2\3er", t) ; dial_subs += c
 
 	return (t, dial_subs)
 	
-## funksion për zëvendësimin e fjalëve angleze - todo
+## funksion për zëvendësimin e fjalëve angleze 
 def replace_eng(text):
 	## initializations 
 	t = text ; eng_subs = 0
 	
 	return (t, eng_subs)
 	
-## funksion për zëvendësime fjalësh të plota - todo
+## funksion për zëvendësime fjalësh të plota 
 def replace_words(text):
 	## initializations 
 	t = text ; word_subs = 0

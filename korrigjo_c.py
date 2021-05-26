@@ -1,13 +1,13 @@
 
 import re, string
 
-## 0-3 simbole shtesë në fund të fjalëve për të kapur prapashtesa 
+## 0-4 simbole shtesë në fund të fjalëve për prapashtesat 
 ## shquese dhe lakesat
 suf = "[a-zA-Z0-9çÇëË_-]{0,4}"
 
 ## temat që shkruhen me C/c në vend të Ç/ç-së nistore
 ## ruhen prapashtesat ndaj nuk pranohen tema me grupe alternative me |
-## cafk, caj, cajnik, cibuk, cift, cimk, cmim, co, corap, cudi, cun, cmendur 
+## cafk, caj, cajnik, cibuk, cift, cimk, cmim, co, corap, cudi, cun 
 pa_c_nis = "afk|aj|ajnik|akmak|allm|arcaf|arçaf|art|ati|ibuk|ift|imk|" + \
 "izme|mim|o|orap|udi|un|mendur"
 

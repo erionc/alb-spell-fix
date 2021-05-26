@@ -1,7 +1,7 @@
 
 import re, string
 
-## fjalë që shkruhen pa ë fundore ose me e në vend të saj - mir(e) -> mirë
+## fjalë që shkruhen pa ë fundore ose me e në vend të saj -- mir(e) -> mirë
 no_e_end = [
 # a
 ['mplitud', 'naliz', 'rk', 'rn', 'rr'],
@@ -66,9 +66,9 @@ for i in range(0, 25):
 	no_e_exp.extend(map((lambda x: initials[i] + x), no_e_end[i]))
 no_e_regex = '|'.join(no_e_exp)
 
-## fjalë që shkruhen me e në vend të ë-së fundore 
-## maje -> majë | duhet të zëvendësohen vetëm kur shfaqen
-## me e në fund, pra jo të ngatërohet me maj (muaji)
+## fjalë që shkruhen me e fundore në vend të ë-së -- maje -> majë  
+## duhet të zëvendësohen vetëm kur shfaqen me e në fund, pra 
+## në shembullin më sipër nuk duhet të ngatërohet maje me maj (muaji)
 with_e_end = [
 # a
 [],
@@ -141,11 +141,11 @@ def replace_e(text):
 	## është
 	t, c = re.subn(fr"(\b)(e|ë)(sht)(e|ë)?(\b)", r"ë\3ë", t) ; e_subs += c
 	
-	## fjalë që shkruhen pa ë fundore ose me ë të shkruar e - mir(e) -> mirë
+	## fjalë që shkruhen pa ë fundore ose me ë të shkruar e -- mir(e) -> mirë
 	t, c = re.subn(fr"(\b)({no_e_regex})(e)?(\b)", r"\2ë", t) ; e_subs += c
 	# t, c = re.subn(r"(Mir|mir)(e?)( |\.)", r"\1ë\3", t) ; e_subs += c
 
-	## fjalë që shkruhen me ë fundore të shkruar e - maje -> majë
+	## fjalë që shkruhen me ë fundore të shkruar e -- maje -> majë
 	t, c = re.subn(fr"(\b)({with_e_regex})(e)(\b)", r"\2ë", t) ; e_subs += c
 	# t, c = re.subn(r"(Mir|mir)(e?)( |\.)", r"\1ë\3", t) ; e_subs += c
 	
