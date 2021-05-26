@@ -4,7 +4,7 @@ import re, string
 ## fjalë që shkruhen pa ë fundore ose me e në vend të saj - mir(e) -> mirë
 no_e_end = [
 # a
-['rk', 'rn', 'rr'],
+['mplitud', 'naliz', 'rk', 'rn', 'rr'],
 # b															
 ['alt', 'arn', 'ibliotek', 'im', 'oj', 'rek', 'ritm', 'ubullim', 'uk', 'uj'],
 # c		
@@ -15,7 +15,7 @@ no_e_end = [
 # e
 ['kspedit', 'kspozit', 'n', 'r'],
 # f								
-['am', 'rik', 'urk', 'ush'],
+['am', 'jal', 'rik', 'urk', 'ush'],
 # g													
 ['af', 'jat', 'j(e|ë)m', 'jer', 'jell', 'ril', 'rop', 'un',],
 # h
@@ -29,7 +29,7 @@ no_e_end = [
 # l								
 ['lim', 'ir', 'op', 'uft'],
 # m											
-['akin', 'ark', 'atric', 'ij', 'ir', 'iz', 'oll', 'uzik'], 
+['akin', 'ark', 'atric', 'ij', 'in', 'ir', 'iz', 'oll', 'uzik'], 
 # n					
 ['aft', 'ap', 'djes', 'gjyr', 'ism', 'j'],	
 # o							
@@ -42,10 +42,10 @@ no_e_end = [
 # r											
 ['(e|ë)r', 'imt', 'rug', 'rugin' ],
 # s												
-['fid', 'heg', 'hpejt', 'hpell', 'hum', 'humic', 'hqis', 'htrenjt', 'it', 
-'ob', 'tuf',],
+['fid', 'heg', 'hkreptim', 'hpejt', 'hpell', 'hum', 'humic', 'hqis', 
+'htrenjt', 'intez', 'it', 'ob', 'tuf',],
 # t
-['han', 'ap', 'arg', 'hik'],		
+['han', 'ap', 'arg', 'hik', 'razir'],		
 # u											
 ['j', 'n'],
 # v												
