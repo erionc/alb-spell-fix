@@ -1,4 +1,4 @@
-# omit python cache folder
+# omit python cache
 __pycache__/
 # omit temporaty files
 tmp/
