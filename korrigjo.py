@@ -65,8 +65,8 @@ tem_sq = ""
 ## tema fjalësh angleze që duhen përkthyer
 tem_en = ""
 
-## funksion për zëvendësime nga të cilat varen zëvendësimet e tjera
-def replace_dep(text):
+## funksion për zëvendësime që përgatitin zëvendësimet e mëpasshme
+def pre_replace(text):
 	## vlerënisje 
 	t = text ; c_subs = 0
 	
@@ -94,6 +94,18 @@ def replace_dep(text):
 	t, c = re.subn(fr"(\b)({para_te})(te)(\b)", r"\2të", t) ; c_subs += c
 	
 	## zëvendësime të tjera e -> ë
+	
+	return (t, c_subs)
+	
+## funksion për zëvendësime që korrigjojnë zëvendësimet e mëparshme
+def post_replace(text):
+	## vlerënisje 
+	t = text ; c_subs = 0
+	
+	## çoc -> çoç
+	t, c = re.subn(fr"(\b)(D|d)çoc(\b)", r"çoç", t) ; c_subs += c
+
+	## zëvendësime të tjera 
 	
 	return (t, c_subs)
 

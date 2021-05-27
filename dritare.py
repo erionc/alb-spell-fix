@@ -4,9 +4,9 @@ import tkinter as tk
 from tkinter import *
 
 # importimi i funksioneve korrigjuese nga modulet përkatëse
-from replace import *
-from replace_e import *
-from replace_c import *
+from korrigjo import *
+from korrigjo_e import *
+from korrigjo_c import *
 
 ## funksioni kryesor i korrigjimeve që thërret funksionet e tjera
 def correction(field_in, field_out, field_message):
