@@ -103,7 +103,7 @@ def post_replace(text):
 	t = text ; c_subs = 0
 	
 	## çoc -> çoç
-	t, c = re.subn(fr"(\b)(D|d)çoc(\b)", r"çoç", t) ; c_subs += c
+	t, c = re.subn(fr"(\b)çoc(\b)", r"çoç", t) ; c_subs += c
 
 	## zëvendësime të tjera 
 	

@@ -15,7 +15,7 @@ def correction(field_in, field_out, field_message):
 	t = input_text ; total_sub = 0
 	
 	# thirren zëvendësimet paraprake
-	t, c = replace_dep(t) ; total_sub += c
+	t, c = pre_replace(t) ; total_sub += c
 		
 	# thirren zëvendësimet e e-së
 	t, c = replace_e(t) ; total_sub += c
@@ -31,6 +31,9 @@ def correction(field_in, field_out, field_message):
 	
 	# thirren zëvendësime e fjalëve angleze
 	t, c = replace_eng(t) ; total_sub += c
+	
+	# thirren zëvendësimet përfundimtare
+	t, c = post_replace(t) ; total_sub += c
 
 	output_text = t
 	# shfaqet totali i zëvendësimeve të kryera
