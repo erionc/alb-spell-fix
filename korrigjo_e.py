@@ -17,7 +17,7 @@ no_e_end = [
 # f								
 ['am', 'jal', 'lam', 'rik', 'urk', 'ush'],
 # g													
-['af', 'jat', 'j(e|ë)m', 'jer', 'jell', 'ril', 'rop', 'un',],
+['af', 'ar', 'jat', 'j(e|ë)m', 'jer', 'jell', 'ril', 'rop', 'un',],
 # h
 ['apësir', 'ipotek', 'umb(e|ë)sir', 'umb(e|ë)tir', 'umner', 'urm'],
 # i									
@@ -91,7 +91,7 @@ with_e_end = [
 # j
 [],	
 # k																										
-['ok'],	
+['am', 'ok'],	
 # l								
 ['ug'],
 # m											

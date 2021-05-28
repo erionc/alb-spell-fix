@@ -1,5 +1,5 @@
 
-## Testime të zëvendësimeve. Totali: 293 zëvendësime
+## Testime të zëvendësimeve. Totali: 297 zëvendësime
 
 ## zëvendësime paraprake - 21 zëvendësime
 kena pa jena shtri do te, doja te, deshem te, donin te
@@ -21,7 +21,7 @@ cimke cimkë cmim cmimet co coc coj Coj Corap corape cudi cun
 cmendur Cmenduri cakmak Carcaf carçaf cizme corodit coroditur
 coroditje cakerdis cakerdisje cakerdisur
 
-## pa ë fundore ose me e në vend të saj - 105 zëvendësime
+## pa ë fundore ose me e në vend të saj - 107 zëvendësime
 Un, esht. nje nj ështe? esht Eshte Eshtë eshtë Une buk une
 un Un. Une. unë uj; Uj. uje Uje uje	ujë Rrug rruge Kan kane 
 dit Dite jet shtrenjt dor Vrim vrime Ngjyr Pem Lufte
@@ -33,9 +33,10 @@ zorre val pushke Naft Balte dig En Furke kafke Kurv
 lope grop Nape boj Gaf Gjem gjëm Makin ndjese than Kale
 humnere humbësir Humbetir Pështym peshtyme gjere Vjeg 
 sob Stuf shkreptim Analiz amplitude Sinteze Mine flam
+gar
 
-## me ë fundore të shkruar e - 3 zëvendësime
-maje Luge qepe koke
+## me ë fundore të shkruar e - 5 zëvendësime
+maje Luge qepe Kame koke
 
 ## pjesore pa "rë" - 24 zëvendësime
 ka ble jemi gri janë la ke mar jemi nda ka nga ke ngri
