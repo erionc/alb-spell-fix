@@ -10,8 +10,8 @@ no_e_end = [
 # c		
 ['ip'],
 # d															
-['ardh', 'at', 'eg', 'epozit', 'ig', 'isfat', 'ispozit', 'it', 'or', 'rejt', 
-'rit'],
+['ardh', 'at', 'eg', 'epozit', 'er', 'ig', 'isfat', 'ispozit', 'it',
+'or', 'rejt', 'rit'],
 # e
 ['kspedit', 'kspozit', 'n', 'r'],
 # f								
@@ -19,7 +19,7 @@ no_e_end = [
 # g													
 ['af', 'ar', 'jat', 'j(e|ë)m', 'jer', 'jell', 'jiz', 'ril', 'rop', 'un',],
 # h
-['apësir', 'ipotek', 'umb(e|ë)sir', 'umb(e|ë)tir', 'umner', 'urm'],
+['apësir', 'er', 'ipotek', 'umb(e|ë)sir', 'umb(e|ë)tir', 'umner', 'urm'],
 # i									
 ['j'],	
 # j
@@ -49,7 +49,7 @@ no_e_end = [
 # u											
 ['j', 'n'],
 # v												
-['al', 'et(e|ë)tim', 'vezullim', 'iktim', 'il', 'jeg', 'rim'],
+['al', 'et(e|ë)tim', 'vezullim', 'iktim', 'il', 'jeg', 'ler', 'rim'],
 # x								
 ['ix', 'hung'],	
 # y														
