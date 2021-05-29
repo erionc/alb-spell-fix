@@ -31,7 +31,7 @@ no_e_end = [
 # m											
 ['akin', 'ark', 'atric', 'ij', 'in', 'ir', 'iz', 'oll', 'uzik'], 
 # n					
-['aft', 'ap', 'djes', 'gjyr', 'ism', 'j'],	
+['aft', 'ap', 'djes', 'gjyr', 'inull', 'ism', 'j'],	
 # o							
 ['rt', 'pozit'],		
 # p								
