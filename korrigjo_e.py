@@ -17,8 +17,8 @@ no_e_end = [
 # f								
 ['am', 'jal', 'lam', 'rik', 'urk', 'ush'],
 # g													
-['af', 'ar', 'jat', 'j(e|ë)m', 'jer', 'jell', 'jithmon', 'jiz', 'oj', 'ril',
-'rop', 'un',],
+['af', 'ar', 'jat', 'j(e|ë)m', 'jer', 'jell', 'jithmon', 'jiz', 'odin',
+'oj', 'ril', 'rop', 'un',],
 # h
 ['apësir', 'er', 'ipotek', 'umb(e|ë)sir', 'umb(e|ë)tir', 'umner', 'urm'],
 # i									
@@ -51,7 +51,7 @@ no_e_end = [
 # u											
 ['j', 'n'],
 # v												
-['al', 'et(e|ë)tim', 'vezullim', 'iktim', 'il', 'jeg', 'ler', 'rim'],
+['al', 'et(e|ë)tim', 'vezullim', 'iktim', 'il', 'jeg', 'ler', 'on', 'rim'],
 # x								
 ['ix', 'hung'],	
 # y														
@@ -73,7 +73,7 @@ no_e_regex = '|'.join(no_e_exp)
 ## në shembullin më sipër nuk duhet të ngatërohet maje me maj (muaji)
 with_e_end = [
 # a
-['mvis'],
+['mvis', 'n',],
 # b															
 [],
 # c		
