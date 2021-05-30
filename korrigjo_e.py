@@ -25,9 +25,10 @@ no_e_end = [
 # j
 ['av', 'et'],	
 # k																										
-['afk', 'al', 'apic', 'arfic', '(e|ë)rthiz', 'lim', 'lithm', 'ov', 'urv'],	
+['afk', 'al', 'apic', 'arfic', '(e|ë)rthiz', 'lim', 'lithm', 'ov', 'urv',
+'ushtetut', ],	
 # l								
-['lim', 'ir', 'op', 'uft'],
+['lim', 'ir', 'oj', 'op', 'uft'],
 # m											
 ['akin', 'ark', 'atric', 'ij', 'in', 'ir', 'iz', 'oll', 'uzik'], 
 # n					
@@ -35,12 +36,12 @@ no_e_end = [
 # o							
 ['rt', 'pozit'],		
 # p								
-['adrejt', 'ag', 'akic', 'em', '(e|ë)shtym', 'jeshk', 'levic', 'ozit',
+['adrejt', 'ag', 'akic', 'em', 'en', '(e|ë)shtym', 'jeshk', 'levic', 'ozit',
 'remis', 'rik', 'un', 'ushk'],
 # q		
 ['ukm'],		
 # r											
-['(e|ë)r', 'imt', 'rug', 'rugic', 'rugin' ],
+['(e|ë)r', 'ezolut', 'imt', 'rug', 'rugic', 'rugin' ],
 # s												
 ['fid', 'heg', 'hkreptim', 'hpejt', 'hpell', 'hum', 'humic', 'hqis', 
 'htrenjt', 'intez', 'it', 'ob', 'tuf',],
