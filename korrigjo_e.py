@@ -6,7 +6,8 @@ no_e_end = [
 # a
 ['mplitud', 'naliz', 'rk', 'rn', 'rr'],
 # b															
-['alt', 'arn', 'ibliotek', 'im', 'oj', 'rek', 'ritm', 'ubullim', 'uk', 'uj'],
+['alt', 'arn', 'ibliotek', 'im', 'iskot', 'oj', 'rek', 'ritm', 'ubullim',
+'uk', 'uj'],
 # c		
 ['ip'],
 # d															
@@ -97,7 +98,7 @@ with_e_end = [
 # l								
 ['ug', 'yr'],
 # m											
-['aj', ], 
+['aj', 'ushk'], 
 # n					
 [],	
 # o							
