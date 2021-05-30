@@ -10,14 +10,14 @@ no_e_end = [
 # c		
 ['ip'],
 # d															
-['ardh', 'at', 'eg', 'epozit', 'er', 'ig', 'isfat', 'ispozit', 'it',
-'or', 'rejt', 'rit'],
+['ardh', 'at', 'eg', 'epozit', 'er', 'h(e|ë)mball', 'hom', 'ig', 'isfat',
+'ispozit', 'it', 'or', 'rejt', 'rit'],
 # e
 ['kspedit', 'kspozit', 'n', 'r'],
 # f								
 ['am', 'jal', 'lam', 'rik', 'urk', 'ush'],
 # g													
-['af', 'ar', 'jat', 'j(e|ë)m', 'jer', 'jell', 'jithmon', 'jiz', 'odin',
+['af', 'ar', 'jasht', 'jat', 'j(e|ë)m', 'jer', 'jell', 'jithmon', 'jiz', 'odin',
 'oj', 'ril', 'rop', 'un',],
 # h
 ['apësir', 'er', 'ipotek', 'umb(e|ë)sir', 'umb(e|ë)tir', 'umner', 'urm'],
@@ -33,21 +33,21 @@ no_e_end = [
 # m											
 ['akin', 'ark', 'atric', 'ij', 'in', 'ir', 'iz', 'oll', 'uzik'], 
 # n					
-['aft', 'ap', 'djes', 'gjyr', 'inull', 'ism', 'j'],	
+['aft', 'ap', 'djes', '(e|ë)nt', 'gjyr', 'inull', 'ism', 'j'],	
 # o							
 ['rt', 'pozit'],		
 # p								
-['adrejt', 'ag', 'akic', 'em', 'en', '(e|ë)shtym', 'jeshk', 'levic', 'ozit',
-'remis', 'rik', 'un', 'ushk'],
+['adrejt', 'ag', 'akic', 'em', 'en', 'es', '(e|ë)shtym', 'jeshk', 'levic', 'ozit',
+'remis', 'rik', 'ron', 'un', 'ushk'],
 # q		
-['ukm'],		
+['indark', 'ukm'],		
 # r											
 ['(e|ë)r', 'ezolut', 'imt', 'rug', 'rugic', 'rugin' ],
 # s												
 ['fid', 'heg', 'hkreptim', 'hpejt', 'hpell', 'hum', 'humic', 'hqis', 
 'htrenjt', 'intez', 'it', 'ob', 'tuf',],
 # t
-['han', 'ap', 'arg', 'hik', 'razir'],		
+['han', 'ap', 'arg', 'et', 'hik', 'razir'],		
 # u											
 ['j', 'n'],
 # v												
@@ -79,7 +79,7 @@ with_e_end = [
 # c		
 [],
 # d															
-[],
+['hjet'],
 # e
 [],
 # f								
@@ -109,7 +109,7 @@ with_e_end = [
 # r											
 [],
 # s												
-[],
+['htat'],
 # t
 [],		
 # u											
