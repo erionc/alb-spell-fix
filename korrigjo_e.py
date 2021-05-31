@@ -122,7 +122,7 @@ with_e_end = [
 # y														
 [],	
 # z										
-[],												
+['gjedh',],												
 ]
 
 ## përgatitja e shprehjes së rregullt për zëvendësimin 
