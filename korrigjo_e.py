@@ -5,58 +5,83 @@ import re, string
 no_e_end = [
 # a
 ['mplitud', 'naliz', 'rk', 'rn', 'rr'],
+
 # b															
 ['alt', 'arn', 'ibliotek', 'im', 'iskot', 'oj', 'rek', 'ritm', 'ubullim',
 'uk', 'uj'],
+
 # c		
 ['ip'],
+
 # d															
 ['ardh', 'at', 'eg', 'epozit', 'er', 'h(e|ë)mball', 'hom', 'ig', 'isfat',
 'ispozit', 'it', 'or', 'rejt', 'rit'],
+
 # e
 ['kspedit', 'kspozit', 'n', 'r'],
+
 # f								
 ['am', 'jal', 'lam', 'rik', 'urk', 'ush'],
+
 # g													
 ['af', 'ar', 'jasht', 'jat', 'j(e|ë)m', 'jer', 'jell', 'jithmon', 'jiz', 'odin',
 'oj', 'ril', 'rop', 'un',],
+
 # h
 ['apësir', 'er', 'ipotek', 'umb(e|ë)sir', 'umb(e|ë)tir', 'umner', 'urm'],
+
 # i									
 ['j'],	
+
 # j
-['av', 'et'],	
+['av', 'et'],
+	
 # k																										
 ['afk', 'al', 'apic', 'arfic', '(e|ë)rthiz', 'lim', 'lithm', 'ov', 'urv',
-'ushtetut', ],	
+'ushtetut', ],
+	
 # l								
 ['lim', 'ir', 'oj', 'op', 'uft'],
+
 # m											
 ['akin', 'ark', 'atric', 'ij', 'in', 'ir', 'iz', 'oll', 'uzik'], 
+
 # n					
-['aft', 'ap', 'djes', '(e|ë)nt', 'gjyr', 'inull', 'ism', 'j'],	
+['aft', 'ap', 'djes', '(e|ë)nt', 'gjyr', 'inull', 'ism', 'j'],
+	
 # o							
-['rt', 'pozit'],		
+['rt', 'pozit'],	
+	
 # p								
-['adrejt', 'ag', 'akic', 'em', 'en', 'es', '(e|ë)shtym', 'jeshk', 'levic', 'ozit',
-'remis', 'rik', 'ron', 'un', 'ushk'],
+['adrejt', 'ag', 'akic', 'arabim', 'arm', 'araman', 'armend', 'em', 'en',
+'es', '(e|ë)shtym', 'jeshk', 'levic', 'ozit', 'remis', 'rik', 'ron',
+'rostitut', 'ul', 'un', 'ushk'],
+
 # q		
-['indark', 'ukm'],		
+['indark', 'ukm'],	
+	
 # r											
 ['(e|ë)r', 'ezolut', 'imt', 'rep', 'rob', 'rug', 'rugic', 'rugin' ],
+
 # s												
 ['fid', 'heg', 'hkreptim', 'hpejt', 'hpell', 'hum', 'humic', 'hqis', 
 'htrenjt', 'intez', 'it', 'ob', 'tuf',],
+
 # t
-['han', 'ap', 'arg', 'et', 'hik', 'razir'],		
+['han', 'ap', 'arg', 'et', 'hik', 'razir'],	
+	
 # u											
 ['j', 'n'],
+
 # v												
 ['al', 'et(e|ë)tim', 'vezullim', 'iktim', 'il', 'jeg', 'ler', 'on', 'rim'],
+
 # x								
 ['ix', 'hung'],	
+
 # y														
 ['n', 'ndyr'],	
+
 # z										
 ['an', 'gjyr', 'hdrejt', 'orr'],												
 ]
@@ -75,52 +100,76 @@ no_e_regex = '|'.join(no_e_exp)
 with_e_end = [
 # a
 ['mvis', 'n',],
+
 # b															
 [],
+
 # c		
 [],
+
 # d															
 ['hjet'],
+
 # e
 [],
+
 # f								
 [],
+
 # g													
 [],
+
 # h
 [],
+
 # i									
 [],	
+
 # j
 [],	
+
 # k																										
-['am', 'ok'],	
+['am', 'ok'],
+	
 # l								
 ['ug', 'yr'],
+
 # m											
 ['aj', 'ushk'], 
+
 # n					
 [],	
+
 # o							
 [],		
+
 # p								
 [],
+
 # q		
-['ep', 'ok',],		
+['ep', 'ok',],	
+	
 # r											
 [],
+
 # s												
 ['htat'],
+
 # t
-[],		
+[],	
+	
 # u											
 [],
+
 # v												
 [],
+
 # x								
 [],	
+
 # y														
 [],	
+
 # z										
 ['gjedh',],												
 ]
