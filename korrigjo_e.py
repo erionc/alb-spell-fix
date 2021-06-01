@@ -43,7 +43,7 @@ no_e_end = [
 # q		
 ['indark', 'ukm'],		
 # r											
-['(e|ë)r', 'ezolut', 'imt', 'rug', 'rugic', 'rugin' ],
+['(e|ë)r', 'ezolut', 'imt', 'rep', 'rob', 'rug', 'rugic', 'rugin' ],
 # s												
 ['fid', 'heg', 'hkreptim', 'hpejt', 'hpell', 'hum', 'humic', 'hqis', 
 'htrenjt', 'intez', 'it', 'ob', 'tuf',],
@@ -106,7 +106,7 @@ with_e_end = [
 # p								
 [],
 # q		
-['ep'],		
+['ep', 'ok',],		
 # r											
 [],
 # s												
