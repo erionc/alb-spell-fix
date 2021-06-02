@@ -14,8 +14,8 @@ no_e_end = [
 ['ip'],
 
 # d															
-['ardh', 'at', 'eg', 'epozit', 'er', 'h(e|ë)mball', 'hom', 'ig', 'isfat',
-'ispozit', 'it', 'or', 'rejt', 'rit'],
+['ardh', 'at', 'eg', 'epozit', 'er', '(e|ë)llinj', 'h(e|ë)mball', 'hom',
+'ig', 'isfat', 'ispozit', 'it', 'or', 'rejt', 'rit', 'ymb(e|ë)dhjet',],
 
 # e
 ['kspedit', 'kspozit', 'n', 'r'],
@@ -24,7 +24,7 @@ no_e_end = [
 ['am', 'jal', 'lam', 'rik', 'urk', 'ush'],
 
 # g													
-['af', 'ar', 'jasht', 'jat', 'j(e|ë)m', 'jer', 'jell', 'jithmon', 'jiz', 'odin',
+['af', 'ar', 'jasht', 'jasht(e|ë)mb(e|ë)dhjet', 'jat', 'j(e|ë)m', 'jer', 'jell', 'jithmon', 'jiz', 'odin',
 'oj', 'ril', 'rop', 'un',],
 
 # h
@@ -37,8 +37,8 @@ no_e_end = [
 ['av', 'et'],
 	
 # k																										
-['afk', 'al', 'apic', 'arfic', '(e|ë)rthiz', 'lim', 'lithm', 'ov', 'urv',
-'ushtetut', ],
+['afk', 'al', 'apic', 'arfic', 'at(e|ë)rmb(e|ë)dhjet', '(e|ë)rthiz', 'lim',
+'lithm', 'ov', 'urv', 'ushtetut',],
 	
 # l								
 ['lim', 'ir', 'oj', 'op', 'uft'],
@@ -47,14 +47,16 @@ no_e_end = [
 ['akin', 'ark', 'atric', 'ij', 'in', 'ir', 'iz', 'oll', 'uzik'], 
 
 # n					
-['aft', 'ap', 'djes', '(e|ë)nt', 'gjyr', 'inull', 'ism', 'j'],
+['aft', 'ap', 'djes', '(e|ë)nt', '(e|ë)nt(e|ë)mb(e|ë)dhjet', 'gjyr',
+'inull', 'ism', 'j', 'j(e|ë)mb(e|ë)dhjet',
+],
 	
 # o							
 ['rt', 'pozit'],	
 	
 # p								
 ['adrejt', 'ag', 'akic', 'arabim', 'arm', 'araman', 'armend', 'em', 'en',
-'es', '(e|ë)shtym', 'jeshk', 'levic', 'ozit', 'remis', 'rik', 'ron',
+'es', 'es(e|ë)mb(e|ë)dhjet', '(e|ë)shtym', 'jeshk', 'levic', 'ozit', 'remis', 'rik', 'ron',
 'rostitut', 'ul', 'un', 'ushk'],
 
 # q		
@@ -65,10 +67,11 @@ no_e_end = [
 
 # s												
 ['fid', 'heg', 'hkreptim', 'hpejt', 'hpell', 'hum', 'humic', 'hqis', 
-'htrenjt', 'intez', 'it', 'ob', 'tuf',],
+'htat', 'htat(e|ë)mb(e|ë)dhjet', 'htrenjt', 'intez', 'it', 'ob', 'tuf',],
 
 # t
-['han', 'ap', 'arg', 'et', 'hik', 'razir'],	
+['han', 'ap', 'arg', 'et', 'et(e|ë)mb(e|ë)dhjet', 'hik', 'razir',
+'remb(e|ë)dhjet'],	
 	
 # u											
 ['j', 'n'],
@@ -138,7 +141,7 @@ with_e_end = [
 ['aj', 'ushk'], 
 
 # n					
-[],	
+['j(e|ë)zet'],	
 
 # o							
 [],		
