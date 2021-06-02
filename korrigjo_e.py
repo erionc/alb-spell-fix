@@ -25,7 +25,7 @@ no_e_end = [
 
 # g													
 ['af', 'ar', 'jasht', 'jasht(e|ë)mb(e|ë)dhjet', 'jat', 'j(e|ë)m', 'jer', 'jell', 'jithmon', 'jiz', 'odin',
-'oj', 'ril', 'rop', 'un',],
+'oj', 'om', 'ril', 'rop', 'un',],
 
 # h
 ['apësir', 'er', 'ipotek', 'umb(e|ë)sir', 'umb(e|ë)tir', 'umner', 'urm'],
@@ -41,7 +41,7 @@ no_e_end = [
 'lithm', 'ov', 'urv', 'ushtetut',],
 	
 # l								
-['lim', 'ir', 'oj', 'op', 'uft'],
+['ënd', 'im', 'ir', 'oj', 'op', 'uft'],
 
 # m											
 ['akin', 'ark', 'atric', 'ij', 'in', 'ir', 'iz', 'oll', 'uzik'], 
@@ -56,8 +56,8 @@ no_e_end = [
 	
 # p								
 ['adrejt', 'ag', 'akic', 'arabim', 'arm', 'araman', 'armend', 'em', 'en',
-'es', 'es(e|ë)mb(e|ë)dhjet', '(e|ë)shtym', 'jeshk', 'levic', 'ozit', 'remis', 'rik', 'ron',
-'rostitut', 'ul', 'un', 'ushk'],
+'end', 'es', 'es(e|ë)mb(e|ë)dhjet', '(e|ë)shtym', 'jeshk', 'levic', 'ozit',
+'remis', 'rik', 'ron', 'rostitut', 'ul', 'un', 'ushk'],
 
 # q		
 ['indark', 'ukm'],	
