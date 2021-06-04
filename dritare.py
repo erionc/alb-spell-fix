@@ -57,7 +57,7 @@ if __name__ == "__main__":
 	# krijohet ndërfaqja grafike me disa specifikime
 	root = Tk()
 	root.configure(background = "red")		# ngjyra e sfondit
-	root.geometry("1000x716")				# përmasat e dritares
+	root.geometry("988x710")				# përmasat e dritares
 	# titulli i dritares kryesore
 	root.title("REDAKTOR TEKSTI PËR GJUHËN SHQIPE")		
 	
