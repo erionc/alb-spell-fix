@@ -3,7 +3,7 @@ import re, string
 
 ## 0-4 simbole shtesë në fund të fjalëve për prapashtesat 
 ## shquese dhe lakesat
-suf = "[a-zA-Z0-9çÇëË_-]{0,4}"
+prapa = "[a-zA-Z0-9çÇëË_-]{0,4}"
 
 ## ndryshore globale për fundin e fjalëve - më mirë (\b) 
 # we = " |\t|\n|\.|\?|:|;|,|!"
@@ -66,7 +66,7 @@ tem_sq = ""
 tem_en = ""
 
 ## funksion për zëvendësime që përgatitin zëvendësimet e mëpasshme
-def pre_replace(text):
+def para_korrigjime(text):
 	## vlerënisje 
 	t = text ; c_subs = 0
 	
@@ -98,7 +98,7 @@ def pre_replace(text):
 	return (t, c_subs)
 	
 ## funksion për zëvendësime që korrigjojnë zëvendësimet e mëparshme
-def post_replace(text):
+def pas_korrigjime(text):
 	## vlerënisje 
 	t = text ; c_subs = 0
 	
@@ -110,7 +110,7 @@ def post_replace(text):
 	return (t, c_subs)
 
 ## funksion për zëvendësimin e formave dialektore
-def replace_dial(text):
+def korrigjo_dial(text):
 	## vlerënisje 
 	t = text ; dial_subs = 0
 	
@@ -132,14 +132,14 @@ def replace_dial(text):
 	return (t, dial_subs)
 	
 ## funksion për zëvendësimin e fjalëve angleze 
-def replace_eng(text):
+def korrigjo_eng(text):
 	## initializations 
 	t = text ; eng_subs = 0
 	
 	return (t, eng_subs)
 	
 ## funksion për zëvendësime fjalësh të plota 
-def replace_words(text):
+def korrigjo_terma(text):
 	## initializations 
 	t = text ; word_subs = 0
 	

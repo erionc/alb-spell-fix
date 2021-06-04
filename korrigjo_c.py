@@ -3,7 +3,7 @@ import re, string
 
 ## 0-4 simbole shtesë në fund të fjalëve për prapashtesat 
 ## shquese dhe lakesat
-suf = "[a-zA-Z0-9çÇëË_-]{0,4}"
+prapa = "[a-zA-Z0-9çÇëË_-]{0,4}"
 
 ## temat që shkruhen me C/c në vend të Ç/ç-së nistore
 ## ruhen prapashtesat ndaj nuk pranohen tema me grupe alternative me |
@@ -12,19 +12,19 @@ pa_c_nis = "afk|aj|ajnik|akerdis|akmak|allm|arcaf|arçaf|art|ati|ibuk|ift|imk|" 
 "izme|mim|o|orap|orodit|udi|un|mendur"
 
 ## funksion për zëvendësime c -> ç 
-def replace_c(text):
+def korrigjo_c(text):
 	## vlerënisje
 	t = text ; c_subs = 0
 	
 	## ç'kemi, ç'ke, ç'keni, 
-	t, c = re.subn(fr"(\b)(c|c'|ç|q|q')(ke)({suf})(\b)", r"ç'\3\4", t) ; c_subs += c
+	t, c = re.subn(fr"(\b)(c|c'|ç|q|q')(ke)({prapa})(\b)", r"ç'\3\4", t) ; c_subs += c
 	## Ç'kemi, Ç'ke, Ç'keni, 
-	t, c = re.subn(fr"(\b)(C|C'|Ç|Q|Q')(ke)({suf})(\b)", r"Ç'\3\4", t) ; c_subs += c
+	t, c = re.subn(fr"(\b)(C|C'|Ç|Q|Q')(ke)({prapa})(\b)", r"Ç'\3\4", t) ; c_subs += c
 	
 	## cka -> çka ; c'kam, ckam -> ç'kam ; c'ka(në) -> ç'ka(në) 
-	t, c = re.subn(fr"(\b)(c|c'|ç|q|q')(ka)({suf})(\b)", r"ç'\3\4", t) ; c_subs += c
+	t, c = re.subn(fr"(\b)(c|c'|ç|q|q')(ka)({prapa})(\b)", r"ç'\3\4", t) ; c_subs += c
 	## Cka -> Çka ; C'kam, Ckam -> Ç'kam ; C'ka(në) -> Ç'ka(në) 
-	t, c = re.subn(fr"(\b)(C|C'|Ç|Q|Q')(ka)({suf})(\b)", r"Ç'\3\4", t) ; c_subs += c
+	t, c = re.subn(fr"(\b)(C|C'|Ç|Q|Q')(ka)({prapa})(\b)", r"Ç'\3\4", t) ; c_subs += c
 	
 	## çfarë 
 	t, c = re.subn(fr"(\b)(c|ç|q)(far)(e|ë)?(\b)", r"çfarë", t) ; c_subs += c
@@ -42,8 +42,8 @@ def replace_c(text):
 	t, c = re.subn(fr"(\b)(C|Ç|Q)(ik)(e|ë)?(\b)", r"Çikë", t) ; c_subs += c
 	
 	## fjalë që shkruhen me C/c në vend të Ç/ç-së nistore - caj -> çaj
-	t, c = re.subn(fr"(\b)(c)({pa_c_nis})({suf})(\b)", r"ç\3\4", t) ; c_subs += c
-	t, c = re.subn(fr"(\b)(C)({pa_c_nis})({suf})(\b)", r"Ç\3\4", t) ; c_subs += c
+	t, c = re.subn(fr"(\b)(c)({pa_c_nis})({prapa})(\b)", r"ç\3\4", t) ; c_subs += c
+	t, c = re.subn(fr"(\b)(C)({pa_c_nis})({prapa})(\b)", r"Ç\3\4", t) ; c_subs += c
 	# t, c = re.subn(fr"(\b)(C)({pa_c_nis})(\b)", r"Ç\3", t) ; c_subs += c
 	
 	return (t, c_subs)
