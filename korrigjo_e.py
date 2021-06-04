@@ -37,8 +37,8 @@ no_e_end = [
 ['av', 'et'],
 	
 # k																										
-['afk', 'afsh', 'al', 'apic', 'arfic', 'at(e|ë)rmb(e|ë)dhjet', '(e|ë)rthiz',
-'lim', 'lithm', 'ov', 'urv', 'ushtetut',],
+['afk', 'afsh', 'al', 'apic', 'arfic', 'asht', 'at(e|ë)rmb(e|ë)dhjet',
+'(e|ë)rthiz', 'lim', 'lithm', 'ov', 'urv', 'ushtetut',],
 	
 # l								
 ['ënd', 'im', 'ir', 'oj', 'op', 'uft'],
