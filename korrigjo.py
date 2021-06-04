@@ -133,14 +133,14 @@ def korrigjo_dial(text):
 	
 ## funksion për zëvendësimin e fjalëve angleze 
 def korrigjo_eng(text):
-	## initializations 
+	## vlerënisje 
 	t = text ; eng_subs = 0
 	
 	return (t, eng_subs)
 	
 ## funksion për zëvendësime fjalësh të plota 
 def korrigjo_terma(text):
-	## initializations 
+	## vlerënisje 
 	t = text ; word_subs = 0
 	
 	return (t, word_subs)
