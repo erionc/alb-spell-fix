@@ -8,7 +8,7 @@ no_e_end = [
 
 # b															
 ['alt', 'arn', 'ibliotek', 'im', 'iskot', 'oj', 'rek', 'ritm', 'ubullim',
-'uk', 'uj'],
+'uj', 'uk', 'ul'],
 
 # c		
 ['ip'],
@@ -57,7 +57,7 @@ no_e_end = [
 # p								
 ['adrejt', 'ag', 'akic', 'arabim', 'arm', 'araman', 'armend', 'em', 'en',
 'end', 'es', 'es(e|ë)mb(e|ë)dhjet', '(e|ë)shtym', 'jeshk', 'levic', 'ozit',
-'remis', 'rik', 'ron', 'rostitut', 'ul', 'un', 'ushk'],
+'redh', 'remis', 'rik', 'ron', 'rostitut', 'ul', 'un', 'ushk'],
 
 # q		
 ['indark', 'ukm'],	
@@ -66,11 +66,12 @@ no_e_end = [
 ['(e|ë)r', 'ezolut', 'imt', 'rep', 'rob', 'rug', 'rugic', 'rugin' ],
 
 # s												
-['fid', 'heg', 'hkreptim', 'hpejt', 'hpell', 'hum', 'humic', 'hqis', 
-'htat', 'htat(e|ë)mb(e|ë)dhjet', 'htrenjt', 'intez', 'it', 'ob', 'tuf',],
+['fid', 'heg', 'hkreptim', 'hpejt', 'hpell', 'hport', 'hum', 'humic',
+'hqis', 'htat', 'htat(e|ë)mb(e|ë)dhjet', 'htrenjt', 'intez', 'it', 'ob',
+'tuf',],
 
 # t
-['han', 'ap', 'arg', 'et', 'et(e|ë)mb(e|ë)dhjet', 'hik', 'razir',
+['han', 'ap', 'arg', 'et', 'et(e|ë)mb(e|ë)dhjet', 'hik', 'orb', 'razir',
 'remb(e|ë)dhjet'],	
 	
 # u											
@@ -147,7 +148,7 @@ with_e_end = [
 [],		
 
 # p								
-[],
+['ort'],
 
 # q		
 ['ep', 'ok',],	
