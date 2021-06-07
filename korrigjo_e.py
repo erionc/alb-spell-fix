@@ -28,7 +28,7 @@ no_e_end = [
 'oj', 'om', 'ril', 'rop', 'un',],
 
 # h
-['apësir', 'er', 'ipotek', 'umb(e|ë)sir', 'umb(e|ë)tir', 'umner', 'urm'],
+['apësir', 'art', 'er', 'ipotek', 'umb(e|ë)sir', 'umb(e|ë)tir', 'umner', 'urm'],
 
 # i									
 ['j'],	
@@ -60,7 +60,7 @@ no_e_end = [
 'redh', 'remis', 'rik', 'ron', 'rostitut', 'ul', 'un', 'ushk'],
 
 # q		
-['indark', 'ukm'],	
+['art', 'indark', 'ukm'],	
 	
 # r											
 ['(e|ë)r', 'ezolut', 'imt', 'rep', 'rob', 'rug', 'rugic', 'rugin' ],
@@ -87,7 +87,7 @@ no_e_end = [
 ['n', 'ndyr'],	
 
 # z										
-['an', 'gjyr', 'hdrejt', 'orr'],												
+['an', 'gjyr', 'hdrejt', 'jarrt', 'orr'],												
 ]
 
 ## përgatitja e shprehjes së rregullt për korrigjimin e ë-së fundore
