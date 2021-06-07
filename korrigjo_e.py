@@ -4,21 +4,21 @@ import re, string
 ## fjalë që shkruhen pa ë fundore ose me e në vend të saj -- mir(e) -> mirë
 no_e_end = [
 # a
-['jk', 'meb', 'mplitud', 'naliz', 'rk', 'rn', 'rr'],
+['jk', 'meb', 'mplitud', 'naliz', 'ngjin', 'rk', 'rn', 'rr', 'tkin',],
 
 # b															
-['alt', 'arn', 'ibliotek', 'im', 'iskot', 'oj', 'rek', 'ritm', 'ubullim',
-'uj', 'ujtin', 'uk', 'ul'],
+['alt', 'altin', 'arn', 'enzin', 'ibliotek', 'im', 'iskot', 'obin', 'oj',
+'otin', 'rek', 'ritm', 'ubullim', 'uj', 'ujtin', 'uk', 'ul'],
 
 # c		
-['aher', 'ajk'],
+['aher', 'ajk', 'apin', 'elin',],
 
 # d															
-['ardh', 'at', 'eg', 'epozit', 'er', '(e|ë)llinj', 'h(e|ë)mball', 'hom',
-'ig', 'isfat', 'ispozit', 'it', 'or', 'rejt', 'rit', 'ymb(e|ë)dhjet',],
+['afin', 'ardh', 'at', 'eg', 'eltin', 'epozit', 'er', '(e|ë)llinj', 'h(e|ë)mball', 'hom',
+'ig', 'isfat', 'ispozit', 'it', 'oktrin', 'or', 'rejt', 'rit', 'uzin', 'ymb(e|ë)dhjet',],
 
 # e
-['kspedit', 'kspozit', 'n', 'r'],
+['kspedit', 'kspozit', 'n', 'r', 'rzin',],
 
 # f								
 ['am', 'jal', 'lam', 'rik', 'urk', 'ush'],
@@ -66,13 +66,13 @@ no_e_end = [
 ['(e|ë)r', 'ezolut', 'imt', 'rep', 'rob', 'rug', 'rugic', 'rugin' ],
 
 # s												
-['fid', 'heg', 'hkreptim', 'hpejt', 'hpell', 'hport', 'hum', 'humic',
+['fid', 'fin', 'heg', 'hkreptim', 'hpejt', 'hpell', 'hport', 'hum', 'humic',
 'hqis', 'htat', 'htat(e|ë)mb(e|ë)dhjet', 'htrenjt', 'intez', 'it', 'ob',
-'tuf',],
+'pin', 'tin', 'tuf',],
 
 # t
 ['han', 'ap', 'arg', 'et', 'et(e|ë)mb(e|ë)dhjet', 'hik', 'orb', 'razir',
-'remb(e|ë)dhjet'],	
+'remb(e|ë)dhjet', 'rin'],	
 	
 # u											
 ['j', 'n'],
@@ -82,7 +82,7 @@ no_e_end = [
 'on', 'rim'],
 
 # x								
-['ix', 'hung'],	
+['hung', 'in', 'ix', ],	
 
 # y														
 ['n', 'ndyr'],	
@@ -107,7 +107,7 @@ with_e_end = [
 ['mvis', 'n',],
 
 # b															
-[],
+['allin',],
 
 # c		
 [],
@@ -158,7 +158,7 @@ with_e_end = [
 [],
 
 # s												
-['htat'],
+['hin', 'htat'],
 
 # t
 ['aks',],	

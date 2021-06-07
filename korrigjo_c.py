@@ -9,7 +9,7 @@ prapa = "[a-zA-Z0-9çÇëË_-]{0,4}"
 ## ruhen prapashtesat ndaj nuk pranohen tema me grupe alternative me |
 ## cafk, caj, cajnik, cibuk, cift, cimk, cmim, co, corap, cudi, cun 
 pa_c_nis = "afk|aj|ajnik|akerdis|akmak|allm|arcaf|arçaf|art|ati|ibuk|ift|imk|" + \
-"izme|mim|o|orap|orodit|udi|un|mendur"
+"izme|mim|o|orap|orodit|udi|un|mend"
 
 ## funksion për zëvendësime c -> ç 
 def korrigjo_c(text):
