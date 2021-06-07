@@ -37,7 +37,7 @@ no_e_end = [
 ['av', 'et'],
 	
 # k																										
-['abin', 'afk', 'afsh', 'al', 'amin', 'antin', 'apic', 'aptin', 'arfic',]
+['abin', 'afk', 'afsh', 'al', 'amin', 'antin', 'apic', 'aptin', 'arfic',
 'asht', 'at(e|ë)rmb(e|ë)dhjet', '(e|ë)rthiz', 'inin', 'lim', 'lithm',
 'odrin', 'ov', 'rahin', 'urv', 'ushtetut', 'uzhin',],
 	
