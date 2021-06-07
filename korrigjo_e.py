@@ -8,7 +8,7 @@ no_e_end = [
 
 # b															
 ['alt', 'arn', 'ibliotek', 'im', 'iskot', 'oj', 'rek', 'ritm', 'ubullim',
-'uj', 'uk', 'ul'],
+'uj', 'ujtin', 'uk', 'ul'],
 
 # c		
 ['aher', 'ajk'],
@@ -24,8 +24,8 @@ no_e_end = [
 ['am', 'jal', 'lam', 'rik', 'urk', 'ush'],
 
 # g													
-['af', 'ar', 'jasht', 'jasht(e|ë)mb(e|ë)dhjet', 'jat', 'j(e|ë)m', 'jer', 'jell', 'jithmon', 'jiz', 'odin',
-'oj', 'om', 'ril', 'rop', 'un',],
+['af', 'ar', 'jasht', 'jasht(e|ë)mb(e|ë)dhjet', 'jat', 'j(e|ë)m', 'jer',
+'jell', 'jithmon', 'jiz', 'lin', 'odin', 'oj', 'om', 'ril', 'rop', 'un',],
 
 # h
 ['apësir', 'art', 'er', 'ipotek', 'umb(e|ë)sir', 'umb(e|ë)tir', 'umner', 'urm'],
@@ -56,8 +56,8 @@ no_e_end = [
 	
 # p								
 ['adrejt', 'ag', 'akic', 'arabim', 'arm', 'araman', 'armend', 'em', 'en',
-'end', 'es', 'es(e|ë)mb(e|ë)dhjet', '(e|ë)shtym', 'jeshk', 'levic', 'ozit',
-'redh', 'remis', 'rik', 'ron', 'rostitut', 'ul', 'un', 'ushk'],
+'end', 'es', 'es(e|ë)mb(e|ë)dhjet', '(e|ë)shtym', 'in', 'jeshk', 'levic',
+'ozit', 'redh', 'remis', 'rik', 'ron', 'rostitut', 'ul', 'un', 'ushk'],
 
 # q		
 ['art', 'indark', 'ukm'],	
@@ -78,7 +78,8 @@ no_e_end = [
 ['j', 'n'],
 
 # v												
-['al', 'et(e|ë)tim', 'vezullim', 'iktim', 'il', 'jeg', 'ler', 'on', 'rim'],
+['al', 'et(e|ë)tim', 'vezullim', 'iktim', 'il', 'itamin', 'jeg', 'ler',
+'on', 'rim'],
 
 # x								
 ['ix', 'hung'],	
