@@ -4,10 +4,11 @@ import re, string
 ## fjalë që shkruhen pa ë fundore ose me e në vend të saj -- mir(e) -> mirë
 no_e_end = [
 # a
-['jk', 'meb', 'mplitud', 'naliz', 'ngjin', 'rk', 'rn', 'rr', 'tkin',],
+['drenalin', 'jk', 'lbumin', 'meb', 'mplitud', 'naliz', 'ngjin', 'nilin',
+'rk', 'rn', 'rr', 'spirin', 'tkin',],
 
 # b															
-['alt', 'altin', 'arn', 'enzin', 'ibliotek', 'im', 'iskot', 'obin', 'oj',
+['alt', 'altin', 'alerin', 'arn', 'enzin', 'ibliotek', 'im', 'iskot', 'obin', 'oj',
 'otin', 'rek', 'ritm', 'ubullim', 'uj', 'ujtin', 'uk', 'ul'],
 
 # c		
@@ -79,11 +80,11 @@ no_e_end = [
 'orb', 'razir', 'remb(e|ë)dhjet', 'rin', 'urbin',],	
 	
 # u											
-['j', 'n'],
+['j', 'n', 'zin'],
 
 # v												
-['al', 'et(e|ë)tim', 'vezullim', 'iktim', 'il', 'itamin', 'jeg', 'ler',
-'on', 'rim'],
+['aksin', 'al', 'et(e|ë)tim', 'vezullim', 'iktim', 'il', 'itamin', 'itrin',
+'jeg', 'ler', 'on', 'rim'],
 
 # x								
 ['hung', 'in', 'ix', ],	
