@@ -66,16 +66,17 @@ no_e_end = [
 ['art', 'indark', 'ukm'],	
 	
 # r											
-['(e|ë)r', 'ezolut', 'imt', 'rep', 'rob', 'rug', 'rugic', 'rugin' ],
+['(e|ë)r', 'etin', 'ezolut', 'imt', 'rep', 'rob', 'rug', 'rugic', 'rugin',
+'utin',],
 
 # s												
 ['fid', 'fin', 'heg', 'hkreptim', 'hpejt', 'hpell', 'hport', 'hum', 'humic',
-'hqis', 'htat', 'htat(e|ë)mb(e|ë)dhjet', 'htrenjt', 'intez', 'it', 'ob',
-'pin', 'tin', 'tuf',],
+'hqis', 'htat', 'htat(e|ë)mb(e|ë)dhjet', 'htrenjt', 'intez', 'it', 'kutin', 'ob',
+'pin', 'terlin', 'tin', 'tuf', 'ulin', 'yprin',],
 
 # t
-['han', 'ap', 'arg', 'et', 'et(e|ë)mb(e|ë)dhjet', 'hik', 'orb', 'razir',
-'remb(e|ë)dhjet', 'rin'],	
+['han', 'ap', 'arg', 'et', 'et(e|ë)mb(e|ë)dhjet', 'hatin', 'hellin', 'hik', 'oksin',
+'orb', 'razir', 'remb(e|ë)dhjet', 'rin', 'urbin',],	
 	
 # u											
 ['j', 'n'],
@@ -158,16 +159,16 @@ with_e_end = [
 ['ep', 'ok',],	
 	
 # r											
-[],
+['rafshin', 'rethin',],
 
 # s												
-['hin', 'htat'],
+['hin', 'hpatin', 'htat'],
 
 # t
-['aks',],	
+['aks', 'erin', 'errin', 'ulin',],	
 	
 # u											
-[],
+['rin',],
 
 # v												
 [],
