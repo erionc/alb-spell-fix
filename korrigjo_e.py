@@ -42,10 +42,11 @@ no_e_end = [
 'odrin', 'ov', 'rahin', 'urv', 'ushtetut', 'uzhin',],
 	
 # l								
-['akin', 'argin', 'ënd', 'im', 'ir', 'oj', 'op', 'uft'],
+['akin', 'argin', 'ënd', '(e|ë)ndin', 'im', 'ir', 'oj', 'op', 'uft', 'ugin',],
 
 # m											
-['akin', 'ark', 'atric', 'ij', 'in', 'ir', 'iz', 'oll', 'uzik'], 
+['akin', 'ark', 'art', 'artin', 'atric', 'ij', 'in', 'ir', 'iz', 'oll',
+'orfin', 'uzik'], 
 
 # n					
 ['aft', 'ap', 'djes', '(e|ë)nt', '(e|ë)nt(e|ë)mb(e|ë)dhjet', 'gjyr',
@@ -56,9 +57,10 @@ no_e_end = [
 ['rt', 'pozit'],	
 	
 # p								
-['adrejt', 'ag', 'akic', 'arabim', 'arm', 'araman', 'armend', 'em', 'en',
-'end', 'es', 'es(e|ë)mb(e|ë)dhjet', '(e|ë)shtym', 'in', 'jeshk', 'levic',
-'ozit', 'redh', 'remis', 'rik', 'ron', 'rostitut', 'ul', 'un', 'ushk'],
+['adrejt', 'ag', 'akic', 'arabim', 'arm', 'araman', 'armend', 'atin', 'em',
+'en', 'end', 'es', 'es(e|ë)mb(e|ë)dhjet', '(e|ë)shtym', 'in', 'ishin', 'jeshk',
+'levic', 'ozit', 'redh', 'remis', 'rik', 'ron', 'rostitut', 'ul', 'un',
+'ushk'],
 
 # q		
 ['art', 'indark', 'ukm'],	
@@ -141,10 +143,10 @@ with_e_end = [
 ['ug', 'yr'],
 
 # m											
-['aj', 'ushk'], 
+['aj', 'arin', 'ushk'], 
 
 # n					
-['j(e|ë)zet'],	
+['grehin', 'j(e|ë)zet'],	
 
 # o							
 [],		
