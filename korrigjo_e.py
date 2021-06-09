@@ -16,16 +16,16 @@ no_e_end = [
 
 # d															
 ['afin', 'ardh', 'at', 'eg', 'eltin', 'epozit', 'er', '(e|ë)llinj', 'h(e|ë)mball', 'hom',
-'ig', 'isfat', 'ispozit', 'it', 'oktrin', 'or', 'rejt', 'rit', 'uzin', 'ymb(e|ë)dhjet',],
+'ig', 'isfat', 'isiplin', 'ispozit', 'it', 'jegurin', 'oktrin', 'or', 'ordolin', 'rejt', 'rit', 'uzin', 'ymb(e|ë)dhjet',],
 
 # e
 ['kspedit', 'kspozit', 'n', 'r', 'rzin',],
 
 # f								
-['am', 'jal', 'lam', 'rik', 'urk', 'ush'],
+['am', 'jal', 'lam', 'rik', 'und(e|ë)rin', 'urk', 'ush'],
 
 # g													
-['af', 'alin', 'ar', 'jasht', 'jasht(e|ë)mb(e|ë)dhjet', 'jat', 'j(e|ë)m', 'jer',
+['abardin', 'af', 'alin', 'ar', 'ardalin', 'azolin', '(e|ë)lqerin', 'ijotin', 'jasht', 'jasht(e|ë)mb(e|ë)dhjet', 'jat', 'j(e|ë)m', 'jer',
 'jell', 'jithmon', 'jiz', 'lin', 'odin', 'oj', 'om', 'remin', 'ril', 'rop', 'un',],
 
 # h
