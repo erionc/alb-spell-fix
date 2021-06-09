@@ -25,11 +25,14 @@ no_e_end = [
 ['am', 'jal', 'lam', 'rik', 'und(e|ë)rin', 'urk', 'ush'],
 
 # g													
-['abardin', 'af', 'alin', 'ar', 'ardalin', 'azolin', '(e|ë)lqerin', 'ijotin', 'jasht', 'jasht(e|ë)mb(e|ë)dhjet', 'jat', 'j(e|ë)m', 'jer',
-'jell', 'jithmon', 'jiz', 'lin', 'odin', 'oj', 'om', 'remin', 'ril', 'rop', 'un',],
+['abardin', 'af', 'alin', 'ar', 'ardalin', 'azolin', '(e|ë)lqerin',
+'ijotin', 'jasht', 'jasht(e|ë)mb(e|ë)dhjet', 'jat', 'eraqin', 'j(e|ë)m',
+'jer', 'jell', 'jithmon', 'jiz', 'licerin', 'lin', 'odin', 'oj', 'om',
+'remin', 'ril', 'rop', 'un',],
 
 # h
-['apësir', 'art', 'artin', 'er', 'ipotek', 'umb(e|ë)sir', 'umb(e|ë)tir', 'umner', 'urm'],
+['apësir', 'art', 'artin', 'emoglobin', 'er', 'ipotek', 'umb(e|ë)sir',
+'umb(e|ë)tir', 'umner', 'urm'],
 
 # i									
 ['j'],	
@@ -38,9 +41,10 @@ no_e_end = [
 ['av', 'et'],
 	
 # k																										
-['abin', 'afk', 'afsh', 'al', 'amin', 'antin', 'apic', 'aptin', 'arfic',
-'asht', 'at(e|ë)rmb(e|ë)dhjet', '(e|ë)rthiz', 'inin', 'lim', 'lithm',
-'odrin', 'ov', 'rahin', 'urv', 'ushtetut', 'uzhin',],
+['abin', 'afk', 'afsh', 'al', 'alt(e|ë)rin', 'amin', 'anarin', 'antin',
+'apic', 'aptin', 'arabin', 'arakatin', 'arfic', 'artolin', 'asht',
+'at(e|ë)rmb(e|ë)dhjet', '(e|ë)rthiz', 'inin', 'lim', 'lithm', 'odrin',
+'okain', 'ov', 'rahin', 'urv', 'ushtetut', 'uzhin',],
 	
 # l								
 ['akin', 'argin', 'ënd', '(e|ë)ndin', 'im', 'ir', 'oj', 'op', 'uft', 'ugin',],
@@ -127,10 +131,10 @@ with_e_end = [
 [],
 
 # g													
-['urin', 'jelin',],
+['urin', 'jelin', 'jeturin',],
 
 # h
-[],
+['edhurin', 'eroin',],
 
 # i									
 [],	
@@ -139,7 +143,7 @@ with_e_end = [
 [],	
 
 # k																										
-['am', 'ok'],
+['afein', 'am', 'ok'],
 	
 # l								
 ['ug', 'yr'],
