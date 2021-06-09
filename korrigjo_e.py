@@ -44,38 +44,41 @@ no_e_end = [
 ['abin', 'afk', 'afsh', 'al', 'alt(e|ë)rin', 'amin', 'anarin', 'antin',
 'apic', 'aptin', 'arabin', 'arakatin', 'arfic', 'artolin', 'asht',
 'at(e|ë)rmb(e|ë)dhjet', '(e|ë)rthiz', 'inin', 'lim', 'lithm', 'odrin',
-'okain', 'ov', 'rahin', 'urv', 'ushtetut', 'uzhin',],
+'okain', 'olesterin', 'omodin', 'opertin', 'ov', 'rahin', 'undrin', 'urv',
+'ushtetut', 'uzhin',],
 	
 # l								
-['akin', 'argin', 'ënd', '(e|ë)ndin', 'im', 'ir', 'oj', 'op', 'uft', 'ugin',],
+['agazin', 'akin', 'argin', 'eckurin', 'ënd', '(e|ë)ndin', 'igatin', 'im', 'imurin',
+'ir', 'lamarin', 'oj', 'op', 'uft', 'ugin',],
 
 # m											
-['akin', 'ark', 'art', 'artin', 'atric', 'ij', 'in', 'ir', 'iz', 'oll',
-'orfin', 'uzik'], 
+['akin', 'andarin', 'andolin', 'argarin', 'ark', 'art', 'artin', 'atric',
+'ij', 'in', 'ir', 'iz', 'oll', 'orfin', 'uzik'], 
 
 # n					
-['aft', 'ap', 'djes', '(e|ë)nt', '(e|ë)nt(e|ë)mb(e|ë)dhjet', 'gjyr',
-'inull', 'ism', 'j', 'j(e|ë)mb(e|ë)dhjet',
+['aft', 'aftalin', 'ap', 'djes', '(e|ë)nt', '(e|ë)nt(e|ë)mb(e|ë)dhjet',
+'gjyr', 'ikotin', 'inull', 'ism', 'itroglicerin', 'j', 'j(e|ë)mb(e|ë)dhjet',
 ],
 	
 # o							
-['rt', 'pozit'],	
+['fi(c|ç)in', 'rigjin', 'rt', 'pozit'],	
 	
 # p								
-['adrejt', 'ag', 'akic', 'arabim', 'arm', 'araman', 'armend', 'atin', 'em',
-'en', 'end', 'es', 'es(e|ë)mb(e|ë)dhjet', '(e|ë)shtym', 'in', 'ishin', 'jeshk',
-'levic', 'ozit', 'redh', 'remis', 'rik', 'ron', 'rostitut', 'ul', 'un',
-'ushk'],
+['adrejt', 'ag', 'akic', 'arabim', 'aradhom', 'arafin', 'arakthin', 'arm',
+'araman', 'armend', 'atin', 'elerin', 'em', 'en', 'end', 'enicilin', 'es',
+'es(e|ë)mb(e|ë)dhjet', '(e|ë)shtym', 'in', 'ishin', 'jeshk', 'lastelin',
+'levic', 'ozit', 'rapashpin', 'redh', 'remis', 'rik', 'ron', 'rostitut',
+'rotein', 'ul', 'un', 'ushk'],
 
 # q		
-['art', 'indark', 'ukm'],	
+['art', 'indark', 'uk(e|ë)lin', 'ukm'],	
 	
 # r											
-['(e|ë)r', 'etin', 'ezolut', 'imt', 'rep', 'rob', 'rug', 'rugic', 'rugin',
-'utin',],
+['(e|ë)r', 'etin', 'ezolut', 'imt', 'rangallin', 'rep', 'rob', 'ozmarin',
+'rug', 'rugic', 'rugin', 'utin',],
 
 # s												
-['fid', 'fin', 'heg', 'hkreptim', 'hpejt', 'hpell', 'hport', 'hum', 'humic',
+['akarin', 'fid', 'fin', 'heg', 'hkreptim', 'hpejt', 'hpell', 'hport', 'hum', 'humic',
 'hqis', 'htat', 'htat(e|ë)mb(e|ë)dhjet', 'htrenjt', 'intez', 'it', 'kutin', 'ob',
 'pin', 'terlin', 'tin', 'tuf', 'ulin', 'yprin',],
 
@@ -149,7 +152,7 @@ with_e_end = [
 ['ug', 'yr'],
 
 # m											
-['aj', 'arin', 'ushk'], 
+['aj', 'arin', 'beturin', 'jegullin', 'ushk'], 
 
 # n					
 ['grehin', 'j(e|ë)zet'],	
