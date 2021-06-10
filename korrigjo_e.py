@@ -87,7 +87,7 @@ no_e_end = [
 'orb', 'razir', 'remb(e|ë)dhjet', 'rin', 'urbin',],	
 	
 # u											
-['j', 'n', 'zin'],
+['j', 'l(ë|e)rim', 'n', 'zin'],
 
 # v												
 ['aksin', 'al', 'et(e|ë)tim', 'vezullim', 'iktim', 'il', 'itamin', 'itrin',
