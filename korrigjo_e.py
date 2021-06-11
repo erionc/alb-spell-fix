@@ -78,13 +78,16 @@ no_e_end = [
 'rug', 'rugic', 'rugin', 'utin',],
 
 # s												
-['akarin', 'fid', 'fin', 'heg', 'hkreptim', 'hpejt', 'hpell', 'hport', 'hum', 'humic',
-'hqis', 'htat', 'htat(e|ë)mb(e|ë)dhjet', 'htrenjt', 'intez', 'it', 'kutin', 'ob',
-'pin', 'terlin', 'tin', 'tuf', 'ulin', 'yprin',],
+['akarin', 'fid', 'fin', 'hakullin', 'heg', 'hkarravin', 'hkat(e|ë)rrin',
+'hkreptim', 'hkresurin', 'hpartallin', 'hpejt', 'hpell', 'hport', 'hum',
+'humic', 'hqis', 'htat', 'htat(e|ë)mb(e|ë)dhjet', 'htrenjt', 'intez',
+'it', 'kutin', 'ob', 'pin', 'terlin', 'tin', 'treptomicin', 'tuf',
+'uferin', 'ulin', 'yprin',],
 
 # t
-['han', 'ap', 'arg', 'et', 'et(e|ë)mb(e|ë)dhjet', 'hatin', 'hellin', 'hik', 'oksin',
-'orb', 'razir', 'remb(e|ë)dhjet', 'rin', 'urbin',],	
+['han', 'ap', 'arg', 'avolin', 'et', 'et(e|ë)mb(e|ë)dhjet', 'etraciklin',
+'hatin', 'hellin', 'hik', 'oksin', 'orb', 'rampolin', 'razir',
+'remb(e|ë)dhjet', 'r(e|ë)ndelin', 'rin', 'urbin',],	
 	
 # u											
 ['j', 'l(ë|e)rim', 'n', 'zin'],
