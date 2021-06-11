@@ -95,10 +95,10 @@ no_e_end = [
 # v												
 ['aksin', 'al', 'azelin', 'et(e|ë)tim', 'vezullim', 'iktim', 'il',
 'iolin', 'itamin', 'itrin', 'jeg', 'jeturin', 'ler', 'og(e|ë)lin', 'on',
-'rim'],
+'orb(e|ë)tin', 'rim'],
 
 # x								
-['hung', 'in', 'ix', ],	
+['helatin', 'hung', 'in', 'ix', ],	
 
 # y														
 ['n', 'ndyr'],	
