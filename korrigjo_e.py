@@ -93,8 +93,9 @@ no_e_end = [
 ['j', 'l(ë|e)rim', 'n', 'zin'],
 
 # v												
-['aksin', 'al', 'et(e|ë)tim', 'vezullim', 'iktim', 'il', 'itamin', 'itrin',
-'jeg', 'ler', 'on', 'rim'],
+['aksin', 'al', 'azelin', 'et(e|ë)tim', 'vezullim', 'iktim', 'il',
+'iolin', 'itamin', 'itrin', 'jeg', 'jeturin', 'ler', 'og(e|ë)lin', 'on',
+'rim'],
 
 # x								
 ['hung', 'in', 'ix', ],	
