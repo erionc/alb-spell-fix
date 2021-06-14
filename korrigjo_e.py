@@ -8,7 +8,7 @@ no_e_end = [
 'rk', 'rn', 'rr', 'spirin', 'tkin',],
 
 # b															
-['alt', 'altin', 'alerin', 'arn', 'enzin', 'ibliotek', 'im', 'iskot', 'obin', 'oj',
+['alt', 'altin', 'alerin', 'arn', 'enzin', 'ib', 'ibliotek', 'im', 'iskot', 'obin', 'oj',
 'otin', 'rek', 'ritm', 'ubullim', 'uj', 'ujtin', 'uk', 'ul'],
 
 # c		
@@ -28,7 +28,7 @@ no_e_end = [
 ['abardin', 'af', 'alin', 'ar', 'ardalin', 'azolin', '(e|ë)lqerin',
 'ijotin', 'jasht', 'jasht(e|ë)mb(e|ë)dhjet', 'jat', 'eraqin', 'j(e|ë)m',
 'jer', 'jell', 'jithmon', 'jiz', 'licerin', 'lin', 'odin', 'oj', 'om',
-'remin', 'ril', 'rop', 'un',],
+'remin', 'rib', 'ril', 'rop', 'un',],
 
 # h
 ['apësir', 'art', 'artin', 'emoglobin', 'er', 'ipotek', 'umb(e|ë)sir',
@@ -74,11 +74,11 @@ no_e_end = [
 ['art', 'indark', 'uk(e|ë)lin', 'ukm'],	
 	
 # r											
-['(e|ë)r', 'etin', 'ezolut', 'imt', 'rangallin', 'rep', 'rob', 'ozmarin',
+['(e|ë)r', 'etin', 'ezolut', 'imt', 'rangallin', 'rep', 'rib', 'rob', 'ozmarin',
 'rug', 'rugic', 'rugin', 'utin',],
 
 # s												
-['akarin', 'fid', 'fin', 'hakullin', 'heg', 'hkarravin', 'hkat(e|ë)rrin',
+['akarin', 'fid', 'fin', 'hakullin', 'heg', 'hib', 'hkarravin', 'hkat(e|ë)rrin',
 'hkreptim', 'hkresurin', 'hpartallin', 'hpejt', 'hpell', 'hport', 'hum',
 'humic', 'hqis', 'htat', 'htat(e|ë)mb(e|ë)dhjet', 'htrenjt', 'intez',
 'it', 'kutin', 'ob', 'pin', 'terlin', 'tin', 'treptomicin', 'tuf',
