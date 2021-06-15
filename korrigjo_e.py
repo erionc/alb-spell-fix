@@ -8,8 +8,9 @@ no_e_end = [
 'rk', 'rn', 'rr', 'spirin', 'tkin',],
 
 # b															
-['ab', 'alt', 'altin', 'alerin', 'arn', 'enzin', 'ib', 'ibliotek', 'im', 'iskot', 'obin', 'oj',
-'otin', 'rek', 'ritm', 'ubullim', 'uj', 'ujtin', 'uk', 'ul'],
+['ab', 'ac', 'alt', 'altin', 'alerin', 'arn', 'enzin', 'ib', 'ibliotek',
+'im', 'iskot', 'lac', 'obin', 'oj', 'otin', 'rek', 'ritm', 'ubullim', 'uj',
+'ujtin', 'uk', 'ul', 'unac'],
 
 # c		
 ['aher', 'ajk', 'apin', 'elin',],
@@ -28,7 +29,7 @@ no_e_end = [
 ['ab', 'abardin', 'af', 'alin', 'ar', 'ardalin', 'azolin', '(e|ë)lqerin',
 'ijotin', 'jasht', 'jasht(e|ë)mb(e|ë)dhjet', 'jat', 'eraqin', 'j(e|ë)m',
 'jer', 'jell', 'jithmon', 'jiz', 'licerin', 'lin', 'odin', 'oj', 'om',
-'remin', 'rib', 'ril', 'rop', 'un',],
+'remin', 'rib', 'ril', 'rop', 'un', 'urgac'],
 
 # h
 ['apësir', 'art', 'artin', 'emoglobin', 'er', 'ipotek', 'umb(e|ë)sir',
@@ -44,7 +45,7 @@ no_e_end = [
 ['abin', 'afk', 'afsh', 'al', 'alt(e|ë)rin', 'amin', 'anarin', 'antin',
 'apic', 'aptin', 'arabin', 'arakatin', 'arfic', 'artolin', 'asht',
 'at(e|ë)rmb(e|ë)dhjet', '(e|ë)rrab', '(e|ë)rthiz', 'inin', 'lim', 'lithm',
-'odrin', 'okain', 'olesterin', 'omodin', 'opertin', 'ov', 'rahin',
+'odrin', 'okain', 'olesterin', 'omodin', 'opertin', 'orac', 'ov', 'rahin',
 'undrin', 'urv', 'ushtetut', 'uzhin',],
 	
 # l								
@@ -66,7 +67,7 @@ no_e_end = [
 # p								
 ['adrejt', 'ag', 'akic', 'arabim', 'aradhom', 'arafin', 'arakthin', 'arm',
 'araman', 'armend', 'atin', 'elerin', 'em', 'en', 'end', 'enicilin', 'es',
-'es(e|ë)mb(e|ë)dhjet', '(e|ë)shtym', 'in', 'ishin', 'jeshk', 'lastelin',
+'es(e|ë)mb(e|ë)dhjet', '(e|ë)shtym', 'in', 'ishin', 'jac', 'jeshk', 'lastelin',
 'levic', 'ozit', 'rapashpin', 'redh', 'remis', 'rik', 'ron', 'rostitut',
 'rotein', 'ul', 'un', 'ushk'],
 
@@ -74,7 +75,7 @@ no_e_end = [
 ['af(e|ë)k(e|ë)rrab', 'art', 'indark', 'uk(e|ë)lin', 'ukm'],	
 	
 # r											
-['(e|ë)r', 'etin', 'ezolut', 'imt', 'rangallin', 'rep', 'rib', 'rob', 'ozmarin',
+['ac', '(e|ë)r', 'etin', 'ezolut', 'imt', 'rangallin', 'rep', 'rib', 'rob', 'ozmarin',
 'rug', 'rugic', 'rugin', 'utin',],
 
 # s												
@@ -138,7 +139,7 @@ with_e_end = [
 [],
 
 # g													
-['urin', 'jelin', 'jeturin',],
+['ac', 'urin', 'jelin', 'jeturin',],
 
 # h
 ['edhurin', 'eroin',],
@@ -153,7 +154,7 @@ with_e_end = [
 ['afein', 'am', 'ok'],
 	
 # l								
-['ug', 'yr'],
+['ac', 'lac', 'ug', 'yr'],
 
 # m											
 ['aj', 'arin', 'beturin', 'jegullin', 'ushk'], 
