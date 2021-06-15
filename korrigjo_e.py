@@ -4,11 +4,11 @@ import re, string
 ## fjalë që shkruhen pa ë fundore ose me e në vend të saj -- mir(e) -> mirë
 no_e_end = [
 # a
-['drenalin', 'jk', 'lbumin', 'meb', 'mplitud', 'naliz', 'ngjin', 'nilin',
+['drenalin', 'jk', 'lbumin', 'm', 'meb', 'mplitud', 'naliz', 'ngjin', 'nilin',
 'rk', 'rn', 'rr', 'spirin', 'tkin',],
 
 # b															
-['alt', 'altin', 'alerin', 'arn', 'enzin', 'ib', 'ibliotek', 'im', 'iskot', 'obin', 'oj',
+['ab', 'alt', 'altin', 'alerin', 'arn', 'enzin', 'ib', 'ibliotek', 'im', 'iskot', 'obin', 'oj',
 'otin', 'rek', 'ritm', 'ubullim', 'uj', 'ujtin', 'uk', 'ul'],
 
 # c		
@@ -25,14 +25,14 @@ no_e_end = [
 ['am', 'jal', 'lam', 'rik', 'und(e|ë)rin', 'urk', 'ush'],
 
 # g													
-['abardin', 'af', 'alin', 'ar', 'ardalin', 'azolin', '(e|ë)lqerin',
+['ab', 'abardin', 'af', 'alin', 'ar', 'ardalin', 'azolin', '(e|ë)lqerin',
 'ijotin', 'jasht', 'jasht(e|ë)mb(e|ë)dhjet', 'jat', 'eraqin', 'j(e|ë)m',
 'jer', 'jell', 'jithmon', 'jiz', 'licerin', 'lin', 'odin', 'oj', 'om',
 'remin', 'rib', 'ril', 'rop', 'un',],
 
 # h
 ['apësir', 'art', 'artin', 'emoglobin', 'er', 'ipotek', 'umb(e|ë)sir',
-'umb(e|ë)tir', 'umner', 'urm'],
+'umb(e|ë)tir', 'umner', 'und(e|ë)k(e|ë)rrab', 'und(e|ë)shkab', 'urm'],
 
 # i									
 ['j'],	
@@ -43,9 +43,9 @@ no_e_end = [
 # k																										
 ['abin', 'afk', 'afsh', 'al', 'alt(e|ë)rin', 'amin', 'anarin', 'antin',
 'apic', 'aptin', 'arabin', 'arakatin', 'arfic', 'artolin', 'asht',
-'at(e|ë)rmb(e|ë)dhjet', '(e|ë)rthiz', 'inin', 'lim', 'lithm', 'odrin',
-'okain', 'olesterin', 'omodin', 'opertin', 'ov', 'rahin', 'undrin', 'urv',
-'ushtetut', 'uzhin',],
+'at(e|ë)rmb(e|ë)dhjet', '(e|ë)rrab', '(e|ë)rthiz', 'inin', 'lim', 'lithm',
+'odrin', 'okain', 'olesterin', 'omodin', 'opertin', 'ov', 'rahin',
+'undrin', 'urv', 'ushtetut', 'uzhin',],
 	
 # l								
 ['agazin', 'akin', 'argin', 'eckurin', 'ënd', '(e|ë)ndin', 'igatin', 'im', 'imurin',
@@ -71,21 +71,21 @@ no_e_end = [
 'rotein', 'ul', 'un', 'ushk'],
 
 # q		
-['art', 'indark', 'uk(e|ë)lin', 'ukm'],	
+['af(e|ë)k(e|ë)rrab', 'art', 'indark', 'uk(e|ë)lin', 'ukm'],	
 	
 # r											
 ['(e|ë)r', 'etin', 'ezolut', 'imt', 'rangallin', 'rep', 'rib', 'rob', 'ozmarin',
 'rug', 'rugic', 'rugin', 'utin',],
 
 # s												
-['akarin', 'fid', 'fin', 'hakullin', 'heg', 'hib', 'hkarravin', 'hkat(e|ë)rrin',
-'hkreptim', 'hkresurin', 'hpartallin', 'hpejt', 'hpell', 'hport', 'hum',
-'humic', 'hqis', 'htat', 'htat(e|ë)mb(e|ë)dhjet', 'htrenjt', 'intez',
-'it', 'kutin', 'ob', 'pin', 'terlin', 'tin', 'treptomicin', 'tuf',
-'uferin', 'ulin', 'yprin',],
+['akarin', 'fid', 'fin', 'hakullin', 'heg', 'hib', 'hkab', 'hkarravin',
+'hkat(e|ë)rrin', 'hkrab', 'hkreptim', 'hkresurin', 'hpartallin', 'hpejt',
+'hpell', 'hport', 'hum', 'humic', 'hqis', 'htat', 'htat(e|ë)mb(e|ë)dhjet',
+'htrenjt', 'intez', 'it', 'kutin', 'ob', 'pin', 'terlin', 'tin',
+'treptomicin', 'tuf', 'uferin', 'ulin', 'yprin',],
 
 # t
-['han', 'ap', 'arg', 'avolin', 'et', 'et(e|ë)mb(e|ë)dhjet', 'etraciklin',
+['han', 'ap', 'arab', 'arg', 'avolin', 'et', 'et(e|ë)mb(e|ë)dhjet', 'etraciklin',
 'hatin', 'hellin', 'hik', 'oksin', 'orb', 'rampolin', 'razir',
 'remb(e|ë)dhjet', 'r(e|ë)ndelin', 'rin', 'urbin',],	
 	
@@ -104,7 +104,7 @@ no_e_end = [
 ['n', 'ndyr'],	
 
 # z										
-['an', 'gjyr', 'hdrejt', 'jarrt', 'orr'],												
+['an', 'gjyr', 'hab', 'hdrejt', 'jarrt', 'orr'],												
 ]
 
 ## përgatitja e shprehjes së rregullt për korrigjimin e ë-së fundore
