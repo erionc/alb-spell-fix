@@ -42,11 +42,11 @@ no_e_end = [
 ['av', 'et'],
 	
 # k																										
-['abin', 'afk', 'afsh', 'al', 'alt(e|ë)rin', 'amin', 'anarin', 'antin',
-'apic', 'aptin', 'arabin', 'arakatin', 'arfic', 'artolin', 'asht',
+['abin', 'afk', 'afsh', 'al', 'alt(e|ë)rin', 'amin', 'anarin', 'anavac',
+'antin', 'apic', 'aptin', 'arabin', 'arakatin', 'arfic', 'artolin', 'asht',
 'at(e|ë)rmb(e|ë)dhjet', '(e|ë)rrab', '(e|ë)rthiz', 'inin', 'lim', 'lithm',
 'odrin', 'okain', 'olesterin', 'omodin', 'opertin', 'orac', 'ov', 'rahin',
-'undrin', 'urv', 'ushtetut', 'uzhin',],
+'undrin', 'ungac', 'urv', 'ushtetut', 'uzhin',],
 	
 # l								
 ['agazin', 'akin', 'argin', 'eckurin', 'ënd', '(e|ë)ndin', 'igatin', 'im', 'imurin',
@@ -82,12 +82,12 @@ no_e_end = [
 ['akarin', 'fid', 'fin', 'hakullin', 'heg', 'hib', 'hkab', 'hkarravin',
 'hkat(e|ë)rrin', 'hkrab', 'hkreptim', 'hkresurin', 'hpartallin', 'hpejt',
 'hpell', 'hport', 'hum', 'humic', 'hqis', 'htat', 'htat(e|ë)mb(e|ë)dhjet',
-'htrenjt', 'intez', 'it', 'kutin', 'ob', 'pin', 'terlin', 'tin',
+'htrenjt', 'intez', 'it', 'kilifac', 'kutin', 'ob', 'pin', 'terlin', 'tin',
 'treptomicin', 'tuf', 'uferin', 'ulin', 'yprin',],
 
 # t
-['han', 'ap', 'arab', 'arg', 'avolin', 'et', 'et(e|ë)mb(e|ë)dhjet', 'etraciklin',
-'hatin', 'hellin', 'hik', 'oksin', 'orb', 'rampolin', 'razir',
+['han', 'ap', 'arab', 'arg', 'arrac', 'avolin', 'et', 'et(e|ë)mb(e|ë)dhjet',
+'etraciklin', 'hatin', 'hellin', 'hik', 'oksin', 'orb', 'rampolin', 'razir',
 'remb(e|ë)dhjet', 'r(e|ë)ndelin', 'rin', 'urbin',],	
 	
 # u											
