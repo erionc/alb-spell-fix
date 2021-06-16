@@ -9,11 +9,11 @@ no_e_end = [
 
 # b															
 ['ab', 'ac', 'alt', 'altin', 'alerin', 'arn', 'enzin', 'ib', 'ibliotek',
-'im', 'iskot', 'lac', 'obin', 'oj', 'otin', 'rek', 'ritm', 'ubullim', 'uj',
-'ujtin', 'uk', 'ul', 'unac'],
+'im', 'iskot', 'lac', 'obin', 'oj', 'otin', 'rek', 'ritm', 'ubullim',
+'udalla(c|ç)k', 'uj', 'ujtin', 'uk', 'ul', 'unac'],
 
 # c		
-['aher', 'ajk', 'apin', 'elin',],
+['açk', 'aher', 'ajk', 'apin', 'elin',],
 
 # d															
 ['afin', 'ardh', 'at', 'eg', 'eltin', 'epozit', 'er', '(e|ë)llinj', 'h(e|ë)mball', 'hom',
@@ -42,15 +42,15 @@ no_e_end = [
 ['av', 'et'],
 	
 # k																										
-['abin', 'afk', 'afsh', 'al', 'alt(e|ë)rin', 'amin', 'anarin', 'anavac',
+['abin', 'açk', 'afk', 'afsh', 'al', 'alt(e|ë)rin', 'amin', 'anarin', 'anavac',
 'antin', 'apic', 'aptin', 'arabin', 'arakatin', 'arfic', 'artolin', 'asht',
 'at(e|ë)rmb(e|ë)dhjet', '(e|ë)rrab', '(e|ë)rthiz', 'inin', 'lim', 'lithm',
 'lla(c|ç)', 'odrin', 'okain', 'olesterin', 'omodin', 'opertin', 'orac',
-'ov', 'rahin', 'undrin', 'ungac', 'urv', 'ushtetut', 'uzhin',],
+'ov', 'rahin', 'ukumjaçk', 'undrin', 'ungac', 'urv', 'ushtetut', 'uzhin',],
 	
 # l								
 ['açk', 'agazin', 'akin', 'argin', 'eckurin', 'ënd', '(e|ë)ndin', 'igatin',
-'im', 'imurin', 'ir', 'lamarin', 'oj', 'op', 'uft', 'ugin',],
+'im', 'imurin', 'ir', 'laçk', 'lamarin', 'oj', 'op', 'uft', 'ugin',],
 
 # m											
 ['akin', 'andarin', 'andolin', 'argarin', 'ark', 'art', 'artin', 'atric',
@@ -67,9 +67,9 @@ no_e_end = [
 # p								
 ['adrejt', 'ag', 'akic', 'arabim', 'aradhom', 'arafin', 'arakthin', 'arm',
 'araman', 'armend', 'atin', 'elerin', 'em', 'en', 'end', 'enicilin', 'es',
-'es(e|ë)mb(e|ë)dhjet', '(e|ë)shtym', 'in', 'ishin', 'jac', 'jeshk', 'lastelin',
-'levic', 'ozit', 'rapashpin', 'redh', 'remis', 'rik', 'ron', 'rostitut',
-'rotein', 'ul', 'un', 'ushk'],
+'es(e|ë)mb(e|ë)dhjet', '(e|ë)shtym', 'in', 'ishin', 'jac', 'jeshk',
+'la(c|ç)k', 'lastelin', 'levic', 'ozit', 'rapashpin', 'redh', 'remis',
+'rik', 'ron', 'rostitut', 'rotein', 'ul', 'un', 'ushk'],
 
 # q		
 ['af(e|ë)k(e|ë)rrab', 'art', 'indark', 'uk(e|ë)lin', 'ukm'],	
