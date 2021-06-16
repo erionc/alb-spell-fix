@@ -45,12 +45,12 @@ no_e_end = [
 ['abin', 'afk', 'afsh', 'al', 'alt(e|ë)rin', 'amin', 'anarin', 'anavac',
 'antin', 'apic', 'aptin', 'arabin', 'arakatin', 'arfic', 'artolin', 'asht',
 'at(e|ë)rmb(e|ë)dhjet', '(e|ë)rrab', '(e|ë)rthiz', 'inin', 'lim', 'lithm',
-'odrin', 'okain', 'olesterin', 'omodin', 'opertin', 'orac', 'ov', 'rahin',
-'undrin', 'ungac', 'urv', 'ushtetut', 'uzhin',],
+'lla(c|ç)', 'odrin', 'okain', 'olesterin', 'omodin', 'opertin', 'orac',
+'ov', 'rahin', 'undrin', 'ungac', 'urv', 'ushtetut', 'uzhin',],
 	
 # l								
-['agazin', 'akin', 'argin', 'eckurin', 'ënd', '(e|ë)ndin', 'igatin', 'im', 'imurin',
-'ir', 'lamarin', 'oj', 'op', 'uft', 'ugin',],
+['açk', 'agazin', 'akin', 'argin', 'eckurin', 'ënd', '(e|ë)ndin', 'igatin',
+'im', 'imurin', 'ir', 'lamarin', 'oj', 'op', 'uft', 'ugin',],
 
 # m											
 ['akin', 'andarin', 'andolin', 'argarin', 'ark', 'art', 'artin', 'atric',
