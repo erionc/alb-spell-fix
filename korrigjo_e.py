@@ -27,9 +27,9 @@ no_e_end = [
 
 # g													
 ['ab', 'abardin', 'af', 'alin', 'ar', 'ardalin', 'azolin', '(e|ë)lqerin',
-'ijotin', 'jasht', 'jasht(e|ë)mb(e|ë)dhjet', 'jat', 'eraqin', 'j(e|ë)m',
-'jer', 'jell', 'jithmon', 'jiz', 'licerin', 'lin', 'odin', 'oj', 'om',
-'remin', 'rib', 'ril', 'rop', 'un', 'urgac'],
+'(e|ë)rmadh', 'ijotin', 'jasht', 'jasht(e|ë)mb(e|ë)dhjet', 'jat',
+'eraqin', 'j(e|ë)m', 'jer', 'jell', 'jithmon', 'jiz', 'licerin', 'lin',
+'odin', 'oj', 'om', 'remin', 'rib', 'ril', 'rop', 'un', 'urgac'],
 
 # h
 ['apësir', 'art', 'artin', 'emoglobin', 'er', 'ipotek', 'umb(e|ë)sir',
@@ -75,7 +75,7 @@ no_e_end = [
 ['af(e|ë)k(e|ë)rrab', 'art', 'indark', 'uk(e|ë)lin', 'ukm'],	
 	
 # r											
-['ac', '(e|ë)r', 'etin', 'ezolut', 'imt', 'rangallin', 'rep', 'rib', 'rob', 'ozmarin',
+['ac', 'adh', '(e|ë)r', 'etin', 'ezolut', 'imt', 'rangallin', 'rep', 'rib', 'rob', 'ozmarin',
 'rug', 'rugic', 'rugin', 'utin',],
 
 # s												
@@ -95,7 +95,7 @@ no_e_end = [
 ['j', 'l(ë|e)rim', 'n', 'zin'],
 
 # v												
-['aksin', 'al', 'azelin', 'et(e|ë)tim', 'vezullim', 'iktim', 'il',
+['adh', 'aksin', 'al', 'azelin', 'et(e|ë)tim', 'vezullim', 'iktim', 'il',
 'iolin', 'itamin', 'itrin', 'jeg', 'jeturin', 'ler', 'og(e|ë)lin', 'on',
 'orb(e|ë)tin', 'rim'],
 
