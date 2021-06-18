@@ -42,12 +42,12 @@ no_e_end = [
 ['av', 'et'],
 	
 # k																										
-['abin', 'açk', 'afk', 'afsh', 'al', 'alt(e|ë)rin', 'amin', 'anarin', 'anavac',
-'antin', 'apic', 'aptin', 'arabin', 'arakatin', 'arfic', 'artolin', 'asht',
-'at(e|ë)rmb(e|ë)dhjet', '(e|ë)rrab', '(e|ë)rthiz', 'inin', 'lim', 'lithm',
-'lla(c|ç)', 'odrin', 'okain', 'olesterin', 'omodin', 'opertin', 'orac',
-'ov', 'rahaqaf', 'ryeradh', 'rahin', 'ukumjaçk', 'undrin', 'ungac', 'urv',
-'ushtetut', 'uzhin',],
+['abin', 'açk', 'afk', 'afsh', 'al', 'aliqaf', 'alt(e|ë)rin', 'amin',
+'anarin', 'anavac', 'antin', 'apic', 'aptin', 'arabin', 'arakatin',
+'arfic', 'artolin', 'asht', 'at(e|ë)rmb(e|ë)dhjet', '(e|ë)rrab',
+'(e|ë)rthiz', 'inin', 'lim', 'lithm', 'lla(c|ç)', 'odrin', 'okain',
+'olesterin', 'omodin', 'opertin', 'orac', 'ov', 'rahaqaf', 'ryeradh',
+'rahin', 'ukumjaçk', 'undrin', 'ungac', 'urv', 'ushtetut', 'uzhin',],
 	
 # l								
 ['açk', 'agazin', 'akin', 'argin', 'eckurin', 'ënd', '(e|ë)ndin', 'igatin',
