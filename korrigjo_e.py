@@ -8,7 +8,7 @@ no_e_end = [
 'rk', 'rn', 'rr', 'spirin', 'tkin',],
 
 # b															
-['ab', 'ac', 'alt', 'altin', 'alerin', 'arn', 'enzin', 'ib', 'ibliotek',
+['ab', 'ac', 'af', 'alt', 'altin', 'alerin', 'arn', 'enzin', 'ib', 'ibliotek',
 'im', 'iskot', 'lac', 'obin', 'oj', 'otin', 'rek', 'ritm', 'ubullim',
 'udalla(c|ç)k', 'uj', 'ujtin', 'uk', 'ul', 'unac'],
 
@@ -46,7 +46,8 @@ no_e_end = [
 'antin', 'apic', 'aptin', 'arabin', 'arakatin', 'arfic', 'artolin', 'asht',
 'at(e|ë)rmb(e|ë)dhjet', '(e|ë)rrab', '(e|ë)rthiz', 'inin', 'lim', 'lithm',
 'lla(c|ç)', 'odrin', 'okain', 'olesterin', 'omodin', 'opertin', 'orac',
-'ov', 'rahin', 'ukumjaçk', 'undrin', 'ungac', 'urv', 'ushtetut', 'uzhin',],
+'ov', 'ryeradh', 'rahin', 'ukumjaçk', 'undrin', 'ungac', 'urv', 'ushtetut',
+'uzhin',],
 	
 # l								
 ['açk', 'agazin', 'akin', 'argin', 'eckurin', 'ënd', '(e|ë)ndin', 'igatin',
