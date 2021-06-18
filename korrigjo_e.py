@@ -23,12 +23,12 @@ no_e_end = [
 ['kspedit', 'kspozit', 'n', 'r', 'rzin',],
 
 # f								
-['am', 'jal', 'lam', 'rik', 'und(e|ë)rin', 'urk', 'ush'],
+['am', 'jal', 'lam', 'rik', 'und(e|ë)rin', 'urk', 'ush', 'ytaqaf',],
 
 # g													
 ['ab', 'abardin', 'af', 'alin', 'ar', 'ardalin', 'azolin', '(e|ë)lqerin',
 '(e|ë)rmadh', 'ijotin', 'jasht', 'jasht(e|ë)mb(e|ë)dhjet', 'jat',
-'eraqin', 'j(e|ë)m', 'jer', 'jell', 'jithmon', 'jiz', 'licerin', 'lin',
+'eraqin', 'j(e|ë)m', 'jer', 'jell', 'jiraf', 'jithmon', 'jiz', 'licerin', 'lin',
 'odin', 'oj', 'om', 'remin', 'rib', 'ril', 'rop', 'un', 'urgac'],
 
 # h
@@ -46,8 +46,8 @@ no_e_end = [
 'antin', 'apic', 'aptin', 'arabin', 'arakatin', 'arfic', 'artolin', 'asht',
 'at(e|ë)rmb(e|ë)dhjet', '(e|ë)rrab', '(e|ë)rthiz', 'inin', 'lim', 'lithm',
 'lla(c|ç)', 'odrin', 'okain', 'olesterin', 'omodin', 'opertin', 'orac',
-'ov', 'ryeradh', 'rahin', 'ukumjaçk', 'undrin', 'ungac', 'urv', 'ushtetut',
-'uzhin',],
+'ov', 'rahaqaf', 'ryeradh', 'rahin', 'ukumjaçk', 'undrin', 'ungac', 'urv',
+'ushtetut', 'uzhin',],
 	
 # l								
 ['açk', 'agazin', 'akin', 'argin', 'eckurin', 'ënd', '(e|ë)ndin', 'igatin',
@@ -80,7 +80,7 @@ no_e_end = [
 'rug', 'rugic', 'rugin', 'utin',],
 
 # s												
-['a(c|ç)m', 'akarin', 'fid', 'fin', 'hakullin', 'heg', 'hib', 'hkab',
+['a(c|ç)m', 'af', 'akarin', 'fid', 'fin', 'hakullin', 'heg', 'hib', 'hkab',
 'hkarravin', 'hkat(e|ë)rrin', 'hkrab', 'hkreptim', 'hkresurin',
 'hpartallin', 'hpejt', 'hpell', 'hport', 'hum', 'humic', 'hqis', 'htat',
 'htat(e|ë)mb(e|ë)dhjet', 'htrenjt', 'intez', 'it', 'kilifac', 'kutin',
