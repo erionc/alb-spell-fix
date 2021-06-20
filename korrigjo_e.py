@@ -8,15 +8,16 @@ no_e_end = [
 'rk', 'rn', 'rr', 'spirin', 'tkin',],
 
 # b															
-['ab', 'ac', 'af', 'alt', 'altin', 'alerin', 'arn', 'enzin', 'ib', 'ibliotek',
-'im', 'iskot', 'lac', 'obin', 'oj', 'otin', 'rek', 'ritm', 'ubullim',
-'udalla(c|ç)k', 'uj', 'ujtin', 'uk', 'ul', 'unac'],
+['ab', 'ac', 'af', 'alad', 'alt', 'alad', 'alerin', 'altin', 'arn',
+'enzin', 'ib', 'ibliotek', 'im', 'iskot', 'lac', 'llokad', 'obin', 'oj',
+'otin', 'rek', 'rigad', 'ritm', 'ubullim', 'udalla(c|ç)k', 'uj', 'ujtin', 'uk',
+'ul', 'unac'],
 
 # c		
 ['açk', 'aher', 'ajk', 'apin', 'elin',],
 
 # d															
-['afin', 'ardh', 'at', 'eg', 'eltin', 'epozit', 'er', '(e|ë)llinj', 'h(e|ë)mball', 'hom',
+['ad', 'afin', 'ardh', 'at', 'eg', 'eltin', 'epozit', 'er', '(e|ë)llinj', 'h(e|ë)mball', 'hom',
 'ig', 'isfat', 'isiplin', 'ispozit', 'it', 'jegurin', 'oktrin', 'or', 'ordolin', 'rejt', 'rit', 'uzin', 'ymb(e|ë)dhjet',],
 
 # e
@@ -29,7 +30,7 @@ no_e_end = [
 ['ab', 'abardin', 'af', 'alin', 'ar', 'ardalin', 'azolin', '(e|ë)lqerin',
 '(e|ë)rmadh', 'ijotin', 'jasht', 'jasht(e|ë)mb(e|ë)dhjet', 'jat',
 'eraqin', 'j(e|ë)m', 'jer', 'jell', 'jiraf', 'jithmon', 'jiz', 'licerin', 'lin',
-'odin', 'oj', 'om', 'remin', 'rib', 'ril', 'rop', 'un', 'urgac'],
+'odin', 'oj', 'om', 'rad', 'remin', 'rib', 'ril', 'rop', 'un', 'urgac'],
 
 # h
 ['apësir', 'art', 'artin', 'emoglobin', 'er', 'ipotek', 'umb(e|ë)sir',
