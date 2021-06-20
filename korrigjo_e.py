@@ -88,7 +88,7 @@ no_e_end = [
 'hib', 'hkab', 'hkarravin', 'hkat(e|ë)rrin', 'hkrab', 'hkreptim', 'hkresurin',
 'hpartallin', 'hpejt', 'hpell', 'hport', 'hum', 'humic', 'hqis', 'htat',
 'htat(e|ë)mb(e|ë)dhjet', 'htrenjt', 'intez', 'it', 'kilifac', 'kutin',
-'ob', 'pin', 'terlin', 'tin', 'treptomicin', 'tuf', 'uferin', 'ulin',
+'ob', 'partakiad', 'pin', 'terlin', 'tin', 'treptomicin', 'tuf', 'uferin', 'ulin',
 'yprin',],
 
 # t
@@ -97,7 +97,7 @@ no_e_end = [
 'remb(e|ë)dhjet', 'r(e|ë)ndelin', 'rin', 'urbin',],	
 	
 # u											
-['j', 'l(ë|e)rim', 'n', 'zin'],
+['j', 'l(ë|e)rim', 'n', 'niversiad', 'zin'],
 
 # v												
 ['adh', 'aksin', 'al', 'azelin', 'et(e|ë)tim', 'vezullim', 'iktim', 'il',
