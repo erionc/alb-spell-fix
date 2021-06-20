@@ -4,27 +4,29 @@ import re, string
 ## fjalë që shkruhen pa ë fundore ose me e në vend të saj -- mir(e) -> mirë
 no_e_end = [
 # a
-['drenalin', 'jk', 'lbumin', 'm', 'meb', 'mplitud', 'naliz', 'ngjin', 'nilin',
-'rk', 'rn', 'rr', 'spirin', 'tkin',],
+['drenalin', 'jk', 'lbumin', 'm', 'mbasad', 'meb', 'mplitud', 'naliz',
+'ngjin', 'nilin', 'rk', 'rn', 'rr', 'spirin', 'tkin', 'utostrad',],
 
 # b															
 ['ab', 'ac', 'af', 'alad', 'alt', 'alad', 'alerin', 'altin', 'arn',
 'enzin', 'ib', 'ibliotek', 'im', 'iskot', 'lac', 'llokad', 'obin', 'oj',
-'otin', 'rek', 'rigad', 'ritm', 'ubullim', 'udalla(c|ç)k', 'uj', 'ujtin', 'uk',
+'otin', 'rek', 'rigad', 'ritm', 'rrikad', 'ubullim', 'udalla(c|ç)k', 'uj', 'ujtin', 'uk',
 'ul', 'unac'],
 
 # c		
-['açk', 'aher', 'ajk', 'apin', 'elin',],
+['açk', 'aher', 'ajk', 'apin', 'elin', 'entigrad',],
 
 # d															
-['ad', 'afin', 'ardh', 'at', 'eg', 'eltin', 'epozit', 'er', '(e|ë)llinj', 'h(e|ë)mball', 'hom',
-'ig', 'isfat', 'isiplin', 'ispozit', 'it', 'jegurin', 'oktrin', 'or', 'ordolin', 'rejt', 'rit', 'uzin', 'ymb(e|ë)dhjet',],
+['ad', 'afin', 'ardh', 'at', 'ecigrad', 'eg', 'ekad', 'eltin', 'epozit',
+'er', '(e|ë)llinj', 'h(e|ë)mball', 'hom', 'ig', 'isfat', 'isiplin',
+'ispozit', 'it', 'jegurin', 'oktrin', 'or', 'ordolin', 'rejt', 'rit',
+'uzin', 'ymb(e|ë)dhjet',],
 
 # e
-['kspedit', 'kspozit', 'n', 'r', 'rzin',],
+['kspedit', 'kspozit', 'n', 'r', 'rzin', 'strad',],
 
 # f								
-['am', 'jal', 'lam', 'rik', 'und(e|ë)rin', 'urk', 'ush', 'ytaqaf',],
+['am', 'jal', 'lam', 'rik', 'asad', 'und(e|ë)rin', 'urk', 'ush', 'ytaqaf',],
 
 # g													
 ['ab', 'abardin', 'af', 'alin', 'ar', 'ardalin', 'azolin', '(e|ë)lqerin',
@@ -52,7 +54,8 @@ no_e_end = [
 	
 # l								
 ['açk', 'agazin', 'akin', 'argin', 'eckurin', 'ënd', '(e|ë)ndin', 'igatin',
-'im', 'imurin', 'ir', 'laçk', 'lamarin', 'oj', 'op', 'uft', 'ugin',],
+'im', 'imonad', 'imurin', 'ir', 'laçk', 'lamarin', 'oj', 'op', 'uft',
+'ugin',],
 
 # m											
 ['akin', 'andarin', 'andolin', 'argarin', 'ark', 'art', 'artin', 'atric',
@@ -67,11 +70,11 @@ no_e_end = [
 ['fi(c|ç)in', 'rigjin', 'rt', 'pozit'],	
 	
 # p								
-['adrejt', 'ag', 'akic', 'arabim', 'aradhom', 'arafin', 'arakthin', 'arm',
+['adrejt', 'ag', 'akic', 'arabim', 'arad', 'aradhom', 'arafin', 'arakthin', 'arm',
 'araman', 'armend', 'atin', 'elerin', 'em', 'en', 'end', 'enicilin', 'es',
 'es(e|ë)mb(e|ë)dhjet', '(e|ë)shtym', 'in', 'ishin', 'jac', 'jeshk',
-'la(c|ç)k', 'lastelin', 'levic', 'ozit', 'rapashpin', 'redh', 'remis',
-'rik', 'ron', 'rostitut', 'rotein', 'ul', 'un', 'ushk'],
+'la(c|ç)k', 'lastelin', 'lejad', 'levic', 'omad', 'ozit', 'rapashpin', 'redh',
+'remis', 'rik', 'ron', 'rostitut', 'rotein', 'ul', 'un', 'ushk'],
 
 # q		
 ['af(e|ë)k(e|ë)rrab', 'art', 'indark', 'uk(e|ë)lin', 'ukm'],	
