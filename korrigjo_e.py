@@ -31,8 +31,9 @@ no_e_end = [
 # g													
 ['ab', 'abardin', 'af', 'alin', 'ar', 'ardalin', 'azolin', '(e|ë)lqerin',
 '(e|ë)rmadh', 'ijotin', 'jasht', 'jasht(e|ë)mb(e|ë)dhjet', 'jat',
-'eraqin', 'j(e|ë)m', 'jer', 'jell', 'jiraf', 'jithmon', 'jiz', 'licerin', 'lin',
-'odin', 'oj', 'om', 'rad', 'remin', 'rib', 'ril', 'rop', 'un', 'urgac'],
+'jeraqin', 'j(e|ë)m', 'jer', 'j(e|ë)kafsh', 'jell', 'jiraf', 'jithmon',
+'jiz', 'jysm(e|ë)kafsh', 'licerin', 'lin', 'odin', 'oj', 'om', 'rad',
+'remin', 'rib', 'ril', 'rop', 'un', 'urgac'],
 
 # h
 ['apësir', 'art', 'artin', 'emoglobin', 'er', 'ipotek', 'oshafk',
@@ -54,9 +55,9 @@ no_e_end = [
 'rahin', 'ukumjaçk', 'undrin', 'ungac', 'urv', 'ushtetut', 'uzhin',],
 	
 # l								
-['açk', 'agazin', 'akin', 'argin', 'eckurin', 'ënd', '(e|ë)ndin', 'igatin',
-'im', 'imonad', 'imurin', 'ir', 'laçk', 'lamarin', 'oj', 'op', 'uft',
-'ugin',],
+['açk', 'afsh', 'agazin', 'akin', 'argin', 'eckurin', 'ënd', '(e|ë)ndin',
+'igatin', 'im', 'imonad', 'imurin', 'ir', 'laçk', 'lamarin', 'oj', 'op',
+'uft', 'ugin',],
 
 # m											
 ['akin', 'andarin', 'andolin', 'argarin', 'ark', 'art', 'artin', 'atric',
