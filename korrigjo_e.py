@@ -35,8 +35,9 @@ no_e_end = [
 'odin', 'oj', 'om', 'rad', 'remin', 'rib', 'ril', 'rop', 'un', 'urgac'],
 
 # h
-['apësir', 'art', 'artin', 'emoglobin', 'er', 'ipotek', 'umb(e|ë)sir',
-'umb(e|ë)tir', 'umner', 'und(e|ë)k(e|ë)rrab', 'und(e|ë)shkab', 'urm'],
+['apësir', 'art', 'artin', 'emoglobin', 'er', 'ipotek', 'oshafk',
+'umb(e|ë)sir', 'umb(e|ë)tir', 'umner', 'und(e|ë)k(e|ë)rrab',
+'und(e|ë)shkab', 'urm'],
 
 # i									
 ['j'],	
@@ -70,11 +71,12 @@ no_e_end = [
 ['fi(c|ç)in', 'limpiad', 'rigjin', 'rt', 'pozit'],	
 	
 # p								
-['adrejt', 'ag', 'akic', 'arabim', 'arad', 'aradhom', 'arafin', 'arakthin', 'arm',
-'araman', 'armend', 'atin', 'elerin', 'em', 'en', 'end', 'enicilin', 'es',
-'es(e|ë)mb(e|ë)dhjet', '(e|ë)shtym', 'in', 'ishin', 'jac', 'jeshk',
-'la(c|ç)k', 'lastelin', 'lejad', 'levic', 'omad', 'ozit', 'rapashpin', 'redh',
-'remis', 'rik', 'ron', 'rostitut', 'rotein', 'ul', 'un', 'ushk'],
+['adrejt', 'afk', 'ag', 'akic', 'arabim', 'arad', 'aradhom', 'arafin',
+'arakthin', 'arm', 'araman', 'armend', 'atin', 'elerin', 'em', 'en',
+'end', 'enicilin', 'es', 'es(e|ë)mb(e|ë)dhjet', '(e|ë)shtym', 'in',
+'ishin', 'jac', 'jeshk', 'la(c|ç)k', 'lastelin', 'lejad', 'levic',
+'omad', 'ozit', 'rapashpin', 'redh', 'remis', 'rik', 'ron', 'rostitut',
+'rotein', 'ul', 'un', 'ushk'],
 
 # q		
 ['af(e|ë)k(e|ë)rrab', 'art', 'indark', 'uk(e|ë)lin', 'ukm'],	
