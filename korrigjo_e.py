@@ -61,7 +61,7 @@ no_e_end = [
 
 # m											
 ['akin', 'andarin', 'andolin', 'argarin', 'ark', 'art', 'artin', 'atric',
-'askarad', 'ij', 'in', 'ir', 'iz', 'oll', 'orfin', 'uzik'], 
+'askarad', '(e|ë)ndafsht', 'ij', 'in', 'ir', 'iz', 'oll', 'orfin', 'uzik'], 
 
 # n					
 ['aft', 'aftalin', 'ap', 'djes', '(e|ë)nt', '(e|ë)nt(e|ë)mb(e|ë)dhjet',
