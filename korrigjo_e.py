@@ -88,25 +88,25 @@ no_e_end = [
 'rib', 'rob', 'ozmarin', 'rug', 'rugic', 'rugin', 'utin',],
 
 # s												
-['a(c|ç)m', 'af', 'akarin', 'erenad', 'fid', 'fin', 'hakullin', 'heg',
-'hib', 'hkab', 'hkarravin', 'hkat(e|ë)rrin', 'hkrab', 'hkreptim', 'hkresurin',
-'hpartallin', 'hpejt', 'hpell', 'hport', 'hum', 'humic', 'hqis', 'htat',
-'htat(e|ë)mb(e|ë)dhjet', 'htrenjt', 'intez', 'it', 'kilifac', 'kutin',
-'ob', 'partakiad', 'pin', 'terlin', 'tin', 'treptomicin', 'tuf', 'uferin', 'ulin',
-'yprin',],
+['a(c|ç)m', 'af', 'ag', 'akarin', 'erenad', 'fid', 'fin', 'hakullin',
+'heg', 'hib', 'hkab', 'hkarravin', 'hkat(e|ë)rrin', 'hkrab', 'hkreptim',
+'hkresurin', 'hpag', 'hpartallin', 'hpejt', 'hpell', 'hport', 'hum',
+'humic', 'hqis', 'htat', 'htat(e|ë)mb(e|ë)dhjet', 'htrenjt', 'intez',
+'it', 'kilifac', 'kutin', 'ob', 'partakiad', 'pin', 'terlin', 'tin',
+'treptomicin', 'tuf', 'uferin', 'ulin', 'yprin',],
 
 # t
 ['han', 'ap', 'arab', 'arg', 'arrac', 'avolin', 'et', 'et(e|ë)mb(e|ë)dhjet',
-'etraciklin', 'hatin', 'hellin', 'hik', 'oksin', 'orb', 'rampolin', 'razir',
-'remb(e|ë)dhjet', 'r(e|ë)ndelin', 'rin', 'urbin',],	
+'etraciklin', 'hatin', 'hellin', 'hik', 'oksin', 'orb', 'rag', 'rampolin',
+'razir', 'remb(e|ë)dhjet', 'r(e|ë)ndelin', 'rin', 'urbin',],	
 	
 # u											
 ['j', 'l(ë|e)rim', 'n', 'niversiad', 'zin'],
 
 # v												
 ['adh', 'aksin', 'al', 'azelin', 'et(e|ë)tim', 'vezullim', 'iktim', 'il',
-'iolin', 'itamin', 'itrin', 'jeg', 'jeturin', 'ler', 'og(e|ë)lin', 'on',
-'orb(e|ë)tin', 'rim'],
+'iolin', 'itamin', 'itrin', 'jeg', 'jeturin', 'lag', 'ler', 'og(e|ë)lin',
+'on', 'orb(e|ë)tin', 'rim'],
 
 # x								
 ['helatin', 'hung', 'in', 'ix', ],	
