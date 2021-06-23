@@ -4,7 +4,7 @@ import re, string
 ## fjalë që shkruhen pa ë fundore ose me e në vend të saj -- mir(e) -> mirë
 no_e_end = [
 # a
-['drenalin', 'jk', 'lbumin', 'm', 'mbasad', 'meb', 'mplitud', 'naliz',
+['drenalin', 'ft', 'jk', 'lbumin', 'm', 'mbasad', 'meb', 'mplitud', 'naliz',
 'ngjin', 'nilin', 'rk', 'rn', 'rr', 'spirin', 'tkin', 'utostrad',],
 
 # b															
@@ -47,7 +47,7 @@ no_e_end = [
 ['av', 'et'],
 	
 # k																										
-['abin', 'açk', 'afk', 'afsh', 'al', 'aliqaf', 'alt(e|ë)rin', 'amin',
+['abin', 'açk', 'afk', 'afsh', 'aft', 'al', 'aliqaf', 'alt(e|ë)rin', 'amin',
 'anarin', 'anavac', 'antin', 'apic', 'aptin', 'arabin', 'arakatin',
 'arfic', 'artolin', 'asht', 'at(e|ë)rmb(e|ë)dhjet', '(e|ë)rrab',
 '(e|ë)rthiz', 'inin', 'lim', 'lithm', 'lla(c|ç)', 'odrin', 'okain',
@@ -61,7 +61,8 @@ no_e_end = [
 
 # m											
 ['akin', 'andarin', 'andolin', 'argarin', 'ark', 'art', 'artin', 'atric',
-'askarad', '(e|ë)ndafsht', 'ij', 'in', 'ir', 'iz', 'oll', 'orfin', 'uzik'], 
+'askarad', '(e|ë)ndafsht', 'ij', 'in', 'ir', 'iz', 'jaft', 'oll', 'orfin',
+'uzik'], 
 
 # n					
 ['aft', 'aftalin', 'ap', 'djes', '(e|ë)nt', '(e|ë)nt(e|ë)mb(e|ë)dhjet',
@@ -72,7 +73,7 @@ no_e_end = [
 ['fi(c|ç)in', 'limpiad', 'rigjin', 'rt', 'pozit'],	
 	
 # p								
-['adrejt', 'afk', 'ag', 'akic', 'arabim', 'arad', 'aradhom', 'arafin',
+['aaft', 'adrejt', 'afk', 'aft', 'ag', 'akic', 'arabim', 'arad', 'aradhom', 'arafin',
 'arakthin', 'arm', 'araman', 'armend', 'atin', 'elerin', 'em', 'en',
 'end', 'enicilin', 'es', 'es(e|ë)mb(e|ë)dhjet', '(e|ë)shtym', 'in',
 'ishin', 'jac', 'jeshk', 'la(c|ç)k', 'lastelin', 'lejad', 'levic',
