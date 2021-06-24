@@ -7,7 +7,7 @@ no_e_end = [
 ['drenalin', 'ft', 'jk', 'lbumin', 'm', 'mbasad', 'meb', 'mplitud', 'naliz',
 'ngjin', 'nilin', 'rk', 'rn', 'rr', 'spirin', 'tkin', 'utostrad',],
 
-# b															
+# b														
 ['ab', 'ac', 'af', 'ag', 'alad', 'alt', 'alad', 'alerin', 'altin', 'arn',
 'enzin', 'ib', 'ibliotek', 'im', 'iskot', 'lac', 'llokad', 'obin', 'oj',
 'otin', 'rek', 'rigad', 'ritm', 'rrikad', 'ubullim', 'udalla(c|ç)k', 'uj', 'ujtin', 'uk',
@@ -18,9 +18,9 @@ no_e_end = [
 
 # d															
 ['ad', 'afin', 'ardh', 'at', 'ecigrad', 'eg', 'ekad', 'eltin', 'epozit',
-'er', '(e|ë)llinj', 'h(e|ë)mball', 'hom', 'ig', 'isfat', 'isiplin',
-'ispozit', 'it', 'jegurin', 'oktrin', 'or', 'ordolin', 'rag', 'rejt',
-'rit', 'uzin', 'ymb(e|ë)dhjet',],
+'er', '(e|ë)llinj', 'h(e|ë)mball', 'hom', 'iafragm', 'ig', 'isfat',
+'isiplin', 'ispozit', 'it', 'jegurin', 'oktrin', 'or', 'ordolin', 'rag',
+'rejt', 'rit', 'uzin', 'ymb(e|ë)dhjet',],
 
 # e
 ['kspedit', 'kspozit', 'n', 'r', 'rzin', 'strad',],
@@ -56,14 +56,14 @@ no_e_end = [
 'rahin', 'ukumjaçk', 'undrin', 'ungac', 'urv', 'ushtetut', 'uzhin',],
 	
 # l								
-['açk', 'afsh', 'agazin', 'akin', 'argin', 'eckurin', 'ënd', '(e|ë)ndin',
-'igatin', 'im', 'imonad', 'imurin', 'ir', 'laçk', 'lamarin', 'oj', 'op',
-'uft', 'ugin',],
+['açk', 'afsh', 'agazin', 'agsht', 'akin', 'argin', 'eckurin', 'ënd',
+'(e|ë)ndin', 'igatin', 'im', 'imonad', 'imurin', 'ir', 'laçk', 'lamarin',
+'oj', 'op', 'uft', 'ugin',],
 
 # m											
-['akin', 'andarin', 'andolin', 'argarin', 'ark', 'art', 'artin', 'atric',
+['agm', 'akin', 'andarin', 'andolin', 'argarin', 'ark', 'art', 'artin', 'atric',
 'askarad', '(e|ë)llag', '(e|ë)ndafsht', 'ij', 'in', 'ir', 'iz', 'jaft',
-'oll', 'olldrag', 'orfin', 'uzik'], 
+'oll', 'olldrag', 'orfin', 'uzik'],
 
 # n					
 ['aft', 'aftalin', 'ap', 'djes', '(e|ë)nt', '(e|ë)nt(e|ë)mb(e|ë)dhjet',
@@ -97,9 +97,10 @@ no_e_end = [
 'treptomicin', 'tuf', 'uferin', 'ulin', 'yprin',],
 
 # t
-['han', 'ap', 'arab', 'arg', 'arrac', 'avolin', 'et', 'et(e|ë)mb(e|ë)dhjet',
-'etraciklin', 'hatin', 'hellin', 'hik', 'oksin', 'orb', 'rag', 'rampolin',
-'razir', 'remb(e|ë)dhjet', 'r(e|ë)ndelin', 'rin', 'urbin',],	
+['hagm', 'han', 'ap', 'arab', 'arg', 'arrac', 'avolin', 'et',
+'et(e|ë)mb(e|ë)dhjet', 'etraciklin', 'hatin', 'hellin', 'hik', 'oksin',
+'orb', 'rag', 'rampolin', 'razir', 'remb(e|ë)dhjet', 'r(e|ë)ndelin',
+'rin', 'urbin',],	
 	
 # u											
 ['j', 'l(ë|e)rim', 'n', 'niversiad', 'zin'],
