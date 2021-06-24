@@ -34,7 +34,7 @@ no_e_end = [
 '(e|ë)rmadh', 'ijotin', 'jasht', 'jasht(e|ë)mb(e|ë)dhjet', 'jat',
 'jeraqin', 'j(e|ë)m', 'jer', 'j(e|ë)kafsh', 'jell', 'jiraf', 'jithmon',
 'jiz', 'jysm(e|ë)kafsh', 'licerin', 'lin', 'odin', 'oj', 'om', 'rad',
-'remin', 'rib', 'ril', 'rop', 'un', 'urgac'],
+'rahm', 'remin', 'rib', 'ril', 'rop', 'un', 'urgac'],
 
 # h
 ['apësir', 'art', 'artin', 'emoglobin', 'er', 'ipotek', 'oshafk',
