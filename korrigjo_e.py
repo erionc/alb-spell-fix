@@ -94,7 +94,7 @@ no_e_end = [
 'hkresurin', 'hpag', 'hpartallin', 'hpejt', 'hpell', 'hport', 'hum',
 'humic', 'hqis', 'htat', 'htat(e|ë)mb(e|ë)dhjet', 'htrenjt', 'intez',
 'it', 'kilifac', 'kutin', 'ob', 'partakiad', 'pin', 'terlin', 'tin',
-'treptomicin', 'tuf', 'uferin', 'ulin', 'yprin',],
+'trajc', 'treptomicin', 'tuf', 'uferin', 'ulin', 'yprin',],
 
 # t
 ['hagm', 'han', 'ap', 'arab', 'arg', 'arrac', 'avolin', 'et',
