@@ -10,8 +10,8 @@ no_e_end = [
 # b														
 ['ab', 'ac', 'af', 'ag', 'alad', 'alt', 'alad', 'alerin', 'altin', 'arn',
 'enzin', 'ib', 'ibliotek', 'im', 'iskot', 'lac', 'llokad', 'obin', 'oj',
-'otin', 'rek', 'rigad', 'ritm', 'rrikad', 'ubullim', 'udalla(c|ç)k', 'uj', 'ujtin', 'uk',
-'ul', 'unac'],
+'otin', 'rek', 'rigad', 'ritm', 'rrikad', 'ubullim', 'udalla(c|ç)k', 'uj',
+'ujtin', 'uk', 'ul', 'unac'],
 
 # c		
 ['açk', 'aher', 'ajk', 'apin', 'elin', 'entigrad', 'fag',],
@@ -48,8 +48,8 @@ no_e_end = [
 ['av', 'et'],
 	
 # k																										
-['abin', 'açk', 'afk', 'afsh', 'aft', 'al', 'aliqaf', 'alt(e|ë)rin', 'amin',
-'anarin', 'anavac', 'antin', 'apic', 'aptin', 'arabin', 'arakatin',
+['abin', 'açk', 'afk', 'afsh', 'aft', 'al', 'aliqaf', 'alt(e|ë)rin',
+'amin', 'anarin', 'anavac', 'antin', 'apic', 'aptin', 'arabin', 'arakatin',
 'arfic', 'artolin', 'asht', 'at(e|ë)rmb(e|ë)dhjet', '(e|ë)rrab',
 '(e|ë)rthiz', 'inin', 'lim', 'lithm', 'lla(c|ç)', 'odrin', 'okain',
 'olesterin', 'omodin', 'opertin', 'orac', 'ov', 'rahaqaf', 'ryeradh',
@@ -61,9 +61,9 @@ no_e_end = [
 'oj', 'op', 'uft', 'ugin',],
 
 # m											
-['agm', 'akin', 'andarin', 'andolin', 'argarin', 'ark', 'art', 'artin', 'atric',
-'askarad', '(e|ë)llag', '(e|ë)ndafsht', 'ij', 'in', 'ir', 'iz', 'jaft',
-'oll', 'olldrag', 'orfin', 'uzik'],
+['agm', 'akin', 'andarin', 'andolin', 'argarin', 'ark', 'art', 'artin',
+'atric', 'askarad', '(e|ë)llag', '(e|ë)ndafsht', 'ij', 'in', 'ir', 'iz',
+'jaft', 'oll', 'olldrag', 'orfin', 'uzik'],
 
 # n					
 ['aft', 'aftalin', 'ap', 'djes', '(e|ë)nt', '(e|ë)nt(e|ë)mb(e|ë)dhjet',
@@ -85,16 +85,16 @@ no_e_end = [
 ['af(e|ë)k(e|ë)rrab', 'art', 'indark', 'uk(e|ë)lin', 'ukm'],	
 	
 # r											
-['ac', 'adh', '(e|ë)r', 'etin', 'ezolut', 'imt', 'rangallin', 'rag', 'rep',
-'rib', 'rob', 'ozmarin', 'rug', 'rugic', 'rugin', 'utin',],
+['ac', 'adh', '(e|ë)r', 'etin', 'ezolut', 'imt', 'rangallin', 'rag',
+'rep', 'rib', 'rob', 'ozmarin', 'rug', 'rugic', 'rugin', 'utin',],
 
 # s												
-['a(c|ç)m', 'af', 'ag', 'akarin', 'arag', 'erenad', 'fid', 'fin', 'hakullin',
-'heg', 'hib', 'hkab', 'hkarravin', 'hkat(e|ë)rrin', 'hkrab', 'hkreptim',
-'hkresurin', 'hpag', 'hpartallin', 'hpejt', 'hpell', 'hport', 'hum',
-'humic', 'hqis', 'htat', 'htat(e|ë)mb(e|ë)dhjet', 'htrenjt', 'intez',
-'it', 'kilifac', 'kutin', 'ob', 'partakiad', 'pin', 'terlin', 'tin',
-'trajc', 'treptomicin', 'tuf', 'uferin', 'ulin', 'yprin',],
+['a(c|ç)m', 'af', 'ag', 'akarin', 'arag', 'erenad', 'fid', 'fin',
+'hakullin', 'heg', 'hib', 'hkab', 'hkarravin', 'hkat(e|ë)rrin', 'hkrab',
+'hkreptim', 'hkresurin', 'hpag', 'hpartallin', 'hpejt', 'hpell', 'hport',
+'hum', 'humic', 'hqis', 'htat', 'htat(e|ë)mb(e|ë)dhjet', 'htrenjt',
+'intez', 'it', 'kilifac', 'kutin', 'ob', 'partakiad', 'pin', 'terlin',
+'tin', 'trajc', 'treptomicin', 'tuf', 'uferin', 'ulin', 'yprin',],
 
 # t
 ['hagm', 'han', 'ap', 'arab', 'arg', 'arrac', 'avolin', 'et',
