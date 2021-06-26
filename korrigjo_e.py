@@ -67,7 +67,8 @@ no_e_end = [
 
 # n					
 ['aft', 'aftalin', 'ap', 'djes', '(e|ë)nt', '(e|ë)nt(e|ë)mb(e|ë)dhjet',
-'gjyr', 'ikotin', 'inull', 'ism', 'itroglicerin', 'j', 'j(e|ë)mb(e|ë)dhjet',
+'gjyr', 'ikotin', 'inull', 'ism', 'itroglicerin', 'j',
+'j(e|ë)mb(e|ë)dhjet',
 ],
 	
 # o							
