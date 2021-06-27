@@ -17,7 +17,7 @@ no_e_end = [
 ['açk', 'aher', 'ajk', 'apin', 'elin', 'entigrad', 'fag',],
 
 # d															
-['ad', 'afin', 'ardh', 'at', 'ecigrad', 'eg', 'ekad', 'eltin', 'epozit',
+['ad', 'afin', 'aj', 'ardh', 'at', 'ecigrad', 'eg', 'ekad', 'eltin', 'epozit',
 'er', '(e|ë)llinj', 'h(e|ë)mball', 'hom', 'iafragm', 'ig', 'isfat',
 'isiplin', 'ispozit', 'it', 'jegurin', 'oktrin', 'or', 'ordolin', 'rag',
 'rejt', 'rit', 'uzin', 'ymb(e|ë)dhjet',],
@@ -45,7 +45,7 @@ no_e_end = [
 ['j'],	
 
 # j
-['av', 'et'],
+['aj', 'av', 'et'],
 	
 # k																										
 ['abin', 'açk', 'afk', 'afsh', 'aft', 'al', 'aliqaf', 'alt(e|ë)rin',
@@ -57,8 +57,8 @@ no_e_end = [
 	
 # l								
 ['açk', 'afsh', 'agazin', 'agsht', 'akin', 'argin', 'eckurin', 'ënd',
-'(e|ë)ndin', 'igatin', 'im', 'imonad', 'imurin', 'ir', 'laçk', 'lamarin',
-'oj', 'op', 'uft', 'ugin',],
+'(e|ë)ndin', 'igatin', 'im', 'imonad', 'imurin', 'ir', 'laçk',
+'lamarin', 'oj', 'op', 'uft', 'ugin',],
 
 # m											
 ['agm', 'akin', 'andarin', 'andolin', 'argarin', 'ark', 'art', 'artin',
@@ -168,7 +168,7 @@ with_e_end = [
 ['afein', 'am', 'ok'],
 	
 # l								
-['ac', 'lac', 'ug', 'yr'],
+['ac', 'lac', 'laj', 'ug', 'yr'],
 
 # m											
 ['aj', 'arin', 'beturin', 'jegullin', 'ushk'], 
