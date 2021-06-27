@@ -67,7 +67,7 @@ no_e_end = [
 
 # n					
 ['aft', 'aftalin', 'ap', 'djes', '(e|ë)nt', '(e|ë)nt(e|ë)mb(e|ë)dhjet',
-'gjyr', 'ikotin', 'inull', 'ism', 'itroglicerin', 'j',
+'gaj', 'gjyr', 'ikotin', 'inull', 'ism', 'itroglicerin', 'j',
 'j(e|ë)mb(e|ë)dhjet',
 ],
 	
@@ -75,11 +75,11 @@ no_e_end = [
 ['fi(c|ç)in', 'limpiad', 'rigjin', 'rt', 'pozit'],	
 	
 # p								
-['aaft', 'adrejt', 'afk', 'aft', 'ag', 'ajag', 'akic', 'arabim',
+['aaft', 'adrejt', 'afk', 'aft', 'ag', 'aj', 'ajag', 'akic', 'arabim',
 'arad', 'aradhom', 'arafin', 'arakthin', 'arm', 'araman', 'armend',
 'atin', 'elerin', 'em', 'en', 'end', 'enicilin', 'es',
 'es(e|ë)mb(e|ë)dhjet', '(e|ë)shtym', 'in', 'ishin', 'jac', 'jeshk',
-'la(c|ç)k', 'lag', 'lastelin', 'lejad', 'levic', 'omad', 'ozit',
+'la(c|ç)k', 'lag', 'lastelin', 'lejad', 'levic', 'llaj', 'omad', 'ozit',
 'rapashpin', 'redh', 'remis', 'rik', 'ron', 'rostitut', 'rotein',
 'ul', 'un', 'ushk'],
 
@@ -88,7 +88,7 @@ no_e_end = [
 	
 # r											
 ['ac', 'adh', '(e|ë)r', 'etin', 'ezolut', 'imt', 'rangallin', 'rag',
-'rep', 'rib', 'rob', 'ozmarin', 'rug', 'rugic', 'rugin', 'utin',],
+'raj', 'rep', 'rib', 'rob', 'ozmarin', 'rug', 'rugic', 'rugin', 'utin',],
 
 # s												
 ['a(c|ç)m', 'af', 'ag', 'akarin', 'arag', 'erenad', 'fid', 'fin',
@@ -99,7 +99,7 @@ no_e_end = [
 'tin', 'trajc', 'treptomicin', 'tuf', 'uferin', 'ulin', 'yprin',],
 
 # t
-['hagm', 'han', 'ap', 'arab', 'arg', 'arrac', 'avolin', 'et',
+['aj', 'hagm', 'han', 'ap', 'arab', 'arg', 'arrac', 'avolin', 'et',
 'et(e|ë)mb(e|ë)dhjet', 'etraciklin', 'hatin', 'hellin', 'hik', 'oksin',
 'orb', 'rag', 'rampolin', 'razir', 'remb(e|ë)dhjet', 'r(e|ë)ndelin',
 'rin', 'urbin',],	
@@ -109,11 +109,11 @@ no_e_end = [
 
 # v												
 ['adh', 'aksin', 'al', 'azelin', 'et(e|ë)tim', 'vezullim', 'iktim', 'il',
-'iolin', 'itamin', 'itrin', 'jeg', 'jeturin', 'lag', 'ler', 'og(e|ë)lin',
-'on', 'orb(e|ë)tin', 'rag', 'rim'],
+'iolin', 'itamin', 'itrin', 'jeg', 'jeturin', 'lag', 'ler', 'llaj',
+'og(e|ë)lin', 'on', 'orb(e|ë)tin', 'rag', 'raj', 'rim'],
 
 # x								
-['helatin', 'hung', 'in', 'ix', ],	
+['haj', 'helatin', 'hung', 'in', 'ix', ],	
 
 # y														
 ['n', 'ndyr'],	
@@ -180,7 +180,7 @@ with_e_end = [
 [],		
 
 # p								
-['ort'],
+['ort', 'raj',],
 
 # q		
 ['ep', 'ok',],	
@@ -198,7 +198,7 @@ with_e_end = [
 ['rin',],
 
 # v												
-[],
+['aj'],
 
 # x								
 [],	
