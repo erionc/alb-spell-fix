@@ -5,13 +5,13 @@ import re, string
 no_e_end = [
 # a
 ['drenalin', 'ft', 'jk', 'lbumin', 'm', 'mbasad', 'meb', 'mplitud', 'naliz',
-'ngjin', 'nilin', 'rk', 'rn', 'rr', 'spirin', 'tkin', 'utostrad',],
+'ngjin', 'nilin', 'rk', 'rn', 'rnaj', 'rr', 'spirin', 'tkin', 'utostrad',],
 
 # b														
 ['ab', 'ac', 'af', 'ag', 'alad', 'alt', 'alad', 'alerin', 'altin', 'arn',
-'enzin', 'ib', 'ibliotek', 'im', 'iskot', 'lac', 'llokad', 'obin', 'oj',
-'otin', 'rek', 'rigad', 'ritm', 'rrikad', 'ubullim', 'udalla(c|ç)k', 'uj',
-'ujtin', 'uk', 'ul', 'unac'],
+'(e|ë)ltaj', 'enzin', '(e|ë)shtaj', 'ib', 'ibliotek', 'im', 'iskot',
+'lac', 'llokad', 'obin', 'oj', 'otin', 'rek', 'rigad', 'ritm', 'rrikad',
+'ubullim', 'udalla(c|ç)k', 'uj', 'ujtin', 'uk', 'ul', 'unac'],
 
 # c		
 ['açk', 'aher', 'ajk', 'apin', 'elin', 'entigrad', 'fag',],
