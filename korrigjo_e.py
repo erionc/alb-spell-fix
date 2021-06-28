@@ -18,10 +18,10 @@ no_e_end = [
 ['açk', 'aher', 'ajk', 'apin', 'elin', 'entigrad', 'fag',],
 
 # d															
-['ad', 'afin', 'aj', 'ardh', 'at', 'ecigrad', 'eg', 'ekad', 'eltin', 'epozit',
-'er', '(e|ë)llinj', 'h(e|ë)mball', 'hom', 'iafragm', 'ig', 'isfat',
-'isiplin', 'ispozit', 'it', 'jegurin', 'oktrin', 'or', 'ordolin', 'rag',
-'rejt', 'rit', 'uzin', 'ymb(e|ë)dhjet',],
+['ad', 'afin', 'aj', 'ardh', 'at', 'ecigrad', 'eg', 'ekad', 'eltin',
+'epozit', 'er', '(e|ë)llinj', 'h(e|ë)mball', 'hom', 'iafragm', 'ig',
+'isfat', 'isiplin', 'ispozit', 'it', 'jegurin', 'oktrin', 'or',
+'ordolin', 'rag', 'rejt', 'rit', 'uzin', 'ymb(e|ë)dhjet',],
 
 # e
 ['kspedit', 'kspozit', 'n', 'r', 'rzin', 'strad',],
