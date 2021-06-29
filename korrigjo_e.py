@@ -11,24 +11,25 @@ no_e_end = [
 ['ab', 'ac', 'af', 'ag', 'alad', 'alt', 'alad', 'alerin', 'altin', 'arn',
 '(e|ë)ltaj', 'enzin', '(e|ë)shtaj', 'ib', 'ibliotek', 'im', 'ishtaj',
 'iskaj', 'iskot', 'lac', 'linaj', 'llokad', 'obin', 'oj', 'ornaj',
-'otin', 'regaj', 'rek', 'rigad', 'rimaj', 'rinaj', 'ritm', 'rrikad', 'ubullim',
-'udalla(c|ç)k', 'uj', 'ujtin', 'uk', 'ul', 'unac', 'ungaj',],
+'otin', 'regaj', 'rek', 'rigad', 'rimaj', 'rinaj', 'ritm', 'rrikad',
+'ubullim', 'udalla(c|ç)k', 'uj', 'ujtin', 'uk', 'ul', 'unac', 'ungaj',],
 
 # c		
-['açk', 'aher', 'ajk', 'apin', 'elin', 'entigrad', 'fag',],
+['açk', 'aher', 'ajk', 'apin', 'elin', 'entigrad', 'fag', 'ungaj'],
 
 # d															
 ['ad', 'afin', 'aj', 'ardh', 'at', 'ecigrad', 'eg', 'ekad', 'eltin',
 'epozit', 'er', '(e|ë)llinj', 'h(e|ë)mball', 'hom', 'iafragm', 'ig',
 'isfat', 'isiplin', 'ispozit', 'it', 'jegurin', 'oktrin', 'or',
-'ordolin', 'rag', 'rejt', 'rit', 'uzin', 'ymb(e|ë)dhjet',],
+'ordolin', 'rag', 'rejt', 'rit', 'rithnaj', 'ushkaj', 'uzin',
+'ymb(e|ë)dhjet',],
 
 # e
 ['kspedit', 'kspozit', 'n', 'r', 'rzin', 'strad',],
 
 # f								
-['am', 'jal', 'lam', 'rik', 'asad', 'und(e|ë)rin', 'urk', 'ush', 'ushtag',
-'ytaqaf',],
+['am', 'asad', 'errnaj', 'jal', 'lam', 'rik', 'und(e|ë)rin', 'urk',
+'ush', 'ushtag', 'ytaqaf',],
 
 # g													
 ['ab', 'abardin', 'af', 'alin', 'ar', 'ardalin', 'azolin', '(e|ë)lqerin',
