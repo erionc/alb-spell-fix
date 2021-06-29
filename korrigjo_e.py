@@ -10,9 +10,9 @@ no_e_end = [
 # b														
 ['ab', 'ac', 'af', 'ag', 'alad', 'alt', 'alad', 'alerin', 'altin', 'arn',
 '(e|ë)ltaj', 'enzin', '(e|ë)shtaj', 'ib', 'ibliotek', 'im', 'ishtaj',
-'iskaj', 'iskot', 'lac', 'linaj', 'llokad', 'obin', 'oj', 'otin', 'rek',
-'rigad', 'ritm', 'rrikad', 'ubullim', 'udalla(c|ç)k', 'uj', 'ujtin', 'uk',
-'ul', 'unac'],
+'iskaj', 'iskot', 'lac', 'linaj', 'llokad', 'obin', 'oj', 'ornaj',
+'otin', 'regaj', 'rek', 'rigad', 'rimaj', 'rinaj', 'ritm', 'rrikad', 'ubullim',
+'udalla(c|ç)k', 'uj', 'ujtin', 'uk', 'ul', 'unac', 'ungaj',],
 
 # c		
 ['açk', 'aher', 'ajk', 'apin', 'elin', 'entigrad', 'fag',],
