@@ -29,14 +29,15 @@ no_e_end = [
 
 # f								
 ['am', 'asad', 'errnaj', 'ieraj', 'iskaj', 'jal', 'lam', 'loknaj',
-'rik', 'und(e|ë)rin', 'urk', 'ush', 'ushtag', 'ytaqaf',],
+'rik', 'undaj', 'und(e|ë)rin', 'urk', 'ush', 'ushnaj', 'ushtag',
+'ytaqaf',],
 
 # g													
-['ab', 'abardin', 'af', 'alin', 'ar', 'ardalin', 'azolin', '(e|ë)lqerin',
-'(e|ë)rmadh', 'ijotin', 'jasht', 'jasht(e|ë)mb(e|ë)dhjet', 'jat',
-'jeraqin', 'j(e|ë)m', 'jer', 'j(e|ë)kafsh', 'jell', 'jiraf', 'jithmon',
-'jiz', 'jysm(e|ë)kafsh', 'licerin', 'lin', 'odin', 'oj', 'om', 'rad',
-'rahm', 'remin', 'rib', 'ril', 'rop', 'un', 'urgac'],
+['ab', 'abardin', 'af', 'alin', 'ar', 'ardalin', 'ardhnaj', 'azolin',
+'(e|ë)lqerin', '(e|ë)rmadh', 'ijotin', 'jasht', 'jasht(e|ë)mb(e|ë)dhjet',
+'jat', 'jeraqin', 'j(e|ë)m', 'jer', 'j(e|ë)kafsh', 'jell', 'jiraf',
+'jithmon', 'jiz', 'jysm(e|ë)kafsh', 'licerin', 'lin', 'odin', 'oj',
+'om', 'rad', 'rahm', 'remin', 'rib', 'ril', 'rop', 'un', 'urgac'],
 
 # h
 ['apësir', 'art', 'artin', 'emoglobin', 'er', 'ipotek', 'oshafk',
