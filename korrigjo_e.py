@@ -28,8 +28,8 @@ no_e_end = [
 ['kspedit', 'kspozit', 'n', 'r', 'rzin', 'strad',],
 
 # f								
-['am', 'asad', 'errnaj', 'jal', 'lam', 'rik', 'und(e|ë)rin', 'urk',
-'ush', 'ushtag', 'ytaqaf',],
+['am', 'asad', 'errnaj', 'ieraj', 'iskaj', 'jal', 'lam', 'loknaj',
+'rik', 'und(e|ë)rin', 'urk', 'ush', 'ushtag', 'ytaqaf',],
 
 # g													
 ['ab', 'abardin', 'af', 'alin', 'ar', 'ardalin', 'azolin', '(e|ë)lqerin',
