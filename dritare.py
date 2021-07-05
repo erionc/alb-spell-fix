@@ -5,7 +5,7 @@ from tkinter import *
 
 # importimi i funksioneve korrigjuese nga modulet përkatëse
 from korrigjo import *
-from korrigjo_pjesore import *
+from korrigjo_pj import *
 from korrigjo_e import *
 from korrigjo_c import *
 

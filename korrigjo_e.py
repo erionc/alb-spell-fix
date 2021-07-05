@@ -1,7 +1,7 @@
 
 import re, string
-from korrigjo_me_e import *
-from korrigjo_pa_e import *
+from fund_me_e import *
+from fund_pa_e import *
 
 ## funksion për zëvendësime e -> ë 
 def korrigjo_e(text):
