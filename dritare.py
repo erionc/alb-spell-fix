@@ -5,6 +5,7 @@ from tkinter import *
 
 # importimi i funksioneve korrigjuese nga modulet përkatëse
 from korrigjo import *
+from korrigjo_pjesore import *
 from korrigjo_e import *
 from korrigjo_c import *
 
@@ -23,8 +24,8 @@ def redaktime(field_in, field_out, field_message):
 	# thirren zëvendësimet e c-së
 	t, c = korrigjo_c(t) ; total_sub += c
 	
-	# thirren zëvendësimet dialektore
-	t, c = korrigjo_dial(t) ; total_sub += c
+	# thirren zëvendësimet e pjesoreve
+	t, c = korrigjo_pjes(t) ; total_sub += c
 	
 	# thirren zëvendësime e fjalëve
 	t, c = korrigjo_terma(t) ; total_sub += c

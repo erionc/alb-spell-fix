@@ -1,6 +1,5 @@
 
 import re, string
-from korrigjo_pjesore import *
 
 ## 0-4 simbole shtesë në fund të fjalëve për prapashtesat 
 ## shquese dhe lakesat
@@ -60,89 +59,27 @@ pj_pa_er = "fy|gry|kry|kthy|ly|shly|shqy|thy"
 ## mbarojnë me 'ua' -- du(e) -> dua, thu(e) -> thua
 fj_dial = "(D|d)u|(G|g)ru|(M|m)u|(T|t)hu"
 
-## tema fjalësh që duhen shqipëruar
-tem_sq = ""
 
-## tema fjalësh angleze që duhen përkthyer
-tem_en = ""
-
-## funksion për zëvendësime që përgatitin zëvendësimet e mëpasshme
-def para_korrigjime(text):
+## funksion për zëvendësimin e pjesoreve t;; shkurt;;ra
+def korrigjo_pjes(text):
 	## vlerënisje 
-	t = text ; c_subs = 0
-	
-	## deshe(m|t|n) -> deshë(m|t|n)
-	t, c = re.subn(fr"(\b)(D|d)(eshe)(m|t|n)(\b)", r"\2eshë\4", t) ; c_subs += c
-
-	## cilet -> cilët
-	t, c = re.subn(fr"(\b)cilet(\b)", r"cilët", t) ; c_subs += c
-	
-	## jan(e) -> janë, kan(e) -> kanë
-	t, c = re.subn(fr"(\b)(J|j|K|k)(an)(e)?(\b)", r"\2anë", t) ; c_subs += c
-	
-	## pate(m|t|n) -> patë(m|t|n)
-	t, c = re.subn(fr"(\b)(pate)(m|t|n)(\b)", r"patë\3", t) ; c_subs += c
-	## qe(m|t|n)(e?) -> qe(m|t|n)ë
-	t, c = re.subn(fr"(\b)(Q|q)(e)(m|t|n)(e)?(\b)", r"\2e\4ë", t) ; c_subs += c
-	
-	## kena -> kemi ; jena -> jemi
-	t, c = re.subn(fr"(\b)(K|k|J|j)(ena)(\b)", r"\2emi", t) ; c_subs += c
-	
-	## per -> për (nuk ka per në fgjssh)
-	t, c = re.subn(fr"(\b)per(\b)", r"për", t) ; c_subs += c
-	
-	## do te -> do të ; dua te -> dua të 
-	t, c = re.subn(fr"(\b)({para_te})(te)(\b)", r"\2të", t) ; c_subs += c
-	
-	## zëvendësime të tjera e -> ë
-	
-	return (t, c_subs)
-	
-## funksion për zëvendësime që korrigjojnë zëvendësimet e mëparshme
-def pas_korrigjime(text):
-	## vlerënisje 
-	t = text ; c_subs = 0
-	
-	## çoc -> çoç
-	t, c = re.subn(fr"(\b)çoc(\b)", r"çoç", t) ; c_subs += c
-
-	## zëvendësime të tjera 
-	
-	return (t, c_subs)
-
-## funksion për zëvendësimin e formave dialektore
-def korrigjo_dial(text):
-	## vlerënisje 
-	t = text ; dial_subs = 0
-	
-	## fjalë që shnkruhen pa a në fund -- du(e) -> dua, thu(e) -> thua
-	t, c = re.subn(fr"(\b)({fj_dial})(e?)(\b)", r"\2a", t) ; dial_subs += c
-	
+	t = text ; pj_subs = 0
+		
 	## pjesoret që shkruhen pa rë në fund -- pru -> prurë
-	t, c = re.subn(fr"(\b)({pp})({pj_pa_re})(r(e)?)?(\b)", r"\2\3rë", t) ; dial_subs += c
+	t, c = re.subn(fr"(\b)({pp})({pj_pa_re})(r(e)?)?(\b)", r"\2\3rë", t) ; pj_subs += c
 
 	## pjesoret që shkruhen pa ar në fund -- shku -> shkuar
-	t, c = re.subn(fr"(\b)({pp})({pj_pa_ar})(\b)", r"\2\3ar", t) ; dial_subs += c
+	t, c = re.subn(fr"(\b)({pp})({pj_pa_ar})(\b)", r"\2\3ar", t) ; pj_subs += c
 	
 	## pjesoret që shkruhen pa ur në fund -- kap -> kapur
-	t, c = re.subn(fr"(\b)({pp})({pj_pa_ur})(\b)", r"\2\3ur", t) ; dial_subs += c
+	t, c = re.subn(fr"(\b)({pp})({pj_pa_ur})(\b)", r"\2\3ur", t) ; pj_subs += c
 
 	## pjesoret që shkruhen pa er në fund -- thy -> thyer
-	t, c = re.subn(fr"(\b)({pp})({pj_pa_er})(\b)", r"\2\3er", t) ; dial_subs += c
+	t, c = re.subn(fr"(\b)({pp})({pj_pa_er})(\b)", r"\2\3er", t) ; pj_subs += c
 
-	return (t, dial_subs)
+	## fjalë që shnkruhen pa a në fund -- du(e) -> dua, thu(e) -> thua
+	t, c = re.subn(fr"(\b)({fj_dial})(e?)(\b)", r"\2a", t) ; pj_subs += c
+
+	return (t, pj_subs)
 	
-## funksion për zëvendësimin e fjalëve angleze 
-def korrigjo_eng(text):
-	## vlerënisje 
-	t = text ; eng_subs = 0
-	
-	return (t, eng_subs)
-	
-## funksion për zëvendësime fjalësh të plota 
-def korrigjo_terma(text):
-	## vlerënisje 
-	t = text ; word_subs = 0
-	
-	return (t, word_subs)
 	
