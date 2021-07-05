@@ -145,6 +145,3 @@ def korrigjo_terma(text):
 	
 	return (t, word_subs)
 	
-
-	
-	

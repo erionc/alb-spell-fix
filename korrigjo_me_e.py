@@ -92,7 +92,7 @@ for i in range(0, 25):
 with_e_regex = '|'.join(with_e_exp)
 
 ## funksion për zëvendësime e -> ë 
-def korrigjo_e(text):
+def korrigjo_me_e(text):
 	## velerënisje
 	t = text ; e_subs = 0
 	
