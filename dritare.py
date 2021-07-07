@@ -59,7 +59,7 @@ if __name__ == "__main__":
 	root = Tk()
 	root.configure(background = "red")			# ngjyra e sfondit
 	root.geometry("988x710")					# përmasat e dritares
-	root.resizable(width=False, height=False)	# no change to window
+	root.resizable(width=False, height=False)	
 	# titulli i dritares kryesore
 	root.title("REDAKTOR TEKSTI PËR GJUHËN SHQIPE")		
 	
