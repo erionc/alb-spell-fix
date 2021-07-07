@@ -1,3 +1,0 @@
-# alb-spell-fix
-
-## Dokumentimi
