@@ -2,8 +2,8 @@
 import re, string
 from korrigjo_pj import *
 
-## 0-4 simbole shtesë në fund të fjalëve për prapashtesat 
-## shquese dhe lakesat
+## 0-4 simbole shtesë në fund të fjalëve për prapashtesat shquese 
+## dhe lakesat
 prapa = "[a-zA-Z0-9çÇëË_-]{0,4}"
 
 ## ndryshore globale për fundin e fjalëve - më mirë (\b) 

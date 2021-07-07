@@ -32,7 +32,7 @@ kj = "Kam\s|kam\s|Ke\s|ke\s|Ka\s|ka\s|Kemi\s|kemi\s|Keni\s|keni\s|" + \
 pasht = "për\stë\s|duke\s|pa\s|"
 
 ## të tjera forma që qëndrojnë para pjesores 
-pptj = "me\stë"
+pptj = "me\stë\s"
 
 ## forma që qëndrojnë para pjesores
 pp = kj + pasht + pptj
