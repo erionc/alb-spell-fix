@@ -44,8 +44,9 @@ pj_pa_re = "ble|fshi|gdhi|gri|la|lëpi|mar|mbi|mpi|nda|nga|ngri|nxi|nxjer|" + \
 
 ## pjesore të shkurtra që mbarojnë me 'u' por që duhet të 
 ## mbarojnë me 'ar' -- shku -> shkuar
-pj_pa_ar = "besu|d(e|ë)gju|dhunu|k(e|ë)rku|lexu|m(e|ë)su|" + \
-"nd(e|ë)shku|ngacmu|shkru|shku|p(ë|e)su|punu|provu"
+pj_pa_ar = "besu|blu|caktu|çmu|çu|d(e|ë)gju|dhunu|k(e|ë)rku|ftu|lexu|" + \
+"mbaru|m(e|ë)su|nd(e|ë)shku|ngacmu|p(ë|e)su|punu|provu|shkru|shku|shtru|" + \
+"shtu|shu|vlu|zgju"
 
 ## pjesore të shkurtra që duhet të mbarojnë me 'ur' -- kap -> kapur
 pj_pa_ur = "ardh|hap|kap|mat|mbyt|m(e|ë)rzit|ngrit|shit|thith|ul|" + \
