@@ -39,12 +39,13 @@ pp = kj + pasht + pptj
 
 ## pjesore të shkurtra që mbarojnë me 'u(r(e))', 'e(r(e))', 'a(r(e))' 
 ## por që duhet të mbarojnë me 'rë' -- pru -> prurë
-pj_pa_re = "ble|fshi|gdhi|gri|la|lëpi|mar|mbi|mpi|nda|nga|ngri|nxi|nxjer|" + \
-"pa|përfshi|përpi|pi|pre|pri|pru|qa|sha|shkri|shtri|shty|tështi|tha|vra"
+pj_pa_re = "ble|ça|fshi|gdhi|gri|la|lëpi|mar|mbi|mpi|nda|nga|ngri|nxi|" + \
+"nxjer|pa|p(e|ë)r(c|ç)a|përfshi|përpi|pi|pre|pri|pru|qa|sha|shkri|" + \
+"shp(e|ë)rnda|shtri|shty|tështi|tha|vra"
 
 ## pjesore të shkurtra që mbarojnë me 'u' por që duhet të 
 ## mbarojnë me 'ar' -- shku -> shkuar
-pj_pa_ar = "besu|blu|caktu|çmu|çu|d(e|ë)gju|dhunu|k(e|ë)rku|ftu|lexu|" + \
+pj_pa_ar = "besu|blu|caktu|çmu|çu|d(e|ë)gju|dhunu|k(e|ë)rku|ftu|la|lexu|" + \
 "mbaru|m(e|ë)su|nd(e|ë)shku|ngacmu|p(ë|e)su|punu|provu|shkru|shku|shtru|" + \
 "shtu|shu|vlu|zgju"
 
@@ -61,7 +62,7 @@ pj_pa_er = "fy|gry|kry|kthy|ly|shly|shqy|thy"
 fj_dial = "(D|d)u|(G|g)ru|(M|m)u|(T|t)hu"
 
 
-## funksion për zëvendësimin e pjesoreve t;; shkurt;;ra
+## funksion për zëvendësimin e pjesoreve të shkurtëra
 def korrigjo_pjes(text):
 	## vlerënisje 
 	t = text ; pj_subs = 0
