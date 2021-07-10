@@ -50,8 +50,8 @@ pj_pa_ar = "besu|blu|caktu|çmu|çu|d(e|ë)gju|dhunu|k(e|ë)rku|ftu|la|lexu|" + 
 "shtu|shu|vlu|zgju"
 
 ## pjesore të shkurtra që duhet të mbarojnë me 'ur' -- kap -> kapur
-pj_pa_ur = "ardh|hap|kap|mat|mbyt|m(e|ë)rzit|ngrit|shit|thith|ul|" + \
-"vulos|zbardh|zbraps|zmbraps|zhyt"
+pj_pa_ur = "ardh|hap|kap|mat|majm|mbajt|mbyt|m(e|ë)rzit|ngrit|" + \
+"shit|thith|ul|vajt|vulos|zbardh|zbraps|zgjat|zmbraps|zhyt"
 
 ## pjesore të shkurtra që mbarojnë me 'y' por që duhet të 
 ## mbarojnë me 'yer' -- thy -> thyer		   
