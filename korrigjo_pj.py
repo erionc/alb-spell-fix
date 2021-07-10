@@ -9,10 +9,10 @@ prapa = "[a-zA-Z0-9çÇëË_-]{0,4}"
 # we = " |\t|\n|\.|\?|:|;|,|!"
 
 ## fjalë që i paraprinë të-së -- do të, dua të, desha të 
-para_te = "dua\s|do\s|duam\s|doni\s|duan\s|doja\s|doje\s|donte\s|donim\s|" + \
-"donit\s|donin\s|desha\s|deshe\s|deshte\s|deshëm\s|deshët\s|deshën\s|" + \
-"me\s|sapo\s|porsa\s|duhet\s|sikur\s|mund\s|kush\s|cil(i|a)\s|cil(ë|a)t\s|" + \
-"ku\sdo\s|kur\sdo\s" 
+para_te = "dua\s|do\s|duam\s|doni\s|duan\s|doja\s|doje\s|donte\s|" + \
+"donim\s|donit\s|donin\s|desha\s|deshe\s|deshte\s|deshëm\s|" + \
+"deshët\s|deshën\s|me\s|sapo\s|porsa\s|duhet\s|sikur\s|mund\s|" + \
+"kush\s|cil(i|a)\s|cil(ë|a)t\s|ku\sdo\s|kur\sdo\s" 
 
 ## foljet ndihmëse kam/jam që paraprijnë pjesoret
 kj = "Kam\s|kam\s|Ke\s|ke\s|Ka\s|ka\s|Kemi\s|kemi\s|Keni\s|keni\s|" + \
@@ -39,15 +39,32 @@ pp = kj + pasht + pptj
 
 ## pjesore të shkurtra që mbarojnë me 'u(r(e))', 'e(r(e))', 'a(r(e))' 
 ## por që duhet të mbarojnë me 'rë' -- pru -> prurë
-pj_pa_re = "ble|ça|fshi|gdhi|gri|la|lëpi|mar|mbi|mpi|nda|nga|ngri|nxi|" + \
-"nxjer|pa|p(e|ë)r(c|ç)a|përfshi|përpi|pi|pre|pri|pru|qa|sha|shkri|" + \
-"shp(e|ë)rnda|shtri|shty|tështi|tha|vra"
+pj_pa_re = "ble|" + \
+"ça|" + \
+"fshi|" + \
+"gdhi|gri|" + \
+"la|lëpi|" + \
+"mar|mbi|mpi|" + \
+"nda|nga|ngri|nxi|nxjer" + \
+"pa|p(e|ë)r(c|ç)a|përfshi|përpi|pi|pre|pri|pru|" + \
+"qa|" + \
+"sha|shkri|shp(e|ë)rnda|shtri|shty|" + \
+"tështi|tha|" + \
+"vra"
 
 ## pjesore të shkurtra që mbarojnë me 'u' por që duhet të 
 ## mbarojnë me 'ar' -- shku -> shkuar
-pj_pa_ar = "besu|blu|caktu|çmu|çu|d(e|ë)gju|dhunu|k(e|ë)rku|ftu|la|lexu|" + \
-"mbaru|m(e|ë)su|nd(e|ë)shku|ngacmu|p(ë|e)su|punu|provu|shkru|shku|shtru|" + \
-"shtu|shu|vlu|zgju"
+pj_pa_ar = "besu|blu|" + \
+"caktu|çmu|çu|d(e|ë)gju|" + \
+"dhunu|" + \
+"ftu|la|lexu|" + \
+"k(e|ë)rku|" + \
+"mbaru|m(e|ë)su|" + \
+"nd(e|ë)shku|ngacmu|" + \
+"p(ë|e)su|punu|provu|" + \
+"shkru|shku|shtru|shtu|shu|" + \
+"vlu|" + \
+"zgju"
 
 ## pjesore të shkurtra që duhet të mbarojnë me 'ur' -- kap -> kapur
 pj_pa_ur = "ardh|hap|kap|mat|majm|mbajt|mbyt|m(e|ë)rzit|ngrit|" + \
