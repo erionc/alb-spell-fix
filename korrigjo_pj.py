@@ -67,12 +67,26 @@ pj_pa_ar = "besu|blu|" + \
 "zgju"
 
 ## pjesore të shkurtra që duhet të mbarojnë me 'ur' -- kap -> kapur
-pj_pa_ur = "ardh|hap|kap|mat|majm|mbajt|mbyt|m(e|ë)rzit|ngrit|" + \
-"shit|thith|ul|vajt|vulos|zbardh|zbraps|zgjat|zmbraps|zhyt"
+pj_pa_ur = "ardh|" + \
+"hap|" + \
+"kap|" + \
+"mat|majm|mbajt|mbyt|m(e|ë)rzit|" + \
+"ngrit|" + \
+"shit|" + \
+"thith|" + \
+"ul|" + \
+"vajt|vulos|" + \
+"zbardh|zbraps|zgjat|zmbraps|zhyt"
 
 ## pjesore të shkurtra që mbarojnë me 'y' por që duhet të 
 ## mbarojnë me 'yer' -- thy -> thyer		   
-pj_pa_er = "fy|gry|kry|kthy|ly|shly|shqy|thy"
+pj_pa_er = "fy|" + \
+"gry|" + \
+"kry|" + \
+"kthy|" + \
+"ly|" + \
+"shly|shqy|" + \
+"thy"
 
 ## fjalë dialektore që mbarojnë me 'u(e)' por që duhet të 
 ## mbarojnë me 'ua' -- du(e) -> dua, thu(e) -> thua
