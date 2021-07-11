@@ -21,7 +21,12 @@ je ul, kanë vulos, janë zbardh, jeni zbraps, janë zmbraps, ke zhyt,
 ishe mërzit, janë merzit, duke thith, pata kap, qe mbyt, qe majm,
 ka mbajt, ka vajt, qe zgjat, 
 
-## pjesore pa "er" - 17 zëvendësime
+## pjesore pa "er" - 53 zëvendësime
 ke gry, ka thy, Kemi ly, për të kry, janë shqy, kanë kry, pa ly, isha thy,
-jena thy, kena kry, qemë ly, pati thy, qe fy, ka shly,
-
+jena thy, kena kry, qemë ly, pati thy, qe fy, ka shly, je dëfry, 
+kam fershëlly, ka fishkëlly, je genjy, qe hakërry, ka kapërcy, kemi këmby,
+ka kërcy, je kthy, ka kursy, je mallëngjy, ka mbërthy, kanë ngallënjy,
+qe ngashëry, je ngazëlly, kam parapëlqy, ke pëlqy, ka përkthy, qe përly,
+ka përthy, je ngjy, ka ngërthy, ka rrëfy, qe rrëmby, ka shërby, ka shkëlqy,
+kam shly, je shqy, je shpërbly, ka shpërthy, ka urry, je ushqy, qe vy,
+kam zbërthy, qe zhgënjy, je zhy,
