@@ -80,13 +80,21 @@ pj_pa_ur = "ardh|" + \
 
 ## pjesore të shkurtra që mbarojnë me 'y' por që duhet të 
 ## mbarojnë me 'yer' -- thy -> thyer		   
-pj_pa_er = "fy|" + \
-"gry|" + \
+pj_pa_er = "d(e|ë)fry" + \
+"fy|" + \
+"g(e|ë)njy|gry|" + \
 "kry|" + \
-"kthy|" + \
+"k(e|ë)mby|k(e|ë)rcy|kthy|kursy|" + \
 "ly|" + \
-"shly|shqy|" + \
-"thy"
+"mb(e|ë)rthy|" + \
+"p(e|ë)lqy|p(e|ë)rkthy|p(e|ë)rly|p(e|ë)rthy" + \
+"ng(e|ë)rthy|ngjy|" + \
+"rr(e|ë)fy|rr(e|ë)mby|" + \
+"sh(e|ë)rby|shk(e|ë)lqy|shly|shqy|shp(e|ë)rbly|shp(e|ë)rthy" + \
+"thy|" + \
+"urry|ushqy|" + \
+"vy|" + \
+"zhy|" + \
 
 ## fjalë dialektore që mbarojnë me 'u(e)' por që duhet të 
 ## mbarojnë me 'ua' -- du(e) -> dua, thu(e) -> thua
