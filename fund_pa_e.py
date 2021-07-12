@@ -50,19 +50,31 @@ no_e_end = [
 'strad',],
 
 # f								
-['am', 'asad', 'errnaj', 'ieraj', 'iskaj', 'jal', 'lam', 'loknaj',
-'rik', 'undaj', 'und(e|ë)rin', 'urk', 'ush', 'ushnaj', 'ushtag',
+['am', 'asad', 
+'errnaj', 
+'ieraj', 'iskaj', 
+'jal', 
+'lam', 'loknaj',
+'rik', 
+'undaj', 'und(e|ë)rin', 'urk', 'ush', 'ushnaj', 'ushtag',
 'ytaqaf',],
 
 # g													
 ['ab', 'abardin', 'af', 'alin', 'ar', 'ardalin', 'ardhnaj', 'azolin',
-'(e|ë)lqerin', '(e|ë)rmadh', 'ijotin', 'jasht', 'jasht(e|ë)mb(e|ë)dhjet',
-'jat', 'jeraqin', 'j(e|ë)m', 'jer', 'j(e|ë)kafsh', 'jell', 'jiraf',
-'jithmon', 'jiz', 'jysm(e|ë)kafsh', 'licerin', 'lin', 'odin', 'oj',
-'om', 'rad', 'rahm', 'remin', 'rib', 'ril', 'rop', 'un', 'urgac'],
+'(e|ë)lqerin', '(e|ë)rmadh', 
+'ijotin', 
+'jasht', 'jasht(e|ë)mb(e|ë)dhjet', 'jat', 'jeraqin', 'j(e|ë)m', 'jer',
+'j(e|ë)kafsh', 'jell', 'jiraf', 'jithmon', 'jiz', 'jysm(e|ë)kafsh',
+'licerin', 'lin', 
+'odin', 'oj', 'om',
+'rad', 'rahm', 'remin', 'rib', 'ril', 'rop', 
+'un', 'urgac'],
 
 # h
-['apësir', 'art', 'artin', 'emoglobin', 'er', 'ipotek', 'oshafk',
+['apësir', 'art', 'artin',
+'emoglobin', 'er',
+'ipotek',
+'oshafk',
 'umb(e|ë)sir', 'umb(e|ë)tir', 'umner', 'und(e|ë)k(e|ë)rrab',
 'und(e|ë)shkab', 'urm'],
 
@@ -70,20 +82,27 @@ no_e_end = [
 ['j'],	
 
 # j
-['aj', 'av', 'et'],
+['aj', 'av', 
+'et'],
 	
 # k																										
 ['abin', 'açk', 'afk', 'afsh', 'aft', 'al', 'aliqaf', 'alt(e|ë)rin',
-'amin', 'anarin', 'anavac', 'antin', 'apic', 'aptin', 'arabin', 'arakatin',
-'arfic', 'artolin', 'asht', 'at(e|ë)rmb(e|ë)dhjet', '(e|ë)rrab',
-'(e|ë)rthiz', 'inin', 'lim', 'lithm', 'lla(c|ç)', 'odrin', 'okain',
-'olesterin', 'omodin', 'opertin', 'orac', 'ov', 'rahaqaf', 'ryeradh',
-'rahin', 'ukumjaçk', 'undrin', 'ungac', 'urv', 'ushtetut', 'uzhin',],
+'amin', 'anarin', 'anavac', 'antin', 'apic', 'aptin', 'arabin',
+'arakatin', 'arfic', 'artolin', 'asht', 'at(e|ë)rmb(e|ë)dhjet',
+'(e|ë)rrab', '(e|ë)rthiz',
+'inin', 'lim', 'lithm',
+'lla(c|ç)',
+'odrin', 'okain', 'olesterin', 'omodin', 'opertin', 'orac', 'ov',
+'rahaqaf', 'ryeradh', 'rahin',
+'ukumjaçk', 'undrin', 'ungac', 'urv', 'ushtetut', 'uzhin',],
 	
 # l								
-['açk', 'afsh', 'agazin', 'agsht', 'akin', 'argin', 'eckurin', 'ënd',
-'(e|ë)ndin', 'igatin', 'im', 'imonad', 'imurin', 'ir', 'laçk',
-'lamarin', 'oj', 'op', 'uft', 'ugin',],
+['açk', 'afsh', 'agazin', 'agsht', 'akin', 'argin', 'eckurin',
+'ënd', '(e|ë)ndin',
+'igatin', 'im', 'imonad', 'imurin', 'ir',
+'laçk', 'lamarin',
+'oj', 'op',
+'uft', 'ugin',],
 
 # m											
 ['agm', 'akin', 'andarin', 'andolin', 'argarin', 'ark', 'art', 'artin',
