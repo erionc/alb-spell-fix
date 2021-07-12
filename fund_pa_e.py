@@ -5,28 +5,49 @@ import re, string
 ## varianti pa ë fundore nuk përplaset me ndonjë fjalë tjetër
 no_e_end = [
 # a
-['drenalin', 'ft', 'jk', 'lbumin', 'm', 'mbasad', 'meb', 'mplitud', 'naliz',
-'ngjin', 'nilin', 'rk', 'rn', 'rnaj', 'rr', 'spirin', 'tkin', 'utostrad',],
+['drenalin', 
+'ft', 
+'jk', 
+'lbumin', 
+'m', 'mbasad', 'meb', 'mplitud', 
+'naliz',
+'ngjin', 'nilin', 
+'rk', 'rn', 'rnaj', 'rr', 
+'spirin', 
+'tkin', 
+'utostrad',],
 
 # b														
 ['ab', 'ac', 'af', 'ag', 'alad', 'alt', 'alad', 'alerin', 'altin', 'arn',
-'(e|ë)ltaj', 'enzin', '(e|ë)shtaj', 'ib', 'ibliotek', 'im', 'ishtaj',
-'iskaj', 'iskot', 'lac', 'linaj', 'llokad', 'obin', 'oj', 'ornaj',
-'otin', 'regaj', 'rek', 'rigad', 'rimaj', 'rinaj', 'ritm', 'rrikad',
+'(e|ë)ltaj', 'enzin', '(e|ë)shtaj', 
+'ib', 'ibliotek', 'im', 'ishtaj', 'iskaj', 'iskot', 
+'lac', 'linaj', 'llokad', 
+'obin', 'oj', 'ornaj', 'otin', 
+'regaj', 'rek', 'rigad', 'rimaj', 'rinaj', 'ritm', 'rrikad',
 'ubullim', 'udalla(c|ç)k', 'uj', 'ujtin', 'uk', 'ul', 'unac', 'ungaj',],
 
 # c		
-['açk', 'aher', 'ajk', 'apin', 'elin', 'entigrad', 'fag', 'ungaj'],
+['açk', 'aher', 'ajk', 'apin', 
+'elin', 'entigrad', 
+'fag', 
+'ungaj'],
 
 # d															
-['ad', 'afin', 'aj', 'ardh', 'at', 'ecigrad', 'eg', 'ekad', 'eltin',
-'epozit', 'er', '(e|ë)llinj', 'h(e|ë)mball', 'hom', 'iafragm', 'ig',
-'isfat', 'isiplin', 'ispozit', 'it', 'jegurin', 'oktrin', 'or',
-'ordolin', 'rag', 'rejt', 'rit', 'rithnaj', 'ushkaj', 'uzin',
+['ad', 'afin', 'aj', 'ardh', 'at', 
+'ecigrad', 'eg', 'ekad', 'eltin', 'epozit', 'er', '(e|ë)llinj', 
+'h(e|ë)mball', 'hom', 
+'iafragm', 'ig', 'isfat', 'isiplin', 'ispozit', 'it', 
+'jegurin', 
+'oktrin', 'or', 'ordolin',
+'rag', 'rejt', 'rit', 'rithnaj',
+'ushkaj', 'uzin',
 'ymb(e|ë)dhjet',],
 
 # e
-['kspedit', 'kspozit', 'n', 'r', 'rzin', 'strad',],
+['kspedit', 'kspozit',
+'n',
+'r', 'rzin',
+'strad',],
 
 # f								
 ['am', 'asad', 'errnaj', 'ieraj', 'iskaj', 'jal', 'lam', 'loknaj',
