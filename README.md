@@ -1,3 +1,7 @@
-# alb-spell-fix
+# Vetëkorrigjues i gjuhës shqipe
 
-## Dokumentimi i projektit
+## Parakushte
+
+Kodi i programit është shkruar dhe testuar me libraritë e mëposhtëme:
+- python >= 3.7.6
+- tkinter >= 8.6
