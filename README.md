@@ -6,7 +6,7 @@ rrjete shoqërore virtuale, etj. Pikënisja ka qenë domosdoshmëria e
 pastrimit të faqeve shqip në Wikipedia, veçanërisht anashkalimi i 
 mospërdorimit të shkronjave ë dhe ç. Programi mbështetet te zëvendësimet
 korrigjuese të bazuara te shprehjet e rregullta. Kriteri themelor i
-hartimit të zëvenësimeve është shmangia e çdo ndryshimi që do 
+hartimit të zëvenësimeve është shmangia e çdo ndryshimi që do të 
 çonte në përplasje apo dykuptimësi të fjalëve. Për këtë arsye, 
 ekzekutimi i programit në çfarëdo teksti hyrës nuk shfaq asnjë gabim
 shtesë, pavarësisht se mund të mos t'i korrigjojë të gjitha gabimet
