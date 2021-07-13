@@ -1,7 +1,7 @@
 # Vetëkorrigjues i gjuhës shqipe
 
 Ky program korrigjimesh është konceptuar si një mjet softuer i hapur
-dhe pa pagesë, në dobi të gjithkujt që shkruajnë në faqe ueb, forume,
+dhe pa pagesë, në dobi të gjithkujt që shkruan në faqe ueb, forume,
 rrjete shoqërore virtuale, etj. Pikënisja ka qenë domosdoshmëria e 
 pastrimit të faqeve shqip në Wikipedia, veçanërisht anashkalimi i 
 mospërdorimit të shkronjave ë dhe ç. Programi mbështetet te zëvendësimet
@@ -10,7 +10,7 @@ hartimit të zëvenësimeve është shmangia e çdo ndryshimi që do
 çonte në përplasje apo dykuptimësi të fjalëve. Për këtë arsye, 
 ekzekutimi i programit në çfarëdo teksti hyrës nuk shfaq asnjë gabim
 shtesë, pavarësisht se mund të mos t'i korrigjojë të gjitha gabimet
-që mund të gjenden në atë teks.  
+që mund të gjenden në atë tekst.  
 
 ## Parakushte
 
@@ -23,7 +23,7 @@ Kodi i programit është shkruar dhe testuar me libraritë e mëposhtëme:
 **Ekzekutimi i programit kryhet me komandën e mëposhtëme:**
 
 ```
-python dritare.py
+$ python dritare.py
 ```
 Do të shfaqet dritarja grafike me dy fusha të mëdha teksti. Te fusha 
 e sipërme shkruhet ose ngjitet teksti të kemi për të redaktuar. Shtypet
