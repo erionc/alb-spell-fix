@@ -1,22 +1,26 @@
 # Vetëkorrigjues për gjuhës shqipe
 
 Ky program korrigjimesh automatike është konceptuar si një mjet softuer
-i hapur dhe falas, në dobi të gjithkujt që shkruan në faqe ueb, forume,
-rrjete shoqërore virtuale, etj. Pikënisja ka qenë domosdoshmëria e 
-pastrimit të faqeve shqip në Wikipedia, veçanërisht për të tejkaluar
-problemin e mprehtë të mospërdorimit të shkronjave ë dhe ç dhe pasojave
-të shumta negative që rrjedhin. Programi mbështetet te zëvendësimet
-korrigjuese të bazuara te shprehjet e rregullta. Kriteri themelor i
-hartimit të zëvenësimeve është shmangia e çdo ndryshimi që do të çonte në
-përplasje apo dykuptimësi të fjalëve. Për këtë arsye, ekzekutimi i
-programit në çfarëdo teksti hyrës jo vetem që nuk sjell asnjë gabim shtesë,
-por nuk shkakton as devijime në stilin apo formatin e shkrimit. 
+i hapur dhe falas (shih skedarin LICENSA.txt), në dobi të gjithkujt që
+shkruan nëpër faqe ueb, forume, rrjete shoqërore virtuale, etj. Motivi
+kryesor për zhvillimin e tij ka qenë domosdoshmëria e pastrimit të faqeve
+shqip në Wikipedia, veçanërisht për të tejkaluar problemin e mprehtë të
+mospërdorimit të shkronjave ë dhe ç dhe pasojave të shumta negative që
+rrjedhin. Programi mbështetet te zëvendësimet korrigjuese të bazuara te
+shprehjet e rregullta. Kriteri themelor i hartimit të zëvenësimeve është
+shmangia e çdo ndryshimi që do të çonte në përplasje apo dykuptimësi të
+fjalëve. Për këtë arsye, ekzekutimi i programit në çfarëdo teksti hyrës
+jo vetem që nuk sjell asnjë gabim shtesë, por nuk shkakton as devijime në
+stilin apo formatin e shkrimit. Me zgjerimet leksikore të parashikuara,
+programi do të jetë në gjendje të korrigjojë shumicën e gabimeve 
+drejtshkrimore që ndeshen në shkrimet e sotme.
 
 ## Parakushte
 
 Kodi i programit është shkruar dhe testuar me libraritë e mëposhtëme:
 - python >= 3.7.6
 - tkinter >= 8.6
+- re >= 2.2.1
 
 ## Përdorimi
 
@@ -35,7 +39,7 @@ Në këtë pikë, programi mund të përdoret për të redaktuar një shkëputje
 tjetër teksti, pa qenë nevoja për ta mbyllur dhe ekzekutuar nga e para.
 Programi do të përdorej me siguri më lehtë dhe më shpejtë i ndërtuar si një 
 mbishtim për shfletuesin Firefox, çka do bënte të mundur thirrjen e tij
-mbi të gjithë tekstin e fushës së shfletuesit. Një realizim i till ngelet
+mbi të gjithë tekstin e fushës së shfletuesit. Një realizim i tillë ngelet
 në prespektivë.
 
   
