@@ -33,4 +33,10 @@ shfaqet numri i zëvendësimeve korrigjuese të kryera. Nëse dëshirojmë ta
 fshijmë përmbajtjen aktuale të fushave të tekstit shtypim butonin *Shuaj*.
 Në këtë pikë, programi mund të përdoret për të redaktuar një shkëputje
 tjetër teksti, pa qenë nevoja për ta mbyllur dhe ekzekutuar nga e para.
+Programi do të përdorej me siguri më lehtë dhe më shpejtë i ndërtuar si një 
+mbishtim për shfletuesin Firefox, çka do bënte të mundur thirrjen e tij
+mbi të gjithë tekstin e fushës së shfletuesit. Një realizim i till ngelet
+në prespektivë.
+
+  
 
