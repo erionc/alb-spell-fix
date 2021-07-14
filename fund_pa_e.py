@@ -2,7 +2,8 @@
 import re, string
 
 ## fjalë që shkruhen pa ë fundore ose me e në vend të saj -- mir(e) -> mirë
-## varianti pa ë fundore nuk përplaset me ndonjë fjalë tjetër
+## zëvendësohet edhe varianti pa ë fundore, meqë nuk përplaset me ndonjë
+## fjalë tjetër
 no_e_end = [
 # a
 ['drenalin', 
@@ -212,7 +213,6 @@ def korrigjo_pa_e(text):
 		
 	## fjalë që shkruhen pa ë fundore ose me ë të shkruar e -- mir(e) -> mirë
 	t, c = re.subn(fr"(\b)({no_e_regex})(e)?(\b)", r"\2ë", t) ; e_subs += c
-	# t, c = re.subn(r"(Mir|mir)(e?)( |\.)", r"\1ë\3", t) ; e_subs += c
 
 	return (t, e_subs)
 	
