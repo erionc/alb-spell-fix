@@ -1,4 +1,4 @@
-# Vetëkorrigjues për gjuhës shqipe
+# Vetëkorrigjues për gjuhën shqipe
 
 Ky program korrigjimesh automatike për gjuhën shqipe është konceptuar si
 një mjet softuer i hapur dhe falas (shih skedarin LICENSA.txt), në dobi të
