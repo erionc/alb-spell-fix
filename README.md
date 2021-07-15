@@ -29,6 +29,13 @@ Kodi i programit është shkruar dhe testuar me libraritë e mëposhtëme:
 ```
 $ python dritare.py
 ```
+
+**apo nëse dëshirojmë të ekzekutojmë në konzolë kryhet me komandën**
+
+```
+$ python konzole.py
+```
+
 Do të hapet dritarja grafike me dy fusha të mëdha teksti. Te fusha 
 e sipërme shkruhet ose ngjitet teksti të kemi për të redaktuar. Shtypet
 butoni *Redakto* dhe teksti i redaktuar do të shfaqet menjëherë te dritarja
