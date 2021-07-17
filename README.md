@@ -24,16 +24,12 @@ Kodi i programit është shkruar dhe testuar me libraritë e mëposhtëme:
 
 ## Përdorimi
 
-**Ekzekutimi i programit kryhet me komandën e mëposhtëme:**
+Programi mund të përdoret në mënyrë grafike ose direkt nga terminali. Për
+ta përdorur duke ndërvepruar me dritaren grafike (libraria tkinter është
+e domosdoshme) shtypim komandën e mëposhtëme:
 
 ```
 $ python dritare.py
-```
-
-**apo nëse dëshirojmë të ekzekutojmë në konzolë kryhet me komandën**
-
-```
-$ python konzole.py
 ```
 
 Do të hapet dritarja grafike me dy fusha të mëdha teksti. Te fusha 
@@ -44,7 +40,17 @@ shfaqet numri i zëvendësimeve korrigjuese të kryera. Nëse dëshirojmë ta
 fshijmë përmbajtjen aktuale të fushave të tekstit shtypim butonin *Shuaj*.
 Në këtë pikë, programi mund të përdoret për të redaktuar një shkëputje
 tjetër teksti, pa qenë nevoja për ta mbyllur dhe ekzekutuar nga e para.
-Programi do të përdorej me siguri më lehtë dhe më shpejtë i ndërtuar si një 
-mbishtim për shfletuesin Firefox, çka do bënte të mundur thirrjen e tij
-mbi të gjithë tekstin e fushës së shfletuesit. Një realizim i tillë ngelet
-në prespektivë.
+
+Nëse dëshirojmë ta përdorim programin direkt nga terminali (libraria tkinter
+nuk nevojitet) shtypim komandën e mëposhtëme:
+
+```
+$ python terminal.py
+```
+
+Në këtë rast duhet patur kujdes që teksti të shtypet në mënyrë të vijueshme,
+pa shtypur butonin "enter" i cili nënkupton përfundimin e futjes së tekstit
+dhe aktivizimin e korrigjimeve. Programi do të përdorej me siguri më lehtë
+dhe më shpejtë i ndërtuar si një mbishtim për shfletuesin Firefox, çka do
+bënte të mundur thirrjen e tij mbi të gjithë tekstin e fushës së shfletuesit.
+Një realizim i tillë ngelet në prespektivë.
