@@ -33,16 +33,20 @@ def redaktime(field_in):
 	t, c = pas_korrigjime(t) ; total_sub += c
 
 	output_text = t
+	
 	# shfaqet totali i zëvendësimeve të kryera
-	output_message = str.format("{} zëvendësime. ", total_sub)
+	if total_sub == 1:
+		output_message = str.format("{} zëvendësim. ", total_sub)
+	else:
+		output_message = str.format("{} zëvendësime. ", total_sub)
 
 	return output_text, output_message
 
 ## pikënisja e ekzekutimit
 if __name__ == "__main__":
-	text1_field = input("Teksti hyrës: ")
+	text1_field = input("\nTeksti hyrës:\n")
 	text, message = redaktime(text1_field)
 
-	print("Teksti dalës: ", text)
-	print("Mesazhi: ", message)
+	print("\nTeksti dalës:\n", text)
+	print(f"\n{message}\n")
 

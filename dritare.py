@@ -37,8 +37,12 @@ def redaktime(field_in, field_out, field_message):
 	t, c = pas_korrigjime(t) ; total_sub += c
 
 	output_text = t
+	
 	# shfaqet totali i zëvendësimeve të kryera
-	output_message = str.format("{} zëvendësime. ", total_sub)
+	if total_sub == 1:
+		output_message = str.format("{} zëvendësim. ", total_sub)
+	else:
+		output_message = str.format("{} zëvendësime. ", total_sub)
 	
 	# futet teksti i redaktuar te kutiza e dytë
 	field_out.insert("1.0", output_text)
