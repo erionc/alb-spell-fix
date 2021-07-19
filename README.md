@@ -40,14 +40,32 @@ shfaqet numri i zëvendësimeve korrigjuese të kryera. Nëse dëshirojmë ta
 fshijmë përmbajtjen aktuale të fushave të tekstit shtypim butonin *Shuaj*.
 Në këtë pikë, programi mund të përdoret për të redaktuar një shkëputje
 tjetër teksti, pa qenë nevoja për ta mbyllur dhe ekzekutuar nga e para.
-Nëse dëshirojmë ta përdorim programin direkt nga terminali (libraria tkinter
-nuk nevojitet) shtypim komandën e mëposhtëme:
+
+Nëse dëshirojmë ta përdorim programin direkt nga terminali libraria tkinter
+nuk nevojitet. Në këtë rast mund t'i kalojmë programit tekstin me gabime
+që gjendet te skedari i hyrjes dhe skedarin e daljes ku të shkruaj tekstin
+e redaktuar. Komanda që duhet shtypur është:
 
 ```
-$ python terminal.py
+$ python terminal.py --input skedar_hyrës --output skedar_dalës
 ```
 
-Në këtë rast duhet patur kujdes që teksti të shtypet në mënyrë të vijueshme,
+Nëse tekstin me gabime e kemi te skedari hyrës por tekstin e redaktuar
+duam ta shfaqim në ekran, atëherë e ekzekutojmë komandën si më poshtë:
+
+```
+$ python terminal.py --input skedar_hyrës
+```
+
+Nëse dëshirojmë që tekstin e hyrjes ta shtypim në terminal e po në 
+terminal të marrim edhe tekstin e daljes, atëherë e ekzekutojmë komandën
+si më poshtë:
+
+```
+$ python terminal.py --input skedar_hyrës
+```
+
+Në këtë rast duhet patur kujdes që teksti të shkruhet në mënyrë të vijueshme,
 pa shtypur butonin "enter" i cili nënkupton përfundimin e futjes së tekstit
 dhe aktivizimin e korrigjimeve. Programi do të përdorej me siguri më lehtë
 dhe më shpejtë i ndërtuar si një mbishtim për shfletuesin Firefox, çka do
