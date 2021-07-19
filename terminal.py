@@ -58,19 +58,33 @@ if __name__ == "__main__":
 		in_text = in_file.read()
 		text, message = redaktime(in_text)
 		in_file.close()
-		
+		# shkruhet dalja te skedari dalës
 		out_file = open(args.output, 'w')
 		out_file.write(text)
 		in_file.close()
 		print(f"\n{message}\n")
 	
-	# nëse jepet vetëm hyrja
+	# nëse jepet hyrja por jo dalja
 	elif args.input and not args.output:
+		# lexohet dhe përpunohet hyrja
+		in_file = open(args.input, 'r')
+		in_text = in_file.read()
+		text, message = redaktime(in_text)
+		in_file.close()
+		# shkruhet dalja në terminali
+		print("\nTeksti dalës:\n", text)
+		print(f"\n{message}\n")
 	
-	
-	text1_field = input("\nTeksti hyrës:\n")
-	text, message = redaktime(text1_field)
+	# nëse nuk jepen as hyrja as dalja
+	elif not args.input and not args.output:
+		text1_field = input("\nTeksti hyrës:\n")
+		text, message = redaktime(text1_field)
 
-	print("\nTeksti dalës:\n", text)
-	print(f"\n{message}\n")
+		print("\nTeksti dalës:\n", text)
+		print(f"\n{message}\n")
+	
+	# komandë e shkruar gabim
+	else:
+		print("Komandë e shkruar gabim...")
+		sys.exit()
 
