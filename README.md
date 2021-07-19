@@ -40,8 +40,7 @@ shfaqet numri i zëvendësimeve korrigjuese të kryera. Nëse dëshirojmë ta
 fshijmë përmbajtjen aktuale të fushave të tekstit shtypim butonin *Shuaj*.
 Në këtë pikë, programi mund të përdoret për të redaktuar një shkëputje
 tjetër teksti, pa qenë nevoja për ta mbyllur dhe ekzekutuar nga e para.
-
-Nëse dëshirojmë ta përdorim programin direkt nga terminali libraria tkinter
+Nëse dëshirojmë ta përdorim programin direkt nga terminali, libraria tkinter
 nuk nevojitet. Në këtë rast mund t'i kalojmë programit tekstin me gabime
 që gjendet te skedari i hyrjes dhe skedarin e daljes ku të shkruaj tekstin
 e redaktuar. Komanda që duhet shtypur është:
