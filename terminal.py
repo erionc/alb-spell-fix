@@ -1,4 +1,4 @@
-import re
+import re, argparse
 # importimi i funksioneve korrigjuese nga modulet përkatëse
 from korrigjo import *
 from korrigjo_pj import *
@@ -41,9 +41,33 @@ def redaktime(field_in):
 		output_message = str.format("{} zëvendësime. ", total_sub)
 
 	return output_text, output_message
+	
+# për ekzekutimin nga terminali
+parser = argparse.ArgumentParser()
+parser.add_argument('-i', '--input', help='Skedari Hyrës'
+parser.add_argument('-o', '--output', help='Skedari Dalës')
+args = parser.parse_args()
 
 ## pikënisja e ekzekutimit
 if __name__ == "__main__":
+	
+	# nëse jepet edhe hyrja edhe dalja
+	if args.input and args.output:
+		# lexohet dhe përpunohet hyrja
+		in_file = open(args.input, 'r')
+		in_text = in_file.read()
+		text, message = redaktime(in_text)
+		in_file.close()
+		
+		out_file = open(args.output, 'w')
+		out_file.write(text)
+		in_file.close()
+		print(f"\n{message}\n")
+	
+	# nëse jepet vetëm hyrja
+	elif args.input and not args.output:
+	
+	
 	text1_field = input("\nTeksti hyrës:\n")
 	text, message = redaktime(text1_field)
 
