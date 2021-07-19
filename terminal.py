@@ -1,4 +1,4 @@
-import re, argparse
+import re, sys, argparse
 # importimi i funksioneve korrigjuese nga modulet përkatëse
 from korrigjo import *
 from korrigjo_pj import *
@@ -44,7 +44,7 @@ def redaktime(field_in):
 	
 # për ekzekutimin nga terminali
 parser = argparse.ArgumentParser()
-parser.add_argument('-i', '--input', help='Skedari Hyrës'
+parser.add_argument('-i', '--input', help='Skedari Hyrës')
 parser.add_argument('-o', '--output', help='Skedari Dalës')
 args = parser.parse_args()
 
