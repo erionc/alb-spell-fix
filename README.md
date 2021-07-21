@@ -6,7 +6,7 @@ gjithkujt që shkruan nëpër faqe ueb, forume, rrjete shoqërore virtuale, etj.
 Motivi kryesor për zhvillimin e tij ka qenë domosdoshmëria e pastrimit të
 faqeve shqip në Wikipedia, veçanërisht për të tejkaluar problemin e mprehtë
 të mospërdorimit të shkronjave ë dhe ç dhe pasojave të shumta negative që
-rrjedhin. Programi ndjek nj;; p;;rqasje thuajse shteruese zëvendësimesh me
+rrjedhin. Programi ndjek një përqasje thuajse shteruese zëvendësimesh me
 anë të shprehjeve të rregullta. Kriteri themelor i hartimit të tyre është
 shmangia e çdo ndryshimi që do të çonte në përplasje apo dykuptimësi të
 fjalëve. Për këtë arsye, ekzekutimi i programit në çfarëdo teksti hyrës jo
@@ -26,8 +26,9 @@ Kodi i programit është shkruar dhe testuar me libraritë e mëposhtëme:
 ## Përdorimi
 
 Programi mund të përdoret në mënyrë grafike ose direkt nga terminali. Për
-ta përdorur duke ndërvepruar me dritaren grafike (libraria tkinter është
-e domosdoshme) shtypim komandën e mëposhtëme:
+ta përdorur duke ndërvepruar me dritaren grafike nevojitet libraria *tkinter*,
+ndërsa libraria *argparse* nuk është e domosdoshme. Programi aktivizohet duke
+shtypur komandën e mëposhtëme:
 
 ```
 $ python dritare.py
@@ -41,10 +42,11 @@ shfaqet numri i zëvendësimeve korrigjuese të kryera. Nëse dëshirojmë ta
 fshijmë përmbajtjen aktuale të fushave të tekstit shtypim butonin *Shuaj*.
 Në këtë pikë, programi mund të përdoret për të redaktuar një shkëputje
 tjetër teksti, pa qenë nevoja për ta mbyllur dhe ekzekutuar nga e para.
-Nëse dëshirojmë ta përdorim programin direkt nga terminali, libraria tkinter
-nuk nevojitet. Në këtë rast mund t'i kalojmë programit tekstin me gabime
-që gjendet te skedari i hyrjes dhe skedarin e daljes ku të shkruaj tekstin
-e redaktuar. Komanda që duhet shtypur është:
+Nëse dëshirojmë ta përdorim programin direkt nga terminali, libraria *tkinter*
+nuk nevojitet ndërsa libraria *argparse* është e domosdoshme. Në këtë rast
+mund t'i kalojmë programit tekstin me gabime që gjendet te skedari i hyrjes
+dhe skedarin e daljes ku të shkruaj tekstin e redaktuar. Komanda që duhet
+shtypur është:
 
 ```
 $ python terminal.py --input skedar_hyrës --output skedar_dalës
@@ -62,7 +64,7 @@ terminal të marrim edhe tekstin e daljes, atëherë e ekzekutojmë komandën
 si më poshtë:
 
 ```
-$ python terminal.py --input skedar_hyrës
+$ python terminal.py
 ```
 
 Në këtë rast duhet patur kujdes që teksti të shkruhet në mënyrë të vijueshme,
