@@ -19,8 +19,9 @@ shkrimet e sotme.
 
 Kodi i programit është shkruar dhe testuar me libraritë e mëposhtëme:
 - python >= 3.7.6
-- tkinter >= 8.6
 - re >= 2.2.1
+- argparse >= 1.1
+- tkinter >= 8.6
 
 ## Përdorimi
 
