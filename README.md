@@ -6,14 +6,14 @@ gjithkujt që shkruan nëpër faqe ueb, forume, rrjete shoqërore virtuale, etj.
 Motivi kryesor për zhvillimin e tij ka qenë domosdoshmëria e pastrimit të
 faqeve shqip në Wikipedia, veçanërisht për të tejkaluar problemin e mprehtë
 të mospërdorimit të shkronjave ë dhe ç dhe pasojave të shumta negative që
-rrjedhin. Programi mbështetet te zëvendësimet korrigjuese me anë të
-shprehjeve të rregullta. Kriteri themelor i hartimit të tyre është shmangia
-e çdo ndryshimi që do të çonte në përplasje apo dykuptimësi të fjalëve. Për
-këtë arsye, ekzekutimi i programit në çfarëdo teksti hyrës jo vetem që nuk
-sjell asnjë gabim shtesë, por nuk shkakton as devijime në stilin apo formatin
-e shkrimit. Me zgjerimet leksikore të parashikuara, programi do të jetë në
-gjendje të korrigjojë shumicën e gabimeve drejtshkrimore që ndeshen në
-shkrimet e sotme.
+rrjedhin. Programi ndjek nj;; p;;rqasje thuajse shteruese zëvendësimesh me
+anë të shprehjeve të rregullta. Kriteri themelor i hartimit të tyre është
+shmangia e çdo ndryshimi që do të çonte në përplasje apo dykuptimësi të
+fjalëve. Për këtë arsye, ekzekutimi i programit në çfarëdo teksti hyrës jo
+vetem që nuk sjell asnjë gabim shtesë, por nuk shkakton as devijime në
+stilin apo formatin e shkrimit. Me zgjerimet leksikore të parashikuara,
+programi do të jetë në gjendje të korrigjojë shumicën e gabimeve
+drejtshkrimore që ndeshen në shkrimet e sotme.
 
 ## Parakushte
 
