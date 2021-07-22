@@ -70,8 +70,11 @@ pj_pa_ar = "besu|blu|" + \
 pj_pa_ur = "ardh|" + \
 "hap|" + \
 "kap|" + \
-"mat|majm|mbajt|mbyt|m(e|ë)rzit|" + \
+"lag|" + \
+"mat|majm|mbajt|mbyt|m(e|ë)rzit|mir(e|ë)mbajt|" + \
 "ngrit|" + \
+"p(e|ë)rmbajt|" + \
+"rrah|" + \
 "shit|" + \
 "thith|" + \
 "ul|" + \
