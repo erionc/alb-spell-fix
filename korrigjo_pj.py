@@ -48,7 +48,7 @@ pj_pa_re = "ble|" + \
 "nda|nga|ngri|nxi|nxjer" + \
 "pa|p(e|ë)r(c|ç)a|përfshi|përpi|pi|pre|pri|pru|" + \
 "qa|" + \
-"sha|shkri|shp(e|ë)rnda|shtri|shty|" + \
+"sha|shka|shkri|shp(e|ë)rnda|shtri|shty|" + \
 "tështi|tha|" + \
 "vra"
 
