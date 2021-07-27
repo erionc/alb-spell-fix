@@ -93,12 +93,12 @@ no_e_end = [
 'inin', 'lim', 'lithm',
 'lla(c|ç)',
 'odrin', 'okain', 'olesterin', 'omodin', 'opertin', 'orac', 'ov',
-'rahaqaf', 'ryeradh', 'rahin',
-'ukumjaçk', 'undrin', 'ungac', 'urv', 'ushtetut', 'uzhin',],
+'rahaqaf', 'renaj', 'ryeradh', 'rahin',
+'ukumjaçk', 'undrin', 'ungac', 'uraj', 'urv', 'ushtetut', 'uzhin',],
 	
 # l								
-['açk', 'afsh', 'agazin', 'agsht', 'akin', 'argin', 'eckurin',
-'ënd', '(e|ë)ndin',
+['açk', 'afsh', 'agazin', 'agsht', 'akin', 'argin', 'eckurin', 'edhnaj',
+'(e|ë)maj', 'ënd', '(e|ë)ndin',
 'igatin', 'im', 'imonad', 'imurin', 'ir',
 'laçk', 'lamarin',
 'oj', 'op',
