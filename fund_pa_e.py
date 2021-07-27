@@ -65,11 +65,10 @@ no_e_end = [
 '(e|ë)lqerin', '(e|ë)rmadh', '(e|ë)rdhaj', '(e|ë)rmaj', 
 'ijotin', 
 'jasht', 'jasht(e|ë)mb(e|ë)dhjet', 'jat', 'jeraqin', 'j(e|ë)m', 'jer',
-'j(e|ë)kafsh', 'jell', 'jiraf', 'jithmon', 'jiz', 'jysm(e|ë)kafsh',
-'licerin', 'lin', 
-'odin', 'oj', 'om',
+'j(e|ë)kafsh', 'jell', 'jethnaj', 'jiraf', 'jithmon', 'jithnaj', 'jiz',
+'jysm(e|ë)kafsh', 'licerin', 'lin', 'odin', 'oj', 'om',
 'rad', 'rahm', 'remin', 'rib', 'ril', 'rop', 'roshnaj', 'runaj', 'rykaj', 
-'un', 'uraj', 'urgac'],
+'un', 'uraj', 'urgac', 'urnaj',],
 
 # h
 ['apësir', 'art', 'artin',
@@ -80,16 +79,16 @@ no_e_end = [
 'und(e|ë)shkab', 'urm'],
 
 # i									
-['j'],	
+['j', 'mshtaj', 'mtaj',],	
 
 # j
 ['aj', 'av', 
 'et'],
 	
 # k																										
-['abin', 'açk', 'afk', 'afsh', 'aft', 'al', 'aliqaf', 'alt(e|ë)rin',
-'amin', 'anarin', 'anavac', 'antin', 'apic', 'aptin', 'arabin',
-'arakatin', 'arfic', 'artolin', 'asht', 'at(e|ë)rmb(e|ë)dhjet',
+['abin', 'açk', 'afk', 'afsh', 'aft', 'al', 'aldaj', 'aliqaf',
+'alt(e|ë)rin', 'amin', 'anarin', 'anavac', 'antin', 'apic', 'aptin',
+'arabin', 'arakatin', 'arfic', 'artolin', 'asht', 'at(e|ë)rmb(e|ë)dhjet',
 '(e|ë)rrab', '(e|ë)rthiz',
 'inin', 'lim', 'lithm',
 'lla(c|ç)',
