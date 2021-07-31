@@ -100,9 +100,9 @@ no_e_end = [
 ['açk', 'afsh', 'agazin', 'agsht', 'akin', 'argin', 'eckurin', 'edhnaj',
 '(e|ë)maj', 'ënd', '(e|ë)ndin',
 'igatin', 'im', 'imonad', 'imurin', 'ir',
-'laçk', 'lamarin',
+'laçk', 'lamarin', 'isnaj',
 'oj', 'op',
-'uft', 'ugin',],
+'uft', 'ugaj', 'ugin', 'ugnaj', 'ulnaj'],
 
 # m											
 ['agm', 'akin', 'andarin', 'andolin', 'argarin', 'ark', 'art', 'artin',
