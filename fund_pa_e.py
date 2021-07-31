@@ -100,9 +100,9 @@ no_e_end = [
 ['açk', 'afsh', 'agazin', 'agsht', 'akin', 'argin', 'eckurin', 'edhnaj',
 '(e|ë)maj', 'ënd', '(e|ë)ndin',
 'igatin', 'im', 'imonad', 'imurin', 'ir',
-'laçk', 'lamarin', 'isnaj',
+'laçk', 'lamarin', 'isnaj', 'lokaj',
 'oj', 'op',
-'uft', 'ugaj', 'ugin', 'ugnaj', 'ulnaj'],
+'uft', 'ugaj', 'ugin', 'ugnaj', 'ulnaj', 'umnaj',],
 
 # m											
 ['agm', 'akin', 'andarin', 'andolin', 'argarin', 'ark', 'art', 'artin',
@@ -110,13 +110,13 @@ no_e_end = [
 '(e|ë)llag', '(e|ë)ndafsht',
 'ij', 'in', 'ir', 'iz',
 'jaft',
-'oll', 'olldrag', 'orfin',
-'uzik'],
+'oll', 'olldrag', 'orfin', 'ortaj',
+'urtaj', 'uzik'],
 
 # n					
 ['aft', 'aftalin', 'ap', 
 'djes', 
-'(e|ë)nt', '(e|ë)nt(e|ë)mb(e|ë)dhjet',
+'(e|ë)n(e|ë)daj', '(e|ë)nt', '(e|ë)nt(e|ë)mb(e|ë)dhjet',
 'gaj', 'gjyr', 
 'ikotin', 'inull', 'ism', 'itroglicerin', 
 'j', 'j(e|ë)mb(e|ë)dhjet',
@@ -134,12 +134,12 @@ no_e_end = [
 'armend', 'atin',
 'elerin', 'em', 'en', 'end', 'enicilin', 'es', 'es(e|ë)mb(e|ë)dhjet',
 '(e|ë)shtym',
-'in', 'ishin', 
+'in', 'ishin', 'ishnaj',
 'jac', 'jeshk',
-'la(c|ç)k', 'lag', 'lastelin', 'lejad', 'levic', 'llaj', 
+'la(c|ç)k', 'lag', 'lastelin', 'lejad', 'lepnaj', 'levic', 'llaj', 
 'omad', 'ozit',
 'rapashpin', 'redh', 'remis', 'rik', 'ron', 'rostitut', 'rotein',
-'ul', 'un', 'ushk'],
+'ul', 'un', 'ushk', ],
 
 # q		
 ['af(e|ë)k(e|ë)rrab', 'art',
