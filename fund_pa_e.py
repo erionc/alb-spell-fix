@@ -139,7 +139,7 @@ no_e_end = [
 'la(c|ç)k', 'lag', 'lastelin', 'lejad', 'lepnaj', 'levic', 'llaj', 
 'omad', 'ozit',
 'rapashpin', 'redh', 'remis', 'rik', 'ron', 'rostitut', 'rotein',
-'ul', 'un', 'ushk', ],
+'ul', 'un', 'uplaj', 'ushk', 'yllnaj',],
 
 # q		
 ['af(e|ë)k(e|ë)rrab', 'art',
@@ -150,7 +150,7 @@ no_e_end = [
 ['ac', 'adh',
 '(e|ë)r', 'etin', 'ezolut',
 'imt',
-'rangallin', 'rag', 'raj', 'rep', 'rib', 'rob',
+'rafshnaj', 'rag', 'raj', 'rangallin', 'rep', 'rib', 'rob',
 'ozmarin', 
 'rug', 'rugic', 'rugin', 
 'utin',],
