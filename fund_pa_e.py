@@ -175,7 +175,7 @@ no_e_end = [
 ['aj', 'hagm', 'han', 'ap', 'arab', 'arg', 'arrac', 'avolin', 'et',
 'et(e|ë)mb(e|ë)dhjet', 'etraciklin', 'hatin', 'hellin', 'hik', 'oksin',
 'orb', 'rag', 'rampolin', 'razir', 'remb(e|ë)dhjet', 'r(e|ë)ndelin',
-'rin', 'rungaj', 'urbin',],	
+'rin', 'rungaj', 'urbin', 'yftaj', 'ymnaj', 'ymtaj',],	
 	
 # u											
 ['j', 'l(ë|e)rim', 'n', 'niversiad', 'zin'],
