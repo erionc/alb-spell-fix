@@ -152,7 +152,7 @@ no_e_end = [
 'imt',
 'rafshnaj', 'rag', 'raj', 'rangallin', 'rep', 'rib', 'rob',
 'ozmarin', 
-'rug', 'rugic', 'rugin', 
+'rethnaj', 'r(e|ë)kaj', 'r(e|ë)shaj', 'rug', 'rungaj', 'rugic', 'rugin', 
 'utin',],
 
 # s												
