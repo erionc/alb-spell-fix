@@ -185,10 +185,14 @@ no_e_end = [
 'yftaj', 'ymnaj', 'ymtaj',],	
 
 # u											
-['j', 'l(ë|e)rim', 'n', 'niversiad', 'zin'],
+['j',
+'l(ë|e)rim',
+'n', 'niversiad',
+'zin'],
 
 # v												
-['adh', 'aksin', 'al', 'azelin', 'et(e|ë)tim', 'ezullim',
+['adh', 'aksin', 'al', 'azelin',
+'et(e|ë)tim', 'ezullim',
 'iktim', 'il', 'iolin', 'itamin', 'itrin',
 'jeg', 'jeturin',
 'lag', 'ler', 'llaj',
@@ -196,13 +200,18 @@ no_e_end = [
 'rag', 'raj', 'rim'],
 
 # x								
-['haj', 'helatin', 'hung', 'in', 'ix', ],	
+['haj', 'helatin', 'hung',
+'in', 'ix', ],	
 
 # y														
 ['n', 'ndyr'],	
 
 # z										
-['an', 'gjyr', 'hab', 'hdrejt', 'jarrt', 'orr'],												
+['an',
+'gjyr',
+'hab', 'hdrejt',
+'jarrt',
+'orr'],												
 ]
 
 ## përgatitja e shprehjes së rregullt për korrigjimin e ë-së fundore
