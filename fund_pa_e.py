@@ -141,7 +141,8 @@ no_e_end = [
 'la(c|ç)k', 'lag', 'lastelin', 'lejad', 'lepnaj', 'levic', 'llaj', 
 'omad', 'ozit',
 'rapashpin', 'redh', 'remis', 'rik', 'ron', 'rostitut', 'rotein',
-'ul', 'un', 'uplaj', 'ushk', 'yllnaj',],
+'ul', 'un', 'uplaj', 'ushk',
+'yllnaj',],
 
 # q		
 ['af(e|ë)k(e|ë)rrab', 'art',
@@ -175,9 +176,13 @@ no_e_end = [
 
 # t
 ['aj', 'hagm', 'han', 'ap', 'arab', 'arg', 'arrac', 'avolin', 'et',
-'et(e|ë)mb(e|ë)dhjet', 'etraciklin', 'hatin', 'hellin', 'hik', 'oksin',
-'orb', 'rag', 'rampolin', 'razir', 'remb(e|ë)dhjet', 'r(e|ë)ndelin',
-'rin', 'rungaj', 'urbin', 'yftaj', 'ymnaj', 'ymtaj',],	
+'et(e|ë)mb(e|ë)dhjet', 'etraciklin',
+'hatin', 'hellin', 'hik',
+'oksin', 'orb',
+'rag', 'rampolin', 'razir', 'remb(e|ë)dhjet', 'r(e|ë)ndelin',
+'rin', 'rungaj',
+'urbin',
+'yftaj', 'ymnaj', 'ymtaj',],	
 
 # u											
 ['j', 'l(ë|e)rim', 'n', 'niversiad', 'zin'],
