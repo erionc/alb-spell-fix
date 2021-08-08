@@ -66,7 +66,9 @@ no_e_end = [
 'ijotin', 
 'jasht', 'jasht(e|ë)mb(e|ë)dhjet', 'jat', 'jeraqin', 'j(e|ë)m', 'jer',
 'j(e|ë)kafsh', 'jell', 'jethnaj', 'jiraf', 'jithmon', 'jithnaj', 'jiz',
-'jysm(e|ë)kafsh', 'licerin', 'lin', 'odin', 'oj', 'om',
+'jysm(e|ë)kafsh',
+'licerin', 'lin',
+'odin', 'oj', 'om',
 'rad', 'rahm', 'remin', 'rib', 'ril', 'rop', 'roshnaj', 'runaj', 'rykaj', 
 'un', 'uraj', 'urgac', 'urnaj',],
 
