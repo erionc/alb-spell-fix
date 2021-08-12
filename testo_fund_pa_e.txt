@@ -38,20 +38,20 @@ balad bllokad brigad dekad estrad fasad parad plejad pomad ambasad
 autostrad barrikad centigrad decigrad limonad maskarad olimpiad
 serenad spartakiad universiad 
 
-# afkë - 
+# afkë - 2 zëvendësime
 pafk hoshafk 
 
-# afshë - 
+# afshë - 4 zëvendësime
 lafsh gjëkafsh gjysmëkafsh mëndafsht 
 
-# aftë - 
+# aftë - 4 zëvendësime
 aft kaft paft paaft 
 
-# agë - 
+# agë - 16 zëvendësime
 bag cfag drag plag rrag sag shpag trag vlag vrag mëllag pajag sarag
 fushtag molldrag lagsht 
 
-# agmë - 
+# agmë - 5 zëvendësime
 magm thagm diafragm grahm strajc 
 
 # ajë - 73 zëvendësime
