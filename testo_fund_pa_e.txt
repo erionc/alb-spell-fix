@@ -36,10 +36,23 @@ bunac gurgac korac pungac tarrac kanavac skilifac kllaçe laçk
 gërmadh kryeradh baf saf fytaqaf krahaqaf kaliqaf gjiraf dad grad
 balad bllokad brigad dekad estrad fasad parad plejad pomad ambasad
 autostrad barrikad centigrad decigrad limonad maskarad olimpiad
-serenad spartakiad universiad pafk hoshafk lafsh gjëkafsh gjysmëkafsh
-mëndafsht aft kaft paft paaft bag cfag drag plag rrag sag shpag trag
-vlag vrag mëllag pajag sarag fushtag molldrag lagsht magm thagm
-diafragm grahm strajc 
+serenad spartakiad universiad 
+
+# afkë - 
+pafk hoshafk 
+
+# afshë - 
+lafsh gjëkafsh gjysmëkafsh mëndafsht 
+
+# aftë - 
+aft kaft paft paaft 
+
+# agë - 
+bag cfag drag plag rrag sag shpag trag vlag vrag mëllag pajag sarag
+fushtag molldrag lagsht 
+
+# agmë - 
+magm thagm diafragm grahm strajc 
 
 # ajë - 73 zëvendësime
 daj jaj ngaj paj pllaj rraj taj vllaj vraj
