@@ -33,7 +33,10 @@ vjeturin vogëlin vorbëtin xhelatin bib grib rrib shib am bab gab shkab
 shkrab zhab kërrab tarab hundëkërrab hundëshkab qafëkërrab blac pjace rac
 bunac gurgac korac pungac tarrac kanavac skilifac kllaçe laçk
 çaçk kaçk llaçk plaçk plack budallaçk kukumjaçk saçm radh vadh
-gërmadh kryeradh baf saf fytaqaf krahaqaf kaliqaf gjiraf dad grad
+gërmadh kryeradh baf saf fytaqaf krahaqaf kaliqaf gjiraf 
+
+# adë - 21 zëvendësime
+dad grad
 balad bllokad brigad dekad estrad fasad parad plejad pomad ambasad
 autostrad barrikad centigrad decigrad limonad maskarad olimpiad
 serenad spartakiad universiad 
