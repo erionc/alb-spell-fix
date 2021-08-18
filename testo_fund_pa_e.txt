@@ -31,8 +31,10 @@ streptomicin suferin shakullin shkarravin shkatërrine shkresurin
 shpartallin tavolin tetraciklin trampolin trëndelin violin vazelin
 vjeturin vogëlin vorbëtin xhelatin bib grib rrib shib am bab gab shkab
 shkrab zhab kërrab tarab hundëkërrab hundëshkab qafëkërrab blac pjace rac
-bunac gurgac korac pungac tarrac kanavac skilifac kllaçe laçk
-çaçk kaçk llaçk plaçk plack budallaçk kukumjaçk saçm 
+bunac gurgac korac pungac tarrac kanavac skilifac kllaç 
+
+# açkë - 9 zëvendësime
+laçk çaçk kaçk llaçk plaçk plack budallaçk kukumjaçk saçm 
 
 # adhë - 4 zëvendësime
 radh vadh gërmadh kryeradh 
