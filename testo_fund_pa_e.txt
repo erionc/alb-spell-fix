@@ -29,7 +29,10 @@ naftalin nikotin nitroglicerin ofiçin origjin parafin paradhom parakthin
 pelerin penicilin plastelin prapashpin qukëlin rozmarin sakarin ulërim
 streptomicin suferin shakullin shkarravin shkatërrine shkresurin
 shpartallin tavolin tetraciklin trampolin trëndelin violin vazelin
-vjeturin vogëlin vorbëtin xhelatin bib grib rrib shib am 
+vjeturin vogëlin vorbëtin xhelatin 
+
+# ibë - 5 zëvendësime
+bib grib rrib shib am 
 
 # abë - 10 zëvendësime
 bab gab shkab shkrab zhab kërrab tarab hundëkërrab hundëshkab qafëkërrab
