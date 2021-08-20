@@ -16,22 +16,22 @@ Karfic plevic bim Yndyr zgjyre Vler der Here Ninull Loj pen kushtetut
 gom Gjithmon Goje vone godin dhemball dhëmballe Prone qindark Pes,
 gjashte, Tet, nente nënt Biskot rrep parabim pend paramane parme
 dellinj dëllinje njëmbëdhjete Kasht shport Predh torbe Bul cajk
-Cahere Ajk ameb Qart hart vitamine pin glin Xin atkin angjin baltin
+Cahere Ajk ameb Qart hart paradhom
+
+# inë - 104 zëvendësime
+vitamine pin glin Xin atkin angjin baltin
 Benzin bobin Capin dafin doktrin Duzin erzin galine kabin Kantin
 kinin kodrin krahin kuzhin lakin argin lendin lëndine lugin patin
 pishin rutin sulin skutin Sterlin Toksine turbin thatin thellin
 uzin vaksin vitrin adrenalin albumin Aniline aspirin balerin disiplin
-Djegurin dordolin fundërin gabardin gardalin gazolin gëlqerin
-Gijotine glicerin gjeraqin hemoglobin Kafein kaltërin kanarin
-karabin karakatin kartolin kokain kolesterin komodin kopertin kundrin
-leckurine ligatin limurin llamarin magazin mandarin mandolin margarin
-naftalin nikotin nitroglicerin ofiçin origjin parafin paradhom 
-
-# inë - 26 zëvendësime
-parakthin pelerin penicilin plastelin prapashpin qukëlin rozmarin sakarin
-ulërim streptomicin suferin shakullin shkarravin shkatërrine shkresurin
-shpartallin tavolin tetraciklin trampolin trëndelin violin vazelin
-vjeturin vogëlin vorbëtin xhelatin 
+Djegurin dordolin fundërin gabardin gardalin gazolin gëlqerin Gijotine
+glicerin gjeraqin hemoglobin Kafein kaltërin kanarin karabin karakatin
+kartolin kokain kolesterin komodin kopertin kundrin leckurine ligatin
+limurin llamarin magazin mandarin mandolin margarin naftalin nikotin
+nitroglicerin ofiçin origjin parafin parakthin pelerin penicilin plastelin
+prapashpin qukëlin rozmarin sakarin ulërim streptomicin suferin shakullin
+shkarravin shkatërrine shkresurin shpartallin tavolin tetraciklin trampolin
+trëndelin violin vazelin vjeturin vogëlin vorbëtin xhelatin 
 
 # ibë - 5 zëvendësime
 bib grib rrib shib am 
