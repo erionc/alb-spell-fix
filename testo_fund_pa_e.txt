@@ -11,12 +11,15 @@ Disfat klithme page Moll pjeshke dardhe Jet arn barne fame arke tap
 lim zorre val pushke Naft Balte dig En Furke kafke Kurv Site lope
 grop Nape boj Gaf Gjem gjëm Makin ndjese than Kale humnere humbësir
 Humbetir Pështym peshtyme gjere Vjeg sob Stuf shkreptim Analiz
-amplitude Sinteze Mine flam gar gjize Kapic kërthize kerthiz rrugic
-Karfic plevic bim Yndyr zgjyre Vler der Here Ninull Loj pen kushtetut
-gom Gjithmon Goje vone godin dhemball dhëmballe Prone qindark Pes,
-gjashte, Tet, nente nënt Biskot rrep parabim pend paramane parme
-dellinj dëllinje njëmbëdhjete Kasht shport Predh torbe Bul cajk
-Cahere Ajk ameb Qart hart paradhom
+amplitude Sinteze Mine flam gar gjize Kapic kërthize kerthiz 
+bim Yndyr zgjyre Vler der Here Ninull Loj pen kushtetut gom Gjithmon
+Goje vone godin dhemball dhëmballe Prone qindark Pes, gjashte, Tet,
+nente nënt Biskot rrep parabim pend paramane parme dellinj dëllinje
+njëmbëdhjete Kasht shport Predh torbe Bul cajk Cahere Ajk ameb Qart hart
+paradhom
+
+# icë - 3 zëvendësime 
+rrugic Karfic plevic
 
 # inë - 104 zëvendësime
 vitamine pin glin Xin atkin angjin baltin
