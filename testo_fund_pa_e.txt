@@ -6,7 +6,7 @@ Un, esht. nje nj ështe? esht Eshte Eshtë eshtë Une buk une un Un.
 Une. unë uj; Uj. uje Uje uje	ujë Rrug rruge Kan kane dit Dite
 jet shtrenjt dor Vrim vrime Ngjyr Pem Lufte kafsh shqis vrim Viktim
 thik muzik Matric arr xix i zhdrejt shpejt Drejt Ekspedit ekspozit
-drite Prik miz Shpelle brek hipotek, Biblioteke deg shege dat gjat
+drite Prik miz Shpelle deg shege dat gjat
 Disfat klithme page Moll pjeshke dardhe Jet arn barne fame arke tap
 lim zorre val pushke Naft Balte dig En Furke kafke Kurv Site lope
 grop Nape boj Gaf Gjem gjëm Makin ndjese than Kale humnere humbësir
@@ -17,6 +17,9 @@ Goje vone godin dhemball dhëmballe Prone qindark Pes, gjashte, Tet,
 nente nënt Biskot rrep parabim pend paramane parme dellinj dëllinje
 njëmbëdhjete Kasht shport Predh torbe Bul cajk Cahere Ajk ameb Qart hart
 paradhom
+
+# ekë - 3 zëvendësime 
+brek hipotek, Biblioteke
 
 # icë - 3 zëvendësime 
 rrugic Karfic plevic
