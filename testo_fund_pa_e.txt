@@ -18,8 +18,8 @@ nente nënt Biskot rrep parabim pend paramane parme dellinj dëllinje
 njëmbëdhjete Kasht shport Predh torbe Bul cajk Cahere Ajk ameb Qart hart
 paradhom botin
 
-# ekë - 3 zëvendësime
-brek hipotek, Biblioteke
+# ekë - 4 zëvendësime
+brek hipotek, Biblioteke, kartotek
 
 # icë - 3 zëvendësime 
 rrugic Karfic plevic
