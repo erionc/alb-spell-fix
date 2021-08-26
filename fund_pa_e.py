@@ -90,7 +90,8 @@ no_e_end = [
 # k																										
 ['abin', 'açk', 'afk', 'afsh', 'aft', 'al', 'aldaj', 'aliqaf',
 'alt(e|ë)rin', 'amin', 'anarin', 'anavac', 'antin', 'apic', 'aptin',
-'arabin', 'arakatin', 'arfic', 'artolin', 'asht', 'at(e|ë)rmb(e|ë)dhjet',
+'arabin', 'arakatin', 'arfic', 'artolin', 'artotek', 'asht',
+'at(e|ë)rmb(e|ë)dhjet',
 '(e|ë)rrab', '(e|ë)rthiz',
 'inin', 'lim', 'lithm',
 'lla(c|ç)',
