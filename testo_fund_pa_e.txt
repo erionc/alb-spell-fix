@@ -19,7 +19,7 @@ njëmbëdhjete Kasht shport Predh torbe Bul cajk Cahere Ajk ameb Qart hart
 paradhom botin
 
 # ekë - 4 zëvendësime
-brek hipotek, Biblioteke, kartotek
+brek hipotek, Biblioteke, kartotek, videotek, 
 
 # icë - 3 zëvendësime 
 rrugic Karfic plevic
