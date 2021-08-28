@@ -194,7 +194,7 @@ no_e_end = [
 # v												
 ['adh', 'aksin', 'al', 'azelin',
 'et(e|ë)tim', 'ezullim',
-'iktim', 'il', 'iolin', 'itamin', 'itrin',
+'ideotek', 'iktim', 'il', 'iolin', 'itamin', 'itrin',
 'jeg', 'jeturin',
 'lag', 'ler', 'llaj',
 'og(e|ë)lin', 'on', 'orb(e|ë)tin',
