@@ -86,7 +86,6 @@ if __name__ == "__main__":
 
 		print("\nTeksti dalës:\n", text)
 		print(f"\n{message}\n")
-	
 	# komandë e shkruar gabim
 	else:
 		print("Komandë e shkruar gabim...")
