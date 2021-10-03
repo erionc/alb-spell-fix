@@ -1,3 +1,4 @@
+
 import re, sys, argparse
 # importimi i funksioneve korrigjuese nga modulet përkatëse
 from korrigjo import *
@@ -53,6 +54,7 @@ if __name__ == "__main__":
 	
 	# nëse jepet edhe hyrja edhe dalja
 	if args.input and args.output:
+	
 		# lexohet dhe përpunohet hyrja
 		in_file = open(args.input, 'r')
 		in_text = in_file.read()
@@ -67,6 +69,7 @@ if __name__ == "__main__":
 	
 	# nëse jepet hyrja por jo dalja
 	elif args.input and not args.output:
+	
 		# lexohet dhe përpunohet hyrja
 		in_file = open(args.input, 'r')
 		in_text = in_file.read()
