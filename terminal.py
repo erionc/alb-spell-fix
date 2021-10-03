@@ -58,6 +58,7 @@ if __name__ == "__main__":
 		in_text = in_file.read()
 		text, message = redaktime(in_text)
 		in_file.close()
+		
 		# shkruhet dalja te skedari dalës
 		out_file = open(args.output, 'w')
 		out_file.write(text)
@@ -71,7 +72,8 @@ if __name__ == "__main__":
 		in_text = in_file.read()
 		text, message = redaktime(in_text)
 		in_file.close()
-		# shkruhet dalja në terminali
+		
+		# shkruhet dalja te terminali
 		print("\nTeksti dalës:\n", text)
 		print(f"\n{message}\n")
 	
