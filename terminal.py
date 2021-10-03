@@ -68,6 +68,7 @@ if __name__ == "__main__":
 	
 	# nëse jepet hyrja por jo dalja
 	elif args.input and not args.output:
+	
 		# lexohet dhe përpunohet hyrja
 		in_file = open(args.input, 'r')
 		in_text = in_file.read()
