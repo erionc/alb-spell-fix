@@ -86,13 +86,12 @@ if __name__ == "__main__":
 	text3_field.place(x=756, y=668) 
 	
 	# butoni i korrigjimit lidhet me funksionin e korrigjimeve
-	correct_button = Button(root, text = "Redakto", bg = "cyan", fg = "black", 
-			command = lambda: redaktime(text1_field, text2_field, text3_field))
+	correct_button = Button(root, text = "Redakto", bg = "cyan", fg = "black", command = lambda: redaktime(text1_field, text2_field, text3_field))
 	correct_button.grid(row = 2, column = 1) # .place(x=790, y=300)
 	
 	# butoni i fshirjes lidhet me funksionin e fshirjes
 	clear_button = Button(root, text = "Shuaj", bg = "cyan", fg = "black",
-			command = lambda: fshiKrejt(text1_field, text2_field, text3_field)) 
+	command = lambda: fshiKrejt(text1_field, text2_field, text3_field)) 
 	clear_button.grid(row = 18, column = 1) # .place(x=800, y=590)  
 	
 	# aktivizimi i dritares grafike
