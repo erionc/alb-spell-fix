@@ -34,19 +34,17 @@ shtypur komandën e mëposhtëme:
 $ python dritare.py
 ```
 
-Do të hapet dritarja grafike me dy fusha të mëdha teksti. Te fusha 
-e sipërme shkruhet ose ngjitet teksti të kemi për të redaktuar. Shtypet
-butoni *Redakto* dhe teksti i redaktuar do të shfaqet menjëherë te dritarja
-e poshtëme nga ku mund të kopjohet. Në qoshen poshtë, djathtas do të 
-shfaqet numri i zëvendësimeve korrigjuese të kryera. Nëse dëshirojmë ta
-fshijmë përmbajtjen aktuale të fushave të tekstit shtypim butonin *Shuaj*.
-Në këtë pikë, programi mund të përdoret për të redaktuar një shkëputje
-tjetër teksti, pa qenë nevoja për ta mbyllur dhe ekzekutuar nga e para.
-Nëse dëshirojmë ta përdorim programin direkt nga terminali, libraria *tkinter*
-nuk nevojitet ndërsa libraria *argparse* është e domosdoshme. Në këtë rast
-mund t'i kalojmë programit tekstin me gabime që gjendet te skedari i hyrjes
-dhe skedarin e daljes ku të shkruaj tekstin e redaktuar. Komanda që duhet
-shtypur është:
+Do të hapet dritarja grafike me dy fusha të mëdha teksti. Te fusha e sipërme 
+shkruhet ose ngjitet teksti të kemi për të redaktuar. Shtypet butoni *Redakto* 
+dhe teksti i redaktuar do të shfaqet menjëherë te dritarja e poshtëme nga ku 
+mund të kopjohet. Në qoshen poshtë, djathtas do të shfaqet numri i 
+zëvendësimeve korrigjuese të kryera. Nëse dëshirojmë ta fshijmë përmbajtjen 
+aktuale të fushave të tekstit shtypim butonin *Shuaj*. Në këtë pikë, programi 
+mund të përdoret për të redaktuar një shkëputje tjetër teksti, pa qenë nevoja 
+për ta mbyllur dhe ekzekutuar nga e para. Nëse dëshirojmë ta përdorim 
+programindirekt nga terminali, libraria *tkinter* nuk nevojitet ndërsa libraria
+*argparse* është e domosdoshme. Në këtë rast mund t'i kalojmë programit tekstin 
+me gabime që gjendet te skedari i hyrjes dhe skedarin e daljes ku të shkruhet teksti i redaktuar. Komanda që duhet shtypur është:
 
 ```
 $ python terminal.py --input skedar_hyrës --output skedar_dalës
