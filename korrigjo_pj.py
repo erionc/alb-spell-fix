@@ -38,7 +38,8 @@ pptj = "me\stë\s"
 pp = kj + pasht + pptj
 
 ## pjesore të shkurtra që mbarojnë me 'u(r(e))', 'e(r(e))', 'a(r(e))' 
-## por që duhet të mbarojnë me 'rë' -- pru -> prurë
+## por që duhet të mbarojnë me 'rë' -- pru -> prurë, pre -> prerë, 
+## 
 pj_pa_re = "ble|" + \
 "ça|" + \
 "fshi|" + \
