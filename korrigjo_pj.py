@@ -37,9 +37,9 @@ pptj = "me\stë\s"
 ## forma që qëndrojnë para pjesores
 pp = kj + pasht + pptj
 
-## pjesore të shkurtra që mbarojnë me 'u(r(e))', 'e(r(e))', 'a(r(e))' 
+## pjesore që mbarojnë me 'u(r(e))', 'e(r(e))', 'a(r(e))', 'y(r(e))' 
 ## por që duhet të mbarojnë me 'rë' -- pru -> prurë, pre -> prerë, 
-## 
+## sha -> sharë, shty -> shtyrë
 pj_pa_re = "ble|" + \
 "ça|" + \
 "fshi|" + \
