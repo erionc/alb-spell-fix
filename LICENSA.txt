@@ -1,3 +1,4 @@
+
 [ALB]
 Ky kod shpërndahet në përputhje me kushtet dhe të drejtat e
 përcaktuara nga licensa Apache-2.0 e dokumentuar te adresa:
