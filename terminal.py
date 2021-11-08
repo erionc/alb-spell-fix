@@ -75,11 +75,11 @@ if __name__ == "__main__":
 		text, message = redaktime(in_text)
 		in_file.close()
 		
-		# shkruhet dalja te terminali
+		# afishohet dalja te terminali
 		print("\nTeksti dalës:\n", text)
 		print(f"\n{message}\n")
 	
-	# nëse nuk jepen as hyrja as dalja
+	# nëse nuk jepen as hyrja as dalja afishohen të dyja në terminal
 	elif not args.input and not args.output:
 		text1_field = input("\nTeksti hyrës:\n")
 		text, message = redaktime(text1_field)
