@@ -79,11 +79,12 @@ if __name__ == "__main__":
 		print("\nTeksti dalës:\n", text)
 		print(f"\n{message}\n")
 	
-	# nëse nuk jepen as hyrja as dalja afishohen të dyja në terminal
+	# nëse nuk jepen as hyrja as dalja
 	elif not args.input and not args.output:
+		# hyrja merret nga terminali
 		text1_field = input("\nTeksti hyrës:\n")
 		text, message = redaktime(text1_field)
-
+		# dalja afishohet në terminal
 		print("\nTeksti dalës:\n", text)
 		print(f"\n{message}\n")
 	# komandë e shkruar gabim
