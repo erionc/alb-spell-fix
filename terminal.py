@@ -1,5 +1,5 @@
 
-import re, sys, argparse
+import re, sys, argparse	# të domosdoshme
 # importimi i funksioneve korrigjuese nga modulet përkatëse
 from korrigjo import *
 from korrigjo_pj import *
