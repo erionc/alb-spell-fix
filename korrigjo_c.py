@@ -1,8 +1,7 @@
 
 import re, string
 
-## 0-4 simbole shtesë në fund të fjalëve për prapashtesat 
-## shquese dhe lakesat
+## 0-4 simbole shtesë në fund të fjalëve për prapashtesat shquese dhe lakesat
 prapa = "[a-zA-Z0-9çÇëË_-]{0,4}"
 
 ## temat që shkruhen me C/c në vend të Ç/ç-së nistore
