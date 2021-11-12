@@ -1,11 +1,10 @@
 
 import re, string
 
-## fjalë që shkruhen me e fundore në vend të ë-së -- maje -> majë
-## varianti pa e apo ë fundore ka përplasje me një fjalë tjetër në
-## atë formë, ndaj këto fjalë duhet të zëvendësohen vetëm kur shfaqen
-## me e në fund, pra në shembullin më sipër nuk duhet të ngatërohet
-## maje me maj (muaji)
+'''
+Fjalë që shkruhen me e fundore në vend të ë-së -- maje -> majë varianti pa e apo ë fundore ka përplasje me një fjalë tjetër në atë formë, ndaj këto fjalë duhet të zëvendësohen vetëm kur shfaqen me e në fund, pra në shembullin më sipër nuk duhet të ngatërohet maje me maj (muaji)
+'''
+
 with_e_end = [
 # a
 ['mvis', 'n',],
