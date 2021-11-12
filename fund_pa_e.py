@@ -1,9 +1,12 @@
 
 import re, string
 
-## fjalë që shkruhen pa ë fundore ose me e në vend të saj -- mir(e) -> mirë
-## zëvendësohet edhe varianti pa ë fundore, meqë nuk përplaset me ndonjë
-## fjalë tjetër
+'''
+Fjalë që shkruhen pa ë fundore ose me e në vend të saj -- mir(e) -> mirë
+zëvendësohet edhe varianti pa ë fundore, meqë nuk përplaset me ndonjë
+fjalë tjetër
+'''
+
 no_e_end = [
 # a
 ['drenalin', 
