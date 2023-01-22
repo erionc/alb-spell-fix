@@ -62,7 +62,7 @@ if __name__ == "__main__":
 	# krijohet ndërfaqja grafike me disa specifikime
 	root = Tk()
 	root.configure(background = "red")			# ngjyra e sfondit
-	root.geometry("988x710")					# përmasat e dritares
+	root.geometry("1020x754")					# përmasat e dritares
 	root.resizable(width=False, height=False)	
 	# titulli i dritares kryesore
 	root.title("REDAKTOR TEKSTI PËR GJUHËN SHQIPE")		
@@ -76,14 +76,14 @@ if __name__ == "__main__":
 	outlabel.grid(row = 17, column = 0, padx = 7) 
 	
 	# tre fushat e tekstit 
-	text1_field = Text(height=14, width=80, fg="white", bg="black")
-	text2_field = Text(height=14, width=80, fg="white", bg="black")
+	text1_field = Text(height=14, width=76, fg="white", bg="black")
+	text2_field = Text(height=14, width=76, fg="white", bg="black")
 	text3_field = Text(height=1, width=17, fg="white", bg="black")
 	
 	# pozicionimi i tre fushave të tekstit te dritarja kryesore
 	text1_field.grid(row = 1, column = 1, padx = 7, pady = 7)
 	text2_field.grid(row = 17, column = 1, padx = 7, pady = 7)
-	text3_field.place(x=756, y=668) 
+	text3_field.place(x=756, y=696) 
 	
 	# butoni i korrigjimit lidhet me funksionin e korrigjimeve
 	correct_button = Button(root, text = "Redakto", bg = "cyan", fg = "black", command = lambda: redaktime(text1_field, text2_field, text3_field))
