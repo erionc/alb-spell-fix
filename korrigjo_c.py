@@ -6,8 +6,8 @@ prapa = "[a-zA-Z0-9çÇëË_-]{0,4}"
 
 ## temat që shkruhen me C/c në vend të Ç/ç-së nistore
 ## ruhen prapashtesat ndaj nuk pranohen tema me grupe alternative me |
-## cafk, caj, cajnik, cibuk, cift, cimk, cmim, co, corap, cudi, cun 
-pa_c_nis = "afk|aj|ajnik|akerdis|akmak|allm|arcaf|arçaf|art|ati|" + \
+## cafk, caj, cajnik, canak, cibuk, cift, cimk, cmim, co, corap, cudi, cun, cup 
+pa_c_nis = "afk|aj|ajnik|anak|akerdis|akmak|allm|arcaf|arçaf|art|ati|" + \
 "ibuk|ift|imk|izme|" + \
 "mend|mim|" + \
 "o|orap|orodit|" + \
@@ -33,9 +33,9 @@ def korrigjo_c(text):
 	## Çfarë
 	t, c = re.subn(fr"(\b)(C|Ç|Q)(far)(e|ë)?(\b)", r"Çfarë", t) ; c_subs += c
 	
-	## çupë
+	# ## çupë
 	t, c = re.subn(fr"(\b)(c|ç|q)(up)(e|ë)?(\b)", r"çupë", t) ; c_subs += c
-	## Çupë
+	# ## Çupë
 	t, c = re.subn(fr"(\b)(C|Ç|Q)(up)(e|ë)?(\b)", r"Çupë", t) ; c_subs += c
 	
 	## çikë
