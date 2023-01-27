@@ -70,12 +70,13 @@ pj_pa_ar = "besu|blu|" + \
 ## pjesore të shkurtra që duhet të mbarojnë me 'ur' -- kap -> kapur
 pj_pa_ur = "ardh|" + \
 "flak|" + \
-"hap|" + \
+"hallakat|hap|" + \
 "kap|" + \
 "lag|" + \
 "mat|majm|mbajt|mbyt|m(e|ë)rzit|mir(e|ë)mbajt|" + \
 "ngrit|" + \
 "p(e|ë)rmbajt|" + \
+"qit|" + \
 "rrah|" + \
 "shit|" + \
 "thith|" + \
