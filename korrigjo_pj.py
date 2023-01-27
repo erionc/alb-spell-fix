@@ -59,7 +59,7 @@ pj_pa_ar = "besu|blu|" + \
 "caktu|çmu|çu|d(e|ë)gju|" + \
 "dhunu|" + \
 "ftu|la|lexu|" + \
-"k(e|ë)rku|" + \
+"k(e|ë)rku|kru|" + \
 "mbaru|mendu|m(e|ë)su|" + \
 "nd(e|ë)shku|ngacmu|" + \
 "p(ë|e)su|punu|provu|" + \
