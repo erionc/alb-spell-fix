@@ -46,7 +46,7 @@ pj_pa_re = "ble|" + \
 "gdhi|gri|" + \
 "la|lëpi|" + \
 "mar|mbi|mpi|" + \
-"nda|nga|ngri|nxi|nxjer" + \
+"nda|nga|ngri|nxi|nxjer|" + \
 "pa|p(e|ë)r(c|ç)a|përfshi|përpi|pi|pre|pri|pru|" + \
 "qa|" + \
 "sha|shka|shkri|shp(e|ë)la|shp(e|ë)rnda|shtri|shty|" + \
@@ -60,7 +60,7 @@ pj_pa_ar = "besu|blu|" + \
 "dhunu|" + \
 "ftu|la|lexu|" + \
 "k(e|ë)rku|" + \
-"mbaru|m(e|ë)su|" + \
+"mbaru|mendu|m(e|ë)su|" + \
 "nd(e|ë)shku|ngacmu|" + \
 "p(ë|e)su|punu|provu|" + \
 "shkru|shku|shtru|shtu|shu|" + \
