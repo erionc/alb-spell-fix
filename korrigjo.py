@@ -1,19 +1,13 @@
 
 import re, string
 from korrigjo_pj import *
-
-## 0-4 simbole shtesë në fund të fjalëve për prapashtesat shquese 
-## dhe lakesat
-prapa = "[a-zA-Z0-9çÇëË_-]{0,4}"
-
-## ndryshore globale për fundin e fjalëve - më mirë (\b) 
-# we = " |\t|\n|\.|\?|:|;|,|!"
+from percaktime_baze import *
 
 ## tema fjalësh që duhen shqipëruar
-tem_sq = ""
+tema_sq = ""
 
 ## tema fjalësh angleze që duhen përkthyer
-tem_en = ""
+tema_en = ""
 
 ## funksion për zëvendësime që përgatitin zëvendësimet e mëpasshme
 def para_korrigjime(text):
