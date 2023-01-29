@@ -1,7 +1,5 @@
 
-import re, string
 from korrigjo_pj import *
-from percaktime_baze import *
 
 ## tema fjalësh që duhen shqipëruar
 tema_sq = ""

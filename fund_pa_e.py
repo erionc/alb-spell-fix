@@ -1,10 +1,10 @@
 
-import re, string
+from percaktime_baze import *
 
 '''
 Fjalë që shkruhen pa ë fundore ose me e në vend të saj -- mir(e) -> mirë
 zëvendësohet edhe varianti pa ë fundore, meqë nuk përplaset me ndonjë
-fjalë tjetër
+fjalë tjetër ;;
 '''
 
 no_e_end = [

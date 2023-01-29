@@ -1,4 +1,6 @@
 
+import re, string
+
 ## ndryshore globale për fundin e fjalëve - më mirë (\b) 
 # we = " |\t|\n|\.|\?|:|;|,|!"
 
@@ -9,7 +11,7 @@ prapa = "[a-zA-Z0-9çÇëË_-]{0,4}"
 para_te = "dua\s|do\s|duam\s|doni\s|duan\s|doja\s|doje\s|donte\s|" + \
 	"donim\s|donit\s|donin\s|desha\s|deshe\s|deshte\s|deshëm\s|" + \
 	"deshët\s|deshën\s|me\s|sapo\s|porsa\s|duhet\s|sikur\s|mund\s|" + \
-	"kush\s|cil(i|a)\s|cil(ë|a)t\s|ku\sdo\s|kur\sdo\s" 
+	"kush\s|cil(i|a)\s|cil(ë|a)t\s|ku\sdo\s|kur\sdo\s|(c|ç)far(e|ë)\s|" 
 
 ## foljet ndihmëse kam/jam që paraprijnë pjesoret
 kam_jam = "Kam\s|kam\s|Ke\s|ke\s|Ka\s|ka\s|Kemi\s|kemi\s|Keni\s|keni\s|" + \

@@ -1,5 +1,4 @@
 
-import re, string
 from percaktime_baze import *
 
 ## pjesore që mbarojnë me 'u(r(e))', 'e(r(e))', 'a(r(e))', 'y(r(e))' 

@@ -1,5 +1,4 @@
 
-import re, string
 from fund_me_e import *
 from fund_pa_e import *
 
