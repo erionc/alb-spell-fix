@@ -1,5 +1,5 @@
 
-from percaktime_baze import *
+from percaktime import *
 
 ## temat që shkruhen me C/c në vend të Ç/ç-së nistore
 ## ruhen prapashtesat ndaj nuk pranohen tema me grupe alternative me |

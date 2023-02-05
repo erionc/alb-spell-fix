@@ -1,5 +1,5 @@
 
-from percaktime_baze import *
+from percaktime import *
 
 '''
 Fjalë që shkruhen pa ë fundore ose me e në vend të saj -- mir(e) -> mirë

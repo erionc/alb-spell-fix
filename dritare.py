@@ -4,10 +4,10 @@ import tkinter as tk
 from tkinter import *
 
 # importimi i funksioneve korrigjuese nga modulet përkatëse
-from korrigjo import *
-from korrigjo_pj import *
-from korrigjo_e import *
-from korrigjo_c import *
+from redakto import *
+from redakto_pj import *
+from redakto_e import *
+from redakto_c import *
 
 ## funksioni kryesor i korrigjimeve që thërret funksionet e tjera
 def redaktime(field_in, field_out, field_message):

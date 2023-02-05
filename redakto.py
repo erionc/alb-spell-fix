@@ -1,5 +1,5 @@
 
-from korrigjo_pj import *
+from redakto_pj import *
 
 ## tema fjalësh që duhen shqipëruar
 tema_sq = ""

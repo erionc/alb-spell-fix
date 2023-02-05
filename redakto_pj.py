@@ -1,5 +1,5 @@
 
-from percaktime_baze import *
+from percaktime import *
 
 ## pjesore që mbarojnë me 'u(r(e))', 'e(r(e))', 'a(r(e))', 'y(r(e))' 
 ## por që duhet të mbarojnë me 'rë' -- pru -> prurë, pre -> prerë, 
