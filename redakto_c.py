@@ -34,9 +34,9 @@ def korrigjo_c(text):
 	## Çikë
 	t, c = re.subn(fr"(\b)(C|Ç|Q)(ik)(e|ë)?(\b)", r"Çikë", t) ; c_subs += c
 	
-	## fjalë që shkruhen me C/c në vend të Ç/ç-së nistore - caj -> çaj
-	t, c = re.subn(fr"(\b)(c)({pa_c_nis})({prapa})(\b)", r"ç\3\4", t) ; c_subs += c
-	t, c = re.subn(fr"(\b)(C)({pa_c_nis})({prapa})(\b)", r"Ç\3\4", t) ; c_subs += c
+	## fjalë që shkruhen me C/c ose Q/q në vend të Ç/ç-së nistore - caj -> çaj ; qizme -> çizme
+	t, c = re.subn(fr"(\b)(c|q)({pa_c_nis})({prapa})(\b)", r"ç\3\4", t) ; c_subs += c
+	t, c = re.subn(fr"(\b)(C|Q)({pa_c_nis})({prapa})(\b)", r"Ç\3\4", t) ; c_subs += c
 	## për fjalën ekzakte çka lejon shpreje (e|ë) te paraqitja e saj
 	# t, c = re.subn(fr"(\b)(C)({pa_c_nis})(\b)", r"Ç\3", t) ; c_subs += c
 	
