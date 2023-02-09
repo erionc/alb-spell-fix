@@ -27,8 +27,9 @@ Kodi i programit është shkruar dhe testuar me libraritë e mëposhtëme:
 
 Programi mund të përdoret me dritare grafike ose direkt nga terminali. Për
 ta përdorur duke ndërvepruar me dritaren grafike nevojitet libraria *tkinter*,
-ndërsa libraria *argparse* nuk është e domosdoshme. Programi aktivizohet duke
-shtypur komandën e mëposhtëme:
+ndërsa libraria *argparse* nuk është e domosdoshme. Përdoruesit e sistemeve Windows
+mund ta aktivizojnë programin me klikim të dyfishtë te skedari *dritare.exe*.
+Programi aktivizohet nga terminali duke shtypur komandën e mëposhtëme:
 
 ```
 $ python dritare.py
@@ -44,7 +45,8 @@ mund të përdoret për të redaktuar një shkëputje tjetër teksti, pa qenë n
 për ta mbyllur dhe ekzekutuar nga e para. Nëse dëshirojmë ta përdorim 
 programindirekt nga terminali, libraria *tkinter* nuk nevojitet ndërsa libraria
 *argparse* është e domosdoshme. Në këtë rast mund t'i kalojmë programit tekstin 
-me gabime që gjendet te skedari i hyrjes dhe skedarin e daljes ku të shkruhet teksti i redaktuar. Komanda që duhet shtypur është:
+me gabime që gjendet te skedari i hyrjes dhe skedarin e daljes ku të shkruhet teksti
+i redaktuar. Komanda që duhet shtypur është:
 
 ```
 $ python terminal.py --input skedar_hyrës --output skedar_dalës
