@@ -18,7 +18,7 @@ gabimeve drejtshkrimore që ndeshen në shkrimet e sotme.
 ## Parakushte
 
 Kodi i programit është shkruar dhe testuar me libraritë e mëposhtëme:
-- python >= 3.7.6
+- python >= 3.8.10
 - re >= 2.2.1
 - argparse >= 1.1
 - tkinter >= 8.6
