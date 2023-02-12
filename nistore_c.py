@@ -8,8 +8,8 @@ pa_c_nis = "afk|aj|ajnik|anak|akerdis|akmak|ale|alë|alo|alu|allm|apkën|apken|a
     "el|ekan|ekic|ekiç|elik|" + \
     "ibuk|ift|ikërrim|ikerrim|imk|izme|" + \
     "mend|mim|mo|" + \
-    "njer|" + \
-    "o|okollat|orap|orodit|" + \
+    "nder|njer|" + \
+    "o|okollat|orap|organi|orodit|" + \
     "u|udi|un"
 
 	
