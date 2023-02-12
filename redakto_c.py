@@ -1,9 +1,6 @@
 
 from nistore_c import *
 
-## 0-4 simbole shtesë në fund të fjalëve për prapashtesat shquese dhe lakesat - e shumta 4 simbole
-prapa = "[a-zA-Z0-9çÇëË_-]{0,4}"
-
 ## funksion për zëvendësime c -> ç 
 def korrigjo_c(text):
 	## vlerënisje

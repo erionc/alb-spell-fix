@@ -4,8 +4,8 @@ import re, string
 ## ndryshore globale për fundin e fjalëve - më mirë (\b) 
 # we = " |\t|\n|\.|\?|:|;|,|!"
 
-## 0-4 simbole shtesë në fund të fjalëve për prapashtesat shquese dhe lakesat - e shumta 4 simbole
-prapa = "[a-zA-Z0-9çÇëË_-]{0,4}"
+## 0-5 simbole shtesë në fund të fjalëve për prapashtesat shquese dhe lakesat - e shumta 5 simbole
+prapa = "[a-zA-Z0-9çÇëË_-]{0,5}"
 
 ## fjalë që i paraprinë të-së -- do të, dua të, desha të 
 para_te = "dua\s|do\s|duam\s|doni\s|duan\s|doja\s|doje\s|donte\s|" + \
