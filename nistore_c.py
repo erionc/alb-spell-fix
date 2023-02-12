@@ -6,7 +6,7 @@ from percaktime import *
 ## cafk, caj, cajnik, canak, cibuk, cift, cimk, cmim, co, corap, cudi, cun, cup 
 pa_c_nis = "afk|aj|ajnik|anak|akerdis|akmak|allm|apkën|apken|arcaf|arçaf|art|ati|" + \
     "el|ekan|ekic|ekiç|elik|" + \
-    "ibuk|ift|imk|izme|" + \
+    "ibuk|ift|ikërrim|ikerrim|imk|izme|" + \
     "mend|mim|mo|" + \
     "o|okollat|orap|orodit|" + \
     "u|udi|un"
