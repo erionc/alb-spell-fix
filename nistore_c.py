@@ -7,7 +7,7 @@ from percaktime import *
 pa_c_nis = "afk|aj|ajnik|anak|akerdis|akmak|ale|alë|alo|alu|allm|apkën|apken|arcaf|arçaf|art|ati|" + \
     "el|ekan|ekic|ekiç|elik|erek|" + \
     "ibuk|ift|ikërrim|ikerrim|imk|izme|" + \
-    "mend|mim|min|mo|mont|morrit|" + \
+    "mend|merit|mim|min|mo|mont|morrit|" + \
     "nder|njer|" + \
     "o|okollat|orap|organi|orodit|" + \
     "u|udi|un"
