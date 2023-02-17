@@ -1,12 +1,12 @@
 
-## Totali: 32 + 82 + 3 = 117 zëvendësime
+## Totali: 32 + 84 + 3 = 119 zëvendësime
 
 ## Ç/ç - 32 zëvendësime
 ckemi c'keni C'ke çke ckeni c'ka cka c'kanë cfarë Cfarë cfare
 Cfare c'kam ckam C'kam Ckam çkam cke cfare Cfare çkemi çkeni qikë
 Cikë Cupë Cupe cupë callmë Cati Cart cartje cartem
 
-## pa ç nistore - 82 zëvendësime
+## pa ç nistore - 84 zëvendësime
 cafke cafkat Cafkë capken Capkën qapken caj Caj cajnik celik cibuk Cift
 cifte qifteli cikerrimë cikërrime cimke cimkë cmim cmimet co Cova coc coj
 Qoj Coj cova Corap corape cudi cun Qun cmendur Cmenduri cmendinë Cmoj
@@ -19,5 +19,5 @@ cminim Cerek cmontoj Cmontim cmorrit Cmorritem cmerit Cmeritem cimento cimentoj
 ## me c nistore - 3 zëvendësime
 çertifikatë Çertifikim certifikoj çertifikoj
 
-## pa ç të brendshme - 1 zëvendësime
+## pa ç të brendshme - 0 zëvendësime
 recel Reqeli Allci allci
