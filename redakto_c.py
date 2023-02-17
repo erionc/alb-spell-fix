@@ -35,9 +35,15 @@ def korrigjo_c(text):
 	t, c = re.subn(fr"(\b)(c|q)({pa_c_nis})({prapa})(\b)", r"ç\3\4", t) ; c_subs += c
 	t, c = re.subn(fr"(\b)(C|Q)({pa_c_nis})({prapa})(\b)", r"Ç\3\4", t) ; c_subs += c
 
-	## fjal;; q;; shkruen me Ç/ç ose Q/q n;; vend t;; C/c-s;; nistore - çertifikatë -> certifikatë
+	## fjalë që shkruen me Ç/ç ose Q/q në vend të C/c-së nistore - çertifikatë -> certifikatë
 	t, c = re.subn(fr"(\b)(ç|q)({me_c_nis})({prapa})(\b)", r"c\3\4", t) ; c_subs += c
 	t, c = re.subn(fr"(\b)(Ç|Q)({me_c_nis})({prapa})(\b)", r"C\3\4", t) ; c_subs += c
+
+	## fjalë që shkruhen me C/c ose Q/q në vend të Ç/ç-së së brendshme - recel -> reçel ; Reqel -> Reçel ; Allci -> Allçi
+	## shprehja ???
+
+	## fjalë që shkruhen me Ç/ç ose Q/q në vend të C/c-së së brendshme - proçes -> proces ; Proqedurë -> Procedurë 
+	## shprehja ???
 
 	## për fjalën ekzakte çka lejon shpreje (e|ë) te paraqitja e saj
 	# t, c = re.subn(fr"(\b)(C)({pa_c_nis})(\b)", r"Ç\3", t) ; c_subs += c

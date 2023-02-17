@@ -36,7 +36,7 @@ with_e_end = [
 # j
 [],	
 
-# k																										
+# k			
 ['afein', 'am', 'ok'],
 	
 # l								

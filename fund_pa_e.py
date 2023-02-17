@@ -90,7 +90,7 @@ no_e_end = [
 ['aj', 'av', 
 'et'],
 	
-# k																										
+# k 	
 ['abin', 'açk', 'afk', 'afsh', 'aft', 'al', 'aldaj', 'aliqaf',
 'alt(e|ë)rin', 'amin', 'anarin', 'anavac', 'antin', 'apic', 'aptin',
 'arabin', 'arakatin', 'arfic', 'artolin', 'artotek', 'asht',
@@ -110,7 +110,7 @@ no_e_end = [
 'oj', 'op',
 'uft', 'ugaj', 'ugin', 'ugnaj', 'ulnaj', 'umnaj',],
 
-# m											
+# m								
 ['agm', 'akin', 'andarin', 'andolin', 'argarin', 'ark', 'art', 'artin',
 'atric', 'askarad',
 '(e|ë)llag', '(e|ë)ndafsht',
@@ -119,7 +119,7 @@ no_e_end = [
 'oll', 'olldrag', 'orfin', 'ortaj',
 'urtaj', 'uzik'],
 
-# n					
+# n		
 ['aft', 'aftalin', 'ap', 
 'djes', 
 '(e|ë)n(e|ë)daj', '(e|ë)nt', '(e|ë)nt(e|ë)mb(e|ë)dhjet',
@@ -128,7 +128,7 @@ no_e_end = [
 'j', 'j(e|ë)mb(e|ë)dhjet',
 ],
 	
-# o							
+# o				
 ['fi(c|ç)in',
 'limpiad',
 'rigjin', 'rt', 

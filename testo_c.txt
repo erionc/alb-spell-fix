@@ -14,7 +14,10 @@ cmonte cakmak Carcaf carçaf cizme qizme cokollat qokollatë corodit
 coroditur coroditje cakerdis cakerdisje cakerdisur canak Canak cel cekan
 Cekiç cekic celur cuar cale calë caloj calova caluar cnjerëzor cnjerezore 
 cnjerezor cnder cnderoj cnderim corganizoj corganizim corganizuar cminoj
-cminim Cerek cmontoj Cmontim cmorrit Cmorritem cmerit Cmeritem
+cminim Cerek cmontoj Cmontim cmorrit Cmorritem cmerit Cmeritem cimento cimentoj
 
 ## me c nistore - 3 zëvendësime
 çertifikatë Çertifikim certifikoj çertifikoj
+
+## pa ç të brendshme - 1 zëvendësime
+recel Reqeli Allci allci
