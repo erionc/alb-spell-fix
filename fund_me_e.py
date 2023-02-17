@@ -55,7 +55,7 @@ with_e_end = [
 ['ort', 'raj',],
 
 # q		
-['ep', 'ok',],	
+['ep',],	
 	
 # r											
 ['rafshin', 'rethin',],
@@ -83,11 +83,18 @@ with_e_end = [
 ]
 
 ## përgatitja e shprehjes së rregullt për zëvendësimin e e-së fundore me ë
-with_e_exp = [] ; upp = string.ascii_uppercase.replace('W', '')
-low = string.ascii_lowercase.replace('w', '')
+with_e_exp = [] # # bashkësia e fjalëve më sipër
+upp = string.ascii_uppercase.replace('W', '') # nistoret e mëdha
+low = string.ascii_lowercase.replace('w', '') # nistoret e vogla
+
+# bashkimi i nistoreve të mëdha e të vogla
 initials = ['(' + upp[i] + '|' +  low[i] + ')' for i in range(0, 25)]
+
+# bashkimi i nistoreve dhe fjalëve që fillojnë me secilën prej tyre
 for i in range(0, 25):
 	with_e_exp.extend(map((lambda x: initials[i] + x), with_e_end[i]))
+
+# lidhja e fjalëve me operatorin | për formimin e shprehjes së rregullt
 with_e_regex = '|'.join(with_e_exp)
 
 ## funksion për zëvendësime e -> ë 

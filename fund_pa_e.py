@@ -4,7 +4,7 @@ from percaktime import *
 '''
 Fjalë që shkruhen pa ë fundore ose me e në vend të saj -- mir(e) -> mirë
 zëvendësohet edhe varianti pa ë fundore, meqë nuk përplaset me ndonjë
-fjalë tjetër ;;
+fjalë tjetër 
 '''
 
 no_e_end = [
@@ -149,7 +149,7 @@ no_e_end = [
 'yllnaj',],
 
 # q		
-['af(e|ë)k(e|ë)rrab', 'art',
+['af(e|ë)k(e|ë)rrab',
 'indark', 
 'uk(e|ë)lin', 'ukm'],	
 	
@@ -219,11 +219,18 @@ no_e_end = [
 ]
 
 ## përgatitja e shprehjes së rregullt për korrigjimin e ë-së fundore
-no_e_exp = [] ; upp = string.ascii_uppercase.replace('W', '')
-low = string.ascii_lowercase.replace('w', '')
+no_e_exp = [] # bashkësia e fjalëve më sipër
+upp = string.ascii_uppercase.replace('W', '') # nistoret e mëdha
+low = string.ascii_lowercase.replace('w', '') # nistoret e vogla
+
+# bashkimi i nistoreve të mëdha e të vogla
 initials = ['(' + upp[i] + '|' +  low[i] + ')' for i in range(0, 25)]
+
+# bashkimi i nistoreve dhe fjalëve që fillojnë me secilën prej tyre
 for i in range(0, 25):
 	no_e_exp.extend(map((lambda x: initials[i] + x), no_e_end[i]))
+
+# lidhja e fjalëve me operatorin | për formimin e shprehjes së rregullt
 no_e_regex = '|'.join(no_e_exp)
 
 ## funksion për zëvendësime e -> ë 
