@@ -73,7 +73,7 @@ fj_dial = "(D|d)u|(G|g)ru|(M|m)u|(T|t)hu"
 
 
 ## funksion për zëvendësimin e pjesoreve të shkurtëra
-def korrigjo_pjes(text):
+def redakto_pjes(text):
 	## vlerënisje 
 	t = text ; pj_subs = 0
 		

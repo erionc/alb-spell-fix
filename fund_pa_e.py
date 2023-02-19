@@ -234,7 +234,7 @@ for i in range(0, 25):
 no_e_regex = '|'.join(no_e_exp)
 
 ## funksion për zëvendësime e -> ë 
-def korrigjo_pa_e(text):
+def redakto_pa_e(text):
 	## velerënisje
 	t = text ; e_subs = 0
 		

@@ -1,5 +1,7 @@
 
 from redakto_pj import *
+from redakto_e import *
+from redakto_c import *
 
 ## tema fjalësh që duhen shqipëruar
 tema_sq = ""
@@ -8,7 +10,7 @@ tema_sq = ""
 tema_en = ""
 
 ## funksion për zëvendësime që përgatitin zëvendësimet e mëpasshme
-def para_korrigjime(text):
+def para_redaktime(text):
 	## vlerënisje 
 	t = text ; c_subs = 0
 	
@@ -40,7 +42,7 @@ def para_korrigjime(text):
 	return (t, c_subs)
 	
 ## funksion për zëvendësime që korrigjojnë zëvendësimet e mëparshme
-def pas_korrigjime(text):
+def pas_redaktime(text):
 	## vlerënisje 
 	t = text ; c_subs = 0
 	
@@ -52,16 +54,44 @@ def pas_korrigjime(text):
 	return (t, c_subs)
 	
 ## funksion për zëvendësimin e fjalëve angleze 
-def korrigjo_eng(text):
+def redakto_eng(text):
 	## vlerënisje 
 	t = text ; eng_subs = 0
 	
 	return (t, eng_subs)
 	
 ## funksion për zëvendësime fjalësh të plota 
-def korrigjo_terma(text):
+def redakto_terma(text):
 	## vlerënisje 
 	t = text ; word_subs = 0
 	
 	return (t, word_subs)
+
+## funksioni kryesor i redaktimeve që thërret funksionet e tjera
+def redakto(text):
+	## vlerënisje
+	t = text ; total_sub = 0
+
+	# thirren zëvendësimet paraprake
+	t, c = para_redaktime(t) ; total_sub += c
+		
+	# thirren zëvendësimet e e-së
+	t, c = redakto_e(t) ; total_sub += c
+	
+	# thirren zëvendësimet e c-së
+	t, c = redakto_c(t) ; total_sub += c
+	
+	# thirren zëvendësimet e pjesoreve
+	t, c = redakto_pjes(t) ; total_sub += c
+	
+	# thirren zëvendësime e fjalëve
+	t, c = redakto_terma(t) ; total_sub += c
+	
+	# thirren zëvendësime e fjalëve angleze
+	t, c = redakto_eng(t) ; total_sub += c
+	
+	# thirren zëvendësimet përfundimtare
+	t, c = pas_redaktime(t) ; total_sub += c
+
+	return (t, total_sub)
 	

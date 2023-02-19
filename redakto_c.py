@@ -2,7 +2,7 @@
 from nistore_c import *
 
 ## funksion për zëvendësime c -> ç 
-def korrigjo_c(text):
+def redakto_c(text):
 	## vlerënisje
 	t = text ; c_subs = 0
 	

@@ -5,36 +5,15 @@ from tkinter import *
 
 # importimi i funksioneve korrigjuese nga modulet përkatëse
 from redakto import *
-from redakto_pj import *
-from redakto_e import *
-from redakto_c import *
 
-## funksioni kryesor i korrigjimeve që thërret funksionet e tjera
+## funksioni kryesor i redaktimeve që thërret funksionet e tjera
 def redaktime(field_in, field_out, field_message):
 	# merret përmbajtja e kutizës së parë
 	input_text = field_in.get("1.0", END) 
 	t = input_text ; total_sub = 0
 	
-	# thirren zëvendësimet paraprake
-	t, c = para_korrigjime(t) ; total_sub += c
-		
-	# thirren zëvendësimet e e-së
-	t, c = korrigjo_e(t) ; total_sub += c
-	
-	# thirren zëvendësimet e c-së
-	t, c = korrigjo_c(t) ; total_sub += c
-	
-	# thirren zëvendësimet e pjesoreve
-	t, c = korrigjo_pjes(t) ; total_sub += c
-	
-	# thirren zëvendësime e fjalëve
-	t, c = korrigjo_terma(t) ; total_sub += c
-	
-	# thirren zëvendësime e fjalëve angleze
-	t, c = korrigjo_eng(t) ; total_sub += c
-	
-	# thirren zëvendësimet përfundimtare
-	t, c = pas_korrigjime(t) ; total_sub += c
+	## thirret funksioni kryesor i redaktimeve
+	t, total_sub = redakto(t)
 
 	output_text = t
 	
