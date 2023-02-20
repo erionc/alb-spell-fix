@@ -27,6 +27,8 @@ def me_c_brenda(text):
     t, c = re.subn(fr"(\b)(P|p)(roçes|roqes)({prapa})(\b)", r"\2roces\4", t) ; c_subs += c
     ##  (P|p)ro(ç|q)edur -> (P|p)rocedur
     t, c = re.subn(fr"(\b)(P|p)(roçedur|roqedur)({prapa})(\b)", r"\2rocedur\4", t) ; c_subs += c
+    ##  (L|l)i(ç|q|sh)ens* -> (L|l)icens*
+    t, c = re.subn(fr"(\b)(L|l)(içens|iqens|ishens)({prapa})(\b)", r"\2icens\4", t) ; c_subs += c
 
     return (t, c_subs)
 
