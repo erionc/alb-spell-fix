@@ -36,14 +36,14 @@ $ python dritare.py
 ```
 
 Do të hapet dritarja grafike me dy fusha të mëdha teksti. Te fusha e sipërme 
-shkruhet ose ngjitet teksti të kemi për të redaktuar. Shtypet butoni *Redakto* 
+shkruhet ose ngjitet teksti që kemi për të redaktuar. Shtypet butoni *Redakto* 
 dhe teksti i redaktuar do të shfaqet menjëherë te dritarja e poshtëme nga ku 
 mund të kopjohet. Në qoshen poshtë, djathtas do të shfaqet numri i 
 zëvendësimeve korrigjuese të kryera. Nëse dëshirojmë ta fshijmë përmbajtjen 
 aktuale të fushave të tekstit shtypim butonin *Shuaj*. Në këtë pikë, programi 
 mund të përdoret për të redaktuar një shkëputje tjetër teksti, pa qenë nevoja 
 për ta mbyllur dhe ekzekutuar nga e para. Nëse dëshirojmë ta përdorim 
-programindirekt nga terminali, libraria *tkinter* nuk nevojitet ndërsa libraria
+programin direkt nga terminali, libraria *tkinter* nuk nevojitet ndërsa libraria
 *argparse* është e domosdoshme. Në këtë rast mund t'i kalojmë programit tekstin 
 me gabime që gjendet te skedari i hyrjes dhe skedarin e daljes ku të shkruhet teksti
 i redaktuar. Komanda që duhet shtypur është:
@@ -67,9 +67,9 @@ si më poshtë:
 $ python terminal.py
 ```
 
-Në këtë rast duhet patur kujdes që teksti të shkruhet në mënyrë të vijueshme,
-pa shtypur butonin "enter" i cili nënkupton përfundimin e futjes së tekstit
-dhe aktivizimin e korrigjimeve. Programi do të përdorej me siguri më lehtë
-dhe më shpejtë i ndërtuar si një mbishtim për shfletuesin Firefox, çka do
-bënte të mundur thirrjen e tij mbi të gjithë tekstin e fushës së shfletuesit.
-Një realizim i tillë ngelet në prespektivë.
+Kjo mënyrë përdorimi nuk sugjerohet, sepse duhet patur kujdes që teksti të
+shkruhet në mënyrë të vijueshme, pa shtypur butonin "enter" i cili nënkupton
+përfundimin e futjes së tekstit dhe aktivizimin e korrigjimeve. Programi do
+të përdorej me siguri më lehtë dhe më shpejtë i ndërtuar si një mbishtim për
+shfletuesin Firefox, çka do bënte të mundur thirrjen e tij mbi të gjithë
+tekstin e fushës së shfletuesit. Një realizim i tillë ngelet në prespektivë.
