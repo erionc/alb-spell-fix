@@ -25,11 +25,14 @@ Kodi i programit është shkruar dhe testuar me paketat e mëposhtëme:
 
 ## Përdorimi
 
-Programi mund të përdoret me dritare grafike ose direkt nga terminali. Për
-ta përdorur duke ndërvepruar me dritaren grafike nevojitet paketa *tkinter*,
-ndërsa paketa *argparse* nuk është e domosdoshme. Përdoruesit e sistemeve Windows
-mund ta aktivizojnë programin me klikim të dyfishtë te skedari *dritare.exe*.
-Dritarja grafike aktivizohet nga terminali duke shtypur komandën e mëposhtëme:
+Programi mund të përdoret me klikim të dyfishtë te skedarë e parakompiluar,
+nga terminali me dritare grafike ose vetëm nga terminali. Për ta thirrur nga 
+skedarët e parakompiluar mjafton një klikim i dyfishtë te skedari *dritare.exe*
+në sistemet Windows dhe te skedari *dritare.bin* në sistemet GNU/Linux dhe MacOS.
+Në këto raste, paketat e listuar më sipër nuk janë të nevojshme. Për ta përdorur 
+duke hapur dritaren grafike nga terminali nevojitet paketa *tkinter*, ndërsa paketa
+*argparse* nuk është e domosdoshme. Dritarja grafike aktivizohet nga terminali duke
+shtypur komandën e mëposhtëme:
 
 ```
 $ python dritare.py
