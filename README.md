@@ -27,11 +27,11 @@ Kodi i programit është shkruar dhe testuar me paketat e mëposhtëme:
 
 Programi mund të përdoret me klikim të dyfishtë te skedarë e parakompiluar,
 nga terminali me dritare grafike ose vetëm nga terminali. Për ta thirrur nga 
-skedarët e parakompiluar mjafton një klikim i dyfishtë te skedari *dritare.exe*
+skedarët e parakompiluar mjafton një klikim i dyfishtë te skedari **dritare.exe**
 në sistemet Windows dhe te skedari **dritare.bin** në sistemet GNU/Linux dhe MacOS.
 Në këto raste, paketat e listuar më sipër nuk janë të nevojshme. Për ta përdorur 
-duke hapur dritaren grafike nga terminali nevojitet paketa *tkinter*, ndërsa paketa
-*argparse* nuk është e domosdoshme. Dritarja grafike aktivizohet nga terminali duke
+duke hapur dritaren grafike nga terminali nevojitet paketa **tkinter**, ndërsa paketa
+**argparse** nuk është e domosdoshme. Dritarja grafike aktivizohet nga terminali duke
 shtypur komandën e mëposhtëme:
 
 ```
@@ -39,15 +39,15 @@ $ python dritare.py
 ```
 
 Do të hapet dritarja grafike me dy fusha të mëdha teksti. Te fusha e sipërme 
-shkruhet ose ngjitet teksti që kemi për të redaktuar. Shtypet butoni *Redakto* 
+shkruhet ose ngjitet teksti që kemi për të redaktuar. Shtypet butoni **Redakto**
 dhe teksti i redaktuar do të shfaqet menjëherë te dritarja e poshtëme nga ku 
 mund të kopjohet. Në qoshen poshtë, djathtas do të shfaqet numri i 
 zëvendësimeve korrigjuese të kryera. Nëse dëshirojmë ta fshijmë përmbajtjen 
-aktuale të fushave të tekstit shtypim butonin *Shuaj*. Në këtë pikë, programi 
+aktuale të fushave të tekstit shtypim butonin **Shuaj**. Në këtë pikë, programi 
 mund të përdoret për të redaktuar një shkëputje tjetër teksti, pa qenë nevoja 
 për ta mbyllur dhe ekzekutuar nga e para. Nëse dëshirojmë ta përdorim 
-programin direkt nga terminali, paketa *tkinter* nuk nevojitet ndërsa paketa
-*argparse* është e domosdoshme. Në këtë rast mund t'i kalojmë programit tekstin 
+programin direkt nga terminali, paketa **tkinter** nuk nevojitet ndërsa paketa
+**argparse** është e domosdoshme. Në këtë rast mund t'i kalojmë programit tekstin 
 me gabime që gjendet te skedari i hyrjes dhe skedarin e daljes ku të shkruhet
 teksti i redaktuar. Komanda që duhet shtypur është:
 
