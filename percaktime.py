@@ -1,10 +1,11 @@
 
 import re, string
 
-## ndryshore globale për fundin e fjalëve - më mirë (\b) 
-# we = " |\t|\n|\.|\?|:|;|,|!"
+## ndryshore globale për fundin e fjalëve
+# we = " |\t|\n|\.|\?|:|;|,|!" # grupi (\b) funksionon më mirë 
 
-## 0-5 simbole shtesë në fund të fjalëve për prapashtesat shquese dhe lakesat - e shumta 5 simbole
+
+## 0-5 simbole shtesë në fund të fjalëve për prapashtesat dhe lakesat
 prapa = "[a-zA-Z0-9çÇëË_-]{0,5}"
 
 ## fjalë që i paraprinë të-së -- do të, dua të, desha të 

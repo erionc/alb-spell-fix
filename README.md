@@ -6,7 +6,7 @@ gjithkujt që shkruan nëpër faqe ueb, forume, rrjete shoqërore virtuale, etj.
 Motivi kryesor për zhvillimin e tij ka qenë domosdoshmëria e pastrimit të
 faqeve te Wikipedia në gjuhën shqipe, veçanërisht për të tejkaluar problemin
 e mprehtë të mospërdorimit të shkronjave ë dhe ç dhe pasojave të shumta 
-negative që rrjedhin. Programi ndjek një përqasje thuajse shteruese 
+negative që rrjedhin. Programi ndjek një përqasje thuajse shteruese
 zëvendësimesh me anë të shprehjeve të rregullta. Kriteri themelor i hartimit
 të tyre është shmangia e çdo ndryshimi që do të çonte në përplasje apo
 dykuptimësi të fjalëve. Për këtë arsye, ekzekutimi i programit në çfarëdo 
