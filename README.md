@@ -68,8 +68,8 @@ $ python terminal.py
 ```
 
 Kjo mënyrë përdorimi nuk sugjerohet, sepse duhet patur kujdes që teksti të
-shkruhet në mënyrë të vijueshme, pa shtypur butonin "enter" i cili nënkupton
-përfundimin e futjes së tekstit dhe aktivizimin e korrigjimeve. Programi do
-të përdorej me siguri më lehtë dhe më shpejtë i ndërtuar si një mbishtim për
+shkruhet në mënyrë të vijueshme, pa shtypur tastin "enter" i cili nënkupton
+përfundimin e futjes së tekstit dhe aktivizimin e redaktimeve. Programi do
+të përdorej me siguri më mirë nëse do të qe i ndërtuar si një mbishtim për
 shfletuesin Firefox, çka do bënte të mundur thirrjen e tij mbi të gjithë
 tekstin e fushës së shfletuesit. Një realizim i tillë ngelet në prespektivë.

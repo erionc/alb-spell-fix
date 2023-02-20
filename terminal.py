@@ -1,10 +1,8 @@
 
 import re, sys, argparse	# paketa të domosdoshme
+
 # importimi i funksioneve korrigjuese nga modulet përkatëse
-from korrigjo import *
-from korrigjo_pj import *
-from korrigjo_e import *
-from korrigjo_c import *
+from redakto import *
 
 ## funksioni kryesor i korrigjimeve që thërret funksionet e tjera
 def redaktime(field_in):
@@ -12,26 +10,8 @@ def redaktime(field_in):
 	input_text = field_in
 	t = input_text ; total_sub = 0
 	
-	# thirren zëvendësimet paraprake
-	t, c = para_korrigjime(t) ; total_sub += c
-		
-	# thirren zëvendësimet e e-së
-	t, c = korrigjo_e(t) ; total_sub += c
-	
-	# thirren zëvendësimet e c-së
-	t, c = korrigjo_c(t) ; total_sub += c
-	
-	# thirren zëvendësimet e pjesoreve
-	t, c = korrigjo_pjes(t) ; total_sub += c
-	
-	# thirren zëvendësime e fjalëve
-	t, c = korrigjo_terma(t) ; total_sub += c
-	
-	# thirren zëvendësime e fjalëve angleze
-	t, c = korrigjo_eng(t) ; total_sub += c
-	
-	# thirren zëvendësimet përfundimtare
-	t, c = pas_korrigjime(t) ; total_sub += c
+	## thirret funksioni kryesor i redaktimeve
+	t, total_sub = redakto(t)
 
 	output_text = t
 	
@@ -43,7 +23,7 @@ def redaktime(field_in):
 
 	return output_text, output_message
 	
-# për ekzekutimin nga terminali
+# argumentet për ekzekutimin nga terminali
 parser = argparse.ArgumentParser()
 parser.add_argument('-i', '--input', help='Skedari Hyrës')
 parser.add_argument('-o', '--output', help='Skedari Dalës')
@@ -85,10 +65,11 @@ if __name__ == "__main__":
 		text1_field = input("\nTeksti hyrës:\n")
 		text, message = redaktime(text1_field)
 		# dalja afishohet në terminal
-		print("\nTeksti dalës:\n", text)
+		print(f"\nTeksti dalës:\n{text}")
 		print(f"\n{message}\n")
+
 	# komandë e shkruar gabim
 	else:
 		print("Komandë e shkruar gabim...")
-		sys.exit()
+		sys.exit(1)
 
