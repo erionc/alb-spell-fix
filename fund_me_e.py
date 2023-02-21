@@ -52,7 +52,7 @@ with_e_end = [
 [],		
 
 # p								
-['ort', 'raj',],
+['ort', 'raj', 'rov',],
 
 # q		
 ['ep',],	
