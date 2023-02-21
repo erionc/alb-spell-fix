@@ -59,7 +59,7 @@ Nëse tekstin me gabime e kemi te skedari hyrës por tekstin e redaktuar
 duam ta shfaqim në ekran, e ekzekutojmë komandën si më poshtë:
 
 ```
-$ python terminal.py --input skedar_hyrës
+$ python terminal.py --input <skedar_hyrës>
 ```
 
 Nëse dëshirojmë që tekstin e hyrjes ta shtypim në terminal e po në 
