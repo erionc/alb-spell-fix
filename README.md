@@ -28,7 +28,7 @@ Kodi i programit është shkruar dhe testuar me paketat e mëposhtëme:
 Programi mund të përdoret me klikim të dyfishtë te skedarë e parakompiluar,
 nga terminali me dritare grafike ose vetëm nga terminali. Për ta thirrur nga 
 skedarët e parakompiluar mjafton një klikim i dyfishtë te skedari **dritare.exe**
-në sistemet Windows dhe te skedari **dritare.bin** në sistemet GNU/Linux dhe MacOS.
+në sistemet Windows ose te skedari **dritare.bin** në sistemet GNU/Linux dhe MacOS.
 Në këto raste, paketat e listuar më sipër nuk janë të nevojshme. Për ta përdorur 
 duke hapur dritaren grafike nga terminali nevojitet paketa **tkinter**, ndërsa paketa
 **argparse** nuk është e domosdoshme. Dritarja grafike aktivizohet nga terminali duke
@@ -52,18 +52,18 @@ me gabime që gjendet te skedari i hyrjes dhe skedarin e daljes ku të shkruhet
 teksti i redaktuar. Komanda që duhet shtypur është:
 
 ```
-$ python terminal.py --input skedar_hyrës --output skedar_dalës
+$ python terminal.py --input <skedar_hyrës> --output <skedar_dalës>
 ```
 
 Nëse tekstin me gabime e kemi te skedari hyrës por tekstin e redaktuar
-duam ta shfaqim në ekran, atëherë e ekzekutojmë komandën si më poshtë:
+duam ta shfaqim në ekran, e ekzekutojmë komandën si më poshtë:
 
 ```
 $ python terminal.py --input skedar_hyrës
 ```
 
 Nëse dëshirojmë që tekstin e hyrjes ta shtypim në terminal e po në 
-terminal të marrim edhe tekstin e daljes, atëherë e ekzekutojmë komandën
+terminal të marrim edhe tekstin e daljes, e ekzekutojmë komandën
 si më poshtë:
 
 ```
@@ -71,7 +71,7 @@ $ python terminal.py
 ```
 
 Kjo mënyrë e fundit e përdorimit nuk sugjerohet, sepse duhet bërë kujdes që
-teksti të shkruhet në mënyrë të vijueshme, pa shtypur tastin "enter" i cili
+teksti të shkruhet në mënyrë të vijueshme, pa shtypur tastin "Enter" i cili
 nënkupton përfundimin e futjes së tekstit dhe aktivizimin e redaktimeve.
 Programi do të përdorej me siguri më mirë nëse do të qe i ndërtuar si një
 mbishtim për shfletuesin Firefox, çka do bënte të mundur thirrjen e tij mbi
