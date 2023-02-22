@@ -19,8 +19,8 @@ cminim Cerek cmontoj Cmontim cmorrit Cmorritem cmerit Cmeritem cimento cimentoj
 ## me c nistore - 3 zëvendësime
 çertifikatë Çertifikim certifikoj çertifikoj
 
-## pa ç të brendshme - 5 zëvendësime
-recel Reqeli recelin Allci allqia
+## pa ç të brendshme - 8 zëvendësime
+recel Reqeli recelin Allci allqia inatci Inatqor zanatci
 
 ## me ç të brendshme - 7 zëvendësime
 proçes Proqesi Proçedurat proqedura liçensa Liqensat lishensoj

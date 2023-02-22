@@ -4,18 +4,22 @@ from percaktime import *
 ## temat që shkruhen me C/c në vend të Ç/ç-së nistore
 ## ruhen prapashtesat ndaj nuk pranohen tema me grupe alternative me | si (c|ç)
 ## cafk, caj, cajnik, canak, cibuk, cift, cimk, cmim, co, corap, cudi, cun, cup 
-pa_c_nis = "afk|aj|ajnik|anak|akerdis|akmak|ale|alë|alo|alu|allm|apkën|apken|arcaf|arçaf|art|ati|" + \
+nis_pa_c = "afk|aj|ajnik|anak|akerdis|akmak|ale|alë|alo|alu|allm|apkën|apken|arcaf|arçaf|art|ati|" + \
     "el|ekan|ekic|ekiç|elik|erek|" + \
-    "ibuk|ift|ikërrim|ikerrim|iment|imk|izme|" + \
+    "ibuk|iflig|ift|ikërrim|ikerrim|iment|imk|izme|" + \
     "mend|merit|mim|min|mo|mont|morrit|" + \
     "nder|njer|" + \
     "o|okollat|orap|organi|orodit|" + \
     "u|udi|un"
 
-## temat që shkruhen me Ç/ç në vend të  C/c-së nistore
+## fjalë që mbarojnë me çi por shpesh shkruhen me ci
+## ruhen prapashtesat ndaj nuk pranohen tema me grupe alternative me | si (c|ç)
+fund_me_ci = "All|all|Inat|inat|Top|top|Zanat|zanat" 
+
+## temat që shkruhen me Ç/ç në vend të C/c-së nistore
 ## ruhen prapashtesat ndaj nuk pranohen tema me grupe alternative me | si (c|ç)
 ## çertifikatë, çertifikoj, çertifikim
-me_c_nis = "ertifik"
+nis_me_c = "ertifik"
 
 ## fjalë që shkruhen me Ç/ç në vend të C/c-së së brendshme
 ## përfshihen vetëm ato fjalë që përmbajnë vetëm 1 c e cila është e brendshme
@@ -40,8 +44,9 @@ def pa_c_brenda(text):
 
     ## (R|r)e(c|q)el -> (R|r)eçel
     t, c = re.subn(fr"(\b)(R|r)(ecel|eqel)({prapa})(\b)", r"\2eçel\4", t) ; c_subs += c
-    ## (A|a)ll(c|q)i -> (A|a)llçi
-    t, c = re.subn(fr"(\b)(A|a)(llci|llqi)({prapa})(\b)", r"\2llçi\4", t) ; c_subs += c
+
+    ## fjalë që mbarojnë me çi ; inatci -> inatçi ; zanatci -> zanatçi
+    t, c = re.subn(fr"(\b)({fund_me_ci})(ci|qi)({prapa})(\b)", r"\2çi\4", t) ; c_subs += c
 
     return (t, c_subs)
 

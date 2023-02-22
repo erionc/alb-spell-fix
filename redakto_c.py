@@ -32,12 +32,12 @@ def redakto_c(text):
 	t, c = re.subn(fr"(\b)(C|Ç|Q)(ik)(e|ë)?(\b)", r"Çikë", t) ; c_subs += c
 	
 	## fjalë që shkruhen me C/c ose Q/q në vend të Ç/ç-së nistore - caj -> çaj ; qizme -> çizme
-	t, c = re.subn(fr"(\b)(c|q)({pa_c_nis})({prapa})(\b)", r"ç\3\4", t) ; c_subs += c
-	t, c = re.subn(fr"(\b)(C|Q)({pa_c_nis})({prapa})(\b)", r"Ç\3\4", t) ; c_subs += c
+	t, c = re.subn(fr"(\b)(c|q)({nis_pa_c})({prapa})(\b)", r"ç\3\4", t) ; c_subs += c
+	t, c = re.subn(fr"(\b)(C|Q)({nis_pa_c})({prapa})(\b)", r"Ç\3\4", t) ; c_subs += c
 
 	## fjalë që shkruen me Ç/ç ose Q/q në vend të C/c-së nistore - çertifikatë -> certifikatë
-	t, c = re.subn(fr"(\b)(ç|q)({me_c_nis})({prapa})(\b)", r"c\3\4", t) ; c_subs += c
-	t, c = re.subn(fr"(\b)(Ç|Q)({me_c_nis})({prapa})(\b)", r"C\3\4", t) ; c_subs += c
+	t, c = re.subn(fr"(\b)(ç|q)({nis_me_c})({prapa})(\b)", r"c\3\4", t) ; c_subs += c
+	t, c = re.subn(fr"(\b)(Ç|Q)({nis_me_c})({prapa})(\b)", r"C\3\4", t) ; c_subs += c
 
 	## fjalë që shkruhen me C/c ose Q/q në vend të Ç/ç-së së brendshme - recel -> reçel ; Reqel -> Reçel ; Allci -> Allçi
 	t, c = pa_c_brenda(t) ; c_subs += c
