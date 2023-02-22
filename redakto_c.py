@@ -4,9 +4,9 @@ from percaktime import *
 ## temat që shkruhen me C/c në vend të Ç/ç-së nistore
 ## ruhen prapashtesat ndaj nuk pranohen tema me grupe alternative me | si (c|ç)
 ## cafk, caj, cajnik, canak, cibuk, cift, cimk, cmim, co, corap, cudi, cun, cup 
-nis_pa_c = "afk|aj|ajnik|anak|akerdis|akmak|ale|alë|alo|alu|allm|apkën|apken|arcaf|arçaf|art|ati|" + \
+nis_pa_c = "afk|aj|ajnik|anak|akerdis|akmak|ale|alë|alo|alu|allm|apkën|apken|arcaf|	arçaf|art|ati|" + \
     "el|ekan|ekic|ekiç|elik|erek|" + \
-    "ibuk|iflig|ift|ikërrim|ikerrim|iment|imk|izme|" + \
+    "iban|ibuk|iflig|ift|ikërrim|ikerrim|iment|imk|izme|" + \
     "mend|merit|mim|min|mo|mont|morrit|" + \
     "nder|njer|" + \
     "o|okollat|orap|organi|orodit|" + \
@@ -19,7 +19,7 @@ nis_me_c = "ertifik"
 
 ## fjalë që mbarojnë me çi por shpesh shkruhen me ci
 ## ruhen prapashtesat ndaj nuk pranohen tema me grupe alternative me | si (c|ç)
-fund_me_ci = "All|all|Inat|inat|Top|top|Zanat|zanat" 
+fund_me_ci = "All|all|Batak|batak|Inat|inat|Top|top|Zanat|zanat" 
 
 
 ## fjalë që shkruhen me Ç/ç në vend të C/c-së së brendshme
@@ -49,6 +49,9 @@ def pa_c_brenda(text):
 
     ## (R|r)e(c|q)el -> (R|r)eçel
     t, c = re.subn(fr"(\b)(R|r)(ecel|eqel)({prapa})(\b)", r"\2eçel\4", t) ; c_subs += c
+
+	## ndricim -> ndriçim ; ndriques -> ndriçues ; ndricimtar -> ndriçimtar
+	t, c = re.subn(fr"(\b)(N|n)(dric|driq)({prapa})(\b)", r"\2driç\4", t) ; c_subs += c
 
     return (t, c_subs)
 

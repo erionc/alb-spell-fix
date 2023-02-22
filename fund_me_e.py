@@ -83,7 +83,7 @@ with_e_end = [
 ]
 
 ## përgatitja e shprehjes së rregullt për zëvendësimin e e-së fundore me ë
-with_e_exp = [] # # bashkësia e fjalëve më sipër
+with_e_exp = [] # bashkësia e fjalëve më sipër
 upp = string.ascii_uppercase.replace('W', '') # nistoret e mëdha
 low = string.ascii_lowercase.replace('w', '') # nistoret e vogla
 
