@@ -1,5 +1,5 @@
 
-## Totali: 32 + 87 + 3 + 9 + 7 = 138 zëvendësime
+## Totali: 32 + 87 + 3 + 15 + 7 = 144 zëvendësime
 
 ## Ç/ç - 32 zëvendësime
 ckemi c'keni C'ke çke ckeni c'ka cka c'kanë cfarë Cfarë cfare
@@ -20,8 +20,9 @@ cimentoj ciflig Qiflig ciban
 ## me c nistore - 3 zëvendësime
 çertifikatë Çertifikim certifikoj çertifikoj
 
-## pa ç të brendshme - 9 zëvendësime
+## pa ç të brendshme - 15 zëvendësime
 recel Reqeli recelin Allci allqia inatci Inatqor zanatci batakciu Batakqi
+ndricim Ndriqimtar ndricoj ndriques Lincim linqoj
 
 ## me ç të brendshme - 7 zëvendësime
 proçes Proqesi Proçedurat proqedura liçensa Liqensat lishensoj

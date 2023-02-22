@@ -4,7 +4,7 @@ from percaktime import *
 ## temat që shkruhen me C/c në vend të Ç/ç-së nistore
 ## ruhen prapashtesat ndaj nuk pranohen tema me grupe alternative me | si (c|ç)
 ## cafk, caj, cajnik, canak, cibuk, cift, cimk, cmim, co, corap, cudi, cun, cup 
-nis_pa_c = "afk|aj|ajnik|anak|akerdis|akmak|ale|alë|alo|alu|allm|apkën|apken|arcaf|	arçaf|art|ati|" + \
+nis_pa_c = "afk|aj|ajnik|anak|akerdis|akmak|ale|alë|alo|alu|allm|apkën|apken|arcaf|arçaf|art|ati|" + \
     "el|ekan|ekic|ekiç|elik|erek|" + \
     "iban|ibuk|iflig|ift|ikërrim|ikerrim|iment|imk|izme|" + \
     "mend|merit|mim|min|mo|mont|morrit|" + \
@@ -41,19 +41,22 @@ def me_c_brenda(text):
 ## fjalë që shkruhen me C/c në vend të Ç/ç-së së brendshme
 ## përfshihen vetëm ato fjalë që përmbajnë vetëm 1 c e cila është e brendshme
 def pa_c_brenda(text):
-    ## vlerënisje
-    t = text ; c_subs = 0
+	## vlerënisje
+	t = text ; c_subs = 0
 
-    ## fjalë që mbarojnë me çi ; inatci -> inatçi ; zanatci -> zanatçi
-    t, c = re.subn(fr"(\b)({fund_me_ci})(ci|qi)({prapa})(\b)", r"\2çi\4", t) ; c_subs += c
+	## fjalë që mbarojnë me çi ; inatci -> inatçi ; zanatci -> zanatçi
+	t, c = re.subn(fr"(\b)({fund_me_ci})(ci|qi)({prapa})(\b)", r"\2çi\4", t) ; c_subs += c
 
-    ## (R|r)e(c|q)el -> (R|r)eçel
-    t, c = re.subn(fr"(\b)(R|r)(ecel|eqel)({prapa})(\b)", r"\2eçel\4", t) ; c_subs += c
+	## (R|r)e(c|q)el -> (R|r)eçel
+	t, c = re.subn(fr"(\b)(R|r)(ecel|eqel)({prapa})(\b)", r"\2eçel\4", t) ; c_subs += c
 
 	## ndricim -> ndriçim ; ndriques -> ndriçues ; ndricimtar -> ndriçimtar
 	t, c = re.subn(fr"(\b)(N|n)(dric|driq)({prapa})(\b)", r"\2driç\4", t) ; c_subs += c
 
-    return (t, c_subs)
+	## lincim -> linçim ; linqoj -> linçoj
+	t, c = re.subn(fr"(\b)(L|l)(inc|inq)({prapa})(\b)", r"\2inç\4", t) ; c_subs += c
+
+	return (t, c_subs)
 
 
 ## funksion për zëvendësime c -> ç 
@@ -99,9 +102,6 @@ def redakto_c(text):
 
 	## fjalë që shkruhen me Ç/ç ose Q/q në vend të C/c-së së brendshme - proçes -> proces ; Proqedurë -> Procedurë 
 	t, c = me_c_brenda(t) ; c_subs += c
-
-	## për fjalën ekzakte çka lejon shpreje (e|ë) te paraqitja e saj
-	# t, c = re.subn(fr"(\b)(C)({pa_c_nis})(\b)", r"Ç\3", t) ; c_subs += c
 	
 	return (t, c_subs)
 	
