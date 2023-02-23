@@ -68,7 +68,7 @@ pj_pa_er = "d(e|ë)fry|d(e|ë)mshp(e|ë)rbly|" + \
 "zb(e|ë)rthy|zhg(e|ë)njy|zhy"
 
 ## pjesore të shkurtra që duhet të mbarojnë me 'ë' -- qen -> qenë, vën -> vënë
-pj_pa_e = "qen|v(e|ë)n|th(e|ë|a)n"
+pj_pa_e = "l(e|ë)n|ngr(e|ë)n|q(e|ë)n|sht(e|ë)n|th(e|ë|a)n|v(e|ë)n|z(e|ë)n"
 
 ## fjalë dialektore që mbarojnë me 'u(e)' por që duhet të 
 ## mbarojnë me 'ua' -- du(e) -> dua, thu(e) -> thua

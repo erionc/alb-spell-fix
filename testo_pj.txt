@@ -1,5 +1,5 @@
 
-## Totali: 36 + 35 + 28 + 54 + 6 = 159 zëvendësime
+## Totali: 36 + 35 + 28 + 54 + 12 = 165 zëvendësime
 
 ## pjesore pa "rë" - 36 zëvendësime
 ka ble, jemi gri, janë la, ke mar, jemi nda, ka nga, ke ngri, ishit nxjer,
@@ -33,5 +33,7 @@ ka përthy, je ngjy, ka ngërthy, ka rrëfy, qe rrëmby, ka shërby, ka shkëlqy
 kam shly, je shqy, je shpërbly, ka shpërthy, ka urry, je ushqy, kam zbërthy,
 qe vy, qe zhgënjy, je zhy, jeni ngrys, 
 
-## pjesore pa "ë" fundore - 6 zëvendësime 
-kemi qen, ka vën, keni ven, kemi then, ka than, ke thën, keni thënë
+## pjesore pa "ë" fundore - 10 zëvendësime 
+kemi qen, ka vën, keni ven, kemi then, ka than, ke thën, keni thënë,
+ka zen, ke zën, kishte len, kemi lën, kam shten, ka shtën, kemi ngren,
+ka ngrën
