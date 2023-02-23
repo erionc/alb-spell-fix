@@ -21,7 +21,7 @@ pj_pa_re = "ble|" + \
 ## mbarojnë me 'ar' -- shku -> shkuar
 pj_pa_ar = "besu|blu|" + \
 "caktu|çmu|çu|d(e|ë)gju|" + \
-"dhunu|" + \
+"darku|dhunu|dreku|" + \
 "ftu|la|lexu|" + \
 "k(e|ë)rku|kru|" + \
 "mbaru|mendu|m(e|ë)su|" + \
@@ -38,7 +38,7 @@ pj_pa_ur = "ardh|" + \
 "kap|" + \
 "lag|" + \
 "mat|majm|mbajt|mbyt|m(e|ë)rzit|mir(e|ë)mbajt|" + \
-"ngrit|" + \
+"ngrit|ngrys|" + \
 "p(e|ë)rmbajt|" + \
 "qit|" + \
 "rrah|" + \
