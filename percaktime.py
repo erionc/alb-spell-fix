@@ -14,10 +14,8 @@ para_te = "dua\s|do\s|duam\s|doni\s|duan\s|doja\s|doje\s|donte\s|" + \
 	"kush\s|cil(i|a)\s|cil(ë|a)t\s|ku\sdo\s|kur\sdo\s|(c|ç)far(e|ë)\s|" 
 
 ## foljet ndihmëse kam/jam që paraprijnë pjesoret
-kam_jam = "Kam\s|kam\s|Ke\s|ke\s|Ka\s|ka\s|Kemi\s|kemi\s|Keni\s|keni\s|" + \
-	"Kanë\s|kanë\s|" + \
-	"Jam\s|jam\s|Je\s|je\s|Është\s|është\s|Jemi\s|" + \
-	"jemi\s|Jeni\s|jeni\s|Janë\s|janë\s|" + \
+kam_jam = "Kam\s|kam\s|Ke\s|ke\s|Ka\s|ka\s|Kemi\s|Kena\s|kemi\s|kena\s|Keni\s|keni\s|Kanë\s|kanë\s|" + \
+	"Jam\s|jam\s|Je\s|je\s|Është\s|është\s|Jemi\s|Jena\s|jemi\s|jena\s|Jeni\s|jeni\s|Janë\s|janë\s|" + \
 	"Kisha\s|kisha\s|Kishe\s|kishe\s|Kishte\s|kishte\s|Kishim\s" + \
 	"kishim\s|Kishit\s|kishit\s|Kishin\s|kishin\s|" + \
 	"Isha\s|isha\s|Ishe\s|ishe\s|Ishte\s|ishte\s|Ishim\s|ishim\s|" + \

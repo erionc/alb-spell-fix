@@ -1,5 +1,5 @@
 
-## Totali: 36 + 33 + 27 + 54 = 150 zëvendësime
+## Totali: 36 + 33 + 27 + 54 + 2 = 152 zëvendësime
 
 ## pjesore pa "rë" - 36 zëvendësime
 ka ble, jemi gri, janë la, ke mar, jemi nda, ka nga, ke ngri, ishit nxjer,
@@ -21,7 +21,7 @@ ka ardh, je hap, kemi kap, Kisha mat, je mbyt, jemi ngrit, kishte shit,
 je ul, kanë vulos, janë zbardh, jeni zbraps, janë zmbraps, ke zhyt,
 ishe mërzit, janë merzit, duke thith, pata kap, qe mbyt, qe majm,
 ka mbajt, ka vajt, qe zgjat, kam mirëmbajt, je përmbajt, ka flak,
-qe hallakat, kemi qit,  
+qe hallakat, kemi qit, ka pas,  
 
 ## pjesore pa "er" - 54 zëvendësime
 ke gry, ka thy, Kemi ly, për të kry, janë shqy, kanë kry, pa ly, isha thy,
@@ -32,3 +32,6 @@ qe ngashëry, je ngazëlly, kam parapëlqy, ke pëlqy, ka përkthy, qe përly,
 ka përthy, je ngjy, ka ngërthy, ka rrëfy, qe rrëmby, ka shërby, ka shkëlqy,
 kam shly, je shqy, je shpërbly, ka shpërthy, ka urry, je ushqy, kam zbërthy,
 qe vy, qe zhgënjy, je zhy, jeni ngrys, 
+
+## pjesore pa "ë" fundore - 3 zëvendësime 
+kemi qen, ka vën, keni ven
