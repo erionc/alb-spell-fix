@@ -1,5 +1,5 @@
 
-## Totali: 36 + 33 + 27 + 54 + 2 = 152 zëvendësime
+## Totali: 36 + 35 + 28 + 54 + 6 = 159 zëvendësime
 
 ## pjesore pa "rë" - 36 zëvendësime
 ka ble, jemi gri, janë la, ke mar, jemi nda, ka nga, ke ngri, ishit nxjer,
@@ -8,7 +8,7 @@ jemi tha, je vra, duke pi, për të vra, Qemë sha, jena gdhi, kemi përfshi,
 me të pa, me te pa, kam ça, jam la, kam perca, kam përca, kam perça,
 ka shpërnda, ka shka, ka shpëla, qe vetëvra, 
 
-## pjesore pa "ar" - 33 zëvendësime
+## pjesore pa "ar" - 35 zëvendësime
 kemi besu, ka dëgju, kemi degju, jam dhunu, kam kerku, Ishin kërku
 Keni lexu, kemi mësu, ka mesu, Ishim ndëshku, ka ndeshku, kam ngacmu
 ke shkru, Kanë shku, ka pësu, kemi pesu, kanë punu, ishte provu 
@@ -16,7 +16,7 @@ patën provu, patën shku, qe shkru, kam çu, për të caktu, kena blu,
 pa mbaru, jam shtu, ka shtru, ka vlu, qe shu, je zgju, ke mendu, 
 ka kru, kemi darku, keni dreku
 
-## pjesore pa "ur" - 27 zëvendësime
+## pjesore pa "ur" - 28 zëvendësime
 ka ardh, je hap, kemi kap, Kisha mat, je mbyt, jemi ngrit, kishte shit,
 je ul, kanë vulos, janë zbardh, jeni zbraps, janë zmbraps, ke zhyt,
 ishe mërzit, janë merzit, duke thith, pata kap, qe mbyt, qe majm,
@@ -33,5 +33,5 @@ ka përthy, je ngjy, ka ngërthy, ka rrëfy, qe rrëmby, ka shërby, ka shkëlqy
 kam shly, je shqy, je shpërbly, ka shpërthy, ka urry, je ushqy, kam zbërthy,
 qe vy, qe zhgënjy, je zhy, jeni ngrys, 
 
-## pjesore pa "ë" fundore - 3 zëvendësime 
-kemi qen, ka vën, keni ven
+## pjesore pa "ë" fundore - 6 zëvendësime 
+kemi qen, ka vën, keni ven, kemi then, ka than, ke thën, keni thënë
