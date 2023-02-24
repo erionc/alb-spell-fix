@@ -23,16 +23,20 @@ pj_pa_ar = "besu|blu|" + \
 "caktu|çmu|çu|d(e|ë)gju|" + \
 "darku|dhunu|dreku|" + \
 "ftu|la|lexu|" + \
-"k(e|ë)rku|kru|" + \
-"mbaru|mendu|m(e|ë)su|" + \
+"k(e|ë)ndu|k(e|ë)rku|kru|" + \
+"livru|l(e|ë)ndu|" + \
+"martu|mbaru|mendu|m(e|ë)su|" + \
 "nd(e|ë)shku|ngacmu|" + \
 "p(ë|e)su|punu|provu|" + \
-"shkru|shku|shtru|shtu|shu|" + \
-"vlu|" + \
-"zgju"
+"rreziku|r(e|ë)ndu|" + \
+"shkarku|shkru|shku|shp(e|ë)tu|shpu|shtru|shtu|shu|" + \
+"trazu|" + \
+"vlu|v(e|ë)llaz(e|ë)ru|" + \
+"zbarku|zgju"
 
 ## pjesore të shkurtra që duhet të mbarojnë me 'ur' -- kap -> kapur
 pj_pa_ur = "ardh|" + \
+"(c|ç)mend|" + \
 "flak|" + \
 "hallakat|hap|" + \
 "kap|" + \
