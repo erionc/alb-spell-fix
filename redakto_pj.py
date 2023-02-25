@@ -8,10 +8,10 @@ pj_pa_re = "ble|" + \
 "ça|" + \
 "fshi|" + \
 "gdhi|gri|" + \
-"la|lëpi|" + \
+"la|l(e|ë)pi|" + \
 "mar|mbi|mpi|" + \
-"nda|nga|ngri|nxi|nxjer|" + \
-"pa|p(e|ë)r(c|ç)a|përfshi|përpi|pi|pre|pri|pru|" + \
+"nda|ndy|nga|ngri|nxi|nxjer|" + \
+"pa|p(e|ë)r(c|ç)a|përfshi|p(e|ë)rpi|p(e|ë)shty|pi|pre|pri|pru|" + \
 "qa|" + \
 "sha|shka|shkri|shp(e|ë)la|shp(e|ë)rnda|shtri|shty|" + \
 "tështi|tha|" + \
@@ -20,18 +20,19 @@ pj_pa_re = "ble|" + \
 ## pjesore të shkurtra që mbarojnë me 'u' por që duhet të 
 ## mbarojnë me 'ar' -- shku -> shkuar
 pj_pa_ar = "besu|blu|" + \
-"caktu|çmu|çu|d(e|ë)gju|" + \
+"caktu|çmu|çu|(c|ç)minu|d(e|ë)gju|" + \
 "darku|dhunu|dreku|" + \
 "ftu|la|lexu|" + \
-"k(e|ë)ndu|k(e|ë)rku|kru|" + \
+"k(e|ë)ndu|k(e|ë)rku|korrigju|kru|kund(e|ë)rshtu|" + \
 "livru|l(e|ë)ndu|" + \
-"martu|mbaru|mendu|m(e|ë)su|" + \
+"martu|mbaru|mendu|m(e|ë)su|minu|" + \
 "nd(e|ë)shku|ngacmu|" + \
-"p(ë|e)su|punu|provu|" + \
+"pendu|p(ë|e)su|provu|punu|" + \
+"q(e|ë)ru|" + \
 "rreziku|r(e|ë)ndu|" + \
-"shkarku|shkru|shku|shp(e|ë)tu|shpu|shtru|shtu|shu|" + \
+"sakrifiku|shkarku|shkru|shku|shp(e|ë)tu|shpu|shtru|shtu|shu|" + \
 "trazu|" + \
-"vlu|v(e|ë)llaz(e|ë)ru|" + \
+"vajtu|v(e|ë)llaz(e|ë)ru|vlu|" + \
 "zbarku|zgju"
 
 ## pjesore të shkurtra që duhet të mbarojnë me 'ur' -- kap -> kapur
@@ -46,7 +47,7 @@ pj_pa_ur = "ardh|" + \
 "pas|p(e|ë)rmbajt|" + \
 "qit|" + \
 "rrah|" + \
-"shit|" + \
+"shit|shkurtu|" + \
 "thith|" + \
 "ul|" + \
 "vajt|vulos|" + \
@@ -61,15 +62,14 @@ pj_pa_er = "d(e|ë)fry|d(e|ë)mshp(e|ë)rbly|" + \
 "kap(e|ë)rcy|k(e|ë)mby|k(e|ë)rcy|kry|kthy|kursy|" + \
 "ly|" + \
 "mall(e|ë)ngjy|mb(e|ë)rthy|" + \
-"ngall(e|ë)njy|ngash(e|ë)ry|ngaz(e|ë)lly|" + \
+"ngall(e|ë)njy|ngash(e|ë)ry|ngaz(e|ë)lly|ng(e|ë)rthy|ngjy|" + \
 "parap(e|ë)lqy|p(e|ë)lqy|p(e|ë)rkthy|p(e|ë)rly|p(e|ë)rthy|" + \
-"ng(e|ë)rthy|ngjy|" + \
 "rr(e|ë)fy|rr(e|ë)mby|" + \
 "sh(e|ë)rby|shk(e|ë)lqy|shly|shqy|shp(e|ë)rbly|shp(e|ë)rthy|" + \
 "thy|" + \
 "urry|ushqy|" + \
 "vy|" + \
-"zb(e|ë)rthy|zhg(e|ë)njy|zhy"
+"zb(e|ë)rthy|zhg(e|ë)njy|zhg(e|ë)rry|zhy"
 
 ## pjesore të shkurtra që duhet të mbarojnë me 'ë' -- qen -> qenë, vën -> vënë
 pj_pa_e = "l(e|ë)n|ngr(e|ë)n|q(e|ë)n|sht(e|ë)n|th(e|ë|a)n|v(e|ë)n|z(e|ë)n"
