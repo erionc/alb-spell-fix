@@ -45,7 +45,7 @@ pj_pa_ur = "ardh|" + \
 "mat|majm|mbajt|mbyt|m(e|ë)rzit|mir(e|ë)mbajt|" + \
 "ngrit|ngrys|" + \
 "pas|p(e|ë)rmbajt|" + \
-"qit|" + \
+"qelb|qit|" + \
 "rrah|" + \
 "shit|shkurtu|" + \
 "thith|" + \

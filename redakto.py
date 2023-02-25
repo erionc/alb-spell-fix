@@ -74,15 +74,15 @@ def redakto(text):
 
 	# thirren zëvendësimet paraprake
 	t, c = para_redaktime(t) ; total_sub += c
-		
+
+	# thirren zëvendësimet e pjesoreve
+	t, c = redakto_pjes(t) ; total_sub += c
+	
 	# thirren zëvendësimet e e-së
 	t, c = redakto_e(t) ; total_sub += c
 	
 	# thirren zëvendësimet e c-së
 	t, c = redakto_c(t) ; total_sub += c
-	
-	# thirren zëvendësimet e pjesoreve
-	t, c = redakto_pjes(t) ; total_sub += c
 	
 	# thirren zëvendësime e fjalëve
 	t, c = redakto_terma(t) ; total_sub += c

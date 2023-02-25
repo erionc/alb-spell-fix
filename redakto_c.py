@@ -4,13 +4,18 @@ from percaktime import *
 ## temat që shkruhen me C/c në vend të Ç/ç-së nistore
 ## ruhen prapashtesat ndaj nuk pranohen tema me grupe alternative me | si (c|ç)
 ## cafk, caj, cajnik, canak, cibuk, cift, cimk, cmim, co, corap, cudi, cun, cup 
-nis_pa_c = "afk|aj|ajnik|anak|akerdis|akmak|ale|alë|alo|alu|allm|apkën|apken|arcaf|arçaf|art|ati|" + \
-    "el|ekan|ekic|ekiç|elik|erek|" + \
+nis_pa_c_me_prap = "afk|aj|ajnik|anak|akerdis|akmak|ale|alë|alo|alu|allm|apkën|apken|arcaf|arçaf|art|ati|" + \
+    "ekan|ekic|ekiç|elik|erek|" + \
     "iban|ibuk|iflig|ift|ikërrim|ikerrim|iment|imk|izme|" + \
     "mend|merit|mim|min|mo|mont|morrit|" + \
     "nder|njer|" + \
     "o|okollat|orap|organi|orodit|" + \
     "u|udi|un"
+
+## temat që shkruhen me C/c në vend të Ç/ç-së nistore
+## nuk i jepet prapashtesë  ruhen prapashtesat ndaj nuk pranohen tema me grupe alternative me | si (c|ç)
+## cafk, caj, cajnik, canak, cibuk, cift, cimk, cmim, co, corap, cudi, cun, cup 
+nis_pa_c_pa_prap = "el"
 
 ## temat që shkruhen me Ç/ç në vend të C/c-së nistore
 ## ruhen prapashtesat ndaj nuk pranohen tema me grupe alternative me | si (c|ç)
@@ -89,9 +94,13 @@ def redakto_c(text):
 	## Çikë
 	t, c = re.subn(fr"(\b)(C|Ç|Q)(ik)(e|ë)?(\b)", r"Çikë", t) ; c_subs += c
 	
-	## fjalë që shkruhen me C/c ose Q/q në vend të Ç/ç-së nistore - caj -> çaj ; qizme -> çizme
-	t, c = re.subn(fr"(\b)(c|q)({nis_pa_c})({prapa})(\b)", r"ç\3\4", t) ; c_subs += c
-	t, c = re.subn(fr"(\b)(C|Q)({nis_pa_c})({prapa})(\b)", r"Ç\3\4", t) ; c_subs += c
+	## fjalë që shkruhen me C/c ose Q/q në vend të Ç/ç-së nistore dhe që marrin prapashtesë - caj -> çaj ; qizme -> çizme
+	t, c = re.subn(fr"(\b)(c|q)({nis_pa_c_me_prap})({prapa})(\b)", r"ç\3\4", t) ; c_subs += c
+	t, c = re.subn(fr"(\b)(C|Q)({nis_pa_c_me_prap})({prapa})(\b)", r"Ç\3\4", t) ; c_subs += c
+
+	## fjalë që shkruhen me C/c ose Q/q në vend të Ç/ç-së nistore por që nuk marrin prapashtesë - cel -> çel
+	t, c = re.subn(fr"(\b)(c|q)({nis_pa_c_pa_prap})(\b)", r"ç\3", t) ; c_subs += c
+	t, c = re.subn(fr"(\b)(C|Q)({nis_pa_c_pa_prap})(\b)", r"Ç\3", t) ; c_subs += c
 
 	## fjalë që shkruen me Ç/ç ose Q/q në vend të C/c-së nistore - çertifikatë -> certifikatë
 	t, c = re.subn(fr"(\b)(ç|q)({nis_me_c})({prapa})(\b)", r"c\3\4", t) ; c_subs += c
