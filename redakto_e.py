@@ -1,5 +1,5 @@
 
-from percaktime import *
+import re, string
 
 '''
 Fjalë që shkruhen pa ë fundore ose me e në vend të saj -- mir(e) -> mirë
