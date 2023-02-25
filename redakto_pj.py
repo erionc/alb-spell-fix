@@ -37,7 +37,7 @@ pj_pa_ar = "besu|blu|" + \
 
 ## pjesore të shkurtra që duhet të mbarojnë me 'ur' -- kap -> kapur
 pj_pa_ur = "ardh|" + \
-"(c|ç)mend|" + \
+"(c|q|ç)el|(c|ç)mend|" + \
 "flak|" + \
 "hallakat|hap|" + \
 "kap|" + \

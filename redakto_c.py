@@ -5,7 +5,7 @@ from percaktime import *
 ## ruhen prapashtesat ndaj nuk pranohen tema me grupe alternative me | si (c|ç)
 ## cafk, caj, cajnik, canak, cibuk, cift, cimk, cmim, co, corap, cudi, cun, cup 
 nis_pa_c_me_prap = "afk|aj|ajnik|anak|akerdis|akmak|ale|alë|alo|alu|allm|apkën|apken|arcaf|arçaf|art|ati|" + \
-    "ekan|ekic|ekiç|elik|erek|" + \
+    "elur|ekan|ekic|ekiç|elik|erek|" + \
     "iban|ibuk|iflig|ift|ikërrim|ikerrim|iment|imk|izme|" + \
     "mend|merit|mim|min|mo|mont|morrit|" + \
     "nder|njer|" + \

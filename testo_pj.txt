@@ -1,5 +1,5 @@
 
-## Totali: 38 + 60 + 31 + 54 + 14 = 197
+## Totali: 38 + 60 + 37 + 54 + 14 = 203
 
 ## pjesore pa "rë" - 38 
 ka ble, jemi gri, janë la, ke mar, jemi nda, ka nga,
@@ -26,7 +26,7 @@ ka shpu, ka shkru, qe trazu, ka korrigjuar,
 ka shkurtu, ka kundershtu, kemi sakrifiku, ka minu,
 ke çminu, ka cminu,
 
-## pjesore pa "ur" - 31 
+## pjesore pa "ur" - 37
 ka ardh, je hap, kemi kap, Kisha mat, je mbyt,
 jemi ngrit, kishte shit, je ul, kanë vulos,
 janë zbardh, jeni zbraps, janë zmbraps, ke zhyt,
@@ -34,6 +34,7 @@ ishe mërzit, janë merzit, duke thith, pata kap,
 qe mbyt, qe majm, ka mbajt, ka vajt, qe zgjat,
 kam mirëmbajt, je përmbajt, ka flak, qe hallakat,
 kemi qit, ka pas, qe cmend, jam çmend, ka qelb,
+ka cel, ka çel, ka qel,
 
 ## pjesore pa "er" - 55 
 ke gry, ka thy, Kemi ly, për të kry, janë shqy,
