@@ -50,7 +50,7 @@ no_e_end = [
 # e
 ['kspedit', 'kspozit',
 'n',
-'r', 'rzin',
+'rzin',
 'strad',],
 
 # f								

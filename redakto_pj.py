@@ -50,13 +50,14 @@ pj_pa_re = "ble|" + \
 
 ## pjesore të shkurtra që mbarojnë me 'u' por që duhet të 
 ## mbarojnë me 'ar' -- shku -> shkuar
-pj_pa_ar = "besu|blu|" + \
+pj_pa_ar = "akuzu|arnu|" + \
+"besu|blu|" + \
 "caktu|çmu|çu|(c|ç)minu|d(e|ë)gju|" + \
-"darku|dhunu|dreku|" + \
+"darku|dep(e|ë)rtu|dhunu|dreku|" + \
 "ftu|la|lexu|" + \
 "k(e|ë)ndu|k(e|ë)rku|korrigju|kru|kund(e|ë)rshtu|" + \
 "livru|l(e|ë)ndu|" + \
-"martu|mbaru|mendu|m(e|ë)su|minu|" + \
+"martu|mashtru|mbaru|mendu|m(e|ë)su|minu|" + \
 "nd(e|ë)shku|ngacmu|" + \
 "pendu|p(ë|e)su|provu|punu|" + \
 "q(e|ë)ru|" + \
