@@ -52,9 +52,10 @@ pj_pa_re = "ble|" + \
 ## mbarojnë me 'ar' -- shku -> shkuar
 pj_pa_ar = "akuzu|arnu|" + \
 "besu|blu|" + \
-"caktu|çmu|çu|(c|ç)minu|d(e|ë)gju|" + \
-"darku|dep(e|ë)rtu|dhunu|dreku|" + \
-"ftu|la|lexu|" + \
+"caktu|çliru|çmu|çu|(c|ç)minu|d(e|ë)gju|" + \
+"darku|dep(e|ë)rtu|d(e|ë)ftu|d(e|ë)gju|dhunu|dreku|" + \
+"f(e|ë)rku|ftu|" + \
+"la|lexu|" + \
 "k(e|ë)ndu|k(e|ë)rku|korrigju|kru|kund(e|ë)rshtu|" + \
 "livru|l(e|ë)ndu|" + \
 "martu|mashtru|mbaru|mendu|m(e|ë)su|minu|" + \
