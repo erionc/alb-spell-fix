@@ -71,9 +71,10 @@ pj_pa_ar = "akuzu|arnu|" + \
 ## pjesore të shkurtra që duhet të mbarojnë me 'ur' -- kap -> kapur
 pj_pa_ur = "ardh|" + \
 "(c|q|ç)el|(c|ç)mend|" + \
+"dash|" + \
 "flak|" + \
 "hallakat|hap|" + \
-"kap|" + \
+"kap|korr|" + \
 "lag|" + \
 "mat|majm|mbajt|mbyt|m(e|ë)rzit|mir(e|ë)mbajt|" + \
 "ngrit|ngrys|" + \
@@ -105,7 +106,7 @@ pj_pa_er = "d(e|ë)fry|d(e|ë)mshp(e|ë)rbly|" + \
 "zb(e|ë)rthy|zhg(e|ë)njy|zhg(e|ë)rry|zhy"
 
 ## pjesore të shkurtra që duhet të mbarojnë me 'ë' -- qen -> qenë, vën -> vënë
-pj_pa_e = "l(e|ë)n|ngr(e|ë)n|q(e|ë)n|sht(e|ë)n|th(e|ë|a)n|v(e|ë)n|z(e|ë)n"
+pj_pa_e = "dal|l(e|ë)n|mbjell|ngr(e|ë)n|q(e|ë)n|sht(e|ë)n|th(e|ë|a)n|v(e|ë)n|z(e|ë)n"
 
 ## fjalë dialektore që mbarojnë me 'u(e)' por që duhet të 
 ## mbarojnë me 'ua' -- du(e) -> dua, thu(e) -> thua
@@ -134,6 +135,11 @@ def redakto_pjes(text):
 
 	## fjalë që shnkruhen pa a në fund -- du(e) -> dua, thu(e) -> thua
 	t, c = re.subn(fr"(\b)({fj_dial})(e?)(\b)", r"\2a", t) ; pj_subs += c
+
+
+
+	# ## për me + pjesore -> për të + pjesore
+	# t, c = re.subn(fr"(\b)(p(e|ë)r\sme\s)({pj_pa_e})(\b)", r"\2\3ë", t) ; pj_subs += c
 
 	return (t, pj_subs)
 	

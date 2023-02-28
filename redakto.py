@@ -13,6 +13,9 @@ tema_en = ""
 def para_redaktime(text):
 	## vlerënisje 
 	t = text ; c_subs = 0
+
+	## p(e|ë)r me -> për të
+	t, c = re.subn(fr"(\b)(per me)(\b)", r"për të", t) ; c_subs += c
 	
 	## deshe(m|t|n) -> deshë(m|t|n)
 	t, c = re.subn(fr"(\b)(D|d)(eshe)(m|t|n)(\b)", r"\2eshë\4", t) ; c_subs += c
