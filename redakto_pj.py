@@ -57,7 +57,7 @@ pj_pa_ar = "akuzu|arnu|" + \
 "f(e|ë)rku|ftu|" + \
 "g(e|ë)rmu|" + \
 "la|lexu|" + \
-"k(e|ë)ndu|k(e|ë)rku|korrigju|kru|kund(e|ë)rshtu|" + \
+"k(e|ë)ndu|k(e|ë)rku|klasifiku|korrigju|kru|kund(e|ë)rshtu|" + \
 "livru|l(e|ë)ndu|" + \
 "martu|mashtru|mbaru|mendu|m(e|ë)su|minu|" + \
 "nd(e|ë)shku|ngacmu|" + \
