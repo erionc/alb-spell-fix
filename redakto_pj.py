@@ -55,6 +55,7 @@ pj_pa_ar = "akuzu|arnu|" + \
 "caktu|çliru|çmu|çu|(c|ç)minu|d(e|ë)gju|" + \
 "darku|dep(e|ë)rtu|d(e|ë)ftu|d(e|ë)gju|dhunu|dreku|" + \
 "f(e|ë)rku|ftu|" + \
+"g(e|ë)rmu|" + \
 "la|lexu|" + \
 "k(e|ë)ndu|k(e|ë)rku|korrigju|kru|kund(e|ë)rshtu|" + \
 "livru|l(e|ë)ndu|" + \
@@ -65,7 +66,7 @@ pj_pa_ar = "akuzu|arnu|" + \
 "rreziku|r(e|ë)ndu|" + \
 "sakrifiku|shkarku|shkru|shku|shp(e|ë)tu|shpu|shtru|shtu|shu|" + \
 "trazu|" + \
-"vajtu|v(e|ë)llaz(e|ë)ru|vlu|" + \
+"vajtu|vazhdu|v(e|ë)llaz(e|ë)ru|vlu|" + \
 "zbarku|zgju"
 
 ## pjesore të shkurtra që duhet të mbarojnë me 'ur' -- kap -> kapur
