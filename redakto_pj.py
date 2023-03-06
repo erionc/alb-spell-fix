@@ -51,11 +51,12 @@ pj_pa_re = "ble|" + \
 ## pjesore të shkurtra që mbarojnë me 'u' por që duhet të 
 ## mbarojnë me 'ar' -- shku -> shkuar
 pj_pa_ar = "akuzu|arnu|" + \
-"besu|blu|" + \
-"caktu|çliru|çmu|çu|(c|ç)minu|d(e|ë)gju|" + \
+"barazu|besu|blu|" + \
+"caktu|çliru|çmu|çu|(c|ç)minu|" + \
 "darku|dep(e|ë)rtu|d(e|ë)ftu|d(e|ë)gju|dhunu|dreku|" + \
 "f(e|ë)rku|ftu|" + \
 "g(e|ë)rmu|" + \
+"hamend(e|ë)su|" + \
 "la|lajm(e|ë)ru|lexu|" + \
 "k(e|ë)ndu|k(e|ë)rc(e|ë)nu|k(e|ë)rku|klasifiku|korrigju|kru|kund(e|ë)rshtu|" + \
 "livru|l(e|ë)ndu|" + \
@@ -64,7 +65,7 @@ pj_pa_ar = "akuzu|arnu|" + \
 "pendu|p(ë|e)su|provu|punu|" + \
 "qarku|qarkullu|q(e|ë)ru|" + \
 "rreziku|r(e|ë)ndu|" + \
-"sakrifiku|shkarku|shkru|shku|shp(e|ë)tu|shpu|shtremb(e|ë)ru|shtru|shtu|shu|" + \
+"sakrifiku|shkarku|shkru|shku|shp(e|ë)tu|shpu|shtremb(e|ë)ru|shtru|shtu|shu|shum(e|ë)zu|" + \
 "trazu|" + \
 "vajtu|vazhdu|v(e|ë)llaz(e|ë)ru|vlu|" + \
 "zbarku|zgju"
