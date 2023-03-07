@@ -53,7 +53,7 @@ pj_pa_re = "ble|" + \
 pj_pa_ar = "aktivizu|akuzu|arnu|" + \
 "barazu|besu|blu|" + \
 "caktu|çliru|çmu|çu|(c|ç)minu|" + \
-"darku|dep(e|ë)rtu|d(e|ë)ftu|d(e|ë)gju|dhunu|dreku|" + \
+"darku|dep(e|ë)rtu|d(e|ë)ftu|d(e|ë)gju|drenu|dhunu|dreku|" + \
 "f(e|ë)rku|ftu|" + \
 "g(e|ë)rmu|" + \
 "hamend(e|ë)su|" + \
@@ -63,9 +63,9 @@ pj_pa_ar = "aktivizu|akuzu|arnu|" + \
 "livru|l(e|ë)ndu|" + \
 "martu|mashtru|mbaru|mendu|m(e|ë)su|minu|" + \
 "nd(e|ë)shku|ngacmu|" + \
-"pendu|p(ë|e)su|pikturu|provu|punu|" + \
+"pendu|p(e|ë)rdhunu|p(ë|e)su|pikturu|provu|punu|" + \
 "qarku|qarkullu|q(e|ë)ru|" + \
-"rreziku|r(e|ë)ndu|" + \
+"rrallu|rreziku|r(e|ë)ndu|" + \
 "sakrifiku|shkarku|shkru|shku|shp(e|ë)tu|shpu|shtremb(e|ë)ru|shtru|shtu|shu|shum(e|ë)zu|" + \
 "trazu|" + \
 "vajtu|vazhdu|vepru|v(e|ë)llaz(e|ë)ru|vlu|" + \
@@ -77,7 +77,7 @@ pj_pa_ur = "ardh|" + \
 "dash|" + \
 "flak|" + \
 "hallakat|hap|" + \
-"kap|korr|" + \
+"kap|korr|kurdis|" + \
 "lag|" + \
 "mat|majm|mbajt|mbyt|m(e|ë)rzit|mir(e|ë)mbajt|" + \
 "ngrit|ngrys|" + \
