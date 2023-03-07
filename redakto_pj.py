@@ -55,7 +55,7 @@ pj_pa_ar = "aktivizu|akuzu|arnu|" + \
 "caktu|çliru|çmu|çu|(c|ç)minu|" + \
 "darku|dep(e|ë)rtu|d(e|ë)ftu|d(e|ë)gju|drenu|dhunu|dreku|" + \
 "f(e|ë)rku|ftu|" + \
-"g(e|ë)rmu|" + \
+"g(e|ë)rmu|gllab(e|ë)ru|" + \
 "hamend(e|ë)su|" + \
 "imitu|" + \
 "la|lajm(e|ë)ru|lexu|" + \
@@ -63,12 +63,12 @@ pj_pa_ar = "aktivizu|akuzu|arnu|" + \
 "livru|l(e|ë)ndu|" + \
 "martu|mashtru|mbaru|mendu|m(e|ë)su|minu|" + \
 "nd(e|ë)shku|ngacmu|" + \
-"pendu|p(e|ë)rdhunu|p(ë|e)su|pikturu|provu|punu|" + \
+"pajtu|pendu|p(e|ë)rdhunu|p(ë|e)su|pikturu|provu|punu|" + \
 "qarku|qarkullu|q(e|ë)ru|" + \
 "rreziku|r(e|ë)ndu|" + \
-"sakrifiku|shkarku|shkru|shku|shp(e|ë)tu|shpu|shtremb(e|ë)ru|shtru|shtu|shu|shum(e|ë)zu|" + \
-"trazu|" + \
-"vajtu|vazhdu|vepru|v(e|ë)llaz(e|ë)ru|vlu|" + \
+"sakrifiku|shkarku|shkru|shku|shp(e|ë)tu|shpu|shqiptu|shqip(e|ë)ru|shtremb(e|ë)ru|shtru|shtu|shu|shum(e|ë)zu|" + \
+"trajnu|trazu|" + \
+"vajtu|varf(e|ë)ru|vazhdu|vepru|v(e|ë)llaz(e|ë)ru|vlu|" + \
 "zbarku|zgju"
 
 ## pjesore të shkurtra që duhet të mbarojnë me 'ur' -- kap -> kapur
