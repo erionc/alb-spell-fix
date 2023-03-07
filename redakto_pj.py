@@ -65,7 +65,7 @@ pj_pa_ar = "aktivizu|akuzu|arnu|" + \
 "nd(e|ë)shku|ngacmu|" + \
 "pendu|p(e|ë)rdhunu|p(ë|e)su|pikturu|provu|punu|" + \
 "qarku|qarkullu|q(e|ë)ru|" + \
-"rrallu|rreziku|r(e|ë)ndu|" + \
+"rreziku|r(e|ë)ndu|" + \
 "sakrifiku|shkarku|shkru|shku|shp(e|ë)tu|shpu|shtremb(e|ë)ru|shtru|shtu|shu|shum(e|ë)zu|" + \
 "trazu|" + \
 "vajtu|vazhdu|vepru|v(e|ë)llaz(e|ë)ru|vlu|" + \
