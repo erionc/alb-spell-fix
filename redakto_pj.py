@@ -50,7 +50,7 @@ pj_pa_re = "ble|" + \
 
 ## pjesore të shkurtra që mbarojnë me 'u' por që duhet të 
 ## mbarojnë me 'ar' -- shku -> shkuar
-pj_pa_ar = "aktivizu|akuzu|arnu|" + \
+pj_pa_ar = "akordu|aktivizu|akuzu|analizu|arnu|" + \
 "barazu|besu|blu|" + \
 "caktu|çliru|çmu|çu|(c|ç)minu|" + \
 "darku|dep(e|ë)rtu|d(e|ë)ftu|d(e|ë)gju|drenu|dhunu|dreku|" + \
@@ -59,16 +59,16 @@ pj_pa_ar = "aktivizu|akuzu|arnu|" + \
 "hamend(e|ë)su|" + \
 "imitu|" + \
 "la|lajm(e|ë)ru|lexu|" + \
-"k(e|ë)ndu|k(e|ë)rc(e|ë)nu|k(e|ë)rku|klasifiku|kopju|korrigju|kru|kryq(e|ë)zu|kund(e|ë)rshtu|" + \
+"k(e|ë)ndu|k(e|ë)rc(e|ë)nu|k(e|ë)rku|klasifiku|konsumu|kopju|korrigju|kru|kryq(e|ë)zu|kund(e|ë)rshtu|" + \
 "livru|l(e|ë)ndu|" + \
-"martu|mashtru|mbaru|mendu|m(e|ë)su|minu|" + \
+"martu|masivizu|mashtru|mbaru|mendu|m(e|ë)su|minu|" + \
 "nd(e|ë)shku|ngacmu|" + \
 "pajtu|pendu|p(e|ë)rdhunu|p(ë|e)su|pikturu|provu|punu|" + \
 "qarku|qarkullu|q(e|ë)ru|" + \
 "rreziku|r(e|ë)ndu|" + \
 "sakrifiku|shkarku|shkru|shku|shp(e|ë)tu|shpu|shqiptu|shqip(e|ë)ru|shtremb(e|ë)ru|shtru|shtu|shu|shum(e|ë)zu|" + \
 "trajnu|trazu|" + \
-"vajtu|varf(e|ë)ru|vazhdu|vepru|v(e|ë)llaz(e|ë)ru|vlu|" + \
+"vajtu|varf(e|ë)ru|vazhdu|vepru|verifiku|v(e|ë)llaz(e|ë)ru|vlu|" + \
 "zbarku|zgju"
 
 ## pjesore të shkurtra që duhet të mbarojnë me 'ur' -- kap -> kapur
