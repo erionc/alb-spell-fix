@@ -79,8 +79,8 @@ pj_pa_ur = "ardh|" + \
 "hallakat|hap|" + \
 "kap|korr|kurdis|" + \
 "lag|" + \
-"mat|majm|mbajt|mbyt|m(e|ë)rzit|mir(e|ë)mbajt|" + \
-"ngrit|ngrys|" + \
+"mat|majm|mbajt|mbath|mbyt|m(e|ë)rzit|mir(e|ë)mbajt|" + \
+"ndesh|ngrit|ngrys|" + \
 "pas|p(e|ë)rmbajt|" + \
 "qelb|qit|" + \
 "rrah|" + \
