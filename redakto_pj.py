@@ -39,6 +39,7 @@ pj_pa_re = "ble|" + \
 "ça|" + \
 "fshi|" + \
 "gdhi|gri|" + \
+"kap(e|ë)rdi|" + \
 "la|l(e|ë)pi|" + \
 "mar|mbi|mpi|" + \
 "nda|ndy|nga|ngri|nxi|nxjer|" + \
@@ -88,7 +89,7 @@ pj_pa_ur = "ardh|" + \
 "thith|" + \
 "ul|" + \
 "vajt|vulos|" + \
-"zbardh|zbraps|zgjat|zmbraps|zhyt"
+"zbardh|zbraps|zbyth|zgjat|zmbraps|zhyt"
 
 ## pjesore të shkurtra që mbarojnë me 'y' por që duhet të 
 ## mbarojnë me 'yer' -- thy -> thyer		   
@@ -138,8 +139,6 @@ def redakto_pjes(text):
 
 	## fjalë që shnkruhen pa a në fund -- du(e) -> dua, thu(e) -> thua
 	t, c = re.subn(fr"(\b)({fj_dial})(e?)(\b)", r"\2a", t) ; pj_subs += c
-
-
 
 	# ## për me + pjesore -> për të + pjesore
 	# t, c = re.subn(fr"(\b)(p(e|ë)r\sme\s)({pj_pa_e})(\b)", r"\2\3ë", t) ; pj_subs += c
