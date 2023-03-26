@@ -55,19 +55,19 @@ pj_pa_ar = "akordu|aktivizu|akuzu|analizu|arnu|" + \
 "barazu|besu|blu|" + \
 "caktu|çliru|çmu|çu|(c|ç)minu|" + \
 "darku|dep(e|ë)rtu|d(e|ë)ftu|d(e|ë)gju|drenu|dhunu|dreku|" + \
-"f(e|ë)rku|ftu|" + \
+"f(e|ë)rku|formulu|ftu|" + \
 "g(e|ë)rmu|gllab(e|ë)ru|" + \
 "hamend(e|ë)su|" + \
 "imitu|" + \
 "la|lajm(e|ë)ru|lexu|" + \
-"k(e|ë)ndu|k(e|ë)rc(e|ë)nu|k(e|ë)rku|klasifiku|konsumu|kopju|korrigju|kru|kryq(e|ë)zu|kund(e|ë)rshtu|" + \
+"k(e|ë)ndu|k(e|ë)rc(e|ë)nu|k(e|ë)rku|klasifiku|konsumu|kopju|korrigju|kru|kryq(e|ë)zu|kund(e|ë)rshtu|kundru|" + \
 "livru|l(e|ë)ndu|" + \
 "martu|masivizu|mashtru|mbaru|mendu|m(e|ë)su|minu|" + \
 "nd(e|ë)shku|ngacmu|" + \
-"pajtu|pendu|p(e|ë)rdhunu|p(ë|e)su|pikturu|provu|punu|" + \
+"pajtu|pendu|p(e|ë)rdhunu|p(ë|e)su|pikturu|profilizu|provu|punu|" + \
 "qarku|qarkullu|q(e|ë)ru|" + \
 "rreziku|r(e|ë)ndu|" + \
-"sakrifiku|shkarku|shkru|shku|shp(e|ë)tu|shpu|shqiptu|shqip(e|ë)ru|shtremb(e|ë)ru|shtru|shtu|shu|shum(e|ë)zu|" + \
+"sakrifiku|shkarku|shkru|shku|shp(e|ë)tu|shpu|shqiptu|shqip(e|ë)ru|shtremb(e|ë)ru|shtru|shtu|shu|shum(e|ë)zu|simpatizu|" + \
 "trajnu|trazu|" + \
 "vajtu|varf(e|ë)ru|vazhdu|vepru|verifiku|v(e|ë)llaz(e|ë)ru|vlu|" + \
 "zbarku|zgju"
