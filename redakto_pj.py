@@ -67,8 +67,8 @@ pj_pa_ar = "akordu|aktivizu|akuzu|analizu|arnu|" + \
 "pajtu|pastru|pendu|p(e|ë)rdhunu|p(ë|e)su|pikturu|profilizu|provu|punu|" + \
 "qarku|qarkullu|q(e|ë)ru|" + \
 "rreziku|r(e|ë)ndu|" + \
-"sakrifiku|shkarku|shkru|shku|shp(e|ë)rq(e|ë)ndru|shp(e|ë)tu|shpu|shqiptu|shqip(e|ë)ru|shtremb(e|ë)ru|shtru|shtu|shu|shum(e|ë)zu|simpatizu|" + \
-"trajnu|trazu|" + \
+"sakrifiku|shkarku|shkru|shku|shkurtu|shp(e|ë)rq(e|ë)ndru|shp(e|ë)tu|shpu|shqiptu|shqip(e|ë)ru|shtremb(e|ë)ru|shtru|shtu|shu|shum(e|ë)zu|simpatizu|" + \
+"t(e|ë)rbu|trajnu|trazu|tregu|" + \
 "vajtu|varf(e|ë)ru|vazhdu|vepru|verifiku|v(e|ë)llaz(e|ë)ru|vlu|" + \
 "zbarku|zgju"
 
@@ -77,6 +77,7 @@ pj_pa_ur = "ardh|" + \
 "(c|q|ç)el|(c|ç)mend|" + \
 "dash|" + \
 "flak|" + \
+"gris|" + \
 "hallakat|hap|" + \
 "kap|korr|kurdis|" + \
 "lag|" + \
@@ -85,7 +86,7 @@ pj_pa_ur = "ardh|" + \
 "pas|p(e|ë)rmbajt|" + \
 "qelb|qit|" + \
 "rrah|" + \
-"shit|shkurtu|" + \
+"shit|" + \
 "thith|" + \
 "ul|" + \
 "vajt|vulos|" + \
