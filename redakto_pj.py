@@ -66,9 +66,9 @@ pj_pa_ar = "akordu|aktivizu|akuzu|analizu|arnu|" + \
 "nd(e|ë)shku|ngacmu|" + \
 "pajtu|pastru|pendu|p(e|ë)rdhunu|p(ë|e)su|pikturu|profilizu|provu|punu|" + \
 "qarku|qarkullu|q(e|ë)ru|" + \
-"rreziku|r(e|ë)ndu|" + \
+"rreshtu|rreziku|r(e|ë)ndu|" + \
 "sakrifiku|shkarku|shkru|shku|shkurtu|shp(e|ë)rq(e|ë)ndru|shp(e|ë)tu|shpu|shqiptu|shqip(e|ë)ru|shtremb(e|ë)ru|shtru|shtu|shu|shum(e|ë)zu|simpatizu|" + \
-"t(e|ë)rbu|trajnu|trazu|tregu|" + \
+"t(e|ë)rbu|ting(e|ë)llu|trajnu|trazu|tregu|trillu|" + \
 "vajtu|varf(e|ë)ru|vazhdu|vepru|verifiku|v(e|ë)llaz(e|ë)ru|vlu|" + \
 "zbarku|zgju"
 
