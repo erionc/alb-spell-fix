@@ -66,30 +66,30 @@ pj_pa_ar = "akordu|aktivizu|akuzu|analizu|arnu|" + \
 "nd(e|ë)rtu|nd(e|ë)shku|ndri(c|ç)u|ndryshu|ngacmu|" + \
 "pajtu|pastru|pendu|p(e|ë)rdhunu|p(e|ë)rjetu|p(ë|e)su|pikturu|profilizu|provu|punu|" + \
 "qarku|qarkullu|q(e|ë)ru|" + \
-"rreshtu|rreziku|r(e|ë)ndu|" + \
+"rreshtu|rreziku|r(e|ë)ndu|rr(e|ë)zu|" + \
 "sabotu|sakrifiku|shkarku|shkru|shku|shkurtu|shp(e|ë)rq(e|ë)ndru|shp(e|ë)tu|shpu|shqiptu|shqip(e|ë)ru|shtremb(e|ë)ru|shtru|shtu|shu|shum(e|ë)zu|simpatizu|" + \
 "t(e|ë)rbu|ting(e|ë)llu|trajnu|trazu|tregu|trillu|" + \
 "vajtu|varf(e|ë)ru|vazhdu|vepru|verifiku|v(e|ë)llaz(e|ë)ru|vlu|" + \
 "zbarku|zgju"
 
 ## pjesore të shkurtra që duhet të mbarojnë me 'ur' -- kap -> kapur
-pj_pa_ur = "ardh|" + \
+pj_pa_ur = "arratis|ardh|" + \
 "(c|q|ç)el|(c|ç)mend|" + \
 "dash|" + \
 "flak|" + \
 "gris|" + \
 "hallakat|hap|" + \
-"kap|korr|kurdis|" + \
+"kap|kapardis|korr|kurdis|" + \
 "lag|" + \
 "mat|majm|mbajt|mbath|mbyt|m(e|ë)rzit|mir(e|ë)mbajt|" + \
 "ndesh|ngrit|ngrys|" + \
-"pas|p(e|ë)rmbajt|" + \
+"pas|p(e|ë)rmbajt|p(e|ë)rplas|" + \
 "qelb|qit|" + \
 "rrah|" + \
-"shit|" + \
+"shit|shmang|" + \
 "thith|" + \
 "ul|" + \
-"vajt|vulos|" + \
+"vajt|var|vulos|" + \
 "zbardh|zbraps|zbyth|zgjat|zmbraps|zhyt"
 
 ## pjesore të shkurtra që mbarojnë me 'y' por që duhet të 
