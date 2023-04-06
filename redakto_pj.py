@@ -56,7 +56,7 @@ pj_pa_ar = "akordu|aktivizu|akuzu|analizu|arnu|" + \
 "caktu|çliru|çmu|çu|(c|ç)minu|" + \
 "darku|dep(e|ë)rtu|d(e|ë)ftu|d(e|ë)gju|drenu|dhunu|dreku|" + \
 "f(e|ë)rku|formulu|ftu|" + \
-"g(e|ë)rmu|gllab(e|ë)ru|" + \
+"gatu|g(e|ë)rmu|gllab(e|ë)ru|" + \
 "hamend(e|ë)su|" + \
 "imitu|" + \
 "la|lajm(e|ë)ru|lexu|" + \
@@ -64,20 +64,20 @@ pj_pa_ar = "akordu|aktivizu|akuzu|analizu|arnu|" + \
 "livru|l(e|ë)ndu|" + \
 "martu|masivizu|mashtru|mbaru|mendu|m(e|ë)su|minu|" + \
 "nd(e|ë)rtu|nd(e|ë)shku|ndri(c|ç)u|ndryshu|ngacmu|" + \
-"pajtu|pastru|pendu|p(e|ë)rdhunu|p(e|ë)rjetu|p(ë|e)su|pikturu|profilizu|provu|punu|" + \
+"pajtu|parashiku|pastru|pendu|p(e|ë)rdhunu|p(e|ë)rgju|p(e|ë)rjetu|p(ë|e)su|pikturu|profilizu|provu|punu|" + \
 "qarku|qarkullu|q(e|ë)ru|" + \
 "rreshtu|rreziku|r(e|ë)ndu|rr(e|ë)zu|" + \
-"sabotu|sakrifiku|shkarku|shkru|shku|shkurtu|shp(e|ë)rq(e|ë)ndru|shp(e|ë)tu|shpu|shqiptu|shqip(e|ë)ru|shtremb(e|ë)ru|shtru|shtu|shu|shum(e|ë)zu|simpatizu|" + \
+"sabotu|sakrifiku|shkarku|shkru|shku|shkurtu|shp(e|ë)rq(e|ë)ndru|shp(e|ë)tu|shpu|shqiptu|shqip(e|ë)ru|shtremb(e|ë)ru|shtru|shtu|shu|shum(e|ë)zu|simpatizu|sinkronizu|" + \
 "t(e|ë)rbu|ting(e|ë)llu|trajnu|trazu|tregu|trillu|" + \
 "vajtu|varf(e|ë)ru|vazhdu|vepru|verifiku|v(e|ë)llaz(e|ë)ru|vlu|" + \
-"zbarku|zgju"
+"zbarku|zgju|zhbiru|"
 
 ## pjesore të shkurtra që duhet të mbarojnë me 'ur' -- kap -> kapur
 pj_pa_ur = "arratis|ardh|" + \
 "(c|q|ç)el|(c|ç)mend|" + \
 "dash|" + \
 "flak|" + \
-"g(e|ë)rvish|gris|gropos" + \
+"g(e|ë)rvisht|gris|gropos|" + \
 "hallakat|hap|" + \
 "kap|kapardis|korr|kurdis|" + \
 "lag|" + \
