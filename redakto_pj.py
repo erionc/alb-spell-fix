@@ -64,13 +64,13 @@ pj_pa_ar = "akordu|aktivizu|akuzu|analizu|arnu|" + \
 "livru|l(e|ë)ndu|" + \
 "martu|masivizu|mashtru|mbaru|mendu|m(e|ë)rgu|m(e|ë)su|minu|" + \
 "nd(e|ë)rtu|nd(e|ë)shku|ndri(c|ç)u|ndryshu|ngacmu|" + \
-"pajtu|parashiku|pastru|pendu|p(e|ë)rdhunu|p(e|ë)rgju|p(e|ë)rjetu|p(ë|e)su|pikturu|profilizu|provu|punu|" + \
+"pajtu|parashiku|pastru|pendu|p(e|ë)rdhunu|p(e|ë)rgju|p(e|ë)rjetu|p(ë|e)su|pikturu|pleq(e|ë)ru|profilizu|provu|punu|" + \
 "qarku|qarkullu|q(e|ë)ru|" + \
 "rreshtu|rreziku|r(e|ë)ndu|rr(e|ë)zu|" + \
 "sabotu|sakrifiku|shkarku|shkru|shku|shkurtu|shp(e|ë)rq(e|ë)ndru|shp(e|ë)tu|shpu|shqiptu|shqip(e|ë)ru|shtremb(e|ë)ru|shtru|shtu|shu|shum(e|ë)zu|simpatizu|sinkronizu|" + \
 "t(e|ë)rbu|ting(e|ë)llu|trajnu|trazu|tregu|trillu|" + \
 "vajtu|varf(e|ë)ru|vazhdu|vepru|verifiku|v(e|ë)llaz(e|ë)ru|vlu|" + \
-"zbarku|zgju|zhbiru|"
+"zbarku|zgju|zhbiru"
 
 ## pjesore të shkurtra që duhet të mbarojnë me 'ur' -- kap -> kapur
 pj_pa_ur = "arratis|ardh|" + \
