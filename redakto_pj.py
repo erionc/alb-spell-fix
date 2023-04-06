@@ -77,7 +77,7 @@ pj_pa_ur = "arratis|ardh|" + \
 "(c|q|ç)el|(c|ç)mend|" + \
 "dash|" + \
 "flak|" + \
-"gris|" + \
+"g(e|ë)rvish|gris|gropos" + \
 "hallakat|hap|" + \
 "kap|kapardis|korr|kurdis|" + \
 "lag|" + \
@@ -89,7 +89,7 @@ pj_pa_ur = "arratis|ardh|" + \
 "shit|shmang|" + \
 "thith|" + \
 "ul|" + \
-"vajt|var|vulos|" + \
+"vajt|var|varos|vulos|" + \
 "zbardh|zbraps|zbyth|zgjat|zmbraps|zhyt"
 
 ## pjesore të shkurtra që mbarojnë me 'y' por që duhet të 
