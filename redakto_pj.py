@@ -62,7 +62,7 @@ pj_pa_ar = "akordu|aktivizu|akuzu|analizu|arnu|" + \
 "la|lajm(e|ë)ru|lexu|" + \
 "k(e|ë)ndu|k(e|ë)rc(e|ë)nu|k(e|ë)rku|klasifiku|konsumu|kopju|korrigju|kru|kryq(e|ë)zu|kund(e|ë)rshtu|kundru|" + \
 "livru|l(e|ë)ndu|" + \
-"martu|masivizu|mashtru|mbaru|mendu|m(e|ë)su|minu|" + \
+"martu|masivizu|mashtru|mbaru|mendu|m(e|ë)rgu|m(e|ë)su|minu|" + \
 "nd(e|ë)rtu|nd(e|ë)shku|ndri(c|ç)u|ndryshu|ngacmu|" + \
 "pajtu|parashiku|pastru|pendu|p(e|ë)rdhunu|p(e|ë)rgju|p(e|ë)rjetu|p(ë|e)su|pikturu|profilizu|provu|punu|" + \
 "qarku|qarkullu|q(e|ë)ru|" + \
