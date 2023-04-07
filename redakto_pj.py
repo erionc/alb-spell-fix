@@ -53,14 +53,14 @@ pj_pa_re = "ble|" + \
 ## mbarojnë me 'ar' -- shku -> shkuar
 pj_pa_ar = "akordu|aktivizu|akuzu|analizu|arnu|" + \
 "barazu|besu|blu|" + \
-"caktu|çliru|çmu|çu|(c|ç)minu|" + \
+"caktu|çliru|çmu|çu|(c|ç)minu|(c|ç)montu|" + \
 "darku|dep(e|ë)rtu|d(e|ë)ftu|d(e|ë)gju|drenu|dhunu|dreku|" + \
 "f(e|ë)rku|formulu|ftu|" + \
 "gatu|g(e|ë)rmu|gllab(e|ë)ru|" + \
 "hamend(e|ë)su|" + \
 "imitu|" + \
 "la|lajm(e|ë)ru|lexu|" + \
-"k(e|ë)ndu|k(e|ë)rc(e|ë)nu|k(e|ë)rku|klasifiku|konsumu|kopju|korrigju|kru|kryq(e|ë)zu|kund(e|ë)rshtu|kundru|" + \
+"k(e|ë)ndu|k(e|ë)rc(e|ë)nu|k(e|ë)rku|klasifiku|konsumu|kopju|korrigju|kru|kryq(e|ë)zu|kund(e|ë)rshtu|kundru|kuror(e|ë)zu|" + \
 "livru|l(e|ë)ndu|" + \
 "martu|masivizu|mashtru|mbaru|mendu|m(e|ë)rgu|m(e|ë)su|minu|" + \
 "nd(e|ë)rtu|nd(e|ë)shku|ndri(c|ç)u|ndryshu|ngacmu|" + \
@@ -79,14 +79,14 @@ pj_pa_ur = "arratis|ardh|" + \
 "flak|" + \
 "g(e|ë)rvisht|gris|gropos|" + \
 "hallakat|hap|" + \
-"kap|kapardis|korr|kurdis|" + \
+"kap|kapardis|korr|kurdis|ky(c|ç)|" + \
 "lag|" + \
 "mat|majm|mbajt|mbath|mbyt|m(e|ë)rzit|mir(e|ë)mbajt|" + \
 "ndesh|ngrit|ngrys|" + \
 "pas|p(e|ë)rmbajt|p(e|ë)rplas|" + \
 "qelb|qit|" + \
 "rrah|" + \
-"shit|shmang|" + \
+"shit|shky(c|ç)|shmang|" + \
 "thith|" + \
 "ul|" + \
 "vajt|var|varos|vulos|" + \
