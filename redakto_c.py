@@ -12,8 +12,8 @@ nis_pa_c_me_prap = "afk|aj|ajnik|anak|akerdis|akmak|ale|alë|alo|alu|allm|apkën
     "iban|ibuk|iflig|ift|ikërrim|ikerrim|iment|imk|izme|" + \
     "mend|merit|mim|min|mo|mont|morrit|" + \
     "nder|njer|" + \
-    "o|okollat|orap|organi|orodit|" + \
-    "u|udi|un"
+    "okollat|orap|organi|orodit|" + \
+    "udi|un"
 
 ## temat që shkruhen me C/c në vend të Ç/ç-së nistore
 ## nuk i jepet prapashtesë -- cel -> çel
