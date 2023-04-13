@@ -1,8 +1,11 @@
 
 import re, string
 
-## 0-5 simbole shtesë në fund të fjalëve për prapashtesat dhe lakesat
-prapa = "[a-zA-Z0-9çÇëË_-]{0,5}"
+## 0-5 simbole shtesë në fund të fjalëve për prapa_gjatshtesat dhe lakesat
+prapa_gjat = "[a-zA-Z0-9çÇëË_-]{0,5}"
+
+## 0-2 simbole shtesë në fund të fjalëve për mbaresa të shkurtra
+prapa_shkurt = "[a-zA-Z0-9çÇëË_-]{0,5}"
 
 ## fjalë që i paraprinë të-së -- do të, dua të, desha të 
 para_te = "dua\s|do\s|duam\s|doni\s|duan\s|doja\s|doje\s|donte\s|" + \
