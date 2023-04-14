@@ -12,89 +12,96 @@ tema_en = ""
 ## funksion për zëvendësime që përgatitin zëvendësimet e mëpasshme
 def para_redaktime(text):
 	## vlerënisje 
-	t = text ; c_subs = 0
+	t = text ; c_subs, e_subs, tj_subs = 0, 0, 0
 
 	## p(e|ë)r me -> për të
-	t, c = re.subn(fr"(\b)(per\sme|për\sme)(\b)", r"për të", t) ; c_subs += c
+	t, c = re.subn(fr"(\b)(per\sme|për\sme)(\b)", r"për të", t) ; e_subs += c
 	
 	## deshe(m|t|n) -> deshë(m|t|n)
-	t, c = re.subn(fr"(\b)(D|d)(eshe)(m|t|n)(\b)", r"\2eshë\4", t) ; c_subs += c
+	t, c = re.subn(fr"(\b)(D|d)(eshe)(m|t|n)(\b)", r"\2eshë\4", t) ; e_subs += c
 
 	## cilet -> cilët
-	t, c = re.subn(fr"(\b)cilet(\b)", r"cilët", t) ; c_subs += c
+	t, c = re.subn(fr"(\b)cilet(\b)", r"cilët", t) ; e_subs += c
 	
 	## jan(e) -> janë, kan(e) -> kanë
-	t, c = re.subn(fr"(\b)(J|j|K|k)(an)(e)?(\b)", r"\2anë", t) ; c_subs += c
+	t, c = re.subn(fr"(\b)(J|j|K|k)(an)(e)?(\b)", r"\2anë", t) ; e_subs += c
 	
 	## pate(m|t|n) -> patë(m|t|n)
-	t, c = re.subn(fr"(\b)(pate)(m|t|n)(\b)", r"patë\3", t) ; c_subs += c
+	t, c = re.subn(fr"(\b)(pate)(m|t|n)(\b)", r"patë\3", t) ; e_subs += c
 	## qe(m|t|n)(e?) -> qe(m|t|n)ë
-	t, c = re.subn(fr"(\b)(Q|q)(e)(m|t|n)(e)?(\b)", r"\2e\4ë", t) ; c_subs += c
+	t, c = re.subn(fr"(\b)(Q|q)(e)(m|t|n)(e)?(\b)", r"\2e\4ë", t) ; e_subs += c
 	
 	## kena -> kemi ; jena -> jemi
-	t, c = re.subn(fr"(\b)(K|k|J|j)(ena)(\b)", r"\2emi", t) ; c_subs += c
+	t, c = re.subn(fr"(\b)(K|k|J|j)(ena)(\b)", r"\2emi", t) ; tj_subs += c
 	
 	## per -> për (nuk ka per në fgjssh)
-	t, c = re.subn(fr"(\b)per(\b)", r"për", t) ; c_subs += c
+	t, c = re.subn(fr"(\b)per(\b)", r"për", t) ; e_subs += c
 	
 	## do te -> do të ; dua te -> dua të 
-	t, c = re.subn(fr"(\b)({para_te})(te)(\b)", r"\2të", t) ; c_subs += c
+	t, c = re.subn(fr"(\b)({para_te})(te)(\b)", r"\2të", t) ; e_subs += c
 	
 	## zëvendësime të tjera e -> ë
 	
-	return (t, c_subs)
+	return (t, e_subs, c_subs, tj_subs)
 	
 ## funksion për zëvendësime që korrigjojnë zëvendësimet e mëparshme
 def pas_redaktime(text):
 	## vlerënisje 
-	t = text ; c_subs = 0
+	t = text ; c_subs, e_subs, tj_subs = 0, 0, 0
 	
 	## çoc -> çoç
 	t, c = re.subn(fr"(\b)çoc(\b)", r"çoç", t) ; c_subs += c
 
 	## zëvendësime të tjera 
 	
-	return (t, c_subs)
+	return (t, e_subs, c_subs, tj_subs)
 	
 ## funksion për zëvendësimin e fjalëve angleze 
 def redakto_eng(text):
 	## vlerënisje 
-	t = text ; eng_subs = 0
+	t = text ; c_subs, e_subs, tj_subs = 0, 0, 0
 	
-	return (t, eng_subs)
+	return (t, e_subs, c_subs, tj_subs)
 	
 ## funksion për zëvendësime fjalësh të plota 
 def redakto_terma(text):
 	## vlerënisje 
-	t = text ; word_subs = 0
+	t = text ; c_subs, e_subs, tj_subs = 0, 0, 0
 	
-	return (t, word_subs)
+	return (t, e_subs, c_subs, tj_subs)
 
 ## funksioni kryesor i redaktimeve që thërret funksionet e tjera
 def redakto(text):
-	## vlerënisje
-	t = text ; total_sub = 0
+	## vlerënisje 
+	t = text ; c_subs, e_subs, tj_subs = 0, 0, 0
 
 	# thirren zëvendësimet paraprake
-	t, c = para_redaktime(t) ; total_sub += c
+	t, e_c, c_c, tj_c = para_redaktime(t) 
+	c_subs += c_c ; e_subs += e_c ; tj_subs += tj_c
 
 	# thirren zëvendësimet e pjesoreve
-	t, c = redakto_pjes(t) ; total_sub += c
+	t, e_c, c_c, tj_c = redakto_pjes(t) 
+	c_subs += c_c ; e_subs += e_c ; tj_subs += tj_c
 	
 	# thirren zëvendësimet e e-së
-	t, c = redakto_e(t) ; total_sub += c
+	t, e_c, c_c, tj_c = redakto_e(t) 
+	c_subs += c_c ; e_subs += e_c ; tj_subs += tj_c
 	
 	# thirren zëvendësimet e c-së
-	t, c = redakto_c(t) ; total_sub += c
+	t, e_c, c_c, tj_c = redakto_c(t) 
+	c_subs += c_c ; e_subs += e_c ; tj_subs += tj_c
 	
 	# thirren zëvendësime e fjalëve
-	t, c = redakto_terma(t) ; total_sub += c
+	t, e_c, c_c, tj_c = redakto_terma(t) 
+	c_subs += c_c ; e_subs += e_c ; tj_subs += tj_c
 	
 	# thirren zëvendësime e fjalëve angleze
-	t, c = redakto_eng(t) ; total_sub += c
+	t, e_c, c_c, tj_c = redakto_eng(t) 
+	c_subs += c_c ; e_subs += e_c ; tj_subs += tj_c
 	
 	# thirren zëvendësimet përfundimtare
-	t, c = pas_redaktime(t) ; total_sub += c
+	t, e_c, c_c, tj_c = pas_redaktime(t) 
+	c_subs += c_c ; e_subs += e_c ; tj_subs += tj_c
 
-	return (t, total_sub)
+	return (t, e_subs, c_subs, tj_subs)
 	

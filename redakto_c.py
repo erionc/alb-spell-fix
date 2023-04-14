@@ -35,24 +35,24 @@ fund_me_ci = "All|all|Batak|batak|Inat|inat|Top|top|Zanat|zanat"
 ## fjalë që shkruhen me Ç/ç në vend të C/c-së së brendshme
 ## përfshihen vetëm ato fjalë që përmbajnë vetëm 1 c e cila është e brendshme
 def me_c_brenda(text):
-    ## vlerënisje
-    t = text ; c_subs = 0
+	## vlerënisje 
+	t = text ; c_subs, e_subs, tj_subs = 0, 0, 0
 
     ## (P|p)ro(ç|q)es -> (P|p)roces 
-    t, c = re.subn(fr"(\b)(P|p)(roçes|roqes)({prapa_gjat})(\b)", r"\2roces\4", t) ; c_subs += c
+	t, c = re.subn(fr"(\b)(P|p)(roçes|roqes)({prapa_gjat})(\b)", r"\2roces\4", t) ; c_subs += c
     ##  (P|p)ro(ç|q)edur -> (P|p)rocedur
-    t, c = re.subn(fr"(\b)(P|p)(roçedur|roqedur)({prapa_gjat})(\b)", r"\2rocedur\4", t) ; c_subs += c
+	t, c = re.subn(fr"(\b)(P|p)(roçedur|roqedur)({prapa_gjat})(\b)", r"\2rocedur\4", t) ; c_subs += c
     ##  (L|l)i(ç|q|sh)ens* -> (L|l)icens*
-    t, c = re.subn(fr"(\b)(L|l)(içens|iqens|ishens)({prapa_gjat})(\b)", r"\2icens\4", t) ; c_subs += c
+	t, c = re.subn(fr"(\b)(L|l)(içens|iqens|ishens)({prapa_gjat})(\b)", r"\2icens\4", t) ; c_subs += c
 
-    return (t, c_subs)
+	return (t, e_subs, c_subs, tj_subs)
 
 
 ## fjalë që shkruhen me C/c në vend të Ç/ç-së së brendshme
 ## përfshihen vetëm ato fjalë që përmbajnë vetëm 1 c e cila është e brendshme
 def pa_c_brenda(text):
-	## vlerënisje
-	t = text ; c_subs = 0
+	## vlerënisje 
+	t = text ; c_subs, e_subs, tj_subs = 0, 0, 0
 
 	## fjalë që mbarojnë me çi ; inatci -> inatçi ; zanatci -> zanatçi
 	t, c = re.subn(fr"(\b)({fund_me_ci})(ci|qi)({prapa_gjat})(\b)", r"\2çi\4", t) ; c_subs += c
@@ -66,13 +66,13 @@ def pa_c_brenda(text):
 	## lincim -> linçim ; linqoj -> linçoj
 	t, c = re.subn(fr"(\b)(L|l)(inc|inq)({prapa_gjat})(\b)", r"\2inç\4", t) ; c_subs += c
 
-	return (t, c_subs)
+	return (t, e_subs, c_subs, tj_subs)
 
 
 ## redaktime të rasteve c'|q' + folje, ç' + folje, dhe çfarë
 def c_apostrof_folje(text):
-	## vlerënisje
-	t = text ; c_subs = 0
+	## vlerënisje 
+	t = text ; c_subs, e_subs, tj_subs = 0, 0, 0
 	
 	## ç'bën, ç'bëni
 	t, c = re.subn(fr"(\b)(c|c'|ç|q|q')(bën|ben)({prapa_gjat})(\b)", r"ç'bën\4", t) ; c_subs += c
@@ -104,16 +104,17 @@ def c_apostrof_folje(text):
 	## Çfarë
 	t, c = re.subn(fr"(\b)(C|Ç|Q)(far)(e|ë)?(\b)", r"Çfarë", t) ; c_subs += c
 
-	return (t, c_subs)
+	return (t, e_subs, c_subs, tj_subs)
 
 
 ## funksion për zëvendësime c -> ç 
 def redakto_c(text):
-	## vlerënisje
-	t = text ; c_subs = 0
+	## vlerënisje 
+	t = text ; c_subs, e_subs, tj_subs = 0, 0, 0
 	
 	## redaktime të rasteve c'|q' + folje, ç' + folje, dhe çfarë
-	t, c = c_apostrof_folje(t) ; c_subs += c
+	t, e_c, c_c, tj_c = c_apostrof_folje(t)
+	c_subs += c_c ; e_subs += e_c ; tj_subs += tj_c
 
 	## fjalë që shkruhen me C/c ose Q/q në vend të Ç/ç-së nistore dhe që marrin prapashtesë - caj -> çaj ; qizme -> çizme
 	t, c = re.subn(fr"(\b)(c|q)({nis_pa_c_me_prap})({prapa_gjat})(\b)", r"ç\3\4", t) ; c_subs += c
@@ -128,11 +129,13 @@ def redakto_c(text):
 	t, c = re.subn(fr"(\b)(Ç|Q)({nis_me_c})({prapa_gjat})(\b)", r"C\3\4", t) ; c_subs += c
 
 	## fjalë që shkruhen me C/c ose Q/q në vend të Ç/ç-së së brendshme - recel -> reçel ; Reqel -> Reçel ; Allci -> Allçi
-	t, c = pa_c_brenda(t) ; c_subs += c
+	t, e_c, c_c, tj_c = pa_c_brenda(t)
+	c_subs += c_c ; e_subs += e_c ; tj_subs += tj_c
 
 	## fjalë që shkruhen me Ç/ç ose Q/q në vend të C/c-së së brendshme - proçes -> proces ; Proqedurë -> Procedurë 
-	t, c = me_c_brenda(t) ; c_subs += c
+	t, e_c, c_c, tj_c = me_c_brenda(t)
+	c_subs += c_c ; e_subs += e_c ; tj_subs += tj_c
 	
-	return (t, c_subs)
+	return (t, e_subs, c_subs, tj_subs)
 	
 	

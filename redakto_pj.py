@@ -124,29 +124,29 @@ fj_dial = "(D|d)u|(G|g)ru|(M|m)u|(T|t)hu"
 ## funksion për zëvendësimin e pjesoreve të shkurtëra
 def redakto_pjes(text):
 	## vlerënisje 
-	t = text ; pj_subs = 0
+	t = text ; c_subs, e_subs, tj_subs = 0, 0, 0
 		
 	## pjesoret që shkruhen pa rë në fund -- pru -> prurë
-	t, c = re.subn(fr"(\b)({para_pjesoreve})({pj_pa_re})(r(e)?)?(\b)", r"\2\3rë", t) ; pj_subs += c
+	t, c = re.subn(fr"(\b)({para_pjesoreve})({pj_pa_re})(r(e)?)?(\b)", r"\2\3rë", t) ; tj_subs += c
 
 	## pjesoret që shkruhen pa ar në fund -- shku -> shkuar
-	t, c = re.subn(fr"(\b)({para_pjesoreve})({pj_pa_ar})(\b)", r"\2\3ar", t) ; pj_subs += c
+	t, c = re.subn(fr"(\b)({para_pjesoreve})({pj_pa_ar})(\b)", r"\2\3ar", t) ; tj_subs += c
 	
 	## pjesoret që shkruhen pa ur në fund -- kap -> kapur
-	t, c = re.subn(fr"(\b)({para_pjesoreve})({pj_pa_ur})(\b)", r"\2\3ur", t) ; pj_subs += c
+	t, c = re.subn(fr"(\b)({para_pjesoreve})({pj_pa_ur})(\b)", r"\2\3ur", t) ; tj_subs += c
 
 	## pjesoret që shkruhen pa er në fund -- thy -> thyer
-	t, c = re.subn(fr"(\b)({para_pjesoreve})({pj_pa_er})(\b)", r"\2\3er", t) ; pj_subs += c
+	t, c = re.subn(fr"(\b)({para_pjesoreve})({pj_pa_er})(\b)", r"\2\3er", t) ; tj_subs += c
 
 	## pjesoret që shkruhen pa ë në fund -- qen -> qenë, vën -> vënë
-	t, c = re.subn(fr"(\b)({para_pjesoreve})({pj_pa_e})(\b)", r"\2\3ë", t) ; pj_subs += c
+	t, c = re.subn(fr"(\b)({para_pjesoreve})({pj_pa_e})(\b)", r"\2\3ë", t) ; tj_subs += c
 
 	## fjalë që shnkruhen pa a në fund -- du(e) -> dua, thu(e) -> thua
-	t, c = re.subn(fr"(\b)({fj_dial})(e?)(\b)", r"\2a", t) ; pj_subs += c
+	t, c = re.subn(fr"(\b)({fj_dial})(e?)(\b)", r"\2a", t) ; tj_subs += c
 
 	# ## për me + pjesore -> për të + pjesore
 	# t, c = re.subn(fr"(\b)(p(e|ë)r\sme\s)({pj_pa_e})(\b)", r"\2\3ë", t) ; pj_subs += c
 
-	return (t, pj_subs)
+	return (t, e_subs, c_subs, tj_subs)
 	
 	

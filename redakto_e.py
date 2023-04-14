@@ -331,8 +331,8 @@ with_e_regex = '|'.join(with_e_exp)
 
 ## funksion për zëvendësime e -> ë 
 def redakto_e(text):
-	## velerënisje
-	t = text ; e_subs = 0
+	## vlerënisje 
+	t = text ; c_subs, e_subs, tj_subs = 0, 0, 0
 	
 	## Është
 	t, c = re.subn(fr"(\b)(E|Ë)(sht)(e|ë)?(\b)", r"Ë\3ë", t) ; e_subs += c
@@ -345,4 +345,4 @@ def redakto_e(text):
 	## fjalë që shkruhen me ë fundore të shkruar e -- maje -> majë
 	t, c = re.subn(fr"(\b)({with_e_regex})(e)(\b)", r"\2ë", t) ; e_subs += c
 	
-	return (t, e_subs)
+	return (t, e_subs, c_subs, tj_subs)
