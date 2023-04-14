@@ -5,15 +5,15 @@ import re, string
 prapa_gjat = "[a-zA-Z0-9çÇëË_-]{0,5}"
 
 ## 0-2 simbole shtesë në fund të fjalëve për mbaresa të shkurtra
-prapa_shkurt = "[a-zA-Z0-9çÇëË_-]{0,5}"
+prapa_shkurt = "[a-zA-Z0-9çÇëË_-]{0,2}"
 
 ## temat që shkruhen me C/c në vend të Ç/ç-së nistore
-## ruhen prapa_gjatshtesat ndaj nuk pranohen tema me grupe alternative me | si (c|ç)
-## cafk, caj, cajnik, canak, cibuk, cift, cimk, cmim, co, corap, cudi, cun, cup 
+## ruhen prapashtesat ndaj nuk pranohen tema me grupe me | si (c|ç)
+## cafk, caj, cajnik, canak, cibuk, cift, cmim, co, corap, cudi, cun, cup 
 nis_pa_c_me_prap = "afk|aj|ajnik|anak|akerdis|akmak|ale|alë|alo|alu|allm|apkën|apken|arcaf|arçaf|art|ati|" + \
     "elur|ekan|ekic|ekiç|elik|erek|" + \
     "iban|ibuk|iflig|ift|ikërrim|ikerrim|iment|imk|izme|" + \
-    "mend|merit|mim|min|mo|mont|morrit|" + \
+    "mall|mend|merit|mim|min|mo|mont|morrit|muar|" + \
     "nder|njer|" + \
     "okollat|orap|organi|orodit|" + \
     "udi|un"
@@ -23,12 +23,12 @@ nis_pa_c_me_prap = "afk|aj|ajnik|anak|akerdis|akmak|ale|alë|alo|alu|allm|apkën
 nis_pa_c_pa_prap = "el|up(e|ë)|ik(e|ë)"
 
 ## temat që shkruhen me Ç/ç në vend të C/c-së nistore
-## ruhen prapa_gjatshtesat ndaj nuk pranohen tema me grupe alternative me | si (c|ç)
+## ruhen prapashtesat ndaj nuk pranohen tema me grupe me | si (c|ç)
 ## çertifikatë, çertifikoj, çertifikim
 nis_me_c = "ertifik"
 
 ## fjalë që mbarojnë me çi por shpesh shkruhen me ci
-## ruhen prapa_gjatshtesat ndaj nuk pranohen tema me grupe alternative me | si (c|ç)
+## ruhen prapashtesat ndaj nuk pranohen tema me grupe me | si (c|ç)
 fund_me_ci = "All|all|Batak|batak|Inat|inat|Top|top|Zanat|zanat" 
 
 
@@ -69,34 +69,52 @@ def pa_c_brenda(text):
 	return (t, c_subs)
 
 
-## funksion për zëvendësime c -> ç 
-def redakto_c(text):
+## redaktime të rasteve c'|q' + folje - ç' + folje, dhe çfarë
+def c_apostrof_folje(text):
 	## vlerënisje
 	t = text ; c_subs = 0
 	
+	## ç'bën, ç'bëni
+	t, c = re.subn(fr"(\b)(c|c'|ç|q|q')(bën|ben)({prapa_gjat})(\b)", r"ç'bën\4", t) ; c_subs += c
+	## Ç'bën, Ç'bëni
+	t, c = re.subn(fr"(\b)(C|C'|Ç|Q|Q')(bën|ben)({prapa_gjat})(\b)", r"Ç'\3\4", t) ; c_subs += c
+
+	## ç'bëj, ç'bëjmë, ç'bëjnë
+	t, c = re.subn(fr"(\b)(c|c'|ç|q|q')(bëj|bej)({prapa_gjat})(\b)", r"ç'bëj\4", t) ; c_subs += c
+	## Ç'bëj, Ç'bëjmë, Ç'bëjnë
+	t, c = re.subn(fr"(\b)(C|C'|Ç|Q|Q')(bëj|bej)({prapa_gjat})(\b)", r"Ç'bëj\4", t) ; c_subs += c
+
 	## ç'kemi, ç'ke, ç'keni
 	t, c = re.subn(fr"(\b)(c|c'|ç|q|q')(ke)({prapa_gjat})(\b)", r"ç'\3\4", t) ; c_subs += c
-
 	## Ç'kemi, Ç'ke, Ç'keni 
 	t, c = re.subn(fr"(\b)(C|C'|Ç|Q|Q')(ke)({prapa_gjat})(\b)", r"Ç'\3\4", t) ; c_subs += c
 	
 	## cka -> çka ; c'kam, ckam -> ç'kam ; c'ka(në) -> ç'ka(në) 
 	t, c = re.subn(fr"(\b)(c|c'|ç|q|q')(ka)({prapa_gjat})(\b)", r"ç'\3\4", t) ; c_subs += c
-
 	## Cka -> Çka ; C'kam, Ckam -> Ç'kam ; C'ka(në) -> Ç'ka(në) 
 	t, c = re.subn(fr"(\b)(C|C'|Ç|Q|Q')(ka)({prapa_gjat})(\b)", r"Ç'\3\4", t) ; c_subs += c
 	
 	## çfarë
 	t, c = re.subn(fr"(\b)(c|ç|q)(far)(e|ë)?(\b)", r"çfarë", t) ; c_subs += c
-
 	## Çfarë
 	t, c = re.subn(fr"(\b)(C|Ç|Q)(far)(e|ë)?(\b)", r"Çfarë", t) ; c_subs += c
+
+	return (t, c_subs)
+
+
+## funksion për zëvendësime c -> ç 
+def redakto_c(text):
+	## vlerënisje
+	t = text ; c_subs = 0
 	
-	## fjalë që shkruhen me C/c ose Q/q në vend të Ç/ç-së nistore dhe që marrin prapa_gjatshtesë - caj -> çaj ; qizme -> çizme
+	## redaktime të rasteve c'|q' + folje - ç' + folje, dhe çfarë
+	t, c = c_apostrof_folje(t) ; c_subs += c
+
+	## fjalë që shkruhen me C/c ose Q/q në vend të Ç/ç-së nistore dhe që marrin prapashtesë - caj -> çaj ; qizme -> çizme
 	t, c = re.subn(fr"(\b)(c|q)({nis_pa_c_me_prap})({prapa_gjat})(\b)", r"ç\3\4", t) ; c_subs += c
 	t, c = re.subn(fr"(\b)(C|Q)({nis_pa_c_me_prap})({prapa_gjat})(\b)", r"Ç\3\4", t) ; c_subs += c
 
-	## fjalë që shkruhen me C/c ose Q/q në vend të Ç/ç-së nistore por që nuk marrin prapa_gjatshtesë - cel -> çel
+	## fjalë që shkruhen me C/c ose Q/q në vend të Ç/ç-së nistore por që nuk marrin prapashtesë - cel -> çel
 	t, c = re.subn(fr"(\b)(c|q)({nis_pa_c_pa_prap})(\b)", r"ç\3", t) ; c_subs += c
 	t, c = re.subn(fr"(\b)(C|Q)({nis_pa_c_pa_prap})(\b)", r"Ç\3", t) ; c_subs += c
 
