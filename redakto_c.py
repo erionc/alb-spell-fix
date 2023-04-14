@@ -69,7 +69,7 @@ def pa_c_brenda(text):
 	return (t, c_subs)
 
 
-## redaktime të rasteve c'|q' + folje - ç' + folje, dhe çfarë
+## redaktime të rasteve c'|q' + folje, ç' + folje, dhe çfarë
 def c_apostrof_folje(text):
 	## vlerënisje
 	t = text ; c_subs = 0
@@ -77,12 +77,17 @@ def c_apostrof_folje(text):
 	## ç'bën, ç'bëni
 	t, c = re.subn(fr"(\b)(c|c'|ç|q|q')(bën|ben)({prapa_gjat})(\b)", r"ç'bën\4", t) ; c_subs += c
 	## Ç'bën, Ç'bëni
-	t, c = re.subn(fr"(\b)(C|C'|Ç|Q|Q')(bën|ben)({prapa_gjat})(\b)", r"Ç'\3\4", t) ; c_subs += c
+	t, c = re.subn(fr"(\b)(C|C'|Ç|Q|Q')(bën|ben)({prapa_gjat})(\b)", r"Ç'bën\4", t) ; c_subs += c
 
 	## ç'bëj, ç'bëjmë, ç'bëjnë
 	t, c = re.subn(fr"(\b)(c|c'|ç|q|q')(bëj|bej)({prapa_gjat})(\b)", r"ç'bëj\4", t) ; c_subs += c
 	## Ç'bëj, Ç'bëjmë, Ç'bëjnë
 	t, c = re.subn(fr"(\b)(C|C'|Ç|Q|Q')(bëj|bej)({prapa_gjat})(\b)", r"Ç'bëj\4", t) ; c_subs += c
+
+	## ç'bëhet
+	t, c = re.subn(fr"(\b)(c|c'|ç|q|q')(bëh|beh)({prapa_gjat})(\b)", r"ç'bëh\4", t) ; c_subs += c
+	## Ç'bëhet
+	t, c = re.subn(fr"(\b)(C|C'|Ç|Q|Q')(bëh|beh)({prapa_gjat})(\b)", r"Ç'bëh\4", t) ; c_subs += c
 
 	## ç'kemi, ç'ke, ç'keni
 	t, c = re.subn(fr"(\b)(c|c'|ç|q|q')(ke)({prapa_gjat})(\b)", r"ç'\3\4", t) ; c_subs += c
@@ -107,7 +112,7 @@ def redakto_c(text):
 	## vlerënisje
 	t = text ; c_subs = 0
 	
-	## redaktime të rasteve c'|q' + folje - ç' + folje, dhe çfarë
+	## redaktime të rasteve c'|q' + folje, ç' + folje, dhe çfarë
 	t, c = c_apostrof_folje(t) ; c_subs += c
 
 	## fjalë që shkruhen me C/c ose Q/q në vend të Ç/ç-së nistore dhe që marrin prapashtesë - caj -> çaj ; qizme -> çizme
