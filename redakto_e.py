@@ -1,6 +1,12 @@
 
 import re, string
 
+## 0-5 simbole shtesë në fund të fjalëve për prapa_gjatshtesat dhe lakesat
+prapa_gjat = "[a-zA-Z0-9çÇëË_-]{0,5}"
+
+## 0-2 simbole shtesë në fund të fjalëve për mbaresa të shkurtra
+prapa_shkurt = "[a-zA-Z0-9çÇëË_-]{0,2}"
+
 '''
 Fjalë që shkruhen pa ë fundore ose me e në vend të saj -- mir(e) -> mirë
 zëvendësohet edhe varianti pa ë fundore, meqë nuk përplaset me ndonjë
@@ -329,6 +335,32 @@ for i in range(0, 25):
 with_e_regex = '|'.join(with_e_exp)
 
 
+## fjalë që mbarojnë me ëk por shpesh shkruhen me ek
+fund_me_ek = "Boll|boll|" + \
+	"Dembell|dembell|" + \
+	"Fukarall|fukarall|" + \
+	"Hamall|hamall|" + \
+	"Pisll|pisll|" + \
+	"Synetll|synetll|" + \
+	"Tersll|tersll"
+
+## fjalë që mbarojnë me ësht por shpesh shkruhen me esht
+fund_me_esht = "Qum|qum|plog"
+
+## fjalë që shkruhen me C/c në vend të Ç/ç-së së brendshme
+def pa_e_brenda(text):
+	## vlerënisje 
+	t = text ; c_subs, e_subs, tj_subs = 0, 0, 0
+
+	## fjalë që mbarojnë me ësht ; qumesht -> qumësht
+	t, c = re.subn(fr"(\b)({fund_me_esht})(esht)({prapa_gjat})(\b)", r"\2ësht\4", t) ; e_subs += c
+
+	## fjalë që mbarojnë me ësht ; qumesht -> qumësht
+	t, c = re.subn(fr"(\b)({fund_me_ek})(ek)({prapa_gjat})(\b)", r"\2ëk\4", t) ; e_subs += c
+
+	return (t, e_subs, c_subs, tj_subs)
+
+
 ## funksion për zëvendësime e -> ë 
 def redakto_e(text):
 	## vlerënisje 
@@ -344,5 +376,10 @@ def redakto_e(text):
 
 	## fjalë që shkruhen me ë fundore të shkruar e -- maje -> majë
 	t, c = re.subn(fr"(\b)({with_e_regex})(e)(\b)", r"\2ë", t) ; e_subs += c
+
+	## fjalët me e brenda - qumesht -> qumësht
+	t, e_c, c_c, tj_c = pa_e_brenda(t)
+	c_subs += c_c ; e_subs += e_c ; tj_subs += tj_c
 	
 	return (t, e_subs, c_subs, tj_subs)
+

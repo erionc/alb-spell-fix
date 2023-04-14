@@ -5,21 +5,24 @@ import re, sys, argparse	# paketa të domosdoshme
 from redakto import *
 
 ## funksioni kryesor i korrigjimeve që thërret funksionet e tjera
-def redaktime(field_in):
+def redaktime(in_text):
 	# merret përmbajtja e kutizës së parë
-	input_text = field_in
+	input_text = in_text
 	t = input_text ; total_sub = 0
 	
 	## thirret funksioni kryesor i redaktimeve
-	t, total_sub = redakto(t)
+	t, e_subs, c_subs, tj_subs = redakto(t)
+	total_sub = c_subs + e_subs + tj_subs
 
 	output_text = t
 	
+	# output_message = f"Zëvendësime të ë-ve:\t\t\t{e_subs}\n" + \
+	# 	f"Zëvendësime të ç-ve:\t\t\t{c_subs}\n" + \
+	# 	f"Zëvendësime të tjera:\t\t\t{tj_subs}\n" + \
+	# 	f"Zëvendësime totale:\t\t\t{total_sub}"
+	
 	# shfaqet totali i zëvendësimeve të kryera
-	if total_sub == 1:
-		output_message = str.format("{} zëvendësim. ", total_sub)
-	else:
-		output_message = str.format("{} zëvendësime. ", total_sub)
+	output_message = f"Zëvendësime totale:\t{total_sub}\n"
 
 	return output_text, output_message
 	
@@ -62,8 +65,8 @@ if __name__ == "__main__":
 	# nëse nuk jepen as hyrja as dalja
 	elif not args.input and not args.output:
 		# hyrja merret nga terminali
-		text1_field = input("\nTeksti hyrës:\n")
-		text, message = redaktime(text1_field)
+		in_text = input("\nTeksti hyrës:\n")
+		text, message = redaktime(in_text)
 		# dalja afishohet në terminal
 		print(f"\nTeksti dalës:\n{text}")
 		print(f"\n{message}\n")
