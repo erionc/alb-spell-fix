@@ -7,6 +7,9 @@ prapa_gjat = "[a-zA-Z0-9çÇëË_-]{0,5}"
 ## 0-2 simbole shtesë në fund të fjalëve për mbaresa të shkurtra
 prapa_shkurt = "[a-zA-Z0-9çÇëË_-]{0,2}"
 
+## 1-5 simbole shtesë në fund të fjalëve për mbaresa të shkurtra
+prapa_jo_bosh = "[a-zA-Z0-9çÇëË_-]{1,5}"
+
 '''
 Fjalë që shkruhen pa ë fundore ose me e në vend të saj -- mir(e) -> mirë
 zëvendësohet edhe varianti pa ë fundore, meqë nuk përplaset me ndonjë
@@ -288,7 +291,7 @@ with_e_end = [
 ['hin', 'hpatin', 'htat'],
 
 # t
-['aks', 'erin', 'errin', 'ulin',],	
+['aks', 'erin', 'errin', 'jer', 'ulin',],	
 	
 # u											
 ['rin',],
@@ -334,6 +337,20 @@ for i in range(0, 25):
 # lidhja e fjalëve me operatorin | për formimin e shprehjes së rregullt
 with_e_regex = '|'.join(with_e_exp)
 
+## fjalë që shfaqin probleme me ë-të vundore
+def pa_e_fundore(text):
+	## vlerënisje 
+	t = text ; c_subs, e_subs, tj_subs = 0, 0, 0
+
+	## fjalë që shkruhen pa ë fundore ose me ë të shkruar e -- mir(e) -> mirë
+	t, c = re.subn(fr"(\b)({no_e_regex})(e)?(\b)", r"\2ë", t) ; e_subs += c
+
+	## fjalë që shkruhen me ë fundore të shkruar e -- maje -> majë
+	t, c = re.subn(fr"(\b)({with_e_regex})(e)(\b)", r"\2ë", t) ; e_subs += c
+
+	return (t, e_subs, c_subs, tj_subs)
+
+
 ## fjalë që nisin me për por shpesh shkruhen me per - permend -> përmend
 ## ruhen prapashtesat ndaj nuk pranohen tema me grupe me | si (e|ë)
 nis_me_per = "afër|afr|" + \
@@ -354,29 +371,76 @@ nis_me_per = "afër|afr|" + \
 	"vi|" + \
 	"z"
 
-## fjalë që mbarojnë me ër por shpesh shkruhen me er - sedek -> sedëk
+
+## fjalë që nisin me MË por shpesh shkruhen me ME - mesues -> mësues
 ## ruhen prapashtesat ndaj nuk pranohen tema me grupe me | si (e|ë)
-fund_me_er = "hat|" + \
-	"let|" + \
-	"mjed|" + \
-	"sed"
+nis_me_me = "kat|" + \
+	"nyr|" + \
+	"rga|rgi|rgo|rgu|" + \
+	"sim|sue"
 
 
-## fjalë që mbarojnë me ëk por shpesh shkruhen me ek - pisllek -> pisllëk
+## fjalë që nisin me KË por shpesh shkruhen me KE - keput -> këput
 ## ruhen prapashtesat ndaj nuk pranohen tema me grupe me | si (e|ë)
-fund_me_ek = "Boll|boll|" + \
+nis_me_me = "na|" + \
+	"nd|" + \
+	"ng|" + \
+	"put|" + \
+	"shill" + \
+	"te|ti|tu|"
+
+
+## fjalë që përmbajnë ËR por shpesh shkruhen me ER - seder -> sedër
+## ruhen prapashtesat ndaj nuk pranohen tema me grupe me | si (e|ë)
+permban_er = "Ashp|ashp|" + \
+	"Hat|hat|" + \
+	"kat|ket|" + \
+	"Let|let|Lib|lib|" + \
+	"Mbret|mbret|Mjed|mjed|" + \
+	"Posht|posht|" + \
+	"Sed|sed|shtret|" + \
+	"Tjet|tjet|" + \
+	"Varf|varf"
+
+
+## fjalë që përmbajnë ËK por shpesh shkruhen me EK - pisllek -> pisllëk
+## ruhen prapashtesat ndaj nuk pranohen tema me grupe me | si (e|ë)
+permban_ek = "Boll|boll|" + \
 	"Dembell|dembell|" + \
-	"Fukarall|fukarall|" + \
+	"Fodull|fodull|Fukarall|fukarall|" + \
 	"Hamall|hamall|" + \
 	"Pisll|pisll|" + \
 	"Synetll|synetll|" + \
 	"Tersll|tersll"
 
-## fjalë që mbarojnë me ësht por shpesh shkruhen me esht - qumesht -> qumësht
-## ruhen prapashtesat ndaj nuk pranohen tema me grupe me | si (e|ë)
-fund_me_esht = "Qum|qum|plog"
 
-## fjalë që shkruhen me C/c në vend të Ç/ç-së së brendshme
+## fjalë që përmbajnë SHTË por shpesh shkruhen me SHTE - kreshte -> kreshtë
+## ruhen prapashtesat ndaj nuk pranohen tema me grupe me | si (e|ë)
+permban_shte = "ava|" + \
+	"gja|" + \
+	"ja|" + \
+	"ka|" + \
+	"la|le"
+
+## fjalë që përmbajnë ËSHT por shpesh shkruhen me ESHT - qumesht -> qumësht
+## ruhen prapashtesat ndaj nuk pranohen tema me grupe me | si (e|ë)
+permban_esht = "Lag|lag" + \
+	"Plog|plog|" + \
+	"Qum|qum"
+
+
+## fjalë që përmbajnë ËSI por shpesh shkruhen me ESI - largesi -> largësi
+## ruhen prapashtesat ndaj nuk pranohen tema me grupe me | si (e|ë)
+permban_esi = "At|at|" + \
+	"Gjat|gjat|" + \
+	"Kenaq|kenaq|Kënaq|kënaq|" + \
+	"Larg|larg|Leht|leht|" + \
+	"Madh|madh|Mëm|mëm|" + \
+	"Pron|pron|" + \
+	"Var|var|Vrazhd|vrazhd"
+
+
+## fjalë që shkruhen me E/e në vend të Ë/ë-së së brendshme
 def pa_e_brenda(text):
 	## vlerënisje 
 	t = text ; c_subs, e_subs, tj_subs = 0, 0, 0
@@ -386,14 +450,30 @@ def pa_e_brenda(text):
 	## fjalë që nisin me Për ; Perdorimi -> Përdorimi
 	t, c = re.subn(fr"(\b)(Per)({nis_me_per})({prapa_gjat})(\b)", r"Për\3\4", t) ; e_subs += c
 
+	## fjalë që nisin me më - mesues -> mësues
+	t, c = re.subn(fr"(\b)(me)({nis_me_me})({prapa_gjat})(\b)", r"më\3\4", t) ; e_subs += c
+	## fjalë që nisin me Më ; Mesues -> Mësues
+	t, c = re.subn(fr"(\b)(Me)({nis_me_me})({prapa_gjat})(\b)", r"Më\3\4", t) ; e_subs += c
+
+	## fjalë që nisin me kë - keput -> këput
+	t, c = re.subn(fr"(\b)(ke)({nis_me_me})({prapa_gjat})(\b)", r"kë\3\4", t) ; e_subs += c
+	## fjalë që nisin me Më ; Kendoj -> Këndoj
+	t, c = re.subn(fr"(\b)(Ke)({nis_me_me})({prapa_gjat})(\b)", r"Kë\3\4", t) ; e_subs += c
+
 	## fjalë që mbarojnë me ër ; seder -> sedër
-	t, c = re.subn(fr"(\b)({fund_me_esht})(esht)({prapa_gjat})(\b)", r"\2ësht\4", t) ; e_subs += c
+	t, c = re.subn(fr"(\b)({permban_esht})(esht)({prapa_gjat})(\b)", r"\2ësht\4", t) ; e_subs += c
+
+	## fjalë që përmbajnë shte ; kashte -> kashtë
+	t, c = re.subn(fr"(\b)({permban_shte})(shte)({prapa_gjat})(\b)", r"\2shtë\4", t) ; e_subs += c
+
+	## fjalë që përmbajnë ësi ; largesi -> largësi
+	t, c = re.subn(fr"(\b)({permban_esi})(esi)({prapa_gjat})(\b)", r"\2ësi\4", t) ; e_subs += c
 
 	## fjalë që mbarojnë me ësht ; qumesht -> qumësht
-	t, c = re.subn(fr"(\b)({fund_me_er})(er)({prapa_gjat})(\b)", r"\2ër\4", t) ; e_subs += c
+	t, c = re.subn(fr"(\b)({permban_er})(er)({prapa_gjat})(\b)", r"\2ër\4", t) ; e_subs += c
 
 	## fjalë që mbarojnë me ëk ; pisllek -> pisllëk
-	t, c = re.subn(fr"(\b)({fund_me_ek})(ek)({prapa_gjat})(\b)", r"\2ëk\4", t) ; e_subs += c
+	t, c = re.subn(fr"(\b)({permban_ek})(ek)({prapa_gjat})(\b)", r"\2ëk\4", t) ; e_subs += c
 
 	return (t, e_subs, c_subs, tj_subs)
 
@@ -407,12 +487,10 @@ def redakto_e(text):
 	t, c = re.subn(fr"(\b)(E|Ë)(sht)(e|ë)?(\b)", r"Ë\3ë", t) ; e_subs += c
 	## është
 	t, c = re.subn(fr"(\b)(e|ë)(sht)(e|ë)?(\b)", r"ë\3ë", t) ; e_subs += c
-	
-	## fjalë që shkruhen pa ë fundore ose me ë të shkruar e -- mir(e) -> mirë
-	t, c = re.subn(fr"(\b)({no_e_regex})(e)?(\b)", r"\2ë", t) ; e_subs += c
 
-	## fjalë që shkruhen me ë fundore të shkruar e -- maje -> majë
-	t, c = re.subn(fr"(\b)({with_e_regex})(e)(\b)", r"\2ë", t) ; e_subs += c
+	## problemet me ë-të fundore
+	t, e_c, c_c, tj_c = pa_e_fundore(t)
+	c_subs += c_c ; e_subs += e_c ; tj_subs += tj_c
 
 	## fjalët me e brenda - qumesht -> qumësht
 	t, e_c, c_c, tj_c = pa_e_brenda(t)

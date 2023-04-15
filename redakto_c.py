@@ -7,6 +7,7 @@ prapa_gjat = "[a-zA-Z0-9çÇëË_-]{0,5}"
 ## 0-2 simbole shtesë në fund të fjalëve për mbaresa të shkurtra
 prapa_shkurt = "[a-zA-Z0-9çÇëË_-]{0,2}"
 
+
 ## temat që shkruhen me C/c në vend të Ç/ç-së nistore
 ## ruhen prapashtesat ndaj nuk pranohen tema me grupe me | si (c|ç)
 ## cafk, caj, cajnik, canak, cibuk, cift, cmim, co, corap, cudi, cun, cup 
@@ -27,10 +28,41 @@ nis_pa_c_pa_prap = "el|up(e|ë)|ik(e|ë)"
 ## çertifikatë, çertifikoj, çertifikim
 nis_me_c = "ertifik"
 
+## fjalë ku shfaqen gabime me c-të, q-të dhe ç-të nistore
+def pa_c_nistore(text):
+	## vlerënisje 
+	t = text ; c_subs, e_subs, tj_subs = 0, 0, 0
+
+	## fjalë që shkruhen me C/c ose Q/q në vend të Ç/ç-së nistore dhe që marrin prapashtesë - caj -> çaj ; qizme -> çizme
+	t, c = re.subn(fr"(\b)(c|q)({nis_pa_c_me_prap})({prapa_gjat})(\b)", r"ç\3\4", t) ; c_subs += c
+	t, c = re.subn(fr"(\b)(C|Q)({nis_pa_c_me_prap})({prapa_gjat})(\b)", r"Ç\3\4", t) ; c_subs += c
+
+	## fjalë që shkruhen me C/c ose Q/q në vend të Ç/ç-së nistore por që nuk marrin prapashtesë - cel -> çel
+	t, c = re.subn(fr"(\b)(c|q)({nis_pa_c_pa_prap})(\b)", r"ç\3", t) ; c_subs += c
+	t, c = re.subn(fr"(\b)(C|Q)({nis_pa_c_pa_prap})(\b)", r"Ç\3", t) ; c_subs += c
+
+	## fjalë që shkruen me Ç/ç ose Q/q në vend të C/c-së nistore - çertifikatë -> certifikatë
+	t, c = re.subn(fr"(\b)(ç|q)({nis_me_c})({prapa_gjat})(\b)", r"c\3\4", t) ; c_subs += c
+	t, c = re.subn(fr"(\b)(Ç|Q)({nis_me_c})({prapa_gjat})(\b)", r"C\3\4", t) ; c_subs += c
+
+	return (t, e_subs, c_subs, tj_subs)
+
+
 ## fjalë që mbarojnë me çi por shpesh shkruhen me ci
 ## ruhen prapashtesat ndaj nuk pranohen tema me grupe me | si (c|ç)
 fund_me_ci = "All|all|Batak|batak|Inat|inat|Top|top|Zanat|zanat" 
 
+## fjalë që përmbajnë ÇUES/ÇOJ por shpesh shkruhen me CUES/COJ - ndricues -> ndriçues ; ndricoj-> ndriçoj
+## ruhen prapashtesat ndaj nuk pranohen tema me grupe me | si (c|ç)
+permban_cues_coj_cim = "Lin|lin|" + \
+	"Ndri|ndri|" + \
+	"Për|për|Per|per|" + \
+	"Tej|tej"
+
+## fjalë që përmbajnë ÇEL por shpesh shkruhen me CEL - ndricues -> ndriçues ; ndricoj-> ndriçoj
+## ruhen prapashtesat ndaj nuk pranohen tema me grupe me | si (c|ç)
+permban_cel = "Nder|Ndër|nder|ndër|" + \
+	"Re|re"
 
 ## fjalë që shkruhen me Ç/ç në vend të C/c-së së brendshme
 ## përfshihen vetëm ato fjalë që përmbajnë vetëm 1 c e cila është e brendshme
@@ -47,7 +79,6 @@ def me_c_brenda(text):
 
 	return (t, e_subs, c_subs, tj_subs)
 
-
 ## fjalë që shkruhen me C/c në vend të Ç/ç-së së brendshme
 ## përfshihen vetëm ato fjalë që përmbajnë vetëm 1 c e cila është e brendshme
 def pa_c_brenda(text):
@@ -57,14 +88,11 @@ def pa_c_brenda(text):
 	## fjalë që mbarojnë me çi ; inatci -> inatçi ; zanatci -> zanatçi
 	t, c = re.subn(fr"(\b)({fund_me_ci})(ci|qi)({prapa_gjat})(\b)", r"\2çi\4", t) ; c_subs += c
 
-	## (R|r)e(c|q)el -> (R|r)eçel
-	t, c = re.subn(fr"(\b)(R|r)(ecel|eqel)({prapa_gjat})(\b)", r"\2eçel\4", t) ; c_subs += c
+	## fjalë që përmbajnë ÇUES/ÇOJ por shpesh shkruhen me CUES/COJ - ndricues -> ndriçues ; ndricoj-> ndriçoj
+	t, c = re.subn(fr"(\b)({permban_cues_coj_cim})(c|q)({prapa_gjat})(\b)", r"\2ç\4", t) ; c_subs += c
 
-	## ndricim -> ndriçim ; ndriques -> ndriçues ; ndricimtar -> ndriçimtar
-	t, c = re.subn(fr"(\b)(N|n)(dric|driq)({prapa_gjat})(\b)", r"\2driç\4", t) ; c_subs += c
-
-	## lincim -> linçim ; linqoj -> linçoj
-	t, c = re.subn(fr"(\b)(L|l)(inc|inq)({prapa_gjat})(\b)", r"\2inç\4", t) ; c_subs += c
+	## fjalë që përmbajnë ÇEL por shpesh shkruhen me CEL - recel -> reçel
+	t, c = re.subn(fr"(\b)({permban_cel})(cel|qel)({prapa_gjat})(\b)", r"\2çel\4", t) ; c_subs += c
 
 	return (t, e_subs, c_subs, tj_subs)
 
@@ -116,19 +144,11 @@ def redakto_c(text):
 	t, e_c, c_c, tj_c = c_apostrof_folje(t)
 	c_subs += c_c ; e_subs += e_c ; tj_subs += tj_c
 
-	## fjalë që shkruhen me C/c ose Q/q në vend të Ç/ç-së nistore dhe që marrin prapashtesë - caj -> çaj ; qizme -> çizme
-	t, c = re.subn(fr"(\b)(c|q)({nis_pa_c_me_prap})({prapa_gjat})(\b)", r"ç\3\4", t) ; c_subs += c
-	t, c = re.subn(fr"(\b)(C|Q)({nis_pa_c_me_prap})({prapa_gjat})(\b)", r"Ç\3\4", t) ; c_subs += c
+	## fjalë që shkruhen me C/c ose Q/q në vend të Ç/ç-së nistore - cafkë -> çafkë
+	t, e_c, c_c, tj_c = pa_c_nistore(t)
+	c_subs += c_c ; e_subs += e_c ; tj_subs += tj_c
 
-	## fjalë që shkruhen me C/c ose Q/q në vend të Ç/ç-së nistore por që nuk marrin prapashtesë - cel -> çel
-	t, c = re.subn(fr"(\b)(c|q)({nis_pa_c_pa_prap})(\b)", r"ç\3", t) ; c_subs += c
-	t, c = re.subn(fr"(\b)(C|Q)({nis_pa_c_pa_prap})(\b)", r"Ç\3", t) ; c_subs += c
-
-	## fjalë që shkruen me Ç/ç ose Q/q në vend të C/c-së nistore - çertifikatë -> certifikatë
-	t, c = re.subn(fr"(\b)(ç|q)({nis_me_c})({prapa_gjat})(\b)", r"c\3\4", t) ; c_subs += c
-	t, c = re.subn(fr"(\b)(Ç|Q)({nis_me_c})({prapa_gjat})(\b)", r"C\3\4", t) ; c_subs += c
-
-	## fjalë që shkruhen me C/c ose Q/q në vend të Ç/ç-së së brendshme - recel -> reçel ; Reqel -> Reçel ; Allci -> Allçi
+	## fjalë që shkruhen me C/c ose Q/q në vend të Ç/ç-së së brendshme - inatci -> inatçi
 	t, e_c, c_c, tj_c = pa_c_brenda(t)
 	c_subs += c_c ; e_subs += e_c ; tj_subs += tj_c
 
