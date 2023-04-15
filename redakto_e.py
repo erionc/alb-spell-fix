@@ -334,8 +334,28 @@ for i in range(0, 25):
 # lidhja e fjalëve me operatorin | për formimin e shprehjes së rregullt
 with_e_regex = '|'.join(with_e_exp)
 
+## fjalë që nisin me për por shpesh shkruhen me per - permend -> përmend
+## ruhen prapashtesat ndaj nuk pranohen tema me grupe me | si (e|ë)
+nis_me_per = "afër|afr|" + \
+	"buz|" + \
+	"cudn|çudn|" + \
+	"dit|dor|" + \
+	"faqes|faqës|fit|ft|fshi|fund|" + \
+	"genjesh|gënjesh|gj|gjith|goj|" + \
+	"kemb|këmb|" + \
+	"ligj|" + \
+	"mend|" + \
+	"pelit|pëlit|pi|pil|pun|" + \
+	"qend|" + \
+	"rall|" + \
+	"serit|sërit|shkr|shtat|siat|sos|" + \
+	"thith|tha|" + \
+	"ul|ulesi|ulësi|ur|" + \
+	"vi|" + \
+	"z"
 
-## fjalë që mbarojnë me ëk por shpesh shkruhen me ek
+## fjalë që mbarojnë me ëk por shpesh shkruhen me ek - pisllek -> pisllëk
+## ruhen prapashtesat ndaj nuk pranohen tema me grupe me | si (e|ë)
 fund_me_ek = "Boll|boll|" + \
 	"Dembell|dembell|" + \
 	"Fukarall|fukarall|" + \
@@ -344,13 +364,19 @@ fund_me_ek = "Boll|boll|" + \
 	"Synetll|synetll|" + \
 	"Tersll|tersll"
 
-## fjalë që mbarojnë me ësht por shpesh shkruhen me esht
+## fjalë që mbarojnë me ësht por shpesh shkruhen me esht - qumesht -> qumësht
+## ruhen prapashtesat ndaj nuk pranohen tema me grupe me | si (e|ë)
 fund_me_esht = "Qum|qum|plog"
 
 ## fjalë që shkruhen me C/c në vend të Ç/ç-së së brendshme
 def pa_e_brenda(text):
 	## vlerënisje 
 	t = text ; c_subs, e_subs, tj_subs = 0, 0, 0
+
+	## fjalë që nisin me për - permend -> përmend
+	t, c = re.subn(fr"(\b)(per)({nis_me_per})({prapa_gjat})(\b)", r"për\3\4", t) ; e_subs += c
+	## fjalë që nisin me Për ; Perdorimi -> Përdorimi
+	t, c = re.subn(fr"(\b)(Per)({nis_me_per})({prapa_gjat})(\b)", r"Për\3\4", t) ; e_subs += c
 
 	## fjalë që mbarojnë me ësht ; qumesht -> qumësht
 	t, c = re.subn(fr"(\b)({fund_me_esht})(esht)({prapa_gjat})(\b)", r"\2ësht\4", t) ; e_subs += c
