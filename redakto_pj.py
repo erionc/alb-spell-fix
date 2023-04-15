@@ -7,12 +7,6 @@ import re, string
 ## 0-2 simbole shtesë në fund të fjalëve për mbaresa të shkurtra
 # prapa_shkurt = "[a-zA-Z0-9çÇëË_-]{0,2}"
 
-## fjalë që i paraprinë të-së -- do të, dua të, desha të 
-para_te = "dua\s|do\s|duam\s|doni\s|duan\s|doja\s|doje\s|donte\s|" + \
-	"donim\s|donit\s|donin\s|desha\s|deshe\s|deshte\s|deshëm\s|" + \
-	"deshët\s|deshën\s|me\s|sapo\s|porsa\s|duhet\s|sikur\s|mund\s|" + \
-	"kush\s|cil(i|a)\s|cil(ë|a)t\s|ku\sdo\s|kur\sdo\s|(c|ç)far(e|ë)\s|" 
-
 ## foljet ndihmëse kam/jam që paraprijnë pjesoret
 kam_jam = "Kam\s|kam\s|Ke\s|ke\s|Ka\s|ka\s|Kemi\s|Kena\s|kemi\s|kena\s|Keni\s|keni\s|Kanë\s|kanë\s|" + \
 	"Jam\s|jam\s|Je\s|je\s|Është\s|është\s|Jemi\s|Jena\s|jemi\s|jena\s|Jeni\s|jeni\s|Janë\s|janë\s|" + \

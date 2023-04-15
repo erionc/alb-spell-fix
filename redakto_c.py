@@ -20,7 +20,7 @@ nis_pa_c_me_prap = "afk|aj|ajnik|anak|akerdis|akmak|ale|alë|alo|alu|allm|apkën
     "udi|un"
 
 ## temat që shkruhen me C/c në vend të Ç/ç-së nistore
-## nuk i jepet prapa_gjatshtesë -- cel -> çel
+## nuk i jepet prapashtesë -- cel -> çel
 nis_pa_c_pa_prap = "el|up(e|ë)|ik(e|ë)"
 
 ## temat që shkruhen me Ç/ç në vend të C/c-së nistore
@@ -89,7 +89,7 @@ def pa_c_brenda(text):
 	t, c = re.subn(fr"(\b)({fund_me_ci})(ci|qi)({prapa_gjat})(\b)", r"\2çi\4", t) ; c_subs += c
 
 	## fjalë që përmbajnë ÇUES/ÇOJ por shpesh shkruhen me CUES/COJ - ndricues -> ndriçues ; ndricoj-> ndriçoj
-	t, c = re.subn(fr"(\b)({permban_cues_coj_cim})(c|q)({prapa_gjat})(\b)", r"\2ç\4", t) ; c_subs += c
+	t, c = re.subn(fr"(\b)({permban_cues_coj_cim})(c|q)(u|o|i)({prapa_gjat})(\b)", r"\2ç\4\5", t) ; c_subs += c
 
 	## fjalë që përmbajnë ÇEL por shpesh shkruhen me CEL - recel -> reçel
 	t, c = re.subn(fr"(\b)({permban_cel})(cel|qel)({prapa_gjat})(\b)", r"\2çel\4", t) ; c_subs += c

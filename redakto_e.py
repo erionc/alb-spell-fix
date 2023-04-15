@@ -353,17 +353,19 @@ def pa_e_fundore(text):
 
 ## fjalë që nisin me për por shpesh shkruhen me per - permend -> përmend
 ## ruhen prapashtesat ndaj nuk pranohen tema me grupe me | si (e|ë)
-nis_me_per = "afër|afr|" + \
+nis_me_per_shper = "afër|afr|" + \
 	"buz|" + \
 	"cudn|çudn|" + \
 	"dit|dor|" + \
 	"faqes|faqës|fit|ft|fshi|fund|" + \
 	"genjesh|gënjesh|gj|gjith|goj|" + \
-	"kemb|këmb|" + \
+	"hap|" + \
+ 	"kemb|këmb|" + \
 	"ligj|" + \
 	"mend|" + \
-	"pelit|pëlit|pi|pil|pun|" + \
-	"qend|" + \
+	"nda|" + \
+	"pelit|pëlit|pi|pil|piq|pjek|pun|" + \
+	"qas|qend|" + \
 	"rall|" + \
 	"serit|sërit|shkr|shtat|siat|sos|" + \
 	"thith|tha|" + \
@@ -395,8 +397,8 @@ nis_me_me = "na|" + \
 permban_er = "Ashp|ashp|" + \
 	"Hat|hat|" + \
 	"kat|ket|" + \
-	"Let|let|Lib|lib|" + \
-	"Mbret|mbret|Mjed|mjed|" + \
+	"Lak|lak|Let|let|Lib|lib|Lod|lod|" + \
+	"Mbret|mbret|Mjed|mjed|Mot|mot|" + \
 	"Posht|posht|" + \
 	"Sed|sed|shtret|" + \
 	"Tjet|tjet|" + \
@@ -405,7 +407,7 @@ permban_er = "Ashp|ashp|" + \
 
 ## fjalë që përmbajnë ËK por shpesh shkruhen me EK - pisllek -> pisllëk
 ## ruhen prapashtesat ndaj nuk pranohen tema me grupe me | si (e|ë)
-permban_ek = "Boll|boll|" + \
+permban_ek = "Boll|boll|Budallall|budallall|" + \
 	"Dembell|dembell|" + \
 	"Fodull|fodull|Fukarall|fukarall|" + \
 	"Hamall|hamall|" + \
@@ -420,7 +422,8 @@ permban_shte = "ava|" + \
 	"gja|" + \
 	"ja|" + \
 	"ka|" + \
-	"la|le"
+	"la|le|" + \
+	"mbrap"
 
 ## fjalë që përmbajnë ËSHT por shpesh shkruhen me ESHT - qumesht -> qumësht
 ## ruhen prapashtesat ndaj nuk pranohen tema me grupe me | si (e|ë)
@@ -428,6 +431,13 @@ permban_esht = "Lag|lag" + \
 	"Plog|plog|" + \
 	"Qum|qum"
 
+## fjalë që përmbajnë ËM por shpesh shkruhen me EM - jashtem -> jashtëm
+## ruhen prapashtesat ndaj nuk pranohen tema me grupe me | si (e|ë)
+fund_me_em = "jasht|" + \
+	"hersh|" + \
+	"kobsh|" + \
+	"rrjedhsh|" + \
+	"vijuesh"
 
 ## fjalë që përmbajnë ËSI por shpesh shkruhen me ESI - largesi -> largësi
 ## ruhen prapashtesat ndaj nuk pranohen tema me grupe me | si (e|ë)
@@ -445,10 +455,15 @@ def pa_e_brenda(text):
 	## vlerënisje 
 	t = text ; c_subs, e_subs, tj_subs = 0, 0, 0
 
+	## fjalë që nisin me shpër - shperhap -> shpërhap
+	t, c = re.subn(fr"(\b)(shper)({nis_me_per_shper})({prapa_gjat})(\b)", r"shpër\3\4", t) ; e_subs += c
+	## fjalë që nisin me Shpër ; Shperqendrim -> Shpërqendrim
+	t, c = re.subn(fr"(\b)(Shper)({nis_me_per_shper})({prapa_gjat})(\b)", r"Shpër\3\4", t) ; e_subs += c
+
 	## fjalë që nisin me për - permend -> përmend
-	t, c = re.subn(fr"(\b)(per)({nis_me_per})({prapa_gjat})(\b)", r"për\3\4", t) ; e_subs += c
+	t, c = re.subn(fr"(\b)(per)({nis_me_per_shper})({prapa_gjat})(\b)", r"për\3\4", t) ; e_subs += c
 	## fjalë që nisin me Për ; Perdorimi -> Përdorimi
-	t, c = re.subn(fr"(\b)(Per)({nis_me_per})({prapa_gjat})(\b)", r"Për\3\4", t) ; e_subs += c
+	t, c = re.subn(fr"(\b)(Per)({nis_me_per_shper})({prapa_gjat})(\b)", r"Për\3\4", t) ; e_subs += c
 
 	## fjalë që nisin me më - mesues -> mësues
 	t, c = re.subn(fr"(\b)(me)({nis_me_me})({prapa_gjat})(\b)", r"më\3\4", t) ; e_subs += c
@@ -474,6 +489,9 @@ def pa_e_brenda(text):
 
 	## fjalë që mbarojnë me ëk ; pisllek -> pisllëk
 	t, c = re.subn(fr"(\b)({permban_ek})(ek)({prapa_gjat})(\b)", r"\2ëk\4", t) ; e_subs += c
+
+	## fjalë që mbarojnë me ëm ; hershem -> hershëm
+	t, c = re.subn(fr"(\b)({fund_me_em})(em)({prapa_gjat})(\b)", r"\2ëm\4", t) ; e_subs += c
 
 	return (t, e_subs, c_subs, tj_subs)
 

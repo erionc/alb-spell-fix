@@ -3,6 +3,12 @@ from redakto_pj import *
 from redakto_e import *
 from redakto_c import *
 
+## fjalë që i paraprinë të-së -- do të, dua të, desha të 
+para_te = "dua\s|do\s|duam\s|doni\s|duan\s|doja\s|doje\s|donte\s|" + \
+	"donim\s|donit\s|donin\s|desha\s|deshe\s|deshte\s|deshëm\s|" + \
+	"deshët\s|deshën\s|me\s|sapo\s|porsa\s|duhet\s|sikur\s|mund\s|" + \
+	"kush\s|cil(i|a)\s|cil(ë|a)t\s|ku\sdo\s|kur\sdo\s|(c|ç)far(e|ë)\s|" 
+
 ## tema fjalësh që duhen shqipëruar
 tema_sq = ""
 
@@ -13,6 +19,9 @@ tema_en = ""
 def para_redaktime(text):
 	## vlerënisje 
 	t = text ; c_subs, e_subs, tj_subs = 0, 0, 0
+
+	## per -> për (nuk ka "per" në fgjssh)
+	t, c = re.subn(fr"(\b)per(\b)", r"për", t) ; e_subs += c
 
 	## p(e|ë)r me -> për të
 	t, c = re.subn(fr"(\b)(per\sme|për\sme)(\b)", r"për të", t) ; e_subs += c
@@ -34,10 +43,7 @@ def para_redaktime(text):
 	## kena -> kemi ; jena -> jemi
 	t, c = re.subn(fr"(\b)(K|k|J|j)(ena)(\b)", r"\2emi", t) ; tj_subs += c
 	
-	## per -> për (nuk ka per në fgjssh)
-	t, c = re.subn(fr"(\b)per(\b)", r"për", t) ; e_subs += c
-	
-	## do te -> do të ; dua te -> dua të 
+	## do te -> do të ; dua te -> dua të ; desha te -> desha të
 	t, c = re.subn(fr"(\b)({para_te})(te)(\b)", r"\2të", t) ; e_subs += c
 	
 	## zëvendësime të tjera e -> ë
