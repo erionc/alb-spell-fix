@@ -354,6 +354,14 @@ nis_me_per = "afër|afr|" + \
 	"vi|" + \
 	"z"
 
+## fjalë që mbarojnë me ër por shpesh shkruhen me er - sedek -> sedëk
+## ruhen prapashtesat ndaj nuk pranohen tema me grupe me | si (e|ë)
+fund_me_er = "hat|" + \
+	"let|" + \
+	"mjed|" + \
+	"sed"
+
+
 ## fjalë që mbarojnë me ëk por shpesh shkruhen me ek - pisllek -> pisllëk
 ## ruhen prapashtesat ndaj nuk pranohen tema me grupe me | si (e|ë)
 fund_me_ek = "Boll|boll|" + \
@@ -378,10 +386,13 @@ def pa_e_brenda(text):
 	## fjalë që nisin me Për ; Perdorimi -> Përdorimi
 	t, c = re.subn(fr"(\b)(Per)({nis_me_per})({prapa_gjat})(\b)", r"Për\3\4", t) ; e_subs += c
 
-	## fjalë që mbarojnë me ësht ; qumesht -> qumësht
+	## fjalë që mbarojnë me ër ; seder -> sedër
 	t, c = re.subn(fr"(\b)({fund_me_esht})(esht)({prapa_gjat})(\b)", r"\2ësht\4", t) ; e_subs += c
 
 	## fjalë që mbarojnë me ësht ; qumesht -> qumësht
+	t, c = re.subn(fr"(\b)({fund_me_er})(er)({prapa_gjat})(\b)", r"\2ër\4", t) ; e_subs += c
+
+	## fjalë që mbarojnë me ëk ; pisllek -> pisllëk
 	t, c = re.subn(fr"(\b)({fund_me_ek})(ek)({prapa_gjat})(\b)", r"\2ëk\4", t) ; e_subs += c
 
 	return (t, e_subs, c_subs, tj_subs)
