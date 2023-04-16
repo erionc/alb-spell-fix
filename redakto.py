@@ -1,20 +1,14 @@
 
-from percaktime import *
 from redakto_pj import *
 from redakto_e import *
 from redakto_c import *
+from shqiperime import *
 
 ## fjalë që i paraprinë të-së -- do të, dua të, desha të 
 para_te = "dua\s|do\s|duam\s|doni\s|duan\s|doja\s|doje\s|donte\s|" + \
 	"donim\s|donit\s|donin\s|desha\s|deshe\s|deshte\s|deshëm\s|" + \
 	"deshët\s|deshën\s|me\s|sapo\s|porsa\s|duhet\s|sikur\s|mund\s|" + \
 	"kush\s|cil(i|a)\s|cil(ë|a)t\s|ku\sdo\s|kur\sdo\s|(c|ç)far(e|ë)\s|" 
-
-## tema fjalësh që duhen shqipëruar
-tema_sq = ""
-
-## tema fjalësh angleze që duhen përkthyer
-tema_en = ""
 
 ## funksion për zëvendësime që përgatitin zëvendësimet e mëpasshme
 def para_redaktime(text):
@@ -63,20 +57,6 @@ def pas_redaktime(text):
 	
 	return (t, e_subs, c_subs, tj_subs)
 	
-## funksion për zëvendësimin e fjalëve angleze 
-def redakto_eng(text):
-	## vlerënisje 
-	t = text ; c_subs, e_subs, tj_subs = 0, 0, 0
-	
-	return (t, e_subs, c_subs, tj_subs)
-	
-## funksion për zëvendësime fjalësh të plota 
-def redakto_terma(text):
-	## vlerënisje 
-	t = text ; c_subs, e_subs, tj_subs = 0, 0, 0
-	
-	return (t, e_subs, c_subs, tj_subs)
-
 ## funksioni kryesor i redaktimeve që thërret funksionet e tjera
 def redakto(text):
 	## vlerënisje 
@@ -98,12 +78,12 @@ def redakto(text):
 	t, e_c, c_c, tj_c = redakto_c(t) 
 	c_subs += c_c ; e_subs += e_c ; tj_subs += tj_c
 	
-	# thirren zëvendësime e fjalëve
-	t, e_c, c_c, tj_c = redakto_terma(t) 
+	# thirren zëvendësime për shqipërime
+	t, e_c, c_c, tj_c = shqiperime(t) 
 	c_subs += c_c ; e_subs += e_c ; tj_subs += tj_c
 	
-	# thirren zëvendësime e fjalëve angleze
-	t, e_c, c_c, tj_c = redakto_eng(t) 
+	# thirren zëvendësime për përkthime
+	t, e_c, c_c, tj_c = perkthime(t) 
 	c_subs += c_c ; e_subs += e_c ; tj_subs += tj_c
 	
 	# thirren zëvendësimet përfundimtare
