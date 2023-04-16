@@ -1,11 +1,5 @@
 
-import re, string
-
-## 0-5 simbole shtesë në fund të fjalëve për prapa_gjatshtesat dhe lakesat
-# prapa_gjat = "[a-zA-Z0-9çÇëË_-]{0,5}"
-
-## 0-2 simbole shtesë në fund të fjalëve për mbaresa të shkurtra
-# prapa_shkurt = "[a-zA-Z0-9çÇëË_-]{0,2}"
+from percaktime import *
 
 ## foljet ndihmëse kam/jam që paraprijnë pjesoret
 kam_jam = "Kam\s|kam\s|Ke\s|ke\s|Ka\s|ka\s|Kemi\s|Kena\s|kemi\s|kena\s|Keni\s|keni\s|Kanë\s|kanë\s|" + \

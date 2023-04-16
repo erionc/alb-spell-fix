@@ -1,12 +1,5 @@
 
-import re, string
-
-## 0-5 simbole shtesë në fund të fjalëve për prapa_gjatshtesat dhe lakesat
-prapa_gjat = "[a-zA-Z0-9çÇëË_-]{0,5}"
-
-## 0-2 simbole shtesë në fund të fjalëve për mbaresa të shkurtra
-prapa_shkurt = "[a-zA-Z0-9çÇëË_-]{0,2}"
-
+from percaktime import *
 
 ## temat që shkruhen me C/c në vend të Ç/ç-së nistore
 ## ruhen prapashtesat ndaj nuk pranohen tema me grupe me | si (c|ç)
@@ -106,6 +99,16 @@ def c_apostrof_folje(text):
 	t, c = re.subn(fr"(\b)(c|c'|ç|q|q')(bën|ben)({prapa_gjat})(\b)", r"ç'bën\4", t) ; c_subs += c
 	## Ç'bën, Ç'bëni
 	t, c = re.subn(fr"(\b)(C|C'|Ç|Q|Q')(bën|ben)({prapa_gjat})(\b)", r"Ç'bën\4", t) ; c_subs += c
+
+	## ç'do, ç'doni
+	t, c = re.subn(fr"(\b)(c'|q')(do|doni)({prapa_gjat})(\b)", r"ç'\3\4", t) ; c_subs += c
+	## Ç'do, Ç'do
+	t, c = re.subn(fr"(\b)(C'|Q')(do|doni)({prapa_gjat})(\b)", r"Ç'\3\4", t) ; c_subs += c
+
+	## çdo, çdokush, ...
+	t, c = re.subn(fr"(\b)(c|q)(do)({prapa_gjat})(\b)", r"ç\3\4", t) ; c_subs += c
+	## Çdo, Çdokush, ...
+	t, c = re.subn(fr"(\b)(C|Q)(do)({prapa_gjat})(\b)", r"Ç\3\4", t) ; c_subs += c
 
 	## ç'bëj, ç'bëjmë, ç'bëjnë
 	t, c = re.subn(fr"(\b)(c|c'|ç|q|q')(bëj|bej)({prapa_gjat})(\b)", r"ç'bëj\4", t) ; c_subs += c

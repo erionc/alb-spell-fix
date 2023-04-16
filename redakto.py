@@ -1,4 +1,5 @@
 
+from percaktime import *
 from redakto_pj import *
 from redakto_e import *
 from redakto_c import *
