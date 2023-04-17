@@ -5,6 +5,7 @@ from percaktime import *
 ## shkruhen me -CIEN por duhen shkruar me KAN
 ## ruhen prapashtesat ndaj nuk pranohen tema me grupe me | si (e|ë)
 fund_me_icien = "Fizi|fizi|" + \
+	"Gramati|gramati|" + \
     "Informati|informati|" + \
     "Matemati|matemati|" + \
     "Statisti|statisti" 
@@ -22,20 +23,22 @@ fund_me_er = "Kod|kod|" + \
 ## ruhen prapashtesat ndaj nuk pranohen tema me grupe me | si (e|ë)
 nis_me_hyper = "graf|" + \
 	"kub|" + \
+	"lidhje|link|" + \
 	"tekst"
 
 ## -ACION -> -IM
 ## ruhen prapashtesat ndaj nuk pranohen tema me grupe me | si (e|ë)
 fund_me_acion = "Emul|emul|" + \
 	"Instal|instal|" + \
-	"Komunik|komunik|Konfigur|konfigur|" + \
+	"Kombin|kombin|Komunik|komunik|Konfigur|konfigur|" + \
 	"Modula|modul|" + \
-	"Simula|simul|" + \
+	"Simul|simul|" + \
 	"Telekomunik|telekomunik|Transform|transform"
 
 ## XH -> GJ
 permban_gj = "Axhend|axhend|" + \
 	"Dixhital|dixhital"
+
 def permban_gj(text):
 	## vlerënisje 
 	t = text ; c_subs, e_subs, tj_subs = 0, 0, 0
@@ -80,5 +83,10 @@ def shqiperime(text):
 def perkthime(text):
 	## vlerënisje 
 	t = text ; c_subs, e_subs, tj_subs = 0, 0, 0
-	
+
+	## link -> lidhje ; Hyperlink -> Hiperlidhje
+	t, c = re.subn(fr"(\b)({para_gjat})(L|l)(ink)(\b)", r"\2\3idhje", t) ; tj_subs += c 
+	t, c = re.subn(fr"(\b)({para_gjat})(L|l)(inku)(\b)", r"\2\3idhja", t) ; tj_subs += c 
+	t, c = re.subn(fr"(\b)({para_gjat})(L|l)(ink|inq)(e|et)(\b)", r"\2\3idhj\5", t) ; tj_subs += c 
+
 	return (t, e_subs, c_subs, tj_subs)
