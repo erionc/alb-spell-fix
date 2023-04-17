@@ -2,7 +2,7 @@
 from redakto_pj import *
 from redakto_e import *
 from redakto_c import *
-from shqiperime import *
+from shqipero import *
 
 ## fjalë që i paraprinë të-së -- do të, dua të, desha të 
 para_te = "dua\s|do\s|duam\s|doni\s|duan\s|doja\s|doje\s|donte\s|" + \
