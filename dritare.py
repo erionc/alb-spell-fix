@@ -23,7 +23,7 @@ def redaktime(field_in, field_out, field_message):
 	# 	f"Zëvendësime totale:\t\t\t{total_sub}"
 	
 	# shfaqet totali i zëvendësimeve të kryera
-	output_message = f"Zëvendësime totale:\t\t\t{total_sub}\n"
+	output_message = f"Zëvendësime totale:\t\t{total_sub}\n"
 	
 	# futet teksti i redaktuar te kutiza e dytë
 	field_out.insert("1.0", output_text)

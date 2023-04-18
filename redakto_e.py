@@ -343,6 +343,60 @@ def pa_e_fundore(text):
 	return (t, e_subs, c_subs, tj_subs)
 
 
+## fjalë që nisin me BË por shpesh shkruhen me BE - beshtineë -> bështinë
+## ruhen prapashtesat ndaj nuk pranohen tema me grupe me | si (e|ë)
+nis_me_be = "j|n|jme|jmë|jne|jnë|" + \
+	"rtas|rtet|rtasim|rtasin|rtitje|rtitur|rthama|rthamat|rthame|rthamë|rthamor|rthamore" + \
+	"shem|shëm|shtaje|shtajë|shtinë"
+
+## fjalë që nisin me DË por shpesh shkruhen me DE - dergoj -> dërgoj
+## ruhen prapashtesat ndaj nuk pranohen tema me grupe me | si (e|ë)
+nis_me_de = "fre|fri|" + \
+	"nim|noj|nu|" + \
+	"rge|rgi|rgo|rgu|" + \
+	"shir|shp|sht"
+
+## fjalë që nisin me KË por shpesh shkruhen me KE - keput -> këput
+## ruhen prapashtesat ndaj nuk pranohen tema me grupe me | si (e|ë)
+nis_me_ke = "ll|" + \
+	"mb|" + \
+	"na|" + \
+	"nd|" + \
+	"ng|" + \
+	"put|" + \
+	"rc|" + \
+	"s|" + \
+	"shill|sht|" + \
+	"ta|te|ti|tu"
+
+## fjalë që nisin me LË por shpesh shkruhen me LE - leviz -> lëviz
+## ruhen prapashtesat ndaj nuk pranohen tema me grupe me | si (e|ë)
+nis_me_le = "ndim|ndo|" + \
+	"shim|sho|" + \
+	"viz"
+	
+## fjalë që nisin me MARRË por shpesh shkruhen me MARRE - marreveshje -> marrëveshje
+## ruhen prapashtesat ndaj nuk pranohen tema me grupe me | si (e|ë)
+nis_me_marre = "dh|" + \
+	"s|" + \
+	"ve|" + \
+	"zi"
+	
+## fjalë që nisin me MË por shpesh shkruhen me ME - mesues -> mësues
+## ruhen prapashtesat ndaj nuk pranohen tema me grupe me | si (e|ë)
+nis_me_me = "kat|" + \
+	"nyr|" + \
+	"rga|rgi|rgo|rgu|" + \
+	"shir|sim|sue"
+
+## fjalë që nisin me NË por shpesh shkruhen me NE - nensistem -> nënsistem
+## ruhen prapashtesat ndaj nuk pranohen tema me grupe me | si (e|ë)
+nis_me_ne = "b|c|ç|d|f|g|k|l|m|n|p||q|r|s|t|u|v"
+
+## fjalë që nisin me NJË por shpesh shkruhen me NJE - njekohshem -> njëkoshëm
+## ruhen prapashtesat ndaj nuk pranohen tema me grupe me | si (e|ë)
+nis_me_nje = "ko"
+
 ## fjalë që nisin me për por shpesh shkruhen me per - permend -> përmend
 ## ruhen prapashtesat ndaj nuk pranohen tema me grupe me | si (e|ë)
 nis_me_per_shper = "afër|afr|" + \
@@ -365,48 +419,30 @@ nis_me_per_shper = "afër|afr|" + \
 	"vet|vi|" + \
 	"z"
 
-## fjalë që nisin me NJË por shpesh shkruhen me NJE - njekohshem -> njëkoshëm
+## fjalë që nisin me TË por shpesh shkruhen me TE - terheq -> tërheq
 ## ruhen prapashtesat ndaj nuk pranohen tema me grupe me | si (e|ë)
-nis_me_nje = "ko"
+nis_me_te = "rh|rku|rth|"
 
 
-## fjalë që nisin me MË por shpesh shkruhen me ME - mesues -> mësues
+## fjalë që përmbajnë ËK por shpesh shkruhen me EK - pisllek -> pisllëk
 ## ruhen prapashtesat ndaj nuk pranohen tema me grupe me | si (e|ë)
-nis_me_me = "kat|" + \
-	"nyr|" + \
-	"rga|rgi|rgo|rgu|" + \
-	"shir|sim|sue"
+fund_me_ek = "Boll|boll|Budallall|budallall|" + \
+	"Dembell|dembell|" + \
+	"Fodull|fodull|Fukarall|fukarall|" + \
+	"Hamall|hamall|" + \
+	"Pisll|pisll|" + \
+	"Synetll|synetll|" + \
+	"Tersll|tersll"
 
-
-## fjalë që nisin me KË por shpesh shkruhen me KE - keput -> këput
+## fjalë që përmbajnë ËM por shpesh shkruhen me EM - jashtem -> jashtëm
 ## ruhen prapashtesat ndaj nuk pranohen tema me grupe me | si (e|ë)
-nis_me_ke = "ll|" + \
-	"mb|" + \
-	"na|" + \
-	"nd|" + \
-	"ng|" + \
-	"put|" + \
-	"rc|" + \
-	"s|" + \
-	"shill|sht|" + \
-	"ta|te|ti|tu"
-
-## fjalë që nisin me LË por shpesh shkruhen me LE - leviz -> lëviz
-## ruhen prapashtesat ndaj nuk pranohen tema me grupe me | si (e|ë)
-nis_me_le = "ndim|ndo|" + \
-	"shim|sho|" + \
-	"viz"
-
-## fjalë që nisin me MARRË por shpesh shkruhen me MARRE - marreveshje -> marrëveshje
-## ruhen prapashtesat ndaj nuk pranohen tema me grupe me | si (e|ë)
-nis_me_marre = "dh|" + \
-	"s|" + \
-	"ve|" + \
-	"zi"
+fund_me_em = "fis|fund|" + \
+	"jasht|" + \
+	"pafund"
 
 ## fjalë që përmbajnë ËR por shpesh shkruhen me ER - seder -> sedër
 ## ruhen prapashtesat ndaj nuk pranohen tema me grupe me | si (e|ë)
-permban_er = "Ashp|ashp|" + \
+fund_me_er = "Ashp|ashp|" + \
 	"Hat|hat|" + \
 	"kat|ket|" + \
 	"Lak|lak|Let|let|Lib|lib|Lod|lod|" + \
@@ -416,21 +452,19 @@ permban_er = "Ashp|ashp|" + \
 	"Tjet|tjet|" + \
 	"Varf|varf"
 
-
-## fjalë që përmbajnë ËK por shpesh shkruhen me EK - pisllek -> pisllëk
+## fjalë që përmbajnë ËSI por shpesh shkruhen me ESI - largesi -> largësi
 ## ruhen prapashtesat ndaj nuk pranohen tema me grupe me | si (e|ë)
-permban_ek = "Boll|boll|Budallall|budallall|" + \
-	"Dembell|dembell|" + \
-	"Fodull|fodull|Fukarall|fukarall|" + \
-	"Hamall|hamall|" + \
-	"Pisll|pisll|" + \
-	"Synetll|synetll|" + \
-	"Tersll|tersll"
-
+fund_me_esi = "At|at|" + \
+	"Gjat|gjat|" + \
+	"Kenaq|kenaq|Kënaq|kënaq|" + \
+	"Larg|larg|Leht|leht|" + \
+	"Madh|madh|Mëm|mëm|" + \
+	"Pron|pron|" + \
+	"Var|var|Vrazhd|vrazhd"
 
 ## fjalë që përmbajnë SHTË por shpesh shkruhen me SHTE - kreshte -> kreshtë
 ## ruhen prapashtesat ndaj nuk pranohen tema me grupe me | si (e|ë)
-permban_shte = "ava|" + \
+fund_me_shte = "ava|" + \
 	"bri|" + \
 	"gja|" + \
 	"ja|" + \
@@ -443,25 +477,9 @@ permban_shte = "ava|" + \
 
 ## fjalë që përmbajnë ËSHT por shpesh shkruhen me ESHT - qumesht -> qumësht
 ## ruhen prapashtesat ndaj nuk pranohen tema me grupe me | si (e|ë)
-permban_esht = "Lag|lag|" + \
+fund_me_esht = "Lag|lag|" + \
 	"Plog|plog|" + \
 	"Qum|qum"
-
-## fjalë që përmbajnë ËM por shpesh shkruhen me EM - jashtem -> jashtëm
-## ruhen prapashtesat ndaj nuk pranohen tema me grupe me | si (e|ë)
-fund_me_em = "fis|fund|" + \
-	"jasht|" + \
-	"pafund"
-
-## fjalë që përmbajnë ËSI por shpesh shkruhen me ESI - largesi -> largësi
-## ruhen prapashtesat ndaj nuk pranohen tema me grupe me | si (e|ë)
-permban_esi = "At|at|" + \
-	"Gjat|gjat|" + \
-	"Kenaq|kenaq|Kënaq|kënaq|" + \
-	"Larg|larg|Leht|leht|" + \
-	"Madh|madh|Mëm|mëm|" + \
-	"Pron|pron|" + \
-	"Var|var|Vrazhd|vrazhd"
 
 
 ## fjalë që shkruhen me E/e në vend të Ë/ë-së së brendshme
@@ -489,6 +507,26 @@ def pa_e_brenda(text):
 	## fjalë që nisin me Më ; Mesues -> Mësues
 	t, c = re.subn(fr"(\b)(Me)({nis_me_me})({prapa_gjat})(\b)", r"Më\3\4", t) ; e_subs += c
 
+	## fjalë që nisin me në - nensistem -> nënsistem
+	t, c = re.subn(fr"(\b)(ne)({nis_me_ne})({para_me_gjat_jo_bosh})(\b)", r"në\3\4", t) ; e_subs += c
+	## fjalë që nisin me Në ; Nentor -> Nëntor
+	t, c = re.subn(fr"(\b)(Ne)({nis_me_ne})({para_me_gjat_jo_bosh})(\b)", r"Në\3\4", t) ; e_subs += c
+
+	## fjalë që nisin me dë - dergoj -> dërgoj
+	t, c = re.subn(fr"(\b)(de)({nis_me_de})({para_me_gjat_jo_bosh})(\b)", r"dë\3\4", t) ; e_subs += c
+	## fjalë që nisin me Dë ; Deshpërim -> Dëshpërim
+	t, c = re.subn(fr"(\b)(De)({nis_me_de})({para_me_gjat_jo_bosh})(\b)", r"Dë\3\4", t) ; e_subs += c
+
+	## fjalë që nisin me bë - bej -> bëj
+	t, c = re.subn(fr"(\b)(be)({nis_me_be})(\b)", r"bë\3", t) ; e_subs += c
+	## fjalë që nisin me Bë ; Beshtinë -> Bështinë
+	t, c = re.subn(fr"(\b)(Be)({nis_me_be})(\b)", r"Bë\3", t) ; e_subs += c
+
+	## fjalë që nisin me të - terheq -> tërheq
+	t, c = re.subn(fr"(\b)(te)({nis_me_te})({para_me_gjat_jo_bosh})(\b)", r"të\3\4", t) ; e_subs += c
+	## fjalë që nisin me Të ; Terheqja -> Tërheqja
+	t, c = re.subn(fr"(\b)(Te)({nis_me_te})({para_me_gjat_jo_bosh})(\b)", r"Të\3\4", t) ; e_subs += c
+
 	## fjalë që nisin me kë - keput -> këput
 	t, c = re.subn(fr"(\b)(ke)({nis_me_ke})({prapa_gjat})(\b)", r"kë\3\4", t) ; e_subs += c
 	## fjalë që nisin me Kë ; Kendoj -> Këndoj
@@ -505,19 +543,19 @@ def pa_e_brenda(text):
 	t, c = re.subn(fr"(\b)(Marre)({nis_me_marre})({prapa_gjat})(\b)", r"Marrë\3\4", t) ; e_subs += c
 
 	## fjalë që mbarojnë me ër ; seder -> sedër
-	t, c = re.subn(fr"(\b)({permban_esht})(esht)({prapa_gjat})(\b)", r"\2ësht\4", t) ; e_subs += c
+	t, c = re.subn(fr"(\b)({fund_me_esht})(esht)({prapa_gjat})(\b)", r"\2ësht\4", t) ; e_subs += c
 
 	## fjalë që përmbajnë shte ; kashte -> kashtë
-	t, c = re.subn(fr"(\b)({permban_shte})(shte)({prapa_gjat})(\b)", r"\2shtë\4", t) ; e_subs += c
+	t, c = re.subn(fr"(\b)({fund_me_shte})(shte)({prapa_gjat})(\b)", r"\2shtë\4", t) ; e_subs += c
 
 	## fjalë që përmbajnë ësi ; largesi -> largësi
 	t, c = re.subn(fr"(\b)({permban_esi})(esi)({prapa_gjat})(\b)", r"\2ësi\4", t) ; e_subs += c
 
 	## fjalë që mbarojnë me ësht ; qumesht -> qumësht
-	t, c = re.subn(fr"(\b)({permban_er})(er)({prapa_gjat})(\b)", r"\2ër\4", t) ; e_subs += c
+	t, c = re.subn(fr"(\b)({fund_me_er})(er)({prapa_gjat})(\b)", r"\2ër\4", t) ; e_subs += c
 
 	## fjalë që mbarojnë me ëk ; pisllek -> pisllëk
-	t, c = re.subn(fr"(\b)({permban_ek})(ek)({prapa_gjat})(\b)", r"\2ëk\4", t) ; e_subs += c
+	t, c = re.subn(fr"(\b)({fund_me_ek})(ek)({prapa_gjat})(\b)", r"\2ëk\4", t) ; e_subs += c
 
 	## fjalë që mbarojnë me ëm ; hershem -> hershëm
 	t, c = re.subn(fr"(\b)({fund_me_em})(em)({prapa_gjat})(\b)", r"\2ëm\4", t) ; e_subs += c
