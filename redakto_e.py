@@ -356,6 +356,12 @@ nis_me_de = "fre|fri|" + \
 	"rge|rgi|rgo|rgu|" + \
 	"shir|shp|sht"
 
+## fjalë që nisin me GË por shpesh shkruhen me GE - germoj -> gërmoj
+## ruhen prapashtesat ndaj nuk pranohen tema me grupe me | si (e|ë)
+nis_me_ge = "l|" + \
+	"rb|rm|rv|" + \
+	"z"
+
 ## fjalë që nisin me KË por shpesh shkruhen me KE - keput -> këput
 ## ruhen prapashtesat ndaj nuk pranohen tema me grupe me | si (e|ë)
 nis_me_ke = "ll|" + \
@@ -418,6 +424,11 @@ nis_me_per_shper = "afër|afr|" + \
 	"ul|ulesi|ulësi|ur|" + \
 	"vet|vi|" + \
 	"z"
+
+## fjalë që nisin me SË por shpesh shkruhen me SE - serish -> sërish
+## ruhen prapashtesat ndaj nuk pranohen tema me grupe me | si (e|ë)
+nis_me_se = "mu|" + \
+	"ris|"
 
 ## fjalë që nisin me TË por shpesh shkruhen me TE - terheq -> tërheq
 ## ruhen prapashtesat ndaj nuk pranohen tema me grupe me | si (e|ë)
@@ -488,77 +499,87 @@ def pa_e_brenda(text):
 	t = text ; c_subs, e_subs, tj_subs = 0, 0, 0
 
 	## fjalë që nisin me shpër - shperhap -> shpërhap
-	t, c = re.subn(fr"(\b)(shper)({nis_me_per_shper})({prapa_me_gjat})(\b)", r"shpër\3\4", t) ; e_subs += c
+	t, c = re.subn(fr"(\b)(shper)({nis_me_per_shper})({prapa_0_7})(\b)", r"shpër\3\4", t) ; e_subs += c
 	## fjalë që nisin me Shpër ; Shperqendrim -> Shpërqendrim
-	t, c = re.subn(fr"(\b)(Shper)({nis_me_per_shper})({prapa_me_gjat})(\b)", r"Shpër\3\4", t) ; e_subs += c
+	t, c = re.subn(fr"(\b)(Shper)({nis_me_per_shper})({prapa_0_7})(\b)", r"Shpër\3\4", t) ; e_subs += c
 
 	## fjalë që nisin me për - permend -> përmend
-	t, c = re.subn(fr"(\b)(per)({nis_me_per_shper})({prapa_me_gjat})(\b)", r"për\3\4", t) ; e_subs += c
+	t, c = re.subn(fr"(\b)(per)({nis_me_per_shper})({prapa_0_7})(\b)", r"për\3\4", t) ; e_subs += c
 	## fjalë që nisin me Për ; Perdorimi -> Përdorimi
-	t, c = re.subn(fr"(\b)(Per)({nis_me_per_shper})({prapa_me_gjat})(\b)", r"Për\3\4", t) ; e_subs += c
+	t, c = re.subn(fr"(\b)(Per)({nis_me_per_shper})({prapa_0_7})(\b)", r"Për\3\4", t) ; e_subs += c
 
 	## fjalë që nisin me një - njekohshëm -> njëkohshëm
-	t, c = re.subn(fr"(\b)(nje)({nis_me_nje})({prapa_me_gjat})(\b)", r"një\3\4", t) ; e_subs += c
+	t, c = re.subn(fr"(\b)(nje)({nis_me_nje})({prapa_0_7})(\b)", r"një\3\4", t) ; e_subs += c
 	## fjalë që nisin me Për ; Njekohësi -> Njëkohësi
-	t, c = re.subn(fr"(\b)(Nje)({nis_me_nje})({prapa_me_gjat})(\b)", r"Një\3\4", t) ; e_subs += c
+	t, c = re.subn(fr"(\b)(Nje)({nis_me_nje})({prapa_0_7})(\b)", r"Një\3\4", t) ; e_subs += c
 
 	## fjalë që nisin me më - mesues -> mësues
-	t, c = re.subn(fr"(\b)(me)({nis_me_me})({prapa_gjat})(\b)", r"më\3\4", t) ; e_subs += c
+	t, c = re.subn(fr"(\b)(me)({nis_me_me})({prapa_0_5})(\b)", r"më\3\4", t) ; e_subs += c
 	## fjalë që nisin me Më ; Mesues -> Mësues
-	t, c = re.subn(fr"(\b)(Me)({nis_me_me})({prapa_gjat})(\b)", r"Më\3\4", t) ; e_subs += c
+	t, c = re.subn(fr"(\b)(Me)({nis_me_me})({prapa_0_5})(\b)", r"Më\3\4", t) ; e_subs += c
 
 	## fjalë që nisin me në - nensistem -> nënsistem
-	t, c = re.subn(fr"(\b)(ne)({nis_me_ne})({para_me_gjat_jo_bosh})(\b)", r"në\3\4", t) ; e_subs += c
+	t, c = re.subn(fr"(\b)(ne)({nis_me_ne})({prapa_1_12})(\b)", r"në\3\4", t) ; e_subs += c
 	## fjalë që nisin me Në ; Nentor -> Nëntor
-	t, c = re.subn(fr"(\b)(Ne)({nis_me_ne})({para_me_gjat_jo_bosh})(\b)", r"Në\3\4", t) ; e_subs += c
+	t, c = re.subn(fr"(\b)(Ne)({nis_me_ne})({prapa_1_12})(\b)", r"Në\3\4", t) ; e_subs += c
 
 	## fjalë që nisin me dë - dergoj -> dërgoj
-	t, c = re.subn(fr"(\b)(de)({nis_me_de})({para_me_gjat_jo_bosh})(\b)", r"dë\3\4", t) ; e_subs += c
+	t, c = re.subn(fr"(\b)(de)({nis_me_de})({prapa_1_12})(\b)", r"dë\3\4", t) ; e_subs += c
 	## fjalë që nisin me Dë ; Deshpërim -> Dëshpërim
-	t, c = re.subn(fr"(\b)(De)({nis_me_de})({para_me_gjat_jo_bosh})(\b)", r"Dë\3\4", t) ; e_subs += c
+	t, c = re.subn(fr"(\b)(De)({nis_me_de})({prapa_1_12})(\b)", r"Dë\3\4", t) ; e_subs += c
 
 	## fjalë që nisin me bë - bej -> bëj
 	t, c = re.subn(fr"(\b)(be)({nis_me_be})(\b)", r"bë\3", t) ; e_subs += c
 	## fjalë që nisin me Bë ; Beshtinë -> Bështinë
 	t, c = re.subn(fr"(\b)(Be)({nis_me_be})(\b)", r"Bë\3", t) ; e_subs += c
 
+	## fjalë që nisin me gë - germoj -> gërmoj
+	t, c = re.subn(fr"(\b)(ge)({nis_me_ge})({prapa_0_7})(\b)", r"gë\3\4", t) ; e_subs += c
+	## fjalë që nisin me Bë ; Germim -> Gërmim
+	t, c = re.subn(fr"(\b)(Ge)({nis_me_ge})({prapa_0_7})(\b)", r"Gë\3\4", t) ; e_subs += c
+
+	## fjalë që nisin me së - semurë -> sëmurë
+	t, c = re.subn(fr"(\b)(se)({nis_me_se})({prapa_1_7})(\b)", r"së\3\4", t) ; e_subs += c
+	## fjalë që nisin me Së ; Semundje -> Sëmundje
+	t, c = re.subn(fr"(\b)(Se)({nis_me_se})({prapa_1_7})(\b)", r"Së\3\4", t) ; e_subs += c
+
 	## fjalë që nisin me të - terheq -> tërheq
-	t, c = re.subn(fr"(\b)(te)({nis_me_te})({para_me_gjat_jo_bosh})(\b)", r"të\3\4", t) ; e_subs += c
+	t, c = re.subn(fr"(\b)(te)({nis_me_te})({prapa_1_12})(\b)", r"të\3\4", t) ; e_subs += c
 	## fjalë që nisin me Të ; Terheqja -> Tërheqja
-	t, c = re.subn(fr"(\b)(Te)({nis_me_te})({para_me_gjat_jo_bosh})(\b)", r"Të\3\4", t) ; e_subs += c
+	t, c = re.subn(fr"(\b)(Te)({nis_me_te})({prapa_1_12})(\b)", r"Të\3\4", t) ; e_subs += c
 
 	## fjalë që nisin me kë - keput -> këput
-	t, c = re.subn(fr"(\b)(ke)({nis_me_ke})({prapa_gjat})(\b)", r"kë\3\4", t) ; e_subs += c
+	t, c = re.subn(fr"(\b)(ke)({nis_me_ke})({prapa_0_7})(\b)", r"kë\3\4", t) ; e_subs += c
 	## fjalë që nisin me Kë ; Kendoj -> Këndoj
-	t, c = re.subn(fr"(\b)(Ke)({nis_me_ke})({prapa_gjat})(\b)", r"Kë\3\4", t) ; e_subs += c
+	t, c = re.subn(fr"(\b)(Ke)({nis_me_ke})({prapa_0_7})(\b)", r"Kë\3\4", t) ; e_subs += c
 
 	## fjalë që nisin me lë - leviz -> lëviz
-	t, c = re.subn(fr"(\b)(le)({nis_me_le})({prapa_gjat})(\b)", r"lë\3\4", t) ; e_subs += c
+	t, c = re.subn(fr"(\b)(le)({nis_me_le})({prapa_0_7})(\b)", r"lë\3\4", t) ; e_subs += c
 	## fjalë që nisin me Lë ; Levizje -> Lëvizje
-	t, c = re.subn(fr"(\b)(Le)({nis_me_le})({prapa_gjat})(\b)", r"Lë\3\4", t) ; e_subs += c
+	t, c = re.subn(fr"(\b)(Le)({nis_me_le})({prapa_0_7})(\b)", r"Lë\3\4", t) ; e_subs += c
 
 	## fjalë që nisin me marrë - marreveshje -> marrëveshje
-	t, c = re.subn(fr"(\b)(marre)({nis_me_marre})({prapa_gjat})(\b)", r"marrë\3\4", t) ; e_subs += c
+	t, c = re.subn(fr"(\b)(marre)({nis_me_marre})({prapa_0_5})(\b)", r"marrë\3\4", t) ; e_subs += c
 	## fjalë që nisin me Marrë ; Marres -> Marrës
-	t, c = re.subn(fr"(\b)(Marre)({nis_me_marre})({prapa_gjat})(\b)", r"Marrë\3\4", t) ; e_subs += c
+	t, c = re.subn(fr"(\b)(Marre)({nis_me_marre})({prapa_0_5})(\b)", r"Marrë\3\4", t) ; e_subs += c
 
-	## fjalë që mbarojnë me ër ; seder -> sedër
-	t, c = re.subn(fr"(\b)({fund_me_esht})(esht)({prapa_gjat})(\b)", r"\2ësht\4", t) ; e_subs += c
+	## fjalë që mbarojnë me ër ; qumesht -> qumësht 
+	t, c = re.subn(fr"(\b)({fund_me_esht})(esht)({prapa_0_5})(\b)", r"\2ësht\4", t) ; e_subs += c
 
 	## fjalë që përmbajnë shte ; kashte -> kashtë
-	t, c = re.subn(fr"(\b)({fund_me_shte})(shte)({prapa_gjat})(\b)", r"\2shtë\4", t) ; e_subs += c
+	t, c = re.subn(fr"(\b)({fund_me_shte})(shte)({prapa_0_5})(\b)", r"\2shtë\4", t) ; e_subs += c
 
 	## fjalë që përmbajnë ësi ; largesi -> largësi
-	t, c = re.subn(fr"(\b)({fund_me_esi})(esi)({prapa_gjat})(\b)", r"\2ësi\4", t) ; e_subs += c
+	t, c = re.subn(fr"(\b)({fund_me_esi})(esi)({prapa_0_5})(\b)", r"\2ësi\4", t) ; e_subs += c
 
-	## fjalë që mbarojnë me ësht ; qumesht -> qumësht
-	t, c = re.subn(fr"(\b)({fund_me_er})(er)({prapa_gjat})(\b)", r"\2ër\4", t) ; e_subs += c
+	## fjalë që mbarojnë me ësht ; seder -> sedër
+	t, c = re.subn(fr"(\b)({fund_me_er})(er)({prapa_0_5})(\b)", r"\2ër\4", t) ; e_subs += c
 
 	## fjalë që mbarojnë me ëk ; pisllek -> pisllëk
-	t, c = re.subn(fr"(\b)({fund_me_ek})(ek)({prapa_gjat})(\b)", r"\2ëk\4", t) ; e_subs += c
+	t, c = re.subn(fr"(\b)({fund_me_ek})(ek)({prapa_0_5})(\b)", r"\2ëk\4", t) ; e_subs += c
 
 	## fjalë që mbarojnë me ëm ; hershem -> hershëm
-	t, c = re.subn(fr"(\b)({fund_me_em})(em)({prapa_gjat})(\b)", r"\2ëm\4", t) ; e_subs += c
+	t, c = re.subn(fr"(\b)({fund_me_em})(em)({prapa_0_5})(\b)", r"\2ëm\4", t) ; e_subs += c
 
 	return (t, e_subs, c_subs, tj_subs)
 
@@ -574,10 +595,10 @@ def redakto_e(text):
 	t, c = re.subn(fr"(\b)(e|ë)(sht)(e|ë)?(\b)", r"ë\3ë", t) ; e_subs += c
 
 	## gjithë fjalët që mbarojnë me SHËM - nuk ka fjalë me SHEM
-	t, c = re.subn(fr"(\b)({para_me_gjat_jo_bosh})(shem)(\b)", r"\2shëm\4", t) ; e_subs += c
+	t, c = re.subn(fr"(\b)({para_1_12})(shem)(\b)", r"\2shëm\4", t) ; e_subs += c
 
 	## gjithë fjalët që mbarojnë me SHMËRI - nuk ka fjalë me SHMERI
-	t, c = re.subn(fr"(\b)({para_me_gjat_jo_bosh})(shmeri)(\b)", r"\2shmëri\4", t) ; e_subs += c
+	t, c = re.subn(fr"(\b)({para_1_12})(shmeri)(\b)", r"\2shmëri\4", t) ; e_subs += c
 
 	## problemet me ë-të fundore
 	t, e_c, c_c, tj_c = pa_e_fundore(t)

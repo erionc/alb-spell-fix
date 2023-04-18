@@ -27,16 +27,16 @@ def pa_c_nistore(text):
 	t = text ; c_subs, e_subs, tj_subs = 0, 0, 0
 
 	## fjalë që shkruhen me C/c ose Q/q në vend të Ç/ç-së nistore dhe që marrin prapashtesë - caj -> çaj ; qizme -> çizme
-	t, c = re.subn(fr"(\b)(c|q)({nis_pa_c_me_prap})({prapa_gjat})(\b)", r"ç\3\4", t) ; c_subs += c
-	t, c = re.subn(fr"(\b)(C|Q)({nis_pa_c_me_prap})({prapa_gjat})(\b)", r"Ç\3\4", t) ; c_subs += c
+	t, c = re.subn(fr"(\b)(c|q)({nis_pa_c_me_prap})({prapa_0_5})(\b)", r"ç\3\4", t) ; c_subs += c
+	t, c = re.subn(fr"(\b)(C|Q)({nis_pa_c_me_prap})({prapa_0_5})(\b)", r"Ç\3\4", t) ; c_subs += c
 
 	## fjalë që shkruhen me C/c ose Q/q në vend të Ç/ç-së nistore por që nuk marrin prapashtesë - cel -> çel
 	t, c = re.subn(fr"(\b)(c|q)({nis_pa_c_pa_prap})(\b)", r"ç\3", t) ; c_subs += c
 	t, c = re.subn(fr"(\b)(C|Q)({nis_pa_c_pa_prap})(\b)", r"Ç\3", t) ; c_subs += c
 
 	## fjalë që shkruen me Ç/ç ose Q/q në vend të C/c-së nistore - çertifikatë -> certifikatë
-	t, c = re.subn(fr"(\b)(ç|q)({nis_me_c})({prapa_gjat})(\b)", r"c\3\4", t) ; c_subs += c
-	t, c = re.subn(fr"(\b)(Ç|Q)({nis_me_c})({prapa_gjat})(\b)", r"C\3\4", t) ; c_subs += c
+	t, c = re.subn(fr"(\b)(ç|q)({nis_me_c})({prapa_0_5})(\b)", r"c\3\4", t) ; c_subs += c
+	t, c = re.subn(fr"(\b)(Ç|Q)({nis_me_c})({prapa_0_5})(\b)", r"C\3\4", t) ; c_subs += c
 
 	return (t, e_subs, c_subs, tj_subs)
 
@@ -64,11 +64,11 @@ def me_c_brenda(text):
 	t = text ; c_subs, e_subs, tj_subs = 0, 0, 0
 
     ## (P|p)ro(ç|q)es -> (P|p)roces 
-	t, c = re.subn(fr"(\b)(P|p)(roçes|roqes)({prapa_gjat})(\b)", r"\2roces\4", t) ; c_subs += c
+	t, c = re.subn(fr"(\b)(P|p)(roçes|roqes)({prapa_0_5})(\b)", r"\2roces\4", t) ; c_subs += c
     ##  (P|p)ro(ç|q)edur -> (P|p)rocedur
-	t, c = re.subn(fr"(\b)(P|p)(roçedur|roqedur)({prapa_gjat})(\b)", r"\2rocedur\4", t) ; c_subs += c
+	t, c = re.subn(fr"(\b)(P|p)(roçedur|roqedur)({prapa_0_5})(\b)", r"\2rocedur\4", t) ; c_subs += c
     ##  (L|l)i(ç|q|sh)ens* -> (L|l)icens*
-	t, c = re.subn(fr"(\b)(L|l)(içens|iqens|ishens)({prapa_gjat})(\b)", r"\2icens\4", t) ; c_subs += c
+	t, c = re.subn(fr"(\b)(L|l)(içens|iqens|ishens)({prapa_0_5})(\b)", r"\2icens\4", t) ; c_subs += c
 
 	return (t, e_subs, c_subs, tj_subs)
 
@@ -79,13 +79,13 @@ def pa_c_brenda(text):
 	t = text ; c_subs, e_subs, tj_subs = 0, 0, 0
 
 	## fjalë që mbarojnë me çi ; inatci -> inatçi ; zanatci -> zanatçi
-	t, c = re.subn(fr"(\b)({fund_me_ci})(ci|qi)({prapa_gjat})(\b)", r"\2çi\4", t) ; c_subs += c
+	t, c = re.subn(fr"(\b)({fund_me_ci})(ci|qi)({prapa_0_5})(\b)", r"\2çi\4", t) ; c_subs += c
 
 	## fjalë që përmbajnë ÇUES/ÇOJ por shpesh shkruhen me CUES/COJ - ndricues -> ndriçues ; ndricoj-> ndriçoj
-	t, c = re.subn(fr"(\b)({permban_cues_coj_cim})(c|q)(u|o|i)({prapa_gjat})(\b)", r"\2ç\4\5", t) ; c_subs += c
+	t, c = re.subn(fr"(\b)({permban_cues_coj_cim})(c|q)(u|o|i)({prapa_0_5})(\b)", r"\2ç\4\5", t) ; c_subs += c
 
 	## fjalë që përmbajnë ÇEL por shpesh shkruhen me CEL - recel -> reçel
-	t, c = re.subn(fr"(\b)({permban_cel})(cel|qel)({prapa_gjat})(\b)", r"\2çel\4", t) ; c_subs += c
+	t, c = re.subn(fr"(\b)({permban_cel})(cel|qel)({prapa_0_5})(\b)", r"\2çel\4", t) ; c_subs += c
 
 	return (t, e_subs, c_subs, tj_subs)
 
@@ -96,39 +96,39 @@ def c_apostrof_folje(text):
 	t = text ; c_subs, e_subs, tj_subs = 0, 0, 0
 	
 	## ç'bën, ç'bëni
-	t, c = re.subn(fr"(\b)(c|c'|ç|q|q')(bën|ben)({prapa_gjat})(\b)", r"ç'bën\4", t) ; c_subs += c
+	t, c = re.subn(fr"(\b)(c|c'|ç|q|q')(bën|ben)({prapa_0_5})(\b)", r"ç'bën\4", t) ; c_subs += c
 	## Ç'bën, Ç'bëni
-	t, c = re.subn(fr"(\b)(C|C'|Ç|Q|Q')(bën|ben)({prapa_gjat})(\b)", r"Ç'bën\4", t) ; c_subs += c
+	t, c = re.subn(fr"(\b)(C|C'|Ç|Q|Q')(bën|ben)({prapa_0_5})(\b)", r"Ç'bën\4", t) ; c_subs += c
 
 	## ç'do, ç'doni
-	t, c = re.subn(fr"(\b)(c'|q')(do|doni)({prapa_gjat})(\b)", r"ç'\3\4", t) ; c_subs += c
+	t, c = re.subn(fr"(\b)(c'|q')(do|doni)({prapa_0_5})(\b)", r"ç'\3\4", t) ; c_subs += c
 	## Ç'do, Ç'do
-	t, c = re.subn(fr"(\b)(C'|Q')(do|doni)({prapa_gjat})(\b)", r"Ç'\3\4", t) ; c_subs += c
+	t, c = re.subn(fr"(\b)(C'|Q')(do|doni)({prapa_0_5})(\b)", r"Ç'\3\4", t) ; c_subs += c
 
 	## çdo, çdokush, ...
-	t, c = re.subn(fr"(\b)(c|q)(do)({prapa_gjat})(\b)", r"ç\3\4", t) ; c_subs += c
+	t, c = re.subn(fr"(\b)(c|q)(do)({prapa_0_5})(\b)", r"ç\3\4", t) ; c_subs += c
 	## Çdo, Çdokush, ...
-	t, c = re.subn(fr"(\b)(C|Q)(do)({prapa_gjat})(\b)", r"Ç\3\4", t) ; c_subs += c
+	t, c = re.subn(fr"(\b)(C|Q)(do)({prapa_0_5})(\b)", r"Ç\3\4", t) ; c_subs += c
 
 	## ç'bëj, ç'bëjmë, ç'bëjnë
-	t, c = re.subn(fr"(\b)(c|c'|ç|q|q')(bëj|bej)({prapa_gjat})(\b)", r"ç'bëj\4", t) ; c_subs += c
+	t, c = re.subn(fr"(\b)(c|c'|ç|q|q')(bëj|bej)({prapa_0_5})(\b)", r"ç'bëj\4", t) ; c_subs += c
 	## Ç'bëj, Ç'bëjmë, Ç'bëjnë
-	t, c = re.subn(fr"(\b)(C|C'|Ç|Q|Q')(bëj|bej)({prapa_gjat})(\b)", r"Ç'bëj\4", t) ; c_subs += c
+	t, c = re.subn(fr"(\b)(C|C'|Ç|Q|Q')(bëj|bej)({prapa_0_5})(\b)", r"Ç'bëj\4", t) ; c_subs += c
 
 	## ç'bëhet
-	t, c = re.subn(fr"(\b)(c|c'|ç|q|q')(bëh|beh)({prapa_gjat})(\b)", r"ç'bëh\4", t) ; c_subs += c
+	t, c = re.subn(fr"(\b)(c|c'|ç|q|q')(bëh|beh)({prapa_0_5})(\b)", r"ç'bëh\4", t) ; c_subs += c
 	## Ç'bëhet
-	t, c = re.subn(fr"(\b)(C|C'|Ç|Q|Q')(bëh|beh)({prapa_gjat})(\b)", r"Ç'bëh\4", t) ; c_subs += c
+	t, c = re.subn(fr"(\b)(C|C'|Ç|Q|Q')(bëh|beh)({prapa_0_5})(\b)", r"Ç'bëh\4", t) ; c_subs += c
 
 	## ç'kemi, ç'ke, ç'keni
-	t, c = re.subn(fr"(\b)(c|c'|ç|q|q')(ke)({prapa_gjat})(\b)", r"ç'\3\4", t) ; c_subs += c
+	t, c = re.subn(fr"(\b)(c|c'|ç|q|q')(ke)({prapa_0_5})(\b)", r"ç'\3\4", t) ; c_subs += c
 	## Ç'kemi, Ç'ke, Ç'keni 
-	t, c = re.subn(fr"(\b)(C|C'|Ç|Q|Q')(ke)({prapa_gjat})(\b)", r"Ç'\3\4", t) ; c_subs += c
+	t, c = re.subn(fr"(\b)(C|C'|Ç|Q|Q')(ke)({prapa_0_5})(\b)", r"Ç'\3\4", t) ; c_subs += c
 	
 	## cka -> çka ; c'kam, ckam -> ç'kam ; c'ka(në) -> ç'ka(në) 
-	t, c = re.subn(fr"(\b)(c|c'|ç|q|q')(ka)({prapa_gjat})(\b)", r"ç'\3\4", t) ; c_subs += c
+	t, c = re.subn(fr"(\b)(c|c'|ç|q|q')(ka)({prapa_0_5})(\b)", r"ç'\3\4", t) ; c_subs += c
 	## Cka -> Çka ; C'kam, Ckam -> Ç'kam ; C'ka(në) -> Ç'ka(në) 
-	t, c = re.subn(fr"(\b)(C|C'|Ç|Q|Q')(ka)({prapa_gjat})(\b)", r"Ç'\3\4", t) ; c_subs += c
+	t, c = re.subn(fr"(\b)(C|C'|Ç|Q|Q')(ka)({prapa_0_5})(\b)", r"Ç'\3\4", t) ; c_subs += c
 	
 	## çfarë
 	t, c = re.subn(fr"(\b)(c|ç|q)(far)(e|ë)?(\b)", r"çfarë", t) ; c_subs += c
