@@ -549,7 +549,7 @@ def pa_e_brenda(text):
 	t, c = re.subn(fr"(\b)({fund_me_shte})(shte)({prapa_gjat})(\b)", r"\2shtë\4", t) ; e_subs += c
 
 	## fjalë që përmbajnë ësi ; largesi -> largësi
-	t, c = re.subn(fr"(\b)({permban_esi})(esi)({prapa_gjat})(\b)", r"\2ësi\4", t) ; e_subs += c
+	t, c = re.subn(fr"(\b)({fund_me_esi})(esi)({prapa_gjat})(\b)", r"\2ësi\4", t) ; e_subs += c
 
 	## fjalë që mbarojnë me ësht ; qumesht -> qumësht
 	t, c = re.subn(fr"(\b)({fund_me_er})(er)({prapa_gjat})(\b)", r"\2ër\4", t) ; e_subs += c
