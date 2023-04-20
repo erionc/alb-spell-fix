@@ -554,6 +554,10 @@ fund_me_esht = "Lag|lag|" + \
 ## ruhen prapashtesat ndaj nuk pranohen tema me grupe me | si (e|ë)
 fund_me_etor = "Shërb|shërb|Sherb|sherb"
 
+## fjalë që përmbajnë ËTI por shpesh shkruhen me ETOR - shërbetor -> shërbëtor
+## ruhen prapashtesat ndaj nuk pranohen tema me grupe me | si (e|ë)
+fund_me_etor = "Shërb|shërb|Sherb|sherb"
+
 ## fjalë që shkruhen me E/e në vend të Ë/ë-së te ndonjë parashtesë
 def pa_e_para(text):
 	## vlerënisje 
