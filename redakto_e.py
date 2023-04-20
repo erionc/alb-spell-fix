@@ -470,6 +470,7 @@ nis_me_ve = "lli|men|nie|rda|rej|rsu|rtet|shtr|zhg"
 fund_me_dhes = "Ar|ar|" + \
 	"Dre|dre|" + \
 	"He|he|" + \
+	"Kre|kre|" + \
 	"Mble|mble|" + \
 	"Tre|tre|" + \
 	"Vje|vje"
@@ -495,15 +496,17 @@ fund_me_em = "fis|fund|" + \
 ## fjalë që përmbajnë ËR por shpesh shkruhen me ER - seder -> sedër
 ## ruhen prapashtesat ndaj nuk pranohen tema me grupe me | si (e|ë)
 fund_me_er = "Ashp|ashp|" + \
-	"Hat|hat|" + \
+	"Fëmij|Femij|fëmij|femij|" + \
+	"Hasm|hasm|Hat|hat|" + \
 	"Kat|kat|Ket|ket|Kod|kod|" + \
-	"Lak|lak|Let|let|Lib|lib|Lod|lod|" + \
-	"Mbret|mbret|Mjed|mjed|Mjesht|mjesht|Mot|mot|" + \
+	"Lak|lak|Last|last|Let|let|Lib|lib|Lod|lod|" + \
+	"Mbret|mbret|Met|\w{0,7}met|Mjed|mjed|Mjesht|mjesht|Mot|mot|" + \
 	"Orkest|orkest|" + \
 	"Posht|posht|" + \
-	"Sed|sed|shtret|Shqip|" + \
+	"Qend|qend|" + \
+	"Sed|sed|Skllav|skllav|Shtret|shtret|Shqip|" + \
 	"Teat|teat|Tjet|tjet|Thjesht|Thjesht|" + \
-	"Varf|varf"
+	"Varf|varf|Vat|vat|Vjet|vjet"
 
 ## fjalë që përmbajnë ËROR por shpesh shkruhen me EROR - femeror -> femëror
 ## ruhen prapashtesat ndaj nuk pranohen tema me grupe me | si (e|ë)
@@ -516,9 +519,10 @@ fund_me_eror = "Burr|burr|" + \
 ## ruhen prapashtesat ndaj nuk pranohen tema me grupe me | si (e|ë)
 fund_me_esi = "Armiq|armiq|At|at|" + \
 	"But|but|" + \
+	"Drejt|drejt|" + \
 	"Fort|fort|" + \
 	"Gjat|gjat|Gjer|gjer|Fshatar|fshatar|" + \
-	"Kenaq|kenaq|Kënaq|kënaq|Krip|krip|" + \
+	"Kenaq|kenaq|Kënaq|kënaq|Kot|kot|Krip|krip|" + \
 	"Larg|larg|Lart|lart|Lasht|lasht|Leht|leht|" + \
 	"Madh|madh|Mend|mend|Mëm|mëm|Miq|miq|Mjek|mjek|" + \
 	"Pron|pron|" + \
@@ -537,7 +541,7 @@ fund_me_shte = "Ava|ava|" + \
 	"Bri|bri|" + \
 	"Gja|gja|" + \
 	"Ja|ja|" + \
-	"Ka|ka|" + \
+	"Ka|ka|Kre|kre|" + \
 	"La|la|Le|le|" + \
 	"Mbrap|mbrap|" + \
 	"She|she|" + \
@@ -550,13 +554,14 @@ fund_me_esht = "Lag|lag|" + \
 	"Plog|plog|" + \
 	"Qum|qum"
 
+## fjalë që përmbajnë ËTI por shpesh shkruhen me ETI - pipetij -> pipëtij
+## ruhen prapashtesat ndaj nuk pranohen tema me grupe me | si (e|ë)
+fund_me_eti = "Pip|pip|Vet|vet"
+
 ## fjalë që përmbajnë ËTOR por shpesh shkruhen me ETOR - shërbetor -> shërbëtor
 ## ruhen prapashtesat ndaj nuk pranohen tema me grupe me | si (e|ë)
 fund_me_etor = "Shërb|shërb|Sherb|sherb"
 
-## fjalë që përmbajnë ËTI por shpesh shkruhen me ETOR - shërbetor -> shërbëtor
-## ruhen prapashtesat ndaj nuk pranohen tema me grupe me | si (e|ë)
-fund_me_etor = "Shërb|shërb|Sherb|sherb"
 
 ## fjalë që shkruhen me E/e në vend të Ë/ë-së te ndonjë parashtesë
 def pa_e_para(text):
@@ -694,6 +699,9 @@ def pa_e_prapa(text):
 
 	## fjalë që mbarojnë me ësht ; qumesht -> qumësht 
 	t, c = re.subn(fr"(\b)({fund_me_esht})(esht)({prapa_0_5})(\b)", r"\2ësht\4", t) ; e_subs += c
+
+	## fjalë që përmbajnë ëti ; pipetij -> pipëtij
+	t, c = re.subn(fr"(\b)({fund_me_eti})(eti)({prapa_0_5})(\b)", r"\2ëti\4", t) ; e_subs += c
 
 	## fjalë që përmbajnë ëtor ; shërbetor -> shërbëtor
 	t, c = re.subn(fr"(\b)({fund_me_etor})(etor)({prapa_0_5})(\b)", r"\2ëtor\4", t) ; e_subs += c
