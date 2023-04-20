@@ -489,6 +489,7 @@ fund_me_ek = "Boll|boll|Budallall|budallall|" + \
 ## ruhen prapashtesat ndaj nuk pranohen tema me grupe me | si (e|ë)
 fund_me_em = "fis|fund|" + \
 	"jasht|" + \
+	"moç|moc|" + \
 	"pafund"
 
 ## fjalë që përmbajnë ËR por shpesh shkruhen me ER - seder -> sedër
@@ -497,10 +498,10 @@ fund_me_er = "Ashp|ashp|" + \
 	"Hat|hat|" + \
 	"Kat|kat|Ket|ket|Kod|kod|" + \
 	"Lak|lak|Let|let|Lib|lib|Lod|lod|" + \
-	"Mbret|mbret|Mjed|mjed|Mot|mot|" + \
+	"Mbret|mbret|Mjed|mjed|Mjesht|mjesht|Mot|mot|" + \
 	"Orkest|orkest|" + \
 	"Posht|posht|" + \
-	"Sed|sed|shtret|" + \
+	"Sed|sed|shtret|Shqip|" + \
 	"Teat|teat|Tjet|tjet|Thjesht|Thjesht|" + \
 	"Varf|varf"
 
@@ -513,14 +514,18 @@ fund_me_eror = "Burr|burr|" + \
 
 ## fjalë që përmbajnë ËSI por shpesh shkruhen me ESI - largesi -> largësi
 ## ruhen prapashtesat ndaj nuk pranohen tema me grupe me | si (e|ë)
-fund_me_esi = "At|at|" + \
+fund_me_esi = "Armiq|armiq|At|at|" + \
+	"But|but|" + \
+	"Fort|fort|" + \
 	"Gjat|gjat|Gjer|gjer|Fshatar|fshatar|" + \
-	"Kenaq|kenaq|Kënaq|kënaq|" + \
-	"Larg|larg|Leht|leht|" + \
-	"Madh|madh|Mëm|mëm|" + \
+	"Kenaq|kenaq|Kënaq|kënaq|Krip|krip|" + \
+	"Larg|larg|Lart|lart|Lasht|lasht|Leht|leht|" + \
+	"Madh|madh|Mend|mend|Mëm|mëm|Miq|miq|Mjek|mjek|" + \
 	"Pron|pron|" + \
-	"Rast|rast|" + \
-	"Var|var|Vrazhd|vrazhd"
+	"Qart|qart|" + \
+	"Shëndet|shëndet|Shendet|shendet|Shpejt|shpejt|" + \
+	"Rast|rast|Rënd|rënd|Rend|rend|" + \
+	"Var|var|Vërtet|vërtet|Vertet|vertet|Vrazhd|vrazhd"
 
 ## fjalë që përmbajnë ËSOR por shpesh shkruhen me ESOR - rastesor -> rastësor
 ## ruhen prapashtesat ndaj nuk pranohen tema me grupe me | si (e|ë)
