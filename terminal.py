@@ -17,9 +17,9 @@ def redaktime(in_text):
 	output_text = t
 	
 	# output_message = f"Zëvendësime të ë-ve:\t\t\t{e_subs}\n" + \
-	# 	f"Zëvendësime të ç-ve:\t\t\t{c_subs}\n" + \
-	# 	f"Zëvendësime të tjera:\t\t\t{tj_subs}\n" + \
-	# 	f"Zëvendësime totale:\t\t\t{total_sub}"
+	# 	f"Zëvendësime të ç-ve:\t{c_subs}\n" + \
+	# 	f"Zëvendësime të tjera:\t{tj_subs}\n" + \
+	# 	f"Zëvendësime totale:\t{total_sub}"
 	
 	# shfaqet totali i zëvendësimeve të kryera
 	output_message = f"Zëvendësime totale:\t{total_sub}\n"

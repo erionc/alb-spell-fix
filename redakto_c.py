@@ -41,6 +41,19 @@ def pa_c_nistore(text):
 	return (t, e_subs, c_subs, tj_subs)
 
 
+## fjalë ku shfaqen gabime me c-të, q-të dhe ç-të fundore 
+fund_me_c = "Ky|ky"
+
+## fjalë ku shfaqen gabime me c-të, q-të dhe ç-të nistore
+def pa_c_fundore(text):
+	## vlerënisje 
+	t = text ; c_subs, e_subs, tj_subs = 0, 0, 0
+
+	## fjalë që shkruhen me c ose q në vend të ç-së fundore - kyc -> kyç
+	t, c = re.subn(fr"(\b)({fund_me_c})(c|q)({prapa_0_7})(\b)", r"\2ç\4", t) ; c_subs += c
+
+	return (t, e_subs, c_subs, tj_subs)
+
 ## fjalë që mbarojnë me çi por shpesh shkruhen me ci
 ## ruhen prapashtesat ndaj nuk pranohen tema me grupe me | si (c|ç)
 fund_me_ci = "All|all|Batak|batak|Inat|inat|Top|top|Zanat|zanat" 
@@ -52,7 +65,7 @@ permban_cues_coj_cim = "Lin|lin|" + \
 	"Për|për|Per|per|" + \
 	"Tej|tej"
 
-## fjalë që përmbajnë ÇEL por shpesh shkruhen me CEL - ndricues -> ndriçues ; ndricoj-> ndriçoj
+## fjalë që përmbajnë ÇEL por shpesh shkruhen me CEL - recel -> reçel
 ## ruhen prapashtesat ndaj nuk pranohen tema me grupe me | si (c|ç)
 permban_cel = "Nder|Ndër|nder|ndër|" + \
 	"Re|re"
@@ -149,6 +162,10 @@ def redakto_c(text):
 
 	## fjalë që shkruhen me C/c ose Q/q në vend të Ç/ç-së nistore - cafkë -> çafkë
 	t, e_c, c_c, tj_c = pa_c_nistore(t)
+	c_subs += c_c ; e_subs += e_c ; tj_subs += tj_c
+
+	## fjalë që shkruhen me c ose q në vend të ç-së fundore - kyc -> kyç
+	t, e_c, c_c, tj_c = pa_c_fundore(t)
 	c_subs += c_c ; e_subs += e_c ; tj_subs += tj_c
 
 	## fjalë që shkruhen me C/c ose Q/q në vend të Ç/ç-së së brendshme - inatci -> inatçi
