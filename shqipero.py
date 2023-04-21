@@ -12,7 +12,7 @@ fund_me_icien = "Fizi|fizi|" + \
 
 ## shkruhen me EN- por duhen shkruar pa të
 ## ruhen prapashtesat ndaj nuk pranohen tema me grupe me | si (e|ë)
-nis_me_er = "kapsul|kod|kript|"
+nis_me_en = "kapsul|kod|kript"
 
 ## shkruhen me -ER por duhen shkruar me -UES
 ## ruhen prapashtesat ndaj nuk pranohen tema me grupe me | si (e|ë)
@@ -68,7 +68,7 @@ def shqiperime(text):
 	t, c = re.subn(fr"(\b)({para_0_5})({fund_me_er})(er)({prapa_0_5})(\b)", r"\2\3ues\5", t) ; tj_subs += c 
 
     ## hiq EN- ; enkodoj -> kodoj
-	t, c = re.subn(fr"(\b)(En|en)({nis_me_er})({prapa_0_5})(\b)", r"\3\4", t) ; tj_subs += c 
+	t, c = re.subn(fr"(\b)(En|en)({nis_me_en})({prapa_0_5})(\b)", r"\3\4", t) ; tj_subs += c 
 
     ## -CION -> -IM ; telekomunikacion -> telekomunikim
 	t, c = re.subn(fr"(\b)({fund_me_acion})(acion)({prapa_0_5})(\b)", r"\2im\4", t) ; tj_subs += c 

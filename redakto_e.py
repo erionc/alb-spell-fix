@@ -346,7 +346,7 @@ def pa_e_fundore(text):
 ## fjalë që nisin me BË por shpesh shkruhen me BE - beshtineë -> bështinë
 ## ruhen prapashtesat ndaj nuk pranohen tema me grupe me | si (e|ë)
 nis_me_be = "j|n|jme|jmë|jne|jnë|" + \
-	"rtas|rtet|rtasim|rtasin|rtitje|rtitur|rthama|rthamat|rthame|rthamë|rthamor|rthamore" + \
+	"rtas|rtet|rtasim|rtasin|rtitje|rtitur|rthama|rthamat|rthame|rthamë|rthamor|rthamore|" + \
 	"shem|shëm|shtaje|shtajë|shtinë"
 
 ## fjalë që nisin me DË por shpesh shkruhen me DE - dergoj -> dërgoj
@@ -355,6 +355,10 @@ nis_me_de = "fre|fri|" + \
 	"nim|noj|nu|" + \
 	"rge|rgi|rgo|rgu|" + \
 	"shir|shp|sht"
+
+## fjalë që nisin me DHË por shpesh shkruhen me DHE - e dhenë -> e dhënë
+## ruhen prapashtesat ndaj nuk pranohen tema me grupe me | si (e|ë)
+nis_me_dhe = "mba|na|nd|ne|në"
 
 ## fjalë që nisin me FË por shpesh shkruhen me FE - femijë -> fëmijë
 ## ruhen prapashtesat ndaj nuk pranohen tema me grupe me | si (e|ë)
@@ -443,7 +447,7 @@ nis_me_re = "ndes|ndë\w|nie"
 
 ## fjalë që nisin me RRË por shpesh shkruhen me RRE - rrekëllej -> rrëkëllej
 ## ruhen prapashtesat ndaj nuk pranohen tema me grupe me | si (e|ë)
-nis_me_rre = "mbe|nde|ndo|pir|shkate|shkatë|" 
+nis_me_rre = "mbe|nde|ndo|pir|shkate|shkatë" 
 
 ## fjalë që nisin me SË por shpesh shkruhen me SE - serish -> sërish
 ## ruhen prapashtesat ndaj nuk pranohen tema me grupe me | si (e|ë)
@@ -577,6 +581,11 @@ def pa_e_para(text):
 	t, c = re.subn(fr"(\b)(de)({nis_me_de})({prapa_1_12})(\b)", r"dë\3\4", t) ; e_subs += c
 	## fjalë që nisin me Dë ; Deshpërim -> Dëshpërim
 	t, c = re.subn(fr"(\b)(De)({nis_me_de})({prapa_1_12})(\b)", r"Dë\3\4", t) ; e_subs += c
+
+	## fjalë që nisin me dë - e dhenë -> e dhënë
+	t, c = re.subn(fr"(\b)(dhe)({nis_me_dhe})({prapa_0_7})(\b)", r"dhë\3\4", t) ; e_subs += c
+	## fjalë që nisin me Dë ; Dhendër -> Dhëndër
+	t, c = re.subn(fr"(\b)(Dhe)({nis_me_dhe})({prapa_0_7})(\b)", r"Dhë\3\4", t) ; e_subs += c
 
 	## fjalë që nisin me fë - ferkoj -> fërkoj
 	t, c = re.subn(fr"(\b)(fe)({nis_me_fe})({prapa_0_12})(\b)", r"fë\3\4", t) ; e_subs += c
