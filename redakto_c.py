@@ -4,13 +4,20 @@ from percaktime import *
 ## temat që shkruhen me C/c në vend të Ç/ç-së nistore
 ## ruhen prapashtesat ndaj nuk pranohen tema me grupe me | si (c|ç)
 ## cafk, caj, cajnik, canak, cibuk, cift, cmim, co, corap, cudi, cun, cup 
-nis_pa_c_me_prap = "afk|aj|ajnik|anak|akerdis|akmak|ale|alë|alo|alu|allm|apkën|apken|arcaf|arçaf|art|ati|" + \
+nis_pa_c_me_prap = "afk|aj|ajnik|anak|akerdis|akmak|ale|alë|alo|alu|allm|apkën|apken|" + \
+	"arcaf|arçaf|art|" + \
+	"asje|asja|ati|" + \
     "elur|ekan|ekic|ekiç|elik|erek|" + \
     "iban|ibuk|iflig|ift|ikërrim|ikerrim|iment|imk|izme|" + \
     "mall|mend|merit|mim|min|mo|mont|morrit|muar|" + \
     "nder|njer|" + \
     "okollat|orap|organi|orodit|" + \
     "udi|un"
+
+## temat që shkruhen me Ç/ç në vend të Q/q-së nistore
+## ruhen prapashtesat ndaj nuk pranohen tema me grupe me | si (c|ç)
+## çasje -> qasje
+nis_me_q_jo_me_c = "orto|asj|uka\w"
 
 ## temat që shkruhen me C/c në vend të Ç/ç-së nistore
 ## nuk i jepet prapashtesë -- cel -> çel
@@ -33,6 +40,9 @@ def pa_c_nistore(text):
 	## fjalë që shkruhen me C/c ose Q/q në vend të Ç/ç-së nistore por që nuk marrin prapashtesë - cel -> çel
 	t, c = re.subn(fr"(\b)(c|q)({nis_pa_c_pa_prap})(\b)", r"ç\3", t) ; c_subs += c
 	t, c = re.subn(fr"(\b)(C|Q)({nis_pa_c_pa_prap})(\b)", r"Ç\3", t) ; c_subs += c
+
+	t, c = re.subn(fr"(\b)(c|ç)({nis_me_q_jo_me_c})({prapa_0_5})(\b)", r"q\3\4", t) ; c_subs += c
+	t, c = re.subn(fr"(\b)(C|Ç)({nis_me_q_jo_me_c})({prapa_0_5})(\b)", r"Q\3\4", t) ; c_subs += c
 
 	## fjalë që shkruen me Ç/ç ose Q/q në vend të C/c-së nistore - çertifikatë -> certifikatë
 	t, c = re.subn(fr"(\b)(ç|q)({nis_me_c})({prapa_0_5})(\b)", r"c\3\4", t) ; c_subs += c
