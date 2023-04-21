@@ -12,7 +12,7 @@ Kodi i programit është shkruar dhe testuar me paketat e mëposhtëme:
 
 ## Përdorimi
 
-Programi mund të përdoret me klikim të dyfishtë te skedarët e parakompiluar ose nga terminali. Për ta thirrur nga skedarët e parakompiluar mjafton një klikim i dyfishtë te skedari **dritare.exe** në sistemet Windows. N;; sistemet GNU/Linux dhe MacOS, e nj;;jta gj;; arrihet n;; duke shtypur n;; terminal komandën e mëposhtëme:
+Programi mund të përdoret me klikim të dyfishtë te skedarët e parakompiluar ose nga terminali. Për ta thirrur nga skedarët e parakompiluar mjafton një klikim i dyfishtë te skedari **dritare.exe** në sistemet Windows. Në sistemet GNU/Linux dhe MacOS, e njëjta gjë arrihet në duke shtypur në terminal komandën e mëposhtëme:
 
 ```
 $ python dritare.py
