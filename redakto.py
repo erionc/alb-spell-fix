@@ -53,6 +53,9 @@ def pas_redaktime(text):
 	## çoc -> çoç
 	t, c = re.subn(fr"(\b)çoc(\b)", r"çoç", t) ; c_subs += c
 
+	## prapësime të zëvendësimeve te disa fjalë të huaja
+	# Nëtwork -> Network
+
 	## zëvendësime të tjera 
 	
 	return (t, e_subs, c_subs, tj_subs)

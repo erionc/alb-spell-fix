@@ -521,8 +521,8 @@ fund_me_eror = "Burr|burr|" + \
 
 ## fjalë që përmbajnë ËSI por shpesh shkruhen me ESI - largesi -> largësi
 ## ruhen prapashtesat ndaj nuk pranohen tema me grupe me | si (e|ë)
-fund_me_esi = "Armiq|armiq|At|at|" + \
-	"But|but|" + \
+fund_me_esi = "Armiq|armiq|Aft|aft|At|at|" + \
+	"Bardh|bardh|But|but|" + \
 	"Drejt|drejt|" + \
 	"Fort|fort|" + \
 	"Gjat|gjat|Gjer|gjer|Fshatar|fshatar|" + \
@@ -537,19 +537,23 @@ fund_me_esi = "Armiq|armiq|At|at|" + \
 
 ## fjalë që përmbajnë ËSOR por shpesh shkruhen me ESOR - rastesor -> rastësor
 ## ruhen prapashtesat ndaj nuk pranohen tema me grupe me | si (e|ë)
-fund_me_esor = "Armiq|armiq|Paq|paq|Rast|rast"
+fund_me_esor = "Armiq|armiq|Jet|jet|Paq|paq|Rast|rast|Shkak|shkak"
 
 ## fjalë që përmbajnë SHTË por shpesh shkruhen me SHTE - kreshte -> kreshtë
 ## ruhen prapashtesat ndaj nuk pranohen tema me grupe me | si (e|ë)
 fund_me_shte = "Ava|ava|" + \
 	"Bri|bri|" + \
+	"Fildi|fildi|" + \
 	"Gja|gja|" + \
+	"He|he|" + \
 	"Ja|ja|" + \
 	"Ka|ka|Kre|kre|" + \
 	"La|la|Le|le|" + \
 	"Mbrap|mbrap|" + \
-	"She|she|" + \
+	"Ngu|ngu|" + \
+	"She|she|Shpe|shpe|" + \
 	"Thje|thje|Tri|tri|" + \
+	"U|u|" + \
 	"Vje|vje"
 
 ## fjalë që përmbajnë ËSHT por shpesh shkruhen me ESHT - qumesht -> qumësht
@@ -698,7 +702,7 @@ def pa_e_prapa(text):
 	t, c = re.subn(fr"(\b)({fund_me_er})(er)({prapa_0_5})(\b)", r"\2ër\4", t) ; e_subs += c
 
 	## fjalë që përmbajnë ësi ; largesi -> largësi
-	t, c = re.subn(fr"(\b)({fund_me_esi})(esi)({prapa_0_5})(\b)", r"\2ësi\4", t) ; e_subs += c
+	t, c = re.subn(fr"(\b)(Pa|pa?)({fund_me_esi})(esi)({prapa_0_5})(\b)", r"\2\3ësi\5", t) ; e_subs += c
 
 	## fjalë që përmbajnë ësor ; paqesor -> paqësor
 	t, c = re.subn(fr"(\b)({fund_me_esor})(esor)({prapa_0_5})(\b)", r"\2ësor\4", t) ; e_subs += c
@@ -716,13 +720,16 @@ def pa_e_prapa(text):
 	t, c = re.subn(fr"(\b)({fund_me_etor})(etor)({prapa_0_5})(\b)", r"\2ëtor\4", t) ; e_subs += c
 
 	## gjithë fjalët që mbarojnë me SHËM - nuk ka fjalë me SHEM
-	t, c = re.subn(fr"(\b)({para_1_12})(shem)(\b)", r"\2shëm\4", t) ; e_subs += c
+	t, c = re.subn(fr"(\b)({para_1_12})(shem)(\b)", r"\2shëm", t) ; e_subs += c
+
+	## gjithë fjalë që mbarojnë me AJTËS - nuk ka fjalë me AJTES
+	t, c = re.subn(fr"(\b)({para_1_12})(ajtes)(\w?)(\b)", r"\2ajtës\4", t) ; e_subs += c
 
 	## gjithë fjalët që mbarojnë me SHMËRI - nuk ka fjalë me SHMERI
 	t, c = re.subn(fr"(\b)({para_1_12})(shmeri)(\b)", r"\2shmëri\4", t) ; e_subs += c
 
 	## fjalë që përmbajnë shtë ; kashte -> kashtë
-	t, c = re.subn(fr"(\b)({fund_me_shte})(shte)({prapa_0_5})(\b)", r"\2shtë\4", t) ; e_subs += c
+	t, c = re.subn(fr"(\b)({fund_me_shte})(shte)({prapa_0_12})(\b)", r"\2shtë\4", t) ; e_subs += c
 
 	return (t, e_subs, c_subs, tj_subs)
 

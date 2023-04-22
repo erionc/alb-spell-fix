@@ -24,7 +24,7 @@ fund_me_er = "Kod|kod|" + \
 nis_me_hyper = "graf|" + \
 	"kub|" + \
 	"lidhje|link|" + \
-	"tekst"
+	"tekst|text"
 
 ## -ACION -> -IM
 ## ruhen prapashtesat ndaj nuk pranohen tema me grupe me | si (e|ë)
@@ -88,5 +88,10 @@ def perkthime(text):
 	t, c = re.subn(fr"(\b)({para_0_5})(L|l)(ink)(\b)", r"\2\3idhje", t) ; tj_subs += c 
 	t, c = re.subn(fr"(\b)({para_0_5})(L|l)(inku)(\b)", r"\2\3idhja", t) ; tj_subs += c 
 	t, c = re.subn(fr"(\b)({para_0_5})(L|l)(ink|inq)(e|et)(\b)", r"\2\3idhj\5", t) ; tj_subs += c 
+
+	## text -> tekst ; Hypertext -> Hipertekst
+	t, c = re.subn(fr"(\b)({para_0_5})(T|t)(ext)(\b)", r"\2\3ekst", t) ; tj_subs += c 
+	t, c = re.subn(fr"(\b)({para_0_5})(T|t)(exti)(\b)", r"\2\3eksti", t) ; tj_subs += c 
+	t, c = re.subn(fr"(\b)({para_0_5})(T|t)(exte|extet)(\b)", r"\2\3ekste\5", t) ; tj_subs += c 
 
 	return (t, e_subs, c_subs, tj_subs)
