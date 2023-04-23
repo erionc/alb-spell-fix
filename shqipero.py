@@ -1,7 +1,6 @@
 
 from percaktime import *
 
-
 ## shkruhen me -CIEN por duhen shkruar me KAN
 ## ruhen prapashtesat ndaj nuk pranohen tema me grupe me | si (e|ë)
 fund_me_icien = "Fizi|fizi|" + \
@@ -44,10 +43,10 @@ def permban_gj(text):
 	t = text ; c_subs, e_subs, tj_subs = 0, 0, 0
 
 	## dixhital -> digjital
-	t, c = re.subn(fr"(\b)(Di|di)(xh)(ital)({prapa_0_5})(\b)", r"\2gj\4\5", t) ; tj_subs += c 
+	t, c = re.subn(fr"(\b)(Di|di)(xh)(ital)({albprapa_0_5})(\b)", r"\2gj\4\5", t) ; tj_subs += c 
 
 	## axhendë -> agjendë
-	t, c = re.subn(fr"(\b)(A|a)(xh)(end)({prapa_0_5})(\b)", r"\2gj\4\5", t) ; tj_subs += c 
+	t, c = re.subn(fr"(\b)(A|a)(xh)(end)({albprapa_0_5})(\b)", r"\2gj\4\5", t) ; tj_subs += c 
 
 	return (t, e_subs, c_subs, tj_subs)
 	
@@ -62,19 +61,19 @@ def shqiperime(text):
 	c_subs += c_c ; e_subs += e_c ; tj_subs += tj_c
 
     ## HYPER -> HIPER ; hypertekst -> hipertekst
-	t, c = re.subn(fr"(\b)(H|h)(yper)({nis_me_hyper})({prapa_0_5})(\b)", r"\2iper\4\5", t) ; tj_subs += c 
+	t, c = re.subn(fr"(\b)(H|h)(yper)({nis_me_hyper})({albprapa_0_5})(\b)", r"\2iper\4\5", t) ; tj_subs += c 
 
     ## -ER -> -UES ; programer -> programues
-	t, c = re.subn(fr"(\b)({para_0_5})({fund_me_er})(er)({prapa_0_5})(\b)", r"\2\3ues\5", t) ; tj_subs += c 
+	t, c = re.subn(fr"(\b)({albpara_0_5})({fund_me_er})(er)({albprapa_0_5})(\b)", r"\2\3ues\5", t) ; tj_subs += c 
 
     ## hiq EN- ; enkodoj -> kodoj
-	t, c = re.subn(fr"(\b)(En|en)({nis_me_en})({prapa_0_5})(\b)", r"\3\4", t) ; tj_subs += c 
+	t, c = re.subn(fr"(\b)(En|en)({nis_me_en})({albprapa_0_5})(\b)", r"\3\4", t) ; tj_subs += c 
 
     ## -CION -> -IM ; telekomunikacion -> telekomunikim
-	t, c = re.subn(fr"(\b)({fund_me_acion})(acion)({prapa_0_5})(\b)", r"\2im\4", t) ; tj_subs += c 
+	t, c = re.subn(fr"(\b)({fund_me_acion})(acion)({albprapa_0_5})(\b)", r"\2im\4", t) ; tj_subs += c 
 
     ## -ICIEN -> -IKAN ; matematicien -> matematikan
-	t, c = re.subn(fr"(\b)({fund_me_icien})(cien)({prapa_0_5})(\b)", r"\2kan\4", t) ; tj_subs += c 
+	t, c = re.subn(fr"(\b)({fund_me_icien})(cien)({albprapa_0_5})(\b)", r"\2kan\4", t) ; tj_subs += c 
 	
 	return (t, e_subs, c_subs, tj_subs)
 
@@ -85,13 +84,13 @@ def perkthime(text):
 	t = text ; c_subs, e_subs, tj_subs = 0, 0, 0
 
 	## link -> lidhje ; Hyperlink -> Hiperlidhje
-	t, c = re.subn(fr"(\b)({para_0_5})(L|l)(ink)(\b)", r"\2\3idhje", t) ; tj_subs += c 
-	t, c = re.subn(fr"(\b)({para_0_5})(L|l)(inku)(\b)", r"\2\3idhja", t) ; tj_subs += c 
-	t, c = re.subn(fr"(\b)({para_0_5})(L|l)(ink|inq)(e|et)(\b)", r"\2\3idhj\5", t) ; tj_subs += c 
+	t, c = re.subn(fr"(\b)({albpara_0_5})(L|l)(ink)(\b)", r"\2\3idhje", t) ; tj_subs += c 
+	t, c = re.subn(fr"(\b)({albpara_0_5})(L|l)(inku)(\b)", r"\2\3idhja", t) ; tj_subs += c 
+	t, c = re.subn(fr"(\b)({albpara_0_5})(L|l)(ink|inq)(e|et)(\b)", r"\2\3idhj\5", t) ; tj_subs += c 
 
 	## text -> tekst ; Hypertext -> Hipertekst
-	t, c = re.subn(fr"(\b)({para_0_5})(T|t)(ext)(\b)", r"\2\3ekst", t) ; tj_subs += c 
-	t, c = re.subn(fr"(\b)({para_0_5})(T|t)(exti)(\b)", r"\2\3eksti", t) ; tj_subs += c 
-	t, c = re.subn(fr"(\b)({para_0_5})(T|t)(exte|extet)(\b)", r"\2\3ekste\5", t) ; tj_subs += c 
+	t, c = re.subn(fr"(\b)({albpara_0_5})(T|t)(ext)(\b)", r"\2\3ekst", t) ; tj_subs += c 
+	t, c = re.subn(fr"(\b)({albpara_0_5})(T|t)(exti)(\b)", r"\2\3eksti", t) ; tj_subs += c 
+	t, c = re.subn(fr"(\b)({albpara_0_5})(T|t)(exte|extet)(\b)", r"\2\3ekste\5", t) ; tj_subs += c 
 
 	return (t, e_subs, c_subs, tj_subs)
