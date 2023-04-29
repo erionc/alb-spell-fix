@@ -31,7 +31,7 @@ nis_me_c = "ertifik"
 ## fjalë ku shfaqen gabime me c-të, q-të dhe ç-të nistore
 def pa_c_nistore(text):
 	## vlerënisje 
-	t = text ; c_subs, e_subs, tj_subs = 0, 0, 0
+	t = text ; c_subs, e_subs, pj_subs, tj_subs = 0, 0, 0, 0
 
 	## fjalë që shkruhen me C/c ose Q/q në vend të Ç/ç-së nistore dhe që marrin prapashtesë - caj -> çaj ; qizme -> çizme
 	t, c = re.subn(fr"(\b)(c|q)({nis_pa_c_me_prap})({albprapa_0_5})(\b)", r"ç\3\4", t) ; c_subs += c
@@ -48,7 +48,7 @@ def pa_c_nistore(text):
 	t, c = re.subn(fr"(\b)(ç|q)({nis_me_c})({albprapa_0_5})(\b)", r"c\3\4", t) ; c_subs += c
 	t, c = re.subn(fr"(\b)(Ç|Q)({nis_me_c})({albprapa_0_5})(\b)", r"C\3\4", t) ; c_subs += c
 
-	return (t, e_subs, c_subs, tj_subs)
+	return (t, e_subs, c_subs, pj_subs, tj_subs)
 
 
 ## fjalë ku shfaqen gabime me c-të, q-të dhe ç-të fundore 
@@ -57,12 +57,12 @@ fund_me_c = "Ky|ky"
 ## fjalë ku shfaqen gabime me c-të, q-të dhe ç-të nistore
 def pa_c_fundore(text):
 	## vlerënisje 
-	t = text ; c_subs, e_subs, tj_subs = 0, 0, 0
+	t = text ; c_subs, e_subs, pj_subs, tj_subs = 0, 0, 0, 0
 
 	## fjalë që shkruhen me c ose q në vend të ç-së fundore - kyc -> kyç
 	t, c = re.subn(fr"(\b)({fund_me_c})(c|q)({albprapa_0_7})(\b)", r"\2ç\4", t) ; c_subs += c
 
-	return (t, e_subs, c_subs, tj_subs)
+	return (t, e_subs, c_subs, pj_subs, tj_subs)
 
 ## fjalë që mbarojnë me çi por shpesh shkruhen me ci
 ## ruhen prapashtesat ndaj nuk pranohen tema me grupe me | si (c|ç)
@@ -84,7 +84,7 @@ permban_cel = "Nder|Ndër|nder|ndër|" + \
 ## përfshihen vetëm ato fjalë që përmbajnë vetëm 1 c e cila është e brendshme
 def me_c_brenda(text):
 	## vlerënisje 
-	t = text ; c_subs, e_subs, tj_subs = 0, 0, 0
+	t = text ; c_subs, e_subs, pj_subs, tj_subs = 0, 0, 0, 0
 
     ## (P|p)ro(ç|q)es -> (P|p)roces 
 	t, c = re.subn(fr"(\b)(P|p)(roçes|roqes)({albprapa_0_5})(\b)", r"\2roces\4", t) ; c_subs += c
@@ -93,13 +93,13 @@ def me_c_brenda(text):
     ##  (L|l)i(ç|q|sh)ens* -> (L|l)icens*
 	t, c = re.subn(fr"(\b)(L|l)(içens|iqens|ishens)({albprapa_0_5})(\b)", r"\2icens\4", t) ; c_subs += c
 
-	return (t, e_subs, c_subs, tj_subs)
+	return (t, e_subs, c_subs, pj_subs, tj_subs)
 
 ## fjalë që shkruhen me C/c në vend të Ç/ç-së së brendshme
 ## përfshihen vetëm ato fjalë që përmbajnë vetëm 1 c e cila është e brendshme
 def pa_c_brenda(text):
 	## vlerënisje 
-	t = text ; c_subs, e_subs, tj_subs = 0, 0, 0
+	t = text ; c_subs, e_subs, pj_subs, tj_subs = 0, 0, 0, 0
 
 	## fjalë që mbarojnë me çi ; inatci -> inatçi ; zanatci -> zanatçi
 	t, c = re.subn(fr"(\b)({fund_me_ci})(ci|qi)({albprapa_0_5})(\b)", r"\2çi\4", t) ; c_subs += c
@@ -110,13 +110,13 @@ def pa_c_brenda(text):
 	## fjalë që përmbajnë ÇEL por shpesh shkruhen me CEL - recel -> reçel
 	t, c = re.subn(fr"(\b)({permban_cel})(cel|qel)({albprapa_0_5})(\b)", r"\2çel\4", t) ; c_subs += c
 
-	return (t, e_subs, c_subs, tj_subs)
+	return (t, e_subs, c_subs, pj_subs, tj_subs)
 
 
 ## redaktime të rasteve c'|q' + folje, ç' + folje, dhe çfarë
 def c_apostrof_folje(text):
 	## vlerënisje 
-	t = text ; c_subs, e_subs, tj_subs = 0, 0, 0
+	t = text ; c_subs, e_subs, pj_subs, tj_subs = 0, 0, 0, 0
 	
 	## ç'bën, ç'bëni
 	t, c = re.subn(fr"(\b)(c|c'|ç|q|q')(bën|ben)({albprapa_0_5})(\b)", r"ç'bën\4", t) ; c_subs += c
@@ -158,34 +158,34 @@ def c_apostrof_folje(text):
 	## Çfarë
 	t, c = re.subn(fr"(\b)(C|Ç|Q)(far)(e|ë)?(\b)", r"Çfarë", t) ; c_subs += c
 
-	return (t, e_subs, c_subs, tj_subs)
+	return (t, e_subs, c_subs, pj_subs, tj_subs)
 
 
 ## funksion për zëvendësime c -> ç 
 def redakto_c(text):
 	## vlerënisje 
-	t = text ; c_subs, e_subs, tj_subs = 0, 0, 0
+	t = text ; c_subs, e_subs, pj_subs, tj_subs = 0, 0, 0, 0
 	
 	## redaktime të rasteve c'|q' + folje, ç' + folje, dhe çfarë
-	t, e_c, c_c, tj_c = c_apostrof_folje(t)
-	c_subs += c_c ; e_subs += e_c ; tj_subs += tj_c
+	t, e_c, c_c, p_c, tj_c = c_apostrof_folje(t)
+	c_subs += c_c ; e_subs += e_c ; pj_subs += p_c ; tj_subs += tj_c
 
 	## fjalë që shkruhen me C/c ose Q/q në vend të Ç/ç-së nistore - cafkë -> çafkë
-	t, e_c, c_c, tj_c = pa_c_nistore(t)
-	c_subs += c_c ; e_subs += e_c ; tj_subs += tj_c
+	t, e_c, c_c, p_c, tj_c = pa_c_nistore(t)
+	c_subs += c_c ; e_subs += e_c ; pj_subs += p_c ; tj_subs += tj_c
 
 	## fjalë që shkruhen me c ose q në vend të ç-së fundore - kyc -> kyç
-	t, e_c, c_c, tj_c = pa_c_fundore(t)
-	c_subs += c_c ; e_subs += e_c ; tj_subs += tj_c
+	t, e_c, c_c, p_c, tj_c = pa_c_fundore(t)
+	c_subs += c_c ; e_subs += e_c ; pj_subs += p_c ; tj_subs += tj_c
 
 	## fjalë që shkruhen me C/c ose Q/q në vend të Ç/ç-së së brendshme - inatci -> inatçi
-	t, e_c, c_c, tj_c = pa_c_brenda(t)
-	c_subs += c_c ; e_subs += e_c ; tj_subs += tj_c
+	t, e_c, c_c, p_c, tj_c = pa_c_brenda(t)
+	c_subs += c_c ; e_subs += e_c ; pj_subs += p_c ; tj_subs += tj_c
 
 	## fjalë që shkruhen me Ç/ç ose Q/q në vend të C/c-së së brendshme - proçes -> proces ; Proqedurë -> Procedurë 
-	t, e_c, c_c, tj_c = me_c_brenda(t)
-	c_subs += c_c ; e_subs += e_c ; tj_subs += tj_c
+	t, e_c, c_c, p_c, tj_c = me_c_brenda(t)
+	c_subs += c_c ; e_subs += e_c ; pj_subs += p_c ; tj_subs += tj_c
 	
-	return (t, e_subs, c_subs, tj_subs)
+	return (t, e_subs, c_subs, pj_subs, tj_subs)
 	
 	

@@ -10,10 +10,41 @@ para_te = "dua\s|do\s|duam\s|doni\s|duan\s|doja\s|doje\s|donte\s|" + \
 	"deshët\s|deshën\s|me\s|sapo\s|porsa\s|duhet\s|sikur\s|mund\s|" + \
 	"kush\s|cil(i|a)\s|cil(ë|a)t\s|ku\sdo\s|kur\sdo\s|(c|ç)far(e|ë)\s" 
 
+def hiq_tekst_joshqip(text):
+	## hiq hiperlidhjet
+	text = re.sub(r'<[^>]*/>', '', text)
+	## hiq termat frëngjisht
+	text = re.sub(r'\((F|f)r\w*(\.|:)(.*?)\)', '', text)
+	## hiq termat italisht
+	text = re.sub(r'\((I|i)t\w*(\.|:)(.*?)\)', '', text)
+	## hiq termat anglisht
+	text = re.sub(r'\((A|a)ng\w*(\.|:)(.*?)\)', '', text)
+	text = re.sub(r'\((E|e)n\w*(\.|:)(.*?)\)', '', text)
+	## hiq termat gjermanisht
+	text = re.sub(r'\((G|g)jer\w*(\.|:)(.*?)\)', '', text)
+	text = re.sub(r'\((D|d)e\w*(\.|:)(.*?)\)', '', text)
+	## hiq termat spanjisht
+	text = re.sub(r'\((S|s)p\w*(\.|:)(.*?)\)', '', text)
+	text = re.sub(r'\((E|e)s\w*(\.|:)(.*?)\)', '', text)
+	## hiq termat rusisht
+	text = re.sub(r'\((R|r)us\w*(\.|:)(.*?)\)', '', text)
+	## hiq termat japonisht
+	text = re.sub(r'\((J|j)ap\w*(\.|:)(.*?)\)', '', text)
+	## hiq termat kineze
+	text = re.sub(r'\((K|k)in\w*(\.|:)(.*?)\)', '', text)
+	## hiq termat turke
+	text = re.sub(r'\((T|t)ur\w*(\.|:)(.*?)\)', '', text)
+	## hiq termat arabe
+	text = re.sub(r'\((A|a)rab\w*(\.|:)(.*?)\)', '', text)
+	return text
+
 ## funksion për zëvendësime që përgatitin zëvendësimet e mëpasshme
 def para_redaktime(text):
 	## vlerënisje 
-	t = text ; c_subs, e_subs, tj_subs = 0, 0, 0
+	t = text ; c_subs, e_subs, pj_subs, tj_subs = 0, 0, 0, 0
+
+	## hiq fjalët e huaja
+	t = hiq_tekst_joshqip(t)
 
 	## per -> për (nuk ka "per" në fgjssh)
 	t, c = re.subn(fr"(\b)per(\b)", r"për", t) ; e_subs += c
@@ -43,12 +74,12 @@ def para_redaktime(text):
 	
 	## zëvendësime të tjera e -> ë
 	
-	return (t, e_subs, c_subs, tj_subs)
+	return (t, e_subs, c_subs, pj_subs, tj_subs)
 	
 ## funksion për zëvendësime që korrigjojnë zëvendësimet e mëparshme
 def pas_redaktime(text):
 	## vlerënisje 
-	t = text ; c_subs, e_subs, tj_subs = 0, 0, 0
+	t = text ; c_subs, e_subs, pj_subs, tj_subs = 0, 0, 0, 0
 	
 	## çoc -> çoç
 	t, c = re.subn(fr"(\b)çoc(\b)", r"çoç", t) ; c_subs += c
@@ -57,40 +88,40 @@ def pas_redaktime(text):
 
 	## zëvendësime të tjera 
 	
-	return (t, e_subs, c_subs, tj_subs)
+	return (t, e_subs, c_subs, pj_subs, tj_subs)
 	
 ## funksioni kryesor i redaktimeve që thërret funksionet e tjera
 def redakto(text):
 	## vlerënisje 
-	t = text ; c_subs, e_subs, tj_subs = 0, 0, 0
+	t = text ; c_subs, e_subs, pj_subs, tj_subs = 0, 0, 0, 0
 
 	# thirren zëvendësimet paraprake
-	t, e_c, c_c, tj_c = para_redaktime(t) 
-	c_subs += c_c ; e_subs += e_c ; tj_subs += tj_c
+	t, e_c, c_c, p_c, tj_c = para_redaktime(t) 
+	c_subs += c_c ; e_subs += e_c ; pj_subs += p_c ; tj_subs += tj_c
 
 	# thirren zëvendësimet e pjesoreve
-	t, e_c, c_c, tj_c = redakto_pjes(t) 
-	c_subs += c_c ; e_subs += e_c ; tj_subs += tj_c
+	t, e_c, c_c, p_c, tj_c = redakto_pjes(t) 
+	c_subs += c_c ; e_subs += e_c ; pj_subs += p_c ; tj_subs += tj_c
 	
 	# thirren zëvendësimet e e-së
-	t, e_c, c_c, tj_c = redakto_e(t) 
-	c_subs += c_c ; e_subs += e_c ; tj_subs += tj_c
+	t, e_c, c_c, p_c, tj_c = redakto_e(t) 
+	c_subs += c_c ; e_subs += e_c ; pj_subs += p_c ; tj_subs += tj_c
 	
 	# thirren zëvendësimet e c-së
-	t, e_c, c_c, tj_c = redakto_c(t) 
-	c_subs += c_c ; e_subs += e_c ; tj_subs += tj_c
+	t, e_c, c_c, p_c, tj_c = redakto_c(t) 
+	c_subs += c_c ; e_subs += e_c ; pj_subs += p_c ; tj_subs += tj_c
 	
 	# thirren zëvendësime për shqipërime
-	t, e_c, c_c, tj_c = shqiperime(t) 
-	c_subs += c_c ; e_subs += e_c ; tj_subs += tj_c
+	t, e_c, c_c, p_c, tj_c = shqiperime(t) 
+	c_subs += c_c ; e_subs += e_c ; pj_subs += p_c ; tj_subs += tj_c
 	
 	# thirren zëvendësime për përkthime
-	t, e_c, c_c, tj_c = perkthime(t) 
-	c_subs += c_c ; e_subs += e_c ; tj_subs += tj_c
+	t, e_c, c_c, p_c, tj_c = perkthime(t) 
+	c_subs += c_c ; e_subs += e_c ; pj_subs += p_c ; tj_subs += tj_c
 	
 	# thirren zëvendësimet përfundimtare
-	t, e_c, c_c, tj_c = pas_redaktime(t) 
-	c_subs += c_c ; e_subs += e_c ; tj_subs += tj_c
+	t, e_c, c_c, p_c, tj_c = pas_redaktime(t) 
+	c_subs += c_c ; e_subs += e_c ; pj_subs += p_c ; tj_subs += tj_c
 
-	return (t, e_subs, c_subs, tj_subs)
+	return (t, e_subs, c_subs, pj_subs, tj_subs)
 	

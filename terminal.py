@@ -11,25 +11,29 @@ def redaktime(in_text):
 	t = input_text ; total_sub = 0
 	
 	## thirret funksioni kryesor i redaktimeve
-	t, e_subs, c_subs, tj_subs = redakto(t)
-	total_sub = c_subs + e_subs + tj_subs
+	t, e_subs, c_subs, pj_subs, tj_subs = redakto(t) 
+	total_sub = c_subs + e_subs + pj_subs + tj_subs
 
 	output_text = t
 	
-	# output_message = f"Zëvendësime të ë-ve:\t\t\t{e_subs}\n" + \
-	# 	f"Zëvendësime të ç-ve:\t{c_subs}\n" + \
-	# 	f"Zëvendësime të tjera:\t{tj_subs}\n" + \
-	# 	f"Zëvendësime totale:\t{total_sub}"
+	output_message = f"-----------------------------\n" + \
+		f"Korrigjime të ë-ve:\t{e_subs}\n" + \
+		f"Korrigjime të ç-ve:\t{c_subs}\n" + \
+		f"Korrigjime pjesoresh:\t{pj_subs}\n" + \
+		f"Korrigjime të tjera:\t{tj_subs}\n" + \
+		f"-----------------------------\n" + \
+		f"Korrigjime totale:\t{total_sub}"
 	
-	# shfaqet totali i zëvendësimeve të kryera
-	output_message = f"Zëvendësime totale:\t{total_sub}\n"
+	## shfaqet totali i zëvendësimeve të kryera
+	# output_message = f"Zëvendësime totale:\t{total_sub}\n"
 
 	return output_text, output_message
 	
 # argumentet për ekzekutimin nga terminali
 parser = argparse.ArgumentParser()
-parser.add_argument('-i', '--input', help='Skedari Hyrës')
-parser.add_argument('-o', '--output', help='Skedari Dalës')
+parser.add_argument('-c', '--corrections', action="store_true", help="Shfaq korrigjimet e kryera")
+parser.add_argument('-i', '--input', help='Skedari hyrës')
+parser.add_argument('-o', '--output', help='Skedari dalës')
 args = parser.parse_args()
 
 ## pikënisja e ekzekutimit
@@ -40,14 +44,17 @@ if __name__ == "__main__":
 		# lexohet dhe përpunohet hyrja
 		in_file = open(args.input, 'r')
 		in_text = in_file.read()
-		text, message = redaktime(in_text)
 		in_file.close()
+		text, message = redaktime(in_text)
 		
 		# shkruhet dalja te skedari dalës
 		out_file = open(args.output, 'w')
 		out_file.write(text)
-		in_file.close()
-		print(f"\n{message}\n")
+		out_file.close()
+		
+		# afishohen korrigjimet e kryera
+		if args.corrections:
+			print(f"\n{message}\n")
 	
 	# nëse jepet hyrja por jo dalja
 	elif args.input and not args.output:
@@ -60,7 +67,10 @@ if __name__ == "__main__":
 		
 		# afishohet dalja te terminali
 		print("\nTeksti dalës:\n", text)
-		print(f"\n{message}\n")
+
+		# afishohen korrigjimet e kryera
+		if args.corrections:
+			print(f"\n{message}\n")
 	
 	# nëse nuk jepen as hyrja as dalja
 	elif not args.input and not args.output:
@@ -69,7 +79,10 @@ if __name__ == "__main__":
 		text, message = redaktime(in_text)
 		# dalja afishohet në terminal
 		print(f"\nTeksti dalës:\n{text}")
-		print(f"\n{message}\n")
+
+		# afishohen korrigjimet e kryera
+		if args.corrections:
+			print(f"\n{message}\n")
 
 	# komandë e shkruar gabim
 	else:

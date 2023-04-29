@@ -40,7 +40,7 @@ permban_gj = "Axhend|axhend|" + \
 
 def permban_gj(text):
 	## vlerënisje 
-	t = text ; c_subs, e_subs, tj_subs = 0, 0, 0
+	t = text ; c_subs, e_subs, pj_subs, tj_subs = 0, 0, 0, 0
 
 	## dixhital -> digjital
 	t, c = re.subn(fr"(\b)(Di|di)(xh)(ital)({albprapa_0_5})(\b)", r"\2gj\4\5", t) ; tj_subs += c 
@@ -48,17 +48,17 @@ def permban_gj(text):
 	## axhendë -> agjendë
 	t, c = re.subn(fr"(\b)(A|a)(xh)(end)({albprapa_0_5})(\b)", r"\2gj\4\5", t) ; tj_subs += c 
 
-	return (t, e_subs, c_subs, tj_subs)
+	return (t, e_subs, c_subs, pj_subs, tj_subs)
 	
 
 ## funksion për shqipërime
 def shqiperime(text):
 	## vlerënisje 
-	t = text ; c_subs, e_subs, tj_subs = 0, 0, 0
+	t = text ; c_subs, e_subs, pj_subs, tj_subs = 0, 0, 0, 0
 
 	## XH -> GJ
-	t, e_c, c_c, tj_c = permban_gj(t)
-	c_subs += c_c ; e_subs += e_c ; tj_subs += tj_c
+	t, e_c, c_c, p_c, tj_c = permban_gj(t)
+	c_subs += c_c ; e_subs += e_c ; pj_subs =+ p_c ; tj_subs += tj_c
 
     ## HYPER -> HIPER ; hypertekst -> hipertekst
 	t, c = re.subn(fr"(\b)(H|h)(yper)({nis_me_hyper})({albprapa_0_5})(\b)", r"\2iper\4\5", t) ; tj_subs += c 
@@ -75,13 +75,13 @@ def shqiperime(text):
     ## -ICIEN -> -IKAN ; matematicien -> matematikan
 	t, c = re.subn(fr"(\b)({fund_me_icien})(cien)({albprapa_0_5})(\b)", r"\2kan\4", t) ; tj_subs += c 
 	
-	return (t, e_subs, c_subs, tj_subs)
+	return (t, e_subs, c_subs, pj_subs, tj_subs)
 
 
 ## funksion për zëvendësimin e fjalëve angleze 
 def perkthime(text):
 	## vlerënisje 
-	t = text ; c_subs, e_subs, tj_subs = 0, 0, 0
+	t = text ; c_subs, e_subs, pj_subs, tj_subs = 0, 0, 0, 0
 
 	## link -> lidhje ; Hyperlink -> Hiperlidhje
 	t, c = re.subn(fr"(\b)({albpara_0_5})(L|l)(ink)(\b)", r"\2\3idhje", t) ; tj_subs += c 
@@ -93,4 +93,4 @@ def perkthime(text):
 	t, c = re.subn(fr"(\b)({albpara_0_5})(T|t)(exti)(\b)", r"\2\3eksti", t) ; tj_subs += c 
 	t, c = re.subn(fr"(\b)({albpara_0_5})(T|t)(exte|extet)(\b)", r"\2\3ekste\5", t) ; tj_subs += c 
 
-	return (t, e_subs, c_subs, tj_subs)
+	return (t, e_subs, c_subs, pj_subs, tj_subs)

@@ -9,21 +9,24 @@ from redakto import *
 def redaktime(field_in, field_out, field_message):
 	# merret përmbajtja e kutizës së parë
 	input_text = field_in.get("1.0", END) 
-	t = input_text ; c_subs, e_subs, tj_subs, total_sub = 0, 0, 0, 0
+	t = input_text ; c_subs, e_subs, pj_subs, tj_subs, total_sub = 0, 0, 0, 0, 0
 	
 	## thirret funksioni kryesor i redaktimeve
-	t, e_subs, c_subs, tj_subs = redakto(t)
-	total_sub = c_subs + e_subs + tj_subs
+	t, e_subs, c_subs, pj_subs, tj_subs = redakto(t) 
+	total_sub = c_subs + e_subs + pj_subs + tj_subs
 
 	output_text = t
 
-	# output_message = f"Zëvendësime të ë-ve:\t\t\t{e_subs}\n" + \
-	# 	f"Zëvendësime të ç-ve:\t\t\t{c_subs}\n" + \
-	# 	f"Zëvendësime të tjera:\t\t\t{tj_subs}\n" + \
-	# 	f"Zëvendësime totale:\t\t\t{total_sub}"
+	# output_message = f"-----------------------------\n" + \
+	# 	f"Korrigjime të ë-ve:\t{e_subs}\n" + \
+	# 	f"Korrigjime të ç-ve:\t{c_subs}\n" + \
+	# 	f"Korrigjime pjesoresh:\t{pj_subs}\n" + \
+	# 	f"Korrigjime të tjera:\t{tj_subs}\n" + \
+	# 	f"-----------------------------\n" + \
+	# 	f"Korrigjime totale:\t{total_sub}"
 	
 	# shfaqet totali i zëvendësimeve të kryera
-	output_message = f"Zëvendësime totale:\t\t{total_sub}\n"
+	output_message = f"Korrigjime totale:\t\t{total_sub}\n"
 	
 	# futet teksti i redaktuar te kutiza e dytë
 	field_out.insert("1.0", output_text)
