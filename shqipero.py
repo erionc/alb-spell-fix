@@ -56,6 +56,12 @@ def shqiperime(text):
 	## vlerënisje 
 	t = text ; c_subs, e_subs, pj_subs, tj_subs = 0, 0, 0, 0
 
+	## kthimi i pikës në presje dhjetore 0.345 -> 0,345 ; 3.6e6 -> 3,6e6 ; -34.4e-4 -> -34,4e-4
+	t, c = re.subn(fr"(\b)([-+]?)([0-9]*)(\.)([0-9]+)([eE][-+]?[0-9]+)?(\b)", r"\2\3,\5\6", t) ; 
+	## shprehja e mëposhtëme zëvendëson edhe numrat e shkruar në formën .345 -> ,345
+	# t, c = re.subn(fr"([-+]?)([0-9]*)(\.)([0-9]+)([eE][-+]?[0-9]+)?(\b)", r"\1\2,\4\5", t)
+	tj_subs += c 
+
 	## XH -> GJ
 	t, e_c, c_c, p_c, tj_c = permban_gj(t)
 	c_subs += c_c ; e_subs += e_c ; pj_subs =+ p_c ; tj_subs += tj_c

@@ -30,12 +30,18 @@ def hiq_tekst_joshqip(text):
 	text = re.sub(r'\((R|r)us\w*(\.|:)(.*?)\)', '', text)
 	## hiq termat japonisht
 	text = re.sub(r'\((J|j)ap\w*(\.|:)(.*?)\)', '', text)
+	## hiq termat portugalisht
+	text = re.sub(r'\((P|p)ort\w*(\.|:)(.*?)\)', '', text)
 	## hiq termat kineze
 	text = re.sub(r'\((K|k)in\w*(\.|:)(.*?)\)', '', text)
 	## hiq termat turke
 	text = re.sub(r'\((T|t)ur\w*(\.|:)(.*?)\)', '', text)
 	## hiq termat arabe
 	text = re.sub(r'\((A|a)rab\w*(\.|:)(.*?)\)', '', text)
+
+	## remove double+ spaces between two words
+	text = re.sub(r'(\w+)([ ]{2,})(\w+)', r'\1 \3', text)
+
 	return text
 
 ## funksion për zëvendësime që përgatitin zëvendësimet e mëpasshme
@@ -71,7 +77,7 @@ def para_redaktime(text):
 	
 	## do te -> do të ; dua te -> dua të ; desha te -> desha të
 	t, c = re.subn(fr"(\b)({para_te})(te)(\b)", r"\2të", t) ; e_subs += c
-	
+
 	## zëvendësime të tjera e -> ë
 	
 	return (t, e_subs, c_subs, pj_subs, tj_subs)
@@ -83,6 +89,12 @@ def pas_redaktime(text):
 	
 	## çoc -> çoç
 	t, c = re.subn(fr"(\b)çoc(\b)", r"çoç", t) ; c_subs += c
+
+	## te + folje -> të + folje
+	t, c = re.subn(fr"(\b)(te )({folje})({albprapa_0_3})(\b)", r"të \3\4", t) ; e_subs += c
+
+	## te te + folje -> të të + folje
+	t, c = re.subn(fr"(\b)(te |të )(te |të )({folje})({albprapa_0_3})(\b)", r"të të \4\5", t) ; e_subs += c
 
 	## prapësime të zëvendësimeve te disa fjalë të huaja
 

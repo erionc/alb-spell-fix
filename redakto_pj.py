@@ -42,7 +42,7 @@ pj_pa_re = "ble|" + \
 
 ## pjesore të shkurtra që mbarojnë me 'u' por që duhet të 
 ## mbarojnë me 'ar' -- shku -> shkuar
-pj_pa_ar = "akordu|aktivizu|akuzu|analizu|arnu|" + \
+pj_pa_ar = "akordu|aktivizu|akuzu|analizu|anu|arnu|" + \
 "barazu|besu|blu|" + \
 "caktu|çliru|çmu|çu|(c|ç)minu|(c|ç)montu|" + \
 "darku|dep(e|ë)rtu|d(e|ë)ftu|d(e|ë)gju|drenu|dhunu|dreku|" + \
@@ -50,6 +50,7 @@ pj_pa_ar = "akordu|aktivizu|akuzu|analizu|arnu|" + \
 "gatu|g(e|ë)rmu|gllab(e|ë)ru|" + \
 "hamend(e|ë)su|" + \
 "imitu|" + \
+"jetu|" + \
 "la|lajm(e|ë)ru|lexu|" + \
 "k(e|ë)ndu|k(e|ë)rc(e|ë)nu|k(e|ë)rku|klasifiku|konsumu|kopju|korrigju|kru|kryq(e|ë)zu|kund(e|ë)rshtu|kundru|kuror(e|ë)zu|" + \
 "livru|l(e|ë)ndu|" + \
@@ -92,7 +93,7 @@ pj_pa_er = "d(e|ë)fry|d(e|ë)mshp(e|ë)rbly|" + \
 "kap(e|ë)rcy|k(e|ë)mby|k(e|ë)rcy|kry|kthy|kursy|" + \
 "ly|" + \
 "mall(e|ë)ngjy|mb(e|ë)rthy|" + \
-"ngall(e|ë)njy|ngash(e|ë)ry|ngaz(e|ë)lly|ng(e|ë)rthy|ngjy|" + \
+"ngadh(e|ë)njy|ngash(e|ë)ry|ngaz(e|ë)lly|ng(e|ë)rthy|ngjy|" + \
 "parap(e|ë)lqy|p(e|ë)lqy|p(e|ë)rkthy|p(e|ë)rly|p(e|ë)rthy|" + \
 "rr(e|ë)fy|rr(e|ë)mby|" + \
 "sh(e|ë)rby|shk(e|ë)lqy|shly|shqy|shp(e|ë)rbly|shp(e|ë)rthy|" + \

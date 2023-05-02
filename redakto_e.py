@@ -395,7 +395,7 @@ nis_me_le = "kua|kun|kuq|kur|" + \
 	"ndim|ndo|" + \
 	"pih|pij|pir" + \
 	"shim|sho|shua|shue|" + \
-	"viz"
+	"viz|vroj"
 
 ## fjalë që nisin me LLË por shpesh shkruhen me LLE - llengë -> llëngë
 ## ruhen prapashtesat ndaj nuk pranohen tema me grupe me | si (e|ë)
@@ -549,6 +549,10 @@ fund_me_esi = "Aft|aft|An|an|Armiq|armiq|At|at|" + \
 	"Shëndet|shëndet|Shendet|shendet|Shpejt|shpejt|" + \
 	"Thjesht|thjesht|" + \
 	"Var|var|Verdh|verdh|Vërtet|vërtet|Vertet|vertet|Vrazhd|vrazhd"
+
+## fjalë që përmbajnë ËSO por shpesh shkruhen me ESO - puneso -> punëso
+## ruhen prapashtesat ndaj nuk pranohen tema me grupe me | si (e|ë)
+fund_me_eso = "Pun|pun|Hamend|hamend|Armiq|armiq|Jet|jet"
 
 ## fjalë që përmbajnë ËSOR por shpesh shkruhen me ESOR - rastesor -> rastësor
 ## ruhen prapashtesat ndaj nuk pranohen tema me grupe me | si (e|ë)
@@ -729,6 +733,9 @@ def pa_e_prapa(text):
 
 	## fjalë që përmbajnë ësi ; largesi -> largësi
 	t, c = re.subn(fr"(\b)(Pa|pa?)({fund_me_esi})(esi)({albprapa_0_5})(\b)", r"\2\3ësi\5", t) ; e_subs += c
+
+	## fjalë që përmbajnë ëso ; puneso -> punëso
+	t, c = re.subn(fr"(\b)({fund_me_eso})(eso)({albprapa_1_5})(\b)", r"\2ëso\4", t) ; e_subs += c
 
 	## fjalë që përmbajnë ësor ; paqesor -> paqësor
 	t, c = re.subn(fr"(\b)({fund_me_esor})(esor)({albprapa_0_5})(\b)", r"\2ësor\4", t) ; e_subs += c
