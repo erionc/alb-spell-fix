@@ -84,22 +84,22 @@ albprapa_1_12 = "[a-vx-zA-VX-Z0-9çÇëË_-]{1,12}"
 
 ## foljet e zgjedhimit të parë
 ## ruhen prapashtesat ndaj nuk pranohen tema me grupe me | si (e|ë)
-folje_zgj_1 = "acaro|admiro|aftëso|akordo|aktivizo|akumulo|analizo|anashkalo|ano|arno|aspiro|avanco|" + \
+folje_zgj_1 = "abuzo|acaro|admiro|adhuro|aftëso|akordo|aktivizo|akumulo|akuzo|analizo|anashkalo|ano|arno|aspiro|avanco|" + \
     "barazo|beso|blindo|blua|bre|" + \
     "cakto|cilëso|" + \
     "çliro|çmino|çmo|çmonto|" + \
-    "darko|depërto|dëfre|dëfto|dëgjo|dëmshpërble|dëno|dërgo|dikto|diskuto|drejto|dreko|dreno|duro|" + \
-    "dhuro|" + \
+    "dallo|darko|depërto|dëfre|dëfto|dëgjo|dëmshpërble|dëno|dërgo|dështo|dikto|diskuto|drejto|dreko|dreno|duro|" + \
+    "dhuno|dhuro|" + \
     "emëro|emërto|" + \
     "ëndërro|" + \
-    "falendero|falëndero|fërko|fërshëlle|flijo|formo|formulo|fshi|fto|" + \
+    "falendero|falëndero|fërko|fërshëlle|filloj|flijo|formo|formulo|fshi|fto|" + \
     "gatua|gdhi|gënje|gërmo|gllabëro|" + \
     "gjurmo|" + \
-    "hakërre|hamendëso|harro|harxho|" + \
-    "imito|" + \
+    "hakërre|hamendëso|harro|harxho|hulumto|" + \
+    "imito|intimido|injoro|" + \
     "jeto|jetëso|" + \
     "kallëzo|kapërce|kapërdi|karakterizo|këmbe|këndo|kërce|kërko|klasifiko|konsumo|kontrollo|kopjo|korrigjo|krijo|krye|kryqëzo|kthe|kufizo|kujto|kundërshto|kupto|kurorëzo|kurse|" + \
-    "la|lajmëro|lexo|lëndo|lëpi|lëvro|livro|lua|lundro|" + \
+    "la|lajmëro|lexo|lëndo|lëpi|lëro|lëvro|livro|lua|lundro|" + \
     "mallëngje|mashtro|mbaro|mbërthe|mbij|mendo|mëso|mirato|mirëkupto|mpi|" + \
     "nda|ndërto|ndëshko|ndijo|ndje|ndriço|ndrysho|ndy|ngacmo|ngadhënje|ngashëre|ngazëlle|ngërthe|ngri|ngushto|nxi|" + \
     "pajto|parapëlqe|parashiko|pastro|pendo|pengo|pëlqe|përmba|përdhuno|përgjo|përjeto|përkthe|përlye|përto|përthye|pëso|piketo|pikëllo|pikturo|pleqëro|prano|profilizo|provo|punëso|puno|pusho|" + \
@@ -119,19 +119,21 @@ folje_zgj_1 = "acaro|admiro|aftëso|akordo|aktivizo|akumulo|analizo|anashkalo|an
 ## ruhen prapashtesat ndaj nuk pranohen tema me grupe me | si (e|ë)
 folje_zgj_2 = "arratis|" + \
     "bërtas|brengos|" + \
-    "çmend|" + \
+    "djeg|" + \
+    "çakërdis|çmend|ço|" + \
     "flak|" + \
     "gërhas|" + \
     "hap|" + \
     "kap|korr|kurdis|" + \
     "lag|" + \
     "mat|mbjell|" + \
-    "ndesh|ndrydh|ngas|ngrys|nuhat|nxjer|" + \
-    "pre|" + \
-    "she|" + \
+    "ndesh|ndrydh|ngas|ngrys|nis|nuhat|nxjer|" + \
+    "prek|" + \
+    "qëndis|" + \
+    "she|shkreh|shtyp|" + \
     "thith|" + \
     "ul" + \
-    "varro|vulo|" + \
+    "varro|vjedh|vjell|vulo|" + \
     "zbardh|zbyth|zgjat|zmbraps|zhyt"
 
 ## foljet e zgjedhimit të tretë
