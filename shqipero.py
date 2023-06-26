@@ -1,7 +1,6 @@
 
 from percaktime import *
 
-
 ## XH -> GJ
 def permban_gj(text):
 	## vlerënisje 

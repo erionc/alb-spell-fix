@@ -1,4 +1,6 @@
 
+''' Redaktimi ë-ve '''
+
 from percaktime import *
 
 '''

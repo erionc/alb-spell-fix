@@ -1,4 +1,6 @@
 
+''' Redaktimi ç-ve '''
+
 from percaktime import *
 
 ## temat që shkruhen me C/c në vend të Ç/ç-së nistore
@@ -52,7 +54,20 @@ def pa_c_nistore(text):
 
 
 ## fjalë ku shfaqen gabime me c-të, q-të dhe ç-të fundore 
-fund_me_c = "Ky|ky"
+fund_me_c = "Barka|barka|Brumba|brumba|Buzëvi|buzëvi|Buzevi|buzevi|" + \
+	"Ceki|Çeki|ceki|çeki|" + \
+	"Gaga|gaga|Gali|gali|" + \
+	"Gjemba|gjemba" + \
+	"Hara|hara|" + \
+	"Ila|ila|" + \
+	"Kaliva|kaliva|Kalu|kalu|Kapu|kapu|Kërba|kërba|Kerba|kerba|Kokëvi|kokëvi|Kokevi|kokevi|Kerri|Kërri|kerri|kërri|Kolopu|kolopu|Ky|ky|" + \
+	"Masti|masti|" + \
+	"Qerpi|qerpi|" + \
+	"Rruga|rruga|" + \
+	"Si|si|" + \
+	"Trazova|trazova|" + \
+	"Vi|vi|Vin|vin|" + \
+	"Zgji|zgji"
 
 ## fjalë ku shfaqen gabime me c-të, q-të dhe ç-të nistore
 def pa_c_fundore(text):
@@ -64,13 +79,18 @@ def pa_c_fundore(text):
 
 	return (t, e_subs, c_subs, pj_subs, tj_subs)
 
+## fjalë që nisin me biç por shpesh shkruhen me bic
+## ruhen prapashtesat ndaj nuk pranohen tema me grupe me | si (c|ç)
+nis_me_bic = "ak|iklet|im|ki"
+
 ## fjalë që mbarojnë me çi por shpesh shkruhen me ci
 ## ruhen prapashtesat ndaj nuk pranohen tema me grupe me | si (c|ç)
-fund_me_ci = "All|all|Batak|batak|Inat|inat|Top|top|Zanat|zanat" 
+fund_me_ci = "All|all|Batak|batak|Fu|fu|Inat|inat|Mel|mel|Mël|mël|Top|top|Zanat|zanat" 
 
 ## fjalë që përmbajnë ÇUES/ÇOJ por shpesh shkruhen me CUES/COJ - ndricues -> ndriçues ; ndricoj-> ndriçoj
 ## ruhen prapashtesat ndaj nuk pranohen tema me grupe me | si (c|ç)
-permban_cues_coj_cim = "Lin|lin|" + \
+permban_cues_coj_cim = "Bi|bi|" + \
+	"Lin|lin|" + \
 	"Ndri|ndri|" + \
 	"Për|për|Per|per|" + \
 	"Tej|tej"
@@ -100,6 +120,10 @@ def me_c_brenda(text):
 def pa_c_brenda(text):
 	## vlerënisje 
 	t = text ; c_subs, e_subs, pj_subs, tj_subs = 0, 0, 0, 0
+
+	## fjalë që nisin me BIÇ por shpesh shkruhen me BIC - bicikletë -> biçikletë
+	t, c = re.subn(fr"(\b)(Bic)({nis_me_bic})({albprapa_0_5})(\b)", r"Biç\3\4", t) ; c_subs += c
+	t, c = re.subn(fr"(\b)(bic)({nis_me_bic})({albprapa_0_5})(\b)", r"biç\3\4", t) ; c_subs += c
 
 	## fjalë që mbarojnë me çi ; inatci -> inatçi ; zanatci -> zanatçi
 	t, c = re.subn(fr"(\b)({fund_me_ci})(ci|qi)({albprapa_0_5})(\b)", r"\2çi\4", t) ; c_subs += c
@@ -187,5 +211,4 @@ def redakto_c(text):
 	c_subs += c_c ; e_subs += e_c ; pj_subs += p_c ; tj_subs += tj_c
 	
 	return (t, e_subs, c_subs, pj_subs, tj_subs)
-	
 	

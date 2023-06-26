@@ -1,9 +1,9 @@
 
-from redakto_pj import *
 from redakto_e import *
 from redakto_c import *
+from redakto_psh import *
+from redakto_pj import *
 from shqipero import *
-from pshtesa import *
 
 ## fjalë që i paraprinë të-së -- do të, dua të, desha të 
 para_te = "dua\s|do\s|duam\s|doni\s|duan\s|doja\s|doje\s|donte\s|" + \
@@ -115,6 +115,10 @@ def redakto(text):
 	# thirren zëvendësimet e pjesoreve
 	t, e_c, c_c, p_c, tj_c = redakto_pjes(t) 
 	c_subs += c_c ; e_subs += e_c ; pj_subs += p_c ; tj_subs += tj_c
+
+	# thirren zëvendësime për parashtesat dhe prapashtesat
+	t, e_c, c_c, p_c, tj_c = paraprapashtesa(t) 
+	c_subs += c_c ; e_subs += e_c ; pj_subs += p_c ; tj_subs += tj_c
 	
 	# thirren zëvendësimet e e-së
 	t, e_c, c_c, p_c, tj_c = redakto_e(t) 
@@ -130,10 +134,6 @@ def redakto(text):
 	
 	# thirren zëvendësime për përkthime
 	t, e_c, c_c, p_c, tj_c = perkthime(t) 
-	c_subs += c_c ; e_subs += e_c ; pj_subs += p_c ; tj_subs += tj_c
-
-	# thirren zëvendësime për parashtesat dhe prapashtesat
-	t, e_c, c_c, p_c, tj_c = paraprapashtesa(t) 
 	c_subs += c_c ; e_subs += e_c ; pj_subs += p_c ; tj_subs += tj_c
 	
 	# thirren zëvendësimet përfundimtare

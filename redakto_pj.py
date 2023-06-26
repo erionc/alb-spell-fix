@@ -1,4 +1,6 @@
 
+''' Redaktimi i formave të gabuara të pjesoreve '''
+
 from percaktime import *
 
 ## foljet ndihmëse kam/jam që paraprijnë pjesoret

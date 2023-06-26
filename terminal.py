@@ -1,4 +1,10 @@
 
+'''
+timecom terminal.bin -c -i ./tmp/3000_cased.txt -o /dev/null
+Korrigjime totale:      1627
+Runtime: 18.954 seconds
+'''
+
 import re, sys, argparse	# paketa të domosdoshme
 
 # importimi i funksioneve korrigjuese nga modulet përkatëse
