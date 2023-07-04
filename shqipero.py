@@ -1,7 +1,7 @@
 
 from percaktime import *
 
-## XH -> GJ
+## G/XH/ZH -> GJ
 def permban_gj(text):
 	## vlerënisje 
 	t = text ; c_subs, e_subs, pj_subs, tj_subs = 0, 0, 0, 0

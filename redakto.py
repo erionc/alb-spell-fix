@@ -11,6 +11,23 @@ para_te = "dua\s|do\s|duam\s|doni\s|duan\s|doja\s|doje\s|donte\s|" + \
 	"deshët\s|deshën\s|me\s|sapo\s|porsa\s|duhet\s|sikur\s|mund\s|" + \
 	"kush\s|cil(i|a)\s|cil(ë|a)t\s|ku\sdo\s|kur\sdo\s|(c|ç)far(e|ë)\s" 
 
+
+## fjalë që nisin me RR por shpesh shkruhen me R - ruga -> rruga
+## ruhen prapashtesat ndaj nuk pranohen tema me grupe me | si (e|ë)
+nis_me_r_rr = "afsh|og|ot|ug"
+
+## redaktimi i RR-ve nistore të shkruara R
+def redakto_r_rr(text):
+	## vlerënisje 
+	t = text ; c_subs, e_subs, pj_subs, tj_subs = 0, 0, 0, 0
+
+	## ruga -> rruga
+	t, c = re.subn(fr"(\b)(R|r)({nis_me_r_rr})({albprapa_0_7})(\b)", r"\2r\3\4", t) ; tj_subs += c
+
+	return (t, e_subs, c_subs, pj_subs, tj_subs)
+
+
+# heqja e teksteve gjuhë të huaj që zakonisht jepen në kllapa
 def hiq_tekst_joshqip(text):
 	## hiq hiperlidhjet
 	text = re.sub(r'<[^>]*/>', '', text)
@@ -40,7 +57,7 @@ def hiq_tekst_joshqip(text):
 	## hiq termat arabe
 	text = re.sub(r'\((A|a)rab\w*(\.|:)(.*?)\)', '', text)
 
-	## remove double+ spaces between two words
+	## hiq dy apo më shumë hapësira të njëpasnjëshme midis dy fjalëve
 	text = re.sub(r'(\w+)([ ]{2,})(\w+)', r'\1 \3', text)
 
 	return text
@@ -102,6 +119,18 @@ def pas_redaktime(text):
 	## zëvendësime të tjera 
 	
 	return (t, e_subs, c_subs, pj_subs, tj_subs)
+
+
+## prapësime që përbëjnë përjashtime të rralla në zëvendësime të tjera 
+def prapesime(text):
+	## vlerënisje 
+	t = text ; c_subs, e_subs, pj_subs, tj_subs = 0, 0, 0, 0
+
+	## rrotacizëm -> rotacizëm
+	t, c = re.subn(fr"(\b)(R|r)(r)(otaciz)({albprapa_0_3})(\b)", r"\2\4\5", t) ; tj_subs += c
+
+	return (t, e_subs, c_subs, pj_subs, tj_subs)
+
 	
 ## funksioni kryesor i redaktimeve që thërret funksionet e tjera
 def redakto(text):
@@ -127,6 +156,10 @@ def redakto(text):
 	# thirren zëvendësimet e c-së
 	t, e_c, c_c, p_c, tj_c = redakto_c(t) 
 	c_subs += c_c ; e_subs += e_c ; pj_subs += p_c ; tj_subs += tj_c
+
+	# thirren redaktimet e rr-ve nistore të shkruara r
+	t, e_c, c_c, p_c, tj_c = redakto_r_rr(t) 
+	c_subs += c_c ; e_subs += e_c ; pj_subs += p_c ; tj_subs += tj_c
 	
 	# thirren zëvendësime për shqipërime
 	t, e_c, c_c, p_c, tj_c = shqiperime(t) 
@@ -138,6 +171,10 @@ def redakto(text):
 	
 	# thirren zëvendësimet përfundimtare
 	t, e_c, c_c, p_c, tj_c = pas_redaktime(t) 
+	c_subs += c_c ; e_subs += e_c ; pj_subs += p_c ; tj_subs += tj_c
+
+	# thirren prapësimet
+	t, e_c, c_c, p_c, tj_c = prapesime(t) 
 	c_subs += c_c ; e_subs += e_c ; pj_subs += p_c ; tj_subs += tj_c
 
 	return (t, e_subs, c_subs, pj_subs, tj_subs)
