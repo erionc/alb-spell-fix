@@ -1,5 +1,5 @@
 
-''' Redaktimi i formave të gabuara të pjesoreve '''
+''' Redaktime të formave të gabuara të pjesoreve '''
 
 from percaktime import *
 

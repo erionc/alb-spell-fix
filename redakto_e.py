@@ -1,5 +1,5 @@
 
-''' Redaktimi ë-ve '''
+''' Redaktime të ë-ve '''
 
 from percaktime import *
 

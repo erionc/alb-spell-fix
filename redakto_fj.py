@@ -1,4 +1,6 @@
 
+''' Redaktime të fjalëve, fonemave dhe aspekteve stilistike '''
+
 from percaktime import *
 
 ## G/XH/ZH -> GJ

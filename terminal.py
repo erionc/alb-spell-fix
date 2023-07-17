@@ -1,8 +1,9 @@
 
 '''
-timecom terminal.bin -c -i ./tmp/3000_cased.txt -o /dev/null
-Korrigjime totale:      1627
-Runtime: 18.954 seconds
+timecl python terminal.py -c -i ./tmp/3000h3000t.txt -o /dev/null
+timecl ./terminal.bin -c -i ./tmp/3000h3000t.txt -o /dev/null
+Korrigjime totale:      2793
+Runtime: 86.088 seconds
 '''
 
 import re, sys, argparse	# paketa të domosdoshme

@@ -3,7 +3,7 @@ from redakto_e import *
 from redakto_c import *
 from redakto_psh import *
 from redakto_pj import *
-from shqipero import *
+from redakto_fj import *
 
 ## fjalë që i paraprinë të-së -- do të, dua të, desha të 
 para_te = "dua\s|do\s|duam\s|doni\s|duan\s|doja\s|doje\s|donte\s|" + \
@@ -14,7 +14,10 @@ para_te = "dua\s|do\s|duam\s|doni\s|duan\s|doja\s|doje\s|donte\s|" + \
 
 ## fjalë që nisin me RR por shpesh shkruhen me R - ruga -> rruga
 ## ruhen prapashtesat ndaj nuk pranohen tema me grupe me | si (e|ë)
-nis_me_r_rr = "afsh|og|ot|ug"
+nis_me_r_rr = "afsh|" + \
+	"ebesh|ebull|eban|ebaq|ena|eng|" + \
+	"oba|obu|og|op|ot|ozg|" + \
+	"uaz|udh|uf|ug|umb|un|uv|uz"  
 
 ## redaktimi i RR-ve nistore të shkruara R
 def redakto_r_rr(text):
@@ -128,6 +131,8 @@ def prapesime(text):
 
 	## rrotacizëm -> rotacizëm
 	t, c = re.subn(fr"(\b)(R|r)(r)(otaciz)({albprapa_0_3})(\b)", r"\2\4\5", t) ; tj_subs += c
+	## rrund -> rund
+	t, c = re.subn(fr"(\b)(R|r)(r)(und)({albprapa_0_3})(\b)", r"\2\4\5", t) ; tj_subs += c
 
 	return (t, e_subs, c_subs, pj_subs, tj_subs)
 
