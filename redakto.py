@@ -16,16 +16,25 @@ para_te = "dua\s|do\s|duam\s|doni\s|duan\s|doja\s|doje\s|donte\s|" + \
 ## ruhen prapashtesat ndaj nuk pranohen tema me grupe me | si (e|ë)
 nis_me_r_rr = "afsh|" + \
 	"ebesh|ebull|eban|ebaq|ena|eng|" + \
-	"oba|obu|og|op|ot|ozg|" + \
+	"ëmbe|ëmo|" + \
+	"enj|ënj|" + \
+	"oba|obu|og|ogoz|op|ot|ozg|" + \
 	"uaz|udh|uf|ug|umb|un|uv|uz"  
 
-## redaktimi i RR-ve nistore të shkruara R
+## fjalë që nisin me R por shpesh shkruhen me RR - rradhë -> radhë
+## ruhen prapashtesat ndaj nuk pranohen tema me grupe me | si (e|ë)
+nis_me_rr_r = "adhë|anor|eshj" 
+
+## redaktimi i RR-ve nistore të shkruara R, ose R-ve nistore të shkruara RR
 def redakto_r_rr(text):
 	## vlerënisje 
 	t = text ; c_subs, e_subs, pj_subs, tj_subs = 0, 0, 0, 0
 
 	## ruga -> rruga
 	t, c = re.subn(fr"(\b)(R|r)({nis_me_r_rr})({albprapa_0_7})(\b)", r"\2r\3\4", t) ; tj_subs += c
+
+	## rradhë -> radhë
+	t, c = re.subn(fr"(\b)(R|r)(r)({nis_me_rr_r})({albprapa_0_7})(\b)", r"\2\4\5", t) ; tj_subs += c
 
 	return (t, e_subs, c_subs, pj_subs, tj_subs)
 
@@ -70,8 +79,8 @@ def para_redaktime(text):
 	## vlerënisje 
 	t = text ; c_subs, e_subs, pj_subs, tj_subs = 0, 0, 0, 0
 
-	## hiq fjalët e huaja
-	t = hiq_tekst_joshqip(t)
+	## hiq fjalët e huaja - e nevojshme vetëm kur përgatitet një korpus shqip
+	# t = hiq_tekst_joshqip(t)
 
 	## per -> për (nuk ka "per" në fgjssh)
 	t, c = re.subn(fr"(\b)per(\b)", r"për", t) ; e_subs += c
@@ -154,16 +163,16 @@ def redakto(text):
 	t, e_c, c_c, p_c, tj_c = paraprapashtesa(t) 
 	c_subs += c_c ; e_subs += e_c ; pj_subs += p_c ; tj_subs += tj_c
 	
+	# thirren redaktimet e rr-ve nistore të shkruara r
+	t, e_c, c_c, p_c, tj_c = redakto_r_rr(t) 
+	c_subs += c_c ; e_subs += e_c ; pj_subs += p_c ; tj_subs += tj_c
+
 	# thirren zëvendësimet e e-së
 	t, e_c, c_c, p_c, tj_c = redakto_e(t) 
 	c_subs += c_c ; e_subs += e_c ; pj_subs += p_c ; tj_subs += tj_c
 	
 	# thirren zëvendësimet e c-së
 	t, e_c, c_c, p_c, tj_c = redakto_c(t) 
-	c_subs += c_c ; e_subs += e_c ; pj_subs += p_c ; tj_subs += tj_c
-
-	# thirren redaktimet e rr-ve nistore të shkruara r
-	t, e_c, c_c, p_c, tj_c = redakto_r_rr(t) 
 	c_subs += c_c ; e_subs += e_c ; pj_subs += p_c ; tj_subs += tj_c
 	
 	# thirren zëvendësime për shqipërime

@@ -86,31 +86,31 @@ albprapa_1_12 = "[a-vx-zA-VX-Z0-9çÇëË_-]{1,12}"
 ## ruhen prapashtesat ndaj nuk pranohen tema me grupe me | si (e|ë)
 folje_zgj_1 = "abuzo|acaro|admiro|adhuro|aftëso|akordo|aktivizo|akumulo|akuzo|analizo|anashkalo|ano|arno|aspiro|avanco|" + \
     "barazo|beso|blindo|blua|bre|" + \
-    "cakto|cilëso|" + \
+    "cakto|certifiko|cilëso|" + \
     "çliro|çmino|çmo|çmonto|" + \
     "dallo|darko|depërto|dëfre|dëfto|dëgjo|dëmshpërble|dëno|dërgo|dështo|dikto|diskuto|drejto|dreko|dreno|duro|" + \
     "dhuno|dhuro|" + \
     "emëro|emërto|" + \
     "ëndërro|" + \
-    "falendero|falëndero|fërko|fërshëlle|filloj|flijo|formo|formulo|fshi|fto|" + \
-    "gatua|gdhi|gënje|gërmo|gllabëro|" + \
-    "gjurmo|" + \
+    "falendero|falëndero|fërko|fërshëlle|filloj|flijo|formo|formulo|freno|fshi|fto|fuqizo|" + \
+    "gatua|gdhi|gënje|gërmo|gllabëro|gurgullo|guxo|" + \
+    "gjua|gjurmo|" + \
     "hakërre|hamendëso|harro|harxho|hulumto|" + \
-    "imito|intimido|injoro|" + \
+    "imito|intimido|injoro|interno|izolo|" + \
     "jeto|jetëso|" + \
-    "kallëzo|kapërce|kapërdi|karakterizo|këmbe|këndo|kërce|kërko|klasifiko|konsumo|kontrollo|kopjo|korrigjo|krijo|krye|kryqëzo|kthe|kufizo|kujto|kundërshto|kupto|kurorëzo|kurse|" + \
-    "la|lajmëro|lexo|lëndo|lëpi|lëro|lëvro|livro|lua|lundro|" + \
+    "kallëzo|kapërce|kapërdi|karakterizo|këmbe|këndo|kërce|kërcëno|kërko|klasifiko|koncepto|konsumo|kontrollo|kopjo|korrigjo|krahaso|krijo|kritiko|krua|krye|kryqëzo|kthe|kufizo|kujto|kundërshto|kupto|kuro|kurorëzo|kurse|" + \
+    "la|lajmëro|largo|lexo|lëmo|lëndo|lëpi|lëro|lëvro|livro|lua|lundro|" + \
     "mallëngje|mashtro|mbaro|mbërthe|mbij|mendo|mëso|mirato|mirëkupto|mpi|" + \
     "nda|ndërto|ndëshko|ndijo|ndje|ndriço|ndrysho|ndy|ngacmo|ngadhënje|ngashëre|ngazëlle|ngërthe|ngri|ngushto|nxi|" + \
-    "pajto|parapëlqe|parashiko|pastro|pendo|pengo|pëlqe|përmba|përdhuno|përgjo|përjeto|përkthe|përlye|përto|përthye|pëso|piketo|pikëllo|pikturo|pleqëro|prano|profilizo|provo|punëso|puno|pusho|" + \
+    "pajto|parandalo|parapëlqe|parashiko|pastro|pendo|pengo|pëlqe|përmba|përdhuno|përgjo|përjeto|përkthe|përlye|përto|përthye|pëso|piketo|pikëllo|pikturo|planifiko|pleqëro|prano|procedo|profilizo|provo|punëso|puno|pusho|" + \
     "qarko|qarkullo|qëllo|qëro|qorto|qua|" + \
     "rekruto|rendo|rëndo|respekto|" + \
     "rreshto|rreziko|rrëfe|rrëmbe|rrëzo|" + \
     "saboto|sakrifiko|sfido|stërhollo|studio|sundo|" + \
-    "shërbe|shfleto|shiko|shkatërro|shkëlqe|shkëmbe|shkrua|shkurto|shlye|shpenzo|shpërble|shpërnda|shpërqendro|shpëto|shpërthe|shpreso|shqipëro|shqipto|shqye|shqyrto|shtri|shtro|shty|" + \
+    "shërbe|shfleto|shiko|shkatërro|shkëlqe|shkëmbe|shkrua|shkurto|shlye|shpenzo|shpërble|shpërnda|shpërqendro|shpëto|shpërthe|shpreso|shqipëro|shqipto|shqye|shqyrto|shtrembëro|shtri|shtro|shty|shuaj|" + \
     "tërbo|tështi|tingëllo|trajno|trazo|trego|trillo|" + \
-    "tha|thye|" + \
-    "urre|ushqe|" + \
+    "tha|thërmo|thumbo|thye|" + \
+    "urino|urre|ushqe|" + \
     "vajto|varfëro|vazhdo|verifiko|vepro|vëre|vëzhgo|vizato|vlerëso|vlo|vrapo|vrojto|vua|" + \
     "zbardh|zbarko|zëvendëso|zgjero|zgjo|" + \
     "zhbiro|zhgënje"
@@ -120,25 +120,29 @@ folje_zgj_1 = "abuzo|acaro|admiro|adhuro|aftëso|akordo|aktivizo|akumulo|akuzo|a
 folje_zgj_2 = "arratis|" + \
     "bërtas|brengos|" + \
     "djeg|" + \
-    "çakërdis|çmend|ço|" + \
-    "flak|" + \
-    "gërhas|" + \
-    "hap|" + \
-    "kap|korr|kurdis|" + \
+    "çakërdis|çmend|ço|çukas|çuket|" + \
+    "faqos|flak|flas|" + \
+    "gërhas|gropos|" + \
+    "gjakos|" + \
+    "hap|has|" + \
+    "kap|katranos|korr|kris|kurdis|" + \
     "lag|" + \
-    "mat|mbjell|" + \
-    "ndesh|ndrydh|ngas|ngrys|nis|nuhat|nxjer|" + \
-    "prek|" + \
-    "qëndis|" + \
+    "llogaris|" + \
+    "mat|mbivendos|mbjell|" + \
+    "ndesh|ndrydh|ngas|ngrys|ngul|nis|nuhat|nxjer|" + \
+    "përflas|përflet|prek|" + \
+    "qëndis|qullos|" + \
+    "rrjep|" + \
     "she|shkreh|shtyp|" + \
-    "thith|" + \
-    "ul" + \
-    "varro|vjedh|vjell|vulo|" + \
+    "tërheq|" + \
+    "them|thith|" + \
+    "ul|" + \
+    "varro|vjedh|vjell|vras|vulo|" + \
     "zbardh|zbyth|zgjat|zmbraps|zhyt"
 
 ## foljet e zgjedhimit të tretë
 ## ruhen prapashtesat ndaj nuk pranohen tema me grupe me | si (e|ë)
-folje_zgj_3 = "fle|" + \
+folje_zgj_3 = "dua|fle|" + \
     "ha|" + \
     "ngre|" + \
     "pi|" + \

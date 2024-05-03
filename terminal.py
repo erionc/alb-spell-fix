@@ -1,9 +1,16 @@
 
 '''
-timecl python terminal.py -c -i ./tmp/3000h3000t.txt -o /dev/null
-timecl ./terminal.bin -c -i ./tmp/3000h3000t.txt -o /dev/null
-Korrigjime totale:      2793
-Runtime: 86.088 seconds
+timecl python terminal.py -c -i ./tmp/6000ht.txt -o /dev/null
+Korrigjime totale:      2819
+Runtime: 53.789 seconds
+...
+timecl python terminal.py -c -i ./tmp/9000hmt.txt -o /dev/null
+Korrigjime totale:      4991
+Runtime: 90.739 seconds
+...
+timecl python terminal.py -c -i ./tmp/15kh_20.10.2023.txt -o /dev/null
+Korrigjime totale:      12872
+Runtime: 194.953 seconds
 '''
 
 import re, sys, argparse	# paketa të domosdoshme
