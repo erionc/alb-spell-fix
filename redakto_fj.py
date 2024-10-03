@@ -1,12 +1,13 @@
 
-''' Redaktime të fjalëve, fonemave dhe aspekteve stilistike '''
+''' Redaktime të fjalëve, fonemave dhe aspekteve stilistike '''  
 
 from percaktime import *
 
 ## G/XH/ZH -> GJ
 def permban_gj(text):
 	## vlerënisje 
-	t = text ; c_subs, e_subs, pj_subs, tj_subs = 0, 0, 0, 0
+	t = text 
+	c_subs, e_subs, pj_subs, tj_subs = 0, 0, 0, 0
 
 	## dixhital -> digjital
 	t, c = re.subn(fr"(\b)(Di|di)(xh)(ital)({albprapa_0_5})(\b)", r"\2gj\4\5", t) ; tj_subs += c 
@@ -41,10 +42,10 @@ def shqiperime(text):
 	t = text ; c_subs, e_subs, pj_subs, tj_subs = 0, 0, 0, 0
 
 	## kthimi i pikës në presje dhjetore 0.345 -> 0,345 ; 3.6e6 -> 3,6e6 ; -34.4e-4 -> -34,4e-4
-	t, c = re.subn(fr"(\b)([-+]?)([0-9]*)(\.)([0-9]+)([eE][-+]?[0-9]+)?(\b)", r"\2\3,\5\6", t) ; 
+	t, c = re.subn(fr"(\b)([-+]?)([0-9]*)(\.)([0-9]+)([eE][-+]?[0-9]+)?(\b)", r"\2\3,\5\6", t) ; tj_subs += c
+
 	## shprehja e mëposhtëme zëvendëson edhe numrat e shkruar në formën .345 -> ,345
-	# t, c = re.subn(fr"([-+]?)([0-9]*)(\.)([0-9]+)([eE][-+]?[0-9]+)?(\b)", r"\1\2,\4\5", t)
-	tj_subs += c 
+	# t, c = re.subn(fr"([-+]?)([0-9]*)(\.)([0-9]+)([eE][-+]?[0-9]+)?(\b)", r"\1\2,\4\5", t) ; tj_subs += c 
 
 	## XH -> GJ
 	t, e_c, c_c, p_c, tj_c = permban_gj(t)
@@ -56,7 +57,8 @@ def shqiperime(text):
 ## funksion për zëvendësimin e fjalëve angleze 
 def perkthime(text):
 	## vlerënisje 
-	t = text ; c_subs, e_subs, pj_subs, tj_subs = 0, 0, 0, 0
+	t = text
+	c_subs, e_subs, pj_subs, tj_subs = 0, 0, 0, 0
 
 	## link -> lidhje ; Hyperlink -> Hiperlidhje
 	t, c = re.subn(fr"(\b)({albpara_0_5})(L|l)(ink)(\b)", r"\2\3idhje", t) ; tj_subs += c 
